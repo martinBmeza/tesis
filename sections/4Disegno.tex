@@ -1,0 +1,38 @@
+\section{Diseño de la Investigación}
+Esta investigación busca estudiar el rendimiento de algoritmos de aprendizaje profundo en la tarea de la segregación de las componentes reverberantes de una señal de voz. Para conseguirlo, se propone organizar la metodología en las siguientes etapas:\\
+
+\textit{Etapa 1: Revisión del estado del arte y planteo de objetivos} \\
+Lo primero será estudiar detalladamente los documentos precedentes en este campo específico de aplicación. Se debe prestar especial atención a los trabajos mas recientes para poder determinar claramente cuales son los puntos débiles que presentan las metodologías actuales y de ese modo dilucidar de que manera se puede aportar al problema en cuestión y desde que enfoque conviene hacerlo. Con esto, se busca tener una mayor perspectiva sobre el problema para poder determinar con mayor eficiencia los objetivos pretendidos a corto y largo plazo. \\
+
+\textit{Etapa 2: Determinar las herramientas a utilizar} \\
+Con los objetivos en mente, el siguiente paso es determinar con que herramientas desarrollar los algoritmos para poder resolver cada paso de la cadena de procesamiento requerida. Existiendo tanta variedad de opciones, se debe analizar detalladamente que elección resulta mas fructífera para la implementación de los procesos pretendidos y para el posterior análisis de dicho proceso. Esto incluye tanto las herramientas de software o frameworks, tanto como los datos o bases de datos a utilizar. \\
+
+\textit{Etapa 3: Análisis y Pre-procesamiento de los datos} \\
+Habiendo elegido las herramientas y los datos a utilizar, el siguiente paso sera realizar un análisis exploratorio de dichos datos. Este análisis tiene como finalidad lograr comprender de una mejor manera las características de los datos con los que se va a trabajar, y determinar cuales son los procesamientos previos que se deben aplicar para que estos datos sean útiles a la hora de alimentar el algoritmo de aprendizaje profundo. Probablemente esta etapa sea la de mayor importancia en cuanto a que es el campo en donde se puede realizar un mayor aporte desde el punto de vista de la Ingeniería de Sonido. En esta etapa se deberá determinar con que datos alimentar el algoritmo y de que manera (o que características) serán estos introducidos a la cadena de procesamiento. Los resultados de este análisis y las decisiones que se deriven de estos marcaran el rumbo de la investigación. \\
+
+\textit{Etapa 4: Modelado y puesta a punto de la/las estructuras de aprendizaje profundo a utilizar, junto con su posterior entrenamiento}\\
+En esta etapa se realiza la implementación del algoritmo de aprendizaje profundo. Consiste tanto en armar la estructura de red elegida previamente, como también el resto de la cadena de procesamiento (previo y posterior a la red). Se deben definir las métricas a utilizar para cuantificar el rendimiento de los algoritmos, las funciones de  optimización para la propagación del error, y otros parámetros relativos al algoritmo. \\
+
+\textit{Etapa 5: Análisis de los resultados de cada modelo, validación y comparación con los modelos existentes.}\\
+En esta etapa de la investigación se busca hacer un contraste con el trabajo realizado y los antecedentes existentes, de manera de valorar los resultados obtenidos y ponerlos en contexto. Se deben elegir adecuadamente los parámetros a comparar y deben considerarse todas las decisiones tomadas a lo largo del procesamiento para poder abordar a conclusiones representativas sobre el aporte de la investigación al campo de estudio. \\
+
+\textit{Etapa 6: Armado de interfaz gráfica}\\
+Por último, la etapa restante consiste en el armado de una herramienta que permita visualizar el funcionamiento del algoritmo propuesto. Esta etapa también contempla el armado de una función global que permita utilizar un modelo entrenado para ser insertado en una cadena de procesamiento posterior, para ser utilizado en otras aplicaciones como el de-noising. \\
+
+
+\subsection{Cronograma}
+
+En el siguiente diagrama de Grantt se propone el cronograma de actividades para la realización de esta investigación. 
+
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\cline{1-1}
+Actividad / Quincenas                                                                             & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Revision de estado del arte  y \\ \\ planteo de objetivos\end{tabular} & X & X & X &   &   &   &   &   &   &    &    &    \\ \hline
+Determinación de herramientas                                                                     &   & X & X &   &   &   &   &   &   &    &    &    \\ \hline
+Análisis y pre-procesamiento de datos                                                             &   &   &   & X & X & X & X &   &   &    &    &    \\ \hline
+Modelado de las estructuras de aprendizaje profundo                                               &   &   &   &   &   &   & X & X &   &    &    &    \\ \hline
+Análisis y validación de resultados                                                               &   &   &   &   &   &   &   &   & X & X  & X  &    \\ \hline
+Desarrollo de Interfaz de visualización de datos                                                  &   &   &   &   &   &   &   &   &   &    & X  & X  \\ \hline
+\end{tabular}
+\end{table}

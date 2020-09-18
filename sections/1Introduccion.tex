@@ -1,0 +1,31 @@
+\section{Introducción} 
+\subsection{Fundamentación}
+Las tecnologías que explotan el procesamiento digital de señales de voz mostraron grandes avances en las ultimas décadas, llegando a ocupar roles de primera importancia en nuestro día a día. Las investigaciones realizadas en este campo fueron impulsando diversas aplicaciones basadas en el análisis de la voz humana. 
+Estas tareas, en mayor o menor medida, deben lidiar con una característica intrínseca a cualquier emisión sonora dentro de un recinto: la reverberación. Las señales de voz que reciben las aplicaciones anteriormente nombradas por lo general se obtienen a partir de un transductor que no siempre se encuentra cercano a la fuente que desea registrar, provocando que la señal resultante capte la reverberación propia del entorno de origen de la señal. Esta reverberación interfiere en detrimento la señal de voz, produciendo una baja en el rendimiento de aquellas aplicaciones que dependen de la integridad de dicha señal, como ser: 
+
+\begin{itemize}
+    \item Reconocimiento del habla \cite{reconocimiento}
+    \item Verificación del hablante\footnote{Debe distinguirse entre reconocimiento del habla y verificación del hablante. Lo primero refiere a poder distinguir que palabras fueron dichas, y lo segundo refiere a identificar quien es el que esta pronunciando las palabras.} \cite{verificacion}
+    
+    \item Localización del hablante \cite{localizacion}
+    \item Aumento de la inteligibilidad de la palabra
+\end{itemize}
+
+
+Si bien esta problemática fue abordada desde el enfoque de diversas técnicas de procesamiento de señales, en los últimos años este campo de estudio tuvo grandes avances producto de la implementación de una tecnología emergente de amplio crecimiento en el ambiente científico: los algoritmos de aprendizaje profundo. La capacidad y robustez que esta técnica demostró a la hora de resolver problemas pertinentes al procesamiento de imágenes y detección de patrones frente a los enfoques clásicos la pusieron al frente de las herramientas utilizadas para resolver problemas de este ámbito. Sin embargo, las tareas relacionadas al procesamiento de audio aun son un campo de estudio reciente para estas tecnologías, en donde todavía se presentan obstáculos para lograr una implementación plena de estas técnicas como por ejemplo: la falta de bases de datos masivas de señales acústicas, la selección de una manera de representación óptima de las señales que permita explotar sus características intrínsecas, las maneras de medir el rendimiento de los procesos, entre otros.
+
+Por este motivo, este trabajo pretende realizar un análisis de esta problemática desde el punto de vista de la ingeniería de sonido, para comprender las limitaciones de los modelos actualmente utilizados en este campo de estudio, y poder aportar al progreso y mejora del rendimiento de dichos modelos. 
+
+\subsection{Objetivos}
+El objetivo general de este trabajo de tesis es implementar un algoritmo de dereverberación de señales de voz a partir del uso de redes neuronales y algoritmos de aprendizaje profundo. 
+
+Los objetivos específicos son 
+\begin{itemize}
+    \item Realizar una revisión de las técnicas utilizadas para resolver el problema de dereverberación 
+    \item Diseñar e implementar una estructura de red neuronal para dereverberación de señales de voz en lenguaje Python.
+    \item Analizar las técnicas de pre y post procesamiento de datos, estudiando el impacto que tienen en el rendimiento del algoritmo
+    \item Optimizar el sistema propuesto, y comparar los resultados obtenidos con los modelos actuales de manera objetiva
+    \item Diseñar e implementar una interfaz gráfica en donde se permita visualizar los efectos del proceso de dereverberación aplicados a una señal particular. 
+\end{itemize}
+
+\subsection{Estructura de la Investigación}

@@ -1,0 +1,117 @@
+ \documentclass[12pt]{article}[a4]
+%\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath,multicol}
+
+
+\usepackage[backend=bibtex,sorting=none]{biblatex}
+%usepackage[resetlabels,labeled]{multibib}
+%\usepackage[sorting=none]{biblatex}
+
+\addbibresource{referencias.bib}
+
+
+\usepackage{fancyhdr}
+\usepackage{import}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{graphicx,float,subcaption}
+\newcommand{\gr}{^{\circ}}
+\newcommand{\ohm}{\Omega}
+\usepackage{import}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+\usepackage{graphicx}
+\graphicspath{ {imagenes/} }
+\usepackage[font=small,justification=centering]{caption}
+%\usepackage{subcaption}
+
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage{fontspec}
+\usepackage{times} 
+\usepackage{mathptmx}
+\usepackage[font={footnotesize,it,bf}]{caption}
+
+
+
+\usepackage{datetime}
+\newdateformat{monthyeardate}{
+  \monthname[\THEMONTH]  \THEYEAR}  \makeatletter
+\renewcommand{\monthnamespanish}[1][\month]{%
+  \@orgargctr=#1\relax
+  \ifcase\@orgargctr
+    \PackageError{datetime}{Invalid Month number \the\@orgargctr}{%
+      Month numbers should go from 1 to 12}%
+    \or Enero%
+    \or Febrero%
+    \or Marzo%
+    \or Abril%
+    \or Mayo%
+    \or Junio%
+    \or Julio%
+    \or Agosto%
+    \or Septiembre%
+    \or Octubre%
+    \or Noviembre%
+    \or Diciembre%
+    \else \PackageError{datetime}{Invalid Month number \the\@orgargctr}{%
+      Month numbers should go from 1 to 12}%
+  \fi}
+\makeatother
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\fontsize{12}{14}\bfseries}{\thesection .}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\fontsize{12}{14}\bfseries}{\thesubsection .}{1em}{}
+
+\usepackage[hidelinks]{hyperref} % Para usar hipervinculos
+\usepackage[]{verbatim} % Para poder comentar por bloques
+\usepackage[]{lipsum} % Para rellenar con texto
+
+\title{De-reverberación del habla a partir de algoritmos de aprendizaje profundo}
+
+\author{Meza, Martin Bernardo}
+
+\begin{document}
+%\setlength{\parindent}{12pt}
+
+\setmainfont{Carlito}
+%\setsansfont[Scale=MatchLowercase]{Calibri}
+\input{sections/0Portada}
+\newpage
+\setcounter{page}{1}
+\setcounter{section}{0}
+\setmainfont{Carlito}
+\begin{center}
+    \textbf{Plan de Tesis}
+\end{center}
+\input{sections/1Introduccion}
+\input{sections/2Estado.tex}
+\input{sections/3Marco.tex}
+\input{sections/4Disegno.tex}
+%\input{sections/5Validacion.tex}
+%\input{sections/6Analisis.tex}
+%\input{sections/7Conclusiones.tex}
+%\input{sections/Lineas_futuras.tex}
+
+\newpage
+
+\printbibliography[heading=bibintoc,title={Bibliografia}]
+
+%\appendix
+%\section{}
+%\input{sections/apendice01}
+
+
+
+
+\end{document}
