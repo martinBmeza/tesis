@@ -10,7 +10,7 @@
 
 \addbibresource{referencias.bib}
 
-
+\usepackage{setspace}
 \usepackage{fancyhdr}
 \usepackage{import}
 \usepackage{tikz}
@@ -77,9 +77,9 @@
 \usepackage[]{verbatim} % Para poder comentar por bloques
 \usepackage[]{lipsum} % Para rellenar con texto
 
-\title{De-reverberación del habla a partir de algoritmos de aprendizaje profundo}
+\title{Dereverberación del habla a partir de algoritmos de aprendizaje profundo}
 
-\author{Meza, Martin Bernardo}
+\author{Martin Bernardo Meza}
 
 \begin{document}
 %\setlength{\parindent}{12pt}
@@ -87,25 +87,36 @@
 \setmainfont{Carlito}
 %\setsansfont[Scale=MatchLowercase]{Calibri}
 \input{sections/0Portada}
+\spacing{1.5}
 \newpage
+
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage
+
 \setcounter{page}{1}
 \setcounter{section}{0}
 \setmainfont{Carlito}
-\begin{center}
-    \textbf{Plan de Tesis}
-\end{center}
+\spacing{1.5}
+
 \input{sections/1Introduccion}
 \input{sections/2Estado.tex}
 \input{sections/3Marco.tex}
-\input{sections/4Disegno.tex}
-%\input{sections/5Validacion.tex}
-%\input{sections/6Analisis.tex}
-%\input{sections/7Conclusiones.tex}
-%\input{sections/Lineas_futuras.tex}
+\input{sections/4Metodologia.tex}
+\input{sections/5Resultados.tex}
+%\input{sections/Disegno.tex}
+%\input{sections/Validacion.tex}
+\input{sections/6Discusion.tex}
+\input{sections/7Conclusiones.tex}
+\input{sections/8Lineas_futuras.tex}
 
 \newpage
 
-\printbibliography[heading=bibintoc,title={Bibliografia}]
+\printbibliography[heading=bibintoc,title={Bibliografía}]
 
 %\appendix
 %\section{}

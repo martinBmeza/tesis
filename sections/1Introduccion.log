@@ -1,0 +1,549 @@
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2020.9.17)  12 OCT 2020 14:32
+ restricted system commands enabled.
+**1Introduccion.tex
+(./1Introduccion.tex
+LaTeX2e <2020-02-02> patch level 2
+Lua module: luaotfload-main 2020-02-02 3.12 luaotfload entry point
+Lua module: luaotfload-init 2020-02-02 3.12 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2020-02-02 2.70 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-02-02 2.70 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2020-02-02 3.12 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-02-02 3.12 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2020-02-02 3.12 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is /home/mrtn/.texlive2019/texmf-var/lu
+atex-cache/generic-dev/names.
+luaotfload | init : Loading fontloader “fontloader-2020-01-26.lua” from kpse
+-resolved path “/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader
+-2020-01-26.lua”.
+Lua-only attribute luaotfload@state = 2
+Lua-only attribute luaotfload@noligature = 3
+Lua-only attribute luaotfload@syllabe = 4
+luaotfload | init : Context OpenType loader version “3.11”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2020-02-02 3.12 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-02-02 3.12 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-02-02 3.12 luaotfload submodule / Unicode he
+lpers
+Lua module: luaotfload-colors 2020-02-02 3.12 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 5
+Lua module: luaotfload-resolvers 2020-02-02 3.12 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is /home/mrtn/.texlive2019/texmf-var/lu
+atex-cache/generic-dev/names.
+Lua module: luaotfload-features 2020-02-02 3.12 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-embolden 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-notdef 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2020-02-02 3.12 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-fallback 2020-02-02 3.12 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-02-02 3.12 luaotfload submodule / multis
+cript
+Lua module: luaotfload-script 2020-02-02 3.12 luaotfload submodule / Script help
+ers
+Lua module: luaotfload-tounicode 2020-02-02 3.12 luaotfload submodule / tounicod
+e
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2020-02-14>
+! Undefined control sequence.
+l.1 \section
+          {Introducción}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{I
+            ntroducción}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.2 \subsection
+             {Fundamentación}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--5
+[]Introducción
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \begin{itemize}
+                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--6
+[] 
+ []
+
+\citation{reconocimiento}
+luaotfload | db : Font names database loaded from /home/mrtn/.texlive2019/texmf-
+var/luatex-cache/generic-dev/names/luaotfload-names.luc
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.7 ...econocimiento del habla \cite{reconocimiento}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `reconocimiento' on page  undefined on input line 7.
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 7--8
+[[]] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.8 ...en es el que esta pronunciando las palabras.}
+                                                   \cite{verificacion}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.8 ...en es el que esta pronunciando las palabras.}
+                                                   \cite{verificacion}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.36pt too wide) in paragraph at lines 8--8
+[][]\TU/lmr/m/n/10 Debe
+ []
+
+
+Overfull \hbox (15.61pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 dis-
+ []
+
+
+Overfull \hbox (15.56pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 tin-
+ []
+
+
+Overfull \hbox (25.64pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 guirse
+ []
+
+
+Overfull \hbox (13.33pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 en-
+ []
+
+
+Overfull \hbox (12.25pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 tre
+ []
+
+
+Overfull \hbox (11.69pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (57.22pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 conocimiento
+ []
+
+
+Overfull \hbox (12.78pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 del
+ []
+
+
+Overfull \hbox (23.9pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 habla
+ []
+
+
+Overfull \hbox (5.28pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 y
+ []
+
+
+Overfull \hbox (16.69pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 ver-
+ []
+
+
+Overfull \hbox (6.11pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 i-
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (27.22pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 cación
+ []
+
+
+Overfull \hbox (12.78pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 del
+ []
+
+
+Overfull \hbox (40.29pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 hablante.
+ []
+
+
+Overfull \hbox (11.25pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 Lo
+ []
+
+
+Overfull \hbox (33.95pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 primero
+ []
+
+
+Overfull \hbox (11.69pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (18.36pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 fiere
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 a
+ []
+
+
+Overfull \hbox (25.04pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 poder
+ []
+
+
+Overfull \hbox (15.61pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 dis-
+ []
+
+
+Overfull \hbox (15.56pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 tin-
+ []
+
+
+Overfull \hbox (17.26pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 guir
+ []
+
+
+Overfull \hbox (15.28pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 que
+ []
+
+
+Overfull \hbox (16.67pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 pal-
+ []
+
+
+Overfull \hbox (23.42pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 abras
+ []
+
+
+Overfull \hbox (27.54pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 fueron
+ []
+
+
+Overfull \hbox (29.78pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 dichas,
+ []
+
+
+Overfull \hbox (5.28pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 y
+ []
+
+
+Overfull \hbox (7.78pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 lo
+ []
+
+
+Overfull \hbox (11.71pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 se-
+ []
+
+
+Overfull \hbox (26.68pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 gundo
+ []
+
+
+Overfull \hbox (11.69pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 re-
+ []
+
+
+Overfull \hbox (18.36pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 fiere
+ []
+
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 a
+ []
+
+
+Overfull \hbox (21.67pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 iden-
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (18.92pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 ficar
+ []
+
+
+Overfull \hbox (23.62pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 quien
+ []
+
+
+Overfull \hbox (8.38pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 es
+ []
+
+
+Overfull \hbox (7.22pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 el
+ []
+
+
+Overfull \hbox (15.28pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 que
+ []
+
+
+Overfull \hbox (17.27pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 esta
+ []
+
+
+Overfull \hbox (17.81pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 pro-
+ []
+
+
+Overfull \hbox (19.73pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 nun-
+ []
+
+
+Overfull \hbox (28.34pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 ciando
+ []
+
+
+Overfull \hbox (11.72pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 las
+ []
+
+
+Overfull \hbox (16.67pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 pal-
+ []
+
+
+Overfull \hbox (26.2pt too wide) in paragraph at lines 8--8
+\TU/lmr/m/n/10 abras.| 
+ []
+
+\citation{verificacion}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.8 ...onunciando las palabras.} \cite{verificacion}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `verificacion' on page  undefined on input line 8.
+
+
+Overfull \hbox (4.483pt too wide) in paragraph at lines 8--9
+hablante[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 8--9
+[[]] 
+ []
+
+\citation{localizacion}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.10 ...calización del hablante \cite{localizacion}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `localizacion' on page  undefined on input line 10.
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 10--11
+[[]] 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 15--16
+[]Si
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 17--18
+[]Por
+ []
+
+! Undefined control sequence.
+l.19 \subsection
+              {Objetivos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.20 \subsubsection
+                 {Objetivo general}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--22
+[]Objetivos
+ []
+
+! Undefined control sequence.
+l.23 \subsubsection
+                 {Objetivos específicos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 23--24
+[]Objetivos
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--26
+[]Los
+ []
+
+! Undefined control sequence.
+l.34 \subsection
+              {Estructura de la Investigación}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> 1Introduccion.tex
+                  
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 42 strings out of 481365
+ 100000,319454 words of node,token memory allocated 29071 words of node memory still in use:
+   122 hlist, 2 rule, 1 ins, 18 disc, 18 local_par, 1 dir, 2 math, 742 glue, 12 
+kern, 100 penalty, 3074 glyph, 1 page_insert, 71 attribute, 39 glue_spec, 71 att
+ribute_list, 1 temp nodes
+   avail lists: 4:162,5:20,8:2,10:161
+ 17253 multiletter control sequences out of 65536+600000
+ 37 fonts using 4144099 bytes
+ 24i,5n,19p,1114b,155s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

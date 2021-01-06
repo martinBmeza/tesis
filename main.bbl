@@ -17,19 +17,89 @@
 \endgroup
 
 \datalist[entry]{none/global//global/global}
+  \entry{fun1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DL}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kingsbury},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DLHGKB1}
+    \strng{fullhash}{DLHGKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{New types of deep neural network learning for speech
+  recognition and related applications: An overview}
+    \field{journaltitle}{Proc. IEEE Int. Conf. Acoustics, Speech, and Signal
+  Process (ICASSP)}
+    \field{year}{2013}
+  \endentry
+
+  \entry{fun2}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CH}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Plourde},
+         familyi={P\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Champagne},
+         familyi={C\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CH+1}
+    \strng{fullhash}{CHKTPECB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Noise-adaptive deep neural network for single-channel speech
+  enhancement}
+    \field{journaltitle}{Proc. Int. Workshop on Machine Learning for Signal
+  Process. (MLSP)}
+    \field{year}{2018}
+  \endentry
+
   \entry{reconocimiento}{article}{}
     \true{moreauthor}
     \true{morelabelname}
     \name{author}{1}{}{%
-      {{hash=PJ}{%
-         family={Pearson},
-         familyi={P\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
+      {{hash=JP}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Pearson},
+         giveni={P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{PJ+1}
-    \strng{fullhash}{PJ+1}
+    \strng{namehash}{JP+1}
+    \strng{fullhash}{JP+1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{Acoustics, Speech, and Signal Processing}
@@ -40,11 +110,11 @@
 
   \entry{verificacion}{article}{}
     \name{author}{3}{}{%
-      {{hash=CPJ}{%
-         family={Castellano},
-         familyi={C\bibinitperiod},
-         given={Pierre\bibnamedelima J.},
-         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      {{hash=JCP}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Castellano\bibnamedelima Pierre},
+         giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
       {{hash=SS}{%
          family={Sradharan},
@@ -59,8 +129,8 @@
          giveni={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{CPJSSCD1}
-    \strng{fullhash}{CPJSSCD1}
+    \strng{namehash}{JCPSSCD1}
+    \strng{fullhash}{JCPSSCD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{Acoustics, Speech, and Signal Processing}
@@ -71,11 +141,11 @@
 
   \entry{localizacion}{article}{}
     \name{author}{3}{}{%
-      {{hash=DJH}{%
-         family={DiBiase},
-         familyi={D\bibinitperiod},
-         given={Joseph\bibnamedelima H.},
-         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      {{hash=HDJ}{%
+         family={H.},
+         familyi={H\bibinitperiod},
+         given={DiBiase\bibnamedelima Joseph},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
       {{hash=SHF}{%
          family={Silverman},
@@ -90,8 +160,8 @@
          giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{DJHSHFBMS1}
-    \strng{fullhash}{DJHSHFBMS1}
+    \strng{namehash}{HDJSHFBMS1}
+    \strng{fullhash}{HDJSHFBMS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{note}{Microphone Arrays.}
@@ -168,7 +238,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {Prentice- Hall,}%
+      {Prentice- Hall}%
     }
     \strng{namehash}{RLRSRW1}
     \strng{fullhash}{RLRSRW1}
@@ -180,21 +250,21 @@
 
   \entry{LPresiduo}{article}{}
     \name{author}{2}{}{%
-      {{hash=YB}{%
-         family={Yegnanarayana},
-         familyi={Y\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
+      {{hash=BY}{%
+         family={B.},
+         familyi={B\bibinitperiod},
+         given={Yegnanarayana},
+         giveni={Y\bibinitperiod},
       }}%
-      {{hash=SP}{%
-         family={Satyanarayana},
-         familyi={S\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
+      {{hash=PS}{%
+         family={P.},
+         familyi={P\bibinitperiod},
+         given={Satyanarayana},
+         giveni={S\bibinitperiod},
       }}%
     }
-    \strng{namehash}{YBSP1}
-    \strng{fullhash}{YBSP1}
+    \strng{namehash}{BYPS1}
+    \strng{fullhash}{BYPS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Enhancement of Reverberant Speech Using LP Residual Signal}
@@ -204,21 +274,21 @@
 
   \entry{multichannel}{article}{}
     \name{author}{2}{}{%
-      {{hash=GS}{%
-         family={Gannot},
-         familyi={G\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
+      {{hash=SG}{%
+         family={S.},
+         familyi={S\bibinitperiod},
+         given={Gannot},
+         giveni={G\bibinitperiod},
       }}%
       {{hash=MM}{%
-         family={Moonen},
+         family={M.},
          familyi={M\bibinitperiod},
-         given={M.},
+         given={Moonen},
          giveni={M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GSMM1}
-    \strng{fullhash}{GSMM1}
+    \strng{namehash}{SGMM1}
+    \strng{fullhash}{SGMM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Subspace Methods for Multimicrophone Speech Dereverberation}
@@ -276,17 +346,22 @@
   \endentry
 
   \entry{spect_subtrac}{article}{}
-    \name{author}{1}{}{%
-      {{hash=KLJMB}{%
-         family={K.\bibnamedelima Lebart},
-         familyi={K\bibinitperiod\bibinitdelim L\bibinitperiod},
-         given={J.\bibnamedelima M.\bibnamedelima Boucher},
-         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
-  B\bibinitperiod},
+    \name{author}{2}{}{%
+      {{hash=LK}{%
+         family={Lebart},
+         familyi={L\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Boucher},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KLJMB1}
-    \strng{fullhash}{KLJMB1}
+    \strng{namehash}{LKBJM1}
+    \strng{fullhash}{LKBJM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{A New Method Based on Spectral Subtraction for
@@ -360,16 +435,15 @@
          given={D.\bibnamedelima L.},
          giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
-      {{hash=GJBE}{%
-         family={G.\bibnamedelima J.\bibnamedelima Brown},
-         familyi={G\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  B\bibinitperiod},
-         given={Eds.},
-         giveni={E\bibinitperiod},
+      {{hash=BGJ}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={G.\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{WDLGJBE1}
-    \strng{fullhash}{WDLGJBE1}
+    \strng{namehash}{WDLBGJ1}
+    \strng{fullhash}{WDLBGJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Computational Auditory Scene Analysis: Principles,
@@ -420,35 +494,47 @@
   \endentry
 
   \entry{rev_mask}{article}{}
-    \name{author}{1}{}{%
-      {{hash=NRJW}{%
-         family={Nicoleta\bibnamedelima Roman},
-         familyi={N\bibinitperiod\bibinitdelim R\bibinitperiod},
-         given={John\bibnamedelima Woodruff},
-         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+    \name{author}{2}{}{%
+      {{hash=RN}{%
+         family={Roman},
+         familyi={R\bibinitperiod},
+         given={Nicoleta},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Woodruff},
+         familyi={W\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{NRJW1}
-    \strng{fullhash}{NRJW1}
+    \strng{namehash}{RNWJ1}
+    \strng{fullhash}{RNWJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{title}{Intelligibility of reverberant noisy speech with ideal
-  binarymasking}
+    \field{title}{Intelligibility of reverberant noisy speech with ideal binary
+  masking}
     \field{journaltitle}{Journal of Acoustical Society of America}
     \field{year}{2011}
   \endentry
 
   \entry{parametros}{article}{}
-    \name{author}{1}{}{%
-      {{hash=NRJW}{%
-         family={Nicoleta\bibnamedelima Roman},
-         familyi={N\bibinitperiod\bibinitdelim R\bibinitperiod},
-         given={John\bibnamedelima Woodruff},
-         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+    \name{author}{2}{}{%
+      {{hash=RN}{%
+         family={Roman},
+         familyi={R\bibinitperiod},
+         given={Nicoleta},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Woodruff},
+         familyi={W\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{NRJW1}
-    \strng{fullhash}{NRJW1}
+    \strng{namehash}{RNWJ1}
+    \strng{fullhash}{RNWJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Speech intelligibility in reverberation with ideal binary
@@ -515,18 +601,28 @@
   \endentry
 
   \entry{ezeKun}{article}{}
-    \name{author}{1}{}{%
-      {{hash=KHDWYW}{%
-         family={Kun\bibnamedelima Han},
-         familyi={K\bibinitperiod\bibinitdelim H\bibinitperiod},
-         suffix={Yuxuan\bibnamedelima Wang},
-         suffixi={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
-         given={DeLiang\bibnamedelima Wang},
-         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+    \name{author}{3}{}{%
+      {{hash=HK}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Kun},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yuxuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={DeLiang},
+         giveni={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KHYWDW1}
-    \strng{fullhash}{KHYWDW1}
+    \strng{namehash}{HKWYWD1}
+    \strng{fullhash}{HKWYWD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Learning spectral mapping for speech dereverberation}
@@ -574,20 +670,28 @@
   \endentry
 
   \entry{CNN}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DSWWSYXZ}{%
-         family={D.\bibnamedelima S.\bibnamedelima Wang},
-         familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
-  W\bibinitperiod},
-         suffix={Y.\bibnamedelima X.\bibnamedelima Zou},
-         suffixi={Y\bibinitperiod\bibinitdelim X\bibinitperiod\bibinitdelim
-  Z\bibinitperiod},
-         given={W.\bibnamedelima Shi},
-         giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod},
+    \name{author}{3}{}{%
+      {{hash=WDS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={D.\bibnamedelima S.},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZYX}{%
+         family={Zou},
+         familyi={Z\bibinitperiod},
+         given={Y.\bibnamedelima X.},
+         giveni={Y\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
       }}%
     }
-    \strng{namehash}{DSWYXZWS1}
-    \strng{fullhash}{DSWYXZWS1}
+    \strng{namehash}{WDSZYXSW1}
+    \strng{fullhash}{WDSZYXSW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{A Deep Convolutional Encoder-Decoder Model for Robust Speech
@@ -663,6 +767,600 @@
   Dereverberation}
     \field{journaltitle}{Discrete Dynamics in Nature and Society}
     \field{year}{2020}
+  \endentry
+
+  \entry{ritmo}{book}{}
+    \name{author}{2}{}{%
+      {{hash=RJD}{%
+         family={Reiss},
+         familyi={R\bibinitperiod},
+         given={Joshua\bibnamedelima D.},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MAP}{%
+         family={McPherson},
+         familyi={M\bibinitperiod},
+         given={Andrew\bibnamedelima P.},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC Press}%
+    }
+    \strng{namehash}{RJDMAP1}
+    \strng{fullhash}{RJDMAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Audio Effects: Theory, Implementation and Application}
+    \field{year}{2014}
+  \endentry
+
+  \entry{openheim}{book}{}
+    \name{author}{3}{}{%
+      {{hash=OAV}{%
+         family={Oppenheim},
+         familyi={O\bibinitperiod},
+         given={Alan\bibnamedelima V.},
+         giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=SRW}{%
+         family={Shafer},
+         familyi={S\bibinitperiod},
+         given={Ronald\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=BJR}{%
+         family={Buck},
+         familyi={B\bibinitperiod},
+         given={John\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice- Hall}%
+    }
+    \strng{namehash}{OAVSRWBJR1}
+    \strng{fullhash}{OAVSRWBJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Discrete-Time Signal Processing}
+    \field{year}{1989}
+  \endentry
+
+  \entry{fft}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BEO}{%
+         family={Brigham},
+         familyi={B\bibinitperiod},
+         given={E.\bibnamedelima Oran},
+         giveni={E\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice- Hall}%
+    }
+    \strng{namehash}{BEO1}
+    \strng{fullhash}{BEO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Fast Fourier Transform And Its Aplications}
+    \field{year}{1988}
+  \endentry
+
+  \entry{libro_dereverb}{book}{}
+    \name{author}{2}{}{%
+      {{hash=NPA}{%
+         family={Naylor},
+         familyi={N\bibinitperiod},
+         given={Patrick\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GND}{%
+         family={Gaubitch},
+         familyi={G\bibinitperiod},
+         given={Nikolay\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{NPAGND1}
+    \strng{fullhash}{NPAGND1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Speech Dereverberation - Signals and Communication
+  Technology}
+    \field{year}{2010}
+  \endentry
+
+  \entry{SRMR}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FTH}{%
+         family={Falk},
+         familyi={F\bibinitperiod},
+         given={Tiago\bibnamedelima H.},
+         giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CWY}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={Wai-Yip},
+         giveni={W\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FTHCWY1}
+    \strng{fullhash}{FTHCWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Queen’s University, Kingston, Ontario, Canada}
+    \field{title}{A Non-intrusive Quality Measure of Dereverberated Speech}
+    \field{journaltitle}{Department of Electrical and Computer Engineering}
+    \field{year}{2008}
+  \endentry
+
+  \entry{ESTOI}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FTH}{%
+         family={Falk},
+         familyi={F\bibinitperiod},
+         given={Tiago\bibnamedelima H.},
+         giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CWY}{%
+         family={Chan},
+         familyi={C\bibinitperiod},
+         given={Wai-Yip},
+         giveni={W\bibinithyphendelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FTHCWY1}
+    \strng{fullhash}{FTHCWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Queen’s University, Kingston, Ontario, Canada}
+    \field{title}{A Non-intrusive Quality Measure of Dereverberated Speech}
+    \field{journaltitle}{Department of Electrical and Computer Engineering}
+    \field{year}{2008}
+  \endentry
+
+  \entry{SAR}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VE}{%
+         family={Vincent},
+         familyi={V\bibinitperiod},
+         given={Emmanuel},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gribonval},
+         familyi={G\bibinitperiod},
+         given={Rémi},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={Févotte},
+         familyi={F\bibinitperiod},
+         given={Cédric},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VEGRFC1}
+    \strng{fullhash}{VEGRFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Performance Measurement in Blind Audio Source Separation}
+    \field{journaltitle}{IEEE Transactions on Audio, Speech and Language
+  Processing}
+    \field{year}{2006}
+  \endentry
+
+  \entry{neurona}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LC}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Chunlei},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Longbiao},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dang},
+         familyi={D\bibinitperiod},
+         given={Jianwu},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LCWLDJ1}
+    \strng{fullhash}{LCWLDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A Logical Calculus of Ideas Immanent in Nervous Activity}
+    \field{journaltitle}{Bulletin of Mathematical Biophysics}
+    \field{year}{1943}
+  \endentry
+
+  \entry{perceptron}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RF}{%
+         family={Rosenblatt},
+         familyi={R\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RF1}
+    \strng{fullhash}{RF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The Perceptron: A Perceiving and Recognizing Automaton}
+    \field{journaltitle}{Cornell Aeronautical Laboratory}
+    \field{year}{1957}
+  \endentry
+
+  \entry{franchute}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Chollet},
+         familyi={C\bibinitperiod},
+         given={Francois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Manning Publications}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Deep Learning with Python}
+    \field{year}{2017}
+  \endentry
+
+  \entry{cv}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Louradour},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Collobert},
+         familyi={C\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Weston},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BY+1}
+    \strng{fullhash}{BYLJCRWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Curriculum Learning}
+    \field{journaltitle}{Proceedings of the 26thInternational Confer-ence on
+  Machine Learning}
+    \field{year}{2009}
+  \endentry
+
+  \entry{lagartija}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GA}{%
+         family={Géron},
+         familyi={G\bibinitperiod},
+         given={Aurélien},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {O'reilly media}%
+    }
+    \strng{namehash}{GA1}
+    \strng{fullhash}{GA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Hands-on Machine Learning with Scikit-Learn, Keras, and
+  TensorFlow}
+    \field{year}{2019}
+  \endentry
+
+  \entry{fase1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WDL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={D.\bibnamedelima L.},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={J.\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WDLLJS1}
+    \strng{fullhash}{WDLLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The unimportance of phase in speechenhancement}
+    \field{journaltitle}{IEEE Trans. Acoust. Speech Signal Process}
+    \field{year}{1982}
+  \endentry
+
+  \entry{fase2}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EY}{%
+         family={Ephraim},
+         familyi={E\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Malah},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EYMD1}
+    \strng{fullhash}{EYMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Speech enhancement using a minimummean-square error
+  short-time spectral amplitude estimator}
+    \field{journaltitle}{IEEE Trans. Acoust. Speech Signal Process}
+    \field{year}{1984}
+  \endentry
+
+  \entry{griffinlim}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GDW}{%
+         family={Griffin},
+         familyi={G\bibinitperiod},
+         given={Daniel\bibnamedelima W.},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={Jaa\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GDWLJS1}
+    \strng{fullhash}{GDWLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Signal Estimation for Modified Short-Time Fourier Transform}
+    \field{journaltitle}{IEEE Trans. Acoust. Speech Signal Process}
+    \field{year}{1984}
+  \endentry
+
+  \entry{rir_reales}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Stewart},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sander},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRSM1}
+    \strng{fullhash}{SRSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Database of omnidirectional and B-format impulse responses}
+    \field{journaltitle}{Proc. IEEE Int. Conf. Acous-tics, Speech, and Signal
+  Process. (ICASSP)}
+    \field{year}{2010}
+  \endentry
+
+  \entry{sinesweep}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AF}{%
+         family={Angelo},
+         familyi={A\bibinitperiod},
+         given={Farina},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AF1}
+    \strng{fullhash}{AF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Simultaneous measurement of impulse response and distortion
+  with a swept sine technique}
+    \field{journaltitle}{108th AES Convention}
+    \field{year}{2000}
+  \endentry
+
+  \entry{pyroom}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SR}{%
+         family={Scheibler},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Bezzam},
+         familyi={B\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DI}{%
+         family={Dokmanić},
+         familyi={D\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRBEDI1}
+    \strng{fullhash}{SRBEDI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Pyroomacoustics: A Python package for audio room simulations
+  and array processing algorithms}
+    \field{journaltitle}{Proc. IEEE ICASSP}
+    \field{year}{2018}
+  \endentry
+
+  \entry{ISM}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AJB}{%
+         family={Allen},
+         familyi={A\bibinitperiod},
+         given={J.\bibnamedelima B.},
+         giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=BDA}{%
+         family={Berkley},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AJBBDA1}
+    \strng{fullhash}{AJBBDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Image method for efficiently simulating small-room acoustics}
+    \field{journaltitle}{J. Acoust. Soc. Am., vol. 65}
+    \field{year}{1979}
+  \endentry
+
+  \entry{librispeech}{article}{}
+    \name{author}{4}{}{%
+      {{hash=VP}{%
+         family={V.},
+         familyi={V\bibinitperiod},
+         given={Panayotov},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={G.},
+         familyi={G\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={D.},
+         familyi={D\bibinitperiod},
+         given={Povey},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={S.},
+         familyi={S\bibinitperiod},
+         given={Khudanpur},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VP+1}
+    \strng{fullhash}{VPGCDPSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Libris-peech: an asr corpus based on public domain audio
+  books}
+    \field{journaltitle}{In Acoustics,Speech and Signal Processing (ICASSP)}
+    \field{year}{2015}
+  \endentry
+
+  \entry{mask_vs_map}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yuxuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Narayanan},
+         familyi={N\bibinitperiod},
+         given={Arun},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WDL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={De\bibnamedelima Liang},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WYNAWDL1}
+    \strng{fullhash}{WYNAWDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{On Training Targets for Supervised Speech Separation}
+    \field{journaltitle}{IEEE/ACM Trans Audio Speech Lang Process}
+    \field{year}{2014}
+  \endentry
+
+  \entry{adam}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PKD}{%
+         family={P.},
+         familyi={P\bibinitperiod},
+         given={Kingma\bibnamedelima D.},
+         giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=JB}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Ba},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PKDJB1}
+    \strng{fullhash}{PKDJB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Adam: A Method for Stochastic Optimization}
+    \field{journaltitle}{ICLR}
+    \field{year}{2014}
+  \endentry
+
+  \entry{aumentacion}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BNJ}{%
+         family={Bryan},
+         familyi={B\bibinitperiod},
+         given={Nicholas\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNJ1}
+    \strng{fullhash}{BNJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Impulse response data augmentation and deep neural networks
+  for blind eoom acoustic parameter estimation}
+    \field{journaltitle}{Adobe Research}
+    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput

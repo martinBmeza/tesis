@@ -1,0 +1,1235 @@
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2020.9.17)  26 NOV 2020 22:37
+ restricted system commands enabled.
+**4Metodologia.tex
+(./4Metodologia.tex
+LaTeX2e <2020-02-02> patch level 2
+Lua module: luaotfload-main 2020-02-02 3.12 luaotfload entry point
+Lua module: luaotfload-init 2020-02-02 3.12 luaotfload submodule / initializatio
+n
+Lua module: lualibs 2020-02-02 2.70 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-02-02 2.70 ConTeXt Lua libraries -- extended c
+ollection.
+Lua module: luaotfload-log 2020-02-02 3.12 luaotfload submodule / logging
+Lua module: luaotfload-parsers 2020-02-02 3.12 luaotfload submodule / filelist
+Lua module: luaotfload-configuration 2020-02-02 3.12 luaotfload submodule / conf
+ig file reader
+luaotfload | conf : Root cache directory is /home/mrtn/.texlive2019/texmf-var/lu
+atex-cache/generic-dev/names.
+luaotfload | init : Loading fontloader “fontloader-2020-01-26.lua” from kpse
+-resolved path “/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader
+-2020-01-26.lua”.
+Lua-only attribute luaotfload@state = 2
+Lua-only attribute luaotfload@noligature = 3
+Lua-only attribute luaotfload@syllabe = 4
+luaotfload | init : Context OpenType loader version “3.11”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Lua module: luaotfload-loaders 2020-02-02 3.12 luaotfload submodule / callback h
+andling
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua module: luaotfload-database 2020-02-02 3.12 luaotfload submodule / database
+Lua module: luaotfload-unicode 2020-02-02 3.12 luaotfload submodule / Unicode he
+lpers
+Lua module: luaotfload-colors 2020-02-02 3.12 luaotfload submodule / color
+Lua-only attribute luaotfload_color_attribute = 5
+Lua module: luaotfload-resolvers 2020-02-02 3.12 luaotfload submodule / resolver
+s
+luaotfload | conf : Root cache directory is /home/mrtn/.texlive2019/texmf-var/lu
+atex-cache/generic-dev/names.
+Lua module: luaotfload-features 2020-02-02 3.12 luaotfload submodule / features
+Lua module: luaotfload-letterspace 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-embolden 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-notdef 2020-02-02 3.12 luaotfload submodule / color
+Lua module: luaotfload-auxiliary 2020-02-02 3.12 luaotfload submodule / auxiliar
+y functions
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Lua module: luaotfload-fallback 2020-02-02 3.12 luaotfload submodule / fallback
+Lua module: luaotfload-multiscript 2020-02-02 3.12 luaotfload submodule / multis
+cript
+Lua module: luaotfload-script 2020-02-02 3.12 luaotfload submodule / Script help
+ers
+Lua module: luaotfload-tounicode 2020-02-02 3.12 luaotfload submodule / tounicod
+e
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2020-02-14>
+! Undefined control sequence.
+l.1 \section
+          {Metodología}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{M
+            etodología}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.2 \subsection
+             {Análisis de datos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--4
+[]Metodología
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 P
+   ara este trabajo, es necesario partir de un conjunto de datos conformados...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
+[]Para
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 A
+   demás, se debe tener en cuenta que se busca formar tres grandes conjunto...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--8
+[]Además,
+ []
+
+! Undefined control sequence.
+l.10 \subsubsection
+                 {Base de datos de respuestas al impulso}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \subsubsection{B
+                   ase de datos de respuestas al impulso}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--11
+[]Base
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 P
+    ara este trabajo se utilizan respuestas al impulso reales y simuladas.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--13
+[]Para
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 L
+    as respuestas al impulso reales se obtienen del conjunto de datos C4DM \...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{rir_reales}
+luaotfload | db : Font names database loaded from /home/mrtn/.texlive2019/texmf-
+var/luatex-cache/generic-dev/names/luaotfload-names.luc
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.14 ...del conjunto de datos C4DM \cite{rir_reales}
+                                                  . Este conjunto consiste e...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `rir_reales' on page  undefined on input line 14.
+
+\citation{sinesweep}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.14 ...ica del barrido frecuencial \cite{sinesweep}
+                                                  . Para todas estas respues...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `sinesweep' on page  undefined on input line 14.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
+[]Las
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 14--15
+[[]].
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 14--15
+[[]].
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 E
+    n cuanto a las respuestas al impulso simuladas, se utiliza la librería ...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{pyroom}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.16 ...a de Python 'PyRoomAcoustics' \cite{pyroom}
+                                                   para generarlas. Esta lib...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `pyroom' on page  undefined on input line 16.
+
+\citation{ISM}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.16 ...o en el método de fuente imagen  \cite{ISM}
+                                                  . El algoritmo está imple...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `ISM' on page  undefined on input line 16.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--17
+[]En
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 16--17
+[[]]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 16--17
+[[]].
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \begin{itemize}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--18
+[] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 25.
+! Undefined control sequence.
+<write> ...ing: Reference `fig:recintos' on page \thepage 
+                                                  \space undefined\on@line .
+l.25 ...'Recinto 2'. En la figura \ref{fig:recintos}
+                                                   se pueden visualizar ambo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:recintos' on page  undefined on input line 25.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--26
+[]Para
+ []
+
+
+Overfull \hbox (52.771pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 8\OML/cmm/m/it/10 m x \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 m x \OT
+1/cmr/m/n/10 4\OML/cmm/m/it/10 m$
+ []
+
+
+Overfull \hbox (60.5488pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 m x \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 m x \OT
+1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 m$
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 25--26
+[]
+ []
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \begin{figure}
+                 [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.29 	\includegraphics
+                    [scale=0.3]{recintos.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 	\caption
+            {Recintos generados para la simulacion de respuestas al impulso}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \end{figure}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 27--33
+[][H]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--36
+[]Para
+ []
+
+! Undefined control sequence.
+l.38 \subsubsection
+                 {Bases de datos de señales del habla}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 38--39
+[]Bases
+ []
+
+\citation{librispeech}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.40 ... la librería LibriSpeech \cite{librispeech}
+                                                   la cual consiste en un co...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `librispeech' on page  undefined on input line 40.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 40--41
+[]Las
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 40--41
+[[]]
+ []
+
+! Undefined control sequence.
+l.42 \subsubsection
+                 {Pre-procesamiento de datos}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 42--43
+[]Pre-
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 44--47
+[]Partiendo
+ []
+
+
+Overfull \hbox (25.00008pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 16000$
+ []
+
+
+Overfull \hbox (34.21533pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 8000\OML/cmm/m/it/10 Hz$
+ []
+
+
+Overfull \hbox (25.00008pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 32640$
+ []
+
+
+Overfull \hbox (19.44446pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 04$
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 512$
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 128$
+ []
+
+
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 75%$\nullfont .
+ []
+
+
+Overfull \hbox (18.46106pt too wide) in paragraph at lines 44--47
+\OML/cmm/m/it/10 Q \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (18.418pt too wide) in paragraph at lines 44--47
+\OML/cmm/m/it/10 C \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (14.44444pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5$\nullfont .
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 256$
+ []
+
+
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 257$
+ []
+
+
+Overfull \hbox (35.71536pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 256\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 256$
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 44--47
+\OT1/cmr/m/n/10 2$\nullfont .
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 48--49
+[]Cabe
+ []
+
+! Undefined control sequence.
+l.51 \subsection
+              {Modelo propuesto}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--52
+[]Modelo
+ []
+
+\citation{FCN}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.53 ...ada en el trabajo de Ernst et. al.\cite{FCN}
+                                                  . Más precisamente, un au...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `FCN' on page  undefined on input line 53.
+
+! Undefined control sequence.
+<write> ...: Reference `fig:autoencoder' on page \thepage 
+                                                  \space undefined\on@line .
+l.53 ... observar en la figura \ref{fig:autoencoder}
+                                                  , donde la variable $x$ re...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:autoencoder' on page  undefined on input line 53.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 53--54
+[]El
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 53--54
+al.[[]].
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 53--54
+[],
+ []
+
+
+Overfull \hbox (5.71527pt too wide) in paragraph at lines 53--54
+\OML/cmm/m/it/10 x$
+ []
+
+
+Overfull \hbox (5.2616pt too wide) in paragraph at lines 53--54
+\OML/cmm/m/it/10 y$
+ []
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \begin{figure}
+                 [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.57 	\includegraphics
+                    [scale=0.3]{autoencoder.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 	\caption
+            {Estructura general de un autoencoder.}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{figure}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--61
+[][H]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
+[]El
+ []
+
+
+Overfull \hbox (5.97226pt too wide) in paragraph at lines 64--65
+\OML/cmm/m/it/10 f$
+ []
+
+
+Overfull \hbox (5.76158pt too wide) in paragraph at lines 65--66
+\OML/cmm/m/it/10 h$
+ []
+
+\citation{FCN}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.71 ...saltos, inspirada inicialmente en \cite{FCN}
+                                                  . Este tipo de estructuras...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `FCN' on page  undefined on input line 71.
+
+! Undefined control sequence.
+<write> ...Warning: Reference `fig:unet' on page \thepage 
+                                                  \space undefined\on@line .
+l.71 ...ura se puede ver en la figura \ref{fig:unet}
+                                                  , en donde se puede ver qu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:unet' on page  undefined on input line 71.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 70--72
+[]El
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 70--72
+[[]].
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 70--72
+[],
+ []
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \begin{figure}
+                 [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.75 	\includegraphics
+                    [scale=0.3]{unet.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 	\caption
+            {Esquema básico de una red tipo 'U-NET'.}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \end{figure}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 73--79
+[][H]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 80--81
+[]A
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 82--83
+[]Para
+ []
+
+! Undefined control sequence.
+<write> ...rning: Reference `fig:modelo' on page \thepage 
+                                                  \space undefined\on@line .
+l.87 ...puede apreciar en la figura \ref{fig:modelo}
+                                                  . En cada capa se indican ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:modelo' on page  undefined on input line 87.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 87--88
+[]Una
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 87--88
+[].
+ []
+
+
+Overfull \hbox (276.20915pt too wide) in paragraph at lines 87--88
+\OML/cmm/m/it/10 dimensiontemporalxdimensionfrecuencialxnumerodecanales$\nullfo
+nt .En
+ []
+
+
+Overfull \hbox (3.44513pt too wide) in paragraph at lines 87--88
+\OML/cmm/m/it/10 i$
+ []
+
+
+Overfull \hbox (16.90277pt too wide) in paragraph at lines 87--88
+\OML/cmm/m/it/10 N \OMS/cmsy/m/n/10  
+ []
+
+
+Overfull \hbox (3.44513pt too wide) in paragraph at lines 87--88
+\OML/cmm/m/it/10 i$
+ []
+
+
+Overfull \hbox (9.12497pt too wide) in paragraph at lines 87--88
+\OML/cmm/m/it/10 N$
+ []
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 \begin{figure}
+                 [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.91 	\includegraphics
+                    [scale=0.3]{modelo_red.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.91 	\includegraphics[scale=0.3]{modelo_
+                                       red.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.91 	\includegraphics[scale=0.3]{modelo_red.png}
+                                               
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 	\caption
+            {Modelo de red neuronal convolucional implementado}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 \end{figure}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.94 \end{figure}
+               
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.94 \end{figure}
+               
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 89--95
+[][H]
+ []
+
+
+Overfull \hbox (256.46274pt too wide) in paragraph at lines 89--95
+[scale=0.3]modelo$[][]\OML/cmm/m/it/10 ed:png[][]$ 
+ []
+
+\citation{mask_vs_map}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.97 ...imas máscaras espectrales\cite{mask_vs_map}
+                                                  . Por esto, las entradas d...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `mask_vs_map' on page  undefined on input line 97.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 96--98
+[]De
+ []
+
+
+Overfull \hbox (15.7153pt too wide) in paragraph at lines 96--98
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 96--98
+espectrales[[]].
+ []
+
+! Undefined control sequence.
+l.99 \subsection
+              {Especificaciones de la arquitectura implementada}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 99--100
+[]Especificaciones
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 101--102
+[]Como
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 103--104
+[]En
+ []
+
+
+Overfull \hbox (14.44444pt too wide) in paragraph at lines 103--104
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2$\nullfont .
+ []
+
+! Undefined control sequence.
+<write> ... Warning: Reference `eqn:mse' on page \thepage 
+                                                  \space undefined\on@line .
+l.107 ...al se expresa en la ecuación \ref{eqn:mse}
+                                                   y para la optimización s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `eqn:mse' on page  undefined on input line 107.
+
+\citation{adam}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.107 ...n adaptativa de momento (ADAM) \cite{adam}
+                                                   con un valor de tasa de a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `adam' on page  undefined on input line 107.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 105--108
+[]En
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 105--108
+\OT1/cmr/m/n/10 1$\nullfont .
+ []
+
+
+Overfull \hbox (27.77782pt too wide) in paragraph at lines 105--108
+\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr
+/m/n/10 1]$\nullfont .
+ []
+
+
+Overfull \hbox (15.7153pt too wide) in paragraph at lines 105--108
+\OT1/cmr/m/n/10 6\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 6$
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 105--108
+\OT1/cmr/m/n/10 2$\nullfont .
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 105--108
+[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 105--108
+[[]]
+ []
+
+
+Overfull \hbox (24.44447pt too wide) in paragraph at lines 105--108
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 001$\nullfont . 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 109--109
+[] 
+ []
+
+
+Overfull \hbox (153.70996pt too wide) detected at line 112
+[]\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 = [] []
+ []
+
+! Undefined control sequence.
+l.114 \subsection
+               {Manejo de datos a evaluar}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 114--116
+[]Manejo
+ []
+
+\citation{aumentacion}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.117 ...esamientos propuestos en \cite{aumentacion}
+                                                   para lograr una aumentaci...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `aumentacion' on page  undefined on input line 117.
+
+! Undefined control sequence.
+<write> ...ning: Reference `Tab:pruebas' on page \thepage 
+                                                  \space undefined\on@line .
+l.118 ...mo se muestra en la tabla \ref{Tab:pruebas}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `Tab:pruebas' on page  undefined on input line 118.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 117--119
+[]En
+ []
+
+
+Overfull \hbox (29.41382pt too wide) in paragraph at lines 117--119
+\OML/cmm/m/it/10 TR[]$
+ []
+
+
+Overfull \hbox (23.89725pt too wide) in paragraph at lines 117--119
+\OML/cmm/m/it/10 DRR$\nullfont .
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 117--119
+[[]]
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 117--119
+[]. 
+ []
+
+
+! LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 \begin{table}
+                 []
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \caption
+            {Conformación de los distintos conjuntos de datos utilizados.}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \end{table}
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 120--130
+[][]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 131--132
+[]Para
+ []
+
+
+Overfull \hbox (19.13194pt too wide) in paragraph at lines 131--132
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OML/cmm/m/it/10 s$
+ []
+
+
+Overfull \hbox (24.13196pt too wide) in paragraph at lines 131--132
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 75\OML/cmm/m/it/10 s$
+ []
+
+
+Overfull \hbox (19.13194pt too wide) in paragraph at lines 131--132
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 s$
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 131--132
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5$
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 131--132
+\OT1/cmr/m/n/10 1$
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 133--134
+[]Por
+ []
+
+)
+! Emergency stop.
+<*> 4Metodologia.tex
+                 
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 48 strings out of 481365
+ 195338,319454 words of node,token memory allocated 154974 words of node memory still in use:
+   301 hlist, 4 vlist, 17 rule, 16 disc, 44 local_par, 1 dir, 41 math, 3713 glue
+, 44 kern, 119 penalty, 17667 glyph, 207 attribute, 39 glue_spec, 207 attribute_
+list, 6 write nodes
+   avail lists: 2:2,3:21,4:190,5:10,7:163,8:54,10:187
+ 17260 multiletter control sequences out of 65536+600000
+ 36 fonts using 4012403 bytes
+ 18i,6n,19p,2193b,113s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!
