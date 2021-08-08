@@ -7,11 +7,15 @@ Para este trabajo, es necesario partir de un conjunto de datos conformados por d
 Además, se debe tener en cuenta que se busca formar tres grandes conjuntos de datos: conjunto de entrenamiento, conjunto de validación y conjunto de prueba. Las características de estos conjuntos deberán variar de acuerdo al propósito de cada uno para lograr optimizar cada etapa, o bien, para evaluar ciertos aspectos de estos procesos.    
 
 
-\subsubsection{Base de datos de respuestas al impulso}
+\subsection{Base de datos de respuestas al impulso}
 
-Para este trabajo se utilizan respuestas al impulso reales y simuladas. 
+Para este trabajo se utilizan respuestas al impulso reales y simuladas. A su vez, tambien se trabaja con un tercer conjunto formado a partir de la aumentación de respuestas al impulso reales. Esto es, partiendo de un subconjunto de respuestas al impulso reales, se alteran estas señales de manera controlada para producir nuevas respuestas al impulso con diferentes caracteristicas acústicas.
+
+\subsubsection{Respuestas al impulso reales}
 
 Las respuestas al impulso reales se obtienen del conjunto de datos C4DM \cite{rir_reales}. Este conjunto consiste en una colección de respuestas al impulso que fueron medidas en tres recintos: una sala multipropósito con aproximadamente 800 asientos, un edificio victoriano construido en 1988 originalmente diseñado para ser una biblioteca, y una sala de clases de una universidad. Las mediciones fueron realizadas utilizando la técnica del barrido frecuencial \cite{sinesweep}. Para todas estas respuestas al impulso, el tiempo de reverberación es de aproximadamente 2 segundos. 
+
+\subsubsection{Respuestas al impulso simuladas}
 
 En cuanto a las respuestas al impulso simuladas, se utiliza la librería de Python 'PyRoomAcoustics' \cite{pyroom} para generarlas. Esta librería brinda un software de generación de respuestas al impulso basado en el método de fuente imagen  \cite{ISM}. El algoritmo está implementado en el lenguaje de programación C, permitiendo una rápida simulación de la propagación del sonido en recintos poliédricos. Los parámetros que se deben indicar a la hora de generar una respuesta al impulso son: 
 
@@ -25,17 +29,32 @@ En cuanto a las respuestas al impulso simuladas, se utiliza la librería de Pyth
 Para generar los datos se proponen dos recintos, el primero de dimensiones $8m\: x\: 6m\: x\: 4m$ que se denominará 'Recinto 1' , el segundo de dimensiones $6m\: x\: 4m\: x\: 3.5m$ que se denominará 'Recinto 2'. En la figura \ref{fig:recintos} se pueden visualizar ambos recintos generados. 
 
 \begin{figure}[H]
-	\centering{}
-	\includegraphics[scale=0.3]{recintos.png}
-	\caption{Recintos generados para la simulacion de respuestas al impulso}
-	\label{fig:recintos}
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.35]{room1.png}
+  \caption{Recinto 1}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.35]{room2.png}
+  \caption{Recinto 2}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{Recintos y puntos receptor-fuente generados para la simulación de respuestas al impulso}
+\label{fig:recintos}
 \end{figure}
 
 Para controlar los demás parámetros que refieren a las condiciones del recinto, se subordina el orden máximo de reflexiones y los coeficientes de absorción a un tiempo de reverberación esperado. Esto es, teniendo un cierto recinto se determina un valor de tiempo de reverberación T60 inicial. Este se utiliza para estimar un valor de un coeficiente de absorción promedio mediante la ecuación de Sabine y también en base a este tiempo se determina el orden de reflexiones necesario para poder representar la reverberación. 
-Por último, las posiciones de fuente y receptor se generan aleatoriamente para poder generar diferentes respuestas al impulso a partir de un mismo recinto. De esta manera, los datos que se deben determinar son las dimensiones del recinto, un tiempo de reverberación inicial y la cantidad de respuestas al impulso que se quiere generar. 
+Por último, las posiciones de fuente y receptor se generan aleatoriamente para poder generar diferentes respuestas al impulso a partir de un mismo recinto. De esta manera, los datos que se deben determinar son las dimensiones del recinto, un tiempo de reverberación inicial y la cantidad de respuestas al impulso que se busca generar. 
+
+\subsubsection{Respuestas al impulso generadas por aumentación}
+Este conjunto se genera partiendo de un subconjunto de respuestas al impulso reales. El proposito de este proceso es partir de un conjunto de impulsos escasos con determinadas características, y generar un conjunto mucho mas grande de respuestas al impulso controlando de manera paramétrica ciertos descriptores acústicos como el tiempo de reverberación $T60$ y la relación directo-reverberado $DRR$, de manera tal que se pueda asegurar un cierto balance en el conjunto conformado \cite{rir_aug}. El proceso de aumentación entonces se divide en dos procesos principales: una alteración de envolvente de caida para controlar el tiempo de reverberación y una alteración de amplitud en la parte temprana de la respuesta al impulso para controlar la relación directo-reverberado. 
 
 
-\subsubsection{Bases de datos de señales del habla}
+
+\subsection{Bases de datos de señales del habla}
 
 Las señales del habla necesarias para formar los pares anecoico-reverberados se obtienen de la librería LibriSpeech \cite{librispeech} la cual consiste en un conjunto de datos que reúne 100 horas de audio correspondientes a lecturas en idioma inglés. Los datos corresponden a programas tipo audiolibros. Las señales poseen bajo nivel de reverberación, y provienen de una aplicación en la cual la inteligibilidad es primordial, lo cual hace que esta base de datos sea adecuada para utilizarse en este trabajo.
 

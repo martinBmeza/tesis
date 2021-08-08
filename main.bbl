@@ -1253,6 +1253,26 @@
     \field{year}{1979}
   \endentry
 
+  \entry{rir_aug}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BNJ}{%
+         family={Bryan},
+         familyi={B\bibinitperiod},
+         given={Nicholas\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNJ1}
+    \strng{fullhash}{BNJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{San Francisco, CA, USA}
+    \field{title}{Impulse response data augmentation and deep neural networks
+  for blind room acoustic parameter estimation}
+    \field{journaltitle}{Adobe Research}
+    \field{year}{2019}
+  \endentry
+
   \entry{librispeech}{article}{}
     \name{author}{4}{}{%
       {{hash=VP}{%
