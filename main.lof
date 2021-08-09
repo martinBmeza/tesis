@@ -11,22 +11,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {5}{\ignorespaces Esquema básico de red neuronal\relax }}{14}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de flujo del bucle de entrenamiento de una sistema de red neuronal\relax }}{15}{figure.caption.6}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de flujo del bucle de entrenamiento de una sistema de red neuronal\relax }}{16}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {7}{\ignorespaces Curva de costo para un parámetro\relax }}{17}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8}{\ignorespaces Capas convolucionales con campos receptivos locales rectangulares\relax }}{18}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Representación de la aplicación de un filtro bidimensional sobre una imagen\relax }}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Representación de la aplicación de un filtro bidimensional sobre una imagen\relax }}{19}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Parámetros de procesamiento en capas convolucionales\relax }}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Parámetros de procesamiento en capas convolucionales\relax }}{20}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11}{\ignorespaces Diagrama en bloques del algoritmo de Griffin-Lim.\relax }}{22}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {12}{\ignorespaces Recintos y puntos receptor-fuente generados para la simulación de respuestas al impulso\relax }}{25}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Estructura general de un autoencoder.\relax }}{28}{figure.caption.13}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Señales involucradas en el proceso de aumentación de DRR\relax }}{27}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Esquema básico de una red tipo 'U-NET'.\relax }}{29}{figure.caption.14}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Estructura general de un autoencoder.\relax }}{29}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Modelo de red neuronal convolucional implementado\relax }}{30}{figure.caption.15}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Esquema básico de una red tipo 'U-NET'.\relax }}{30}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {16}{\ignorespaces Modelo de red neuronal convolucional implementado\relax }}{32}{figure.caption.16}%

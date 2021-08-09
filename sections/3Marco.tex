@@ -47,9 +47,24 @@ Si el micrófono se ubica cerca de la fuente va a captar en mayor medida la señ
 
 De esta manera, habrá una distancia específica para la cual el nivel de presión sonora generado por la fuente sera igual al nivel de presión sonora generado por el efecto de la reverberación. Esta distancia se conoce como distancia crítica. Esta depende tanto de las condiciones del recinto como de las características del micrófono. 
 
-La función de transferencia entre la fuente emisora y el micrófono se define como la respuesta al impulso del recinto y usualmente se denota como $h(t)$. Este será diferente para cualquier punto en el espacio dentro del recinto. Haciendo un análisis temporal de una respuesta al impulso, podemos identificar 3 partes: en primer lugar el nivel de sonido directo (producido por la onda que viaja a través de camino directo), las reflexiones tempranas (cuyo limite temporal vendrá definido por las características propias de cada recinto) y por último la cola reverberante. Esto se ve representado en la Figura \ref{fig:rir}. Se puede distinguir la parte de reflexiones tempranas y la cola reverberante partiendo de la suposición de que las reflexiones tempranas ocurren en un proceso determinístico, siendo altamente sensibles a pequeños cambios en la geometría del recinto, mientras que la cola reverberante es mas bien un proceso estocástico, y al depender de un mayor número de reflexiones no varia drásticamente frente a pequeños cambios de geometría.  
+La función de transferencia entre la fuente emisora y el micrófono se define como la respuesta al impulso del recinto y usualmente se denota como $h(t)$. Este será diferente para cualquier punto en el espacio dentro del recinto. Haciendo un análisis temporal de una respuesta al impulso, podemos identificar 3 partes: en primer lugar el nivel de sonido directo (producido por la onda que viaja a través de camino directo), las reflexiones tempranas (cuyo limite temporal vendrá definido por las características propias de cada recinto) y por último la cola reverberante. Esto se ve representado en la Figura \ref{fig:rir}. Se puede distinguir la parte de reflexiones tempranas y la cola reverberante partiendo de la suposición de que las reflexiones tempranas ocurren en un proceso determinístico, siendo altamente sensibles a pequeños cambios en la geometría del recinto, mientras que la cola reverberante es mas bien un proceso estocástico, y al depender de un mayor número de reflexiones no varia drásticamente frente a pequeños cambios de geometría. Analíticamente, la parte temprana y tardia de una respuesta al impulso se define segun las ecuaciones \ref{eqn:early} y \ref{eqn:late} respectivamente.
 
-Idealmente, el micrófono captura una señal que corresponde a la convolución entre la respuesta al impulso del recinto y la señal fuente, como se ve en la ecuación \ref{eqn:impulso}. Esto equivale a una multiplicación en el dominio de la frecuencia de acuerdo con la transformada de Fourier, como se ve en la ecuación \ref{eqn:frecuencia}.  
+\begin{equation}\label{eqn:early}
+h_{e}(t) = \left\{\begin{matrix}
+h(t) & t_{d}-t_{0}\leq t \leq t_{d}+t_{0}\\ 
+0 & e.o.c 
+\end{matrix}\right.
+\end{equation} 
+
+\begin{equation}\label{eqn:late}
+h_{l}(t) = \left\{\begin{matrix}
+h(t) & t < t_{d} - t_{0} \\ 
+h(t) & t > t_{d} + t_{0}\\ 
+0 & e.o.c. 
+\end{matrix}\right.
+\end{equation} 
+
+En donde, $h(t)$ corresponde a la respuesta al impulso, $h_{e}(t)$ corresponde a la parte temprana, $h_{l}(t)$ corresponde a la parte tardia, $t_{d}$ es el tiempo de retardo del camino directo y $t_{0}$ es el parámetro que define el largo temporal de la ventana de tolerancia. Comúnmente se utiliza un valor de $t_{0} = 2.5 ms$.
 
 \begin{figure}[H]
   \centering{}
@@ -57,6 +72,8 @@ Idealmente, el micrófono captura una señal que corresponde a la convolución e
   \caption{Secciones temporales de una respuesta al impuulso}
   \label{fig:rir}
 \end{figure}
+
+Idealmente, el micrófono captura una señal que corresponde a la convolución entre la respuesta al impulso del recinto y la señal fuente, como se ve en la ecuación \ref{eqn:impulso}. Esto equivale a una multiplicación en el dominio de la frecuencia de acuerdo con la transformada de Fourier, como se ve en la ecuación \ref{eqn:frecuencia}.  
 
 
 \begin{equation}

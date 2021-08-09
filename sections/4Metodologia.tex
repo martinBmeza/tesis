@@ -50,9 +50,26 @@ Para controlar los demás parámetros que refieren a las condiciones del recinto
 Por último, las posiciones de fuente y receptor se generan aleatoriamente para poder generar diferentes respuestas al impulso a partir de un mismo recinto. De esta manera, los datos que se deben determinar son las dimensiones del recinto, un tiempo de reverberación inicial y la cantidad de respuestas al impulso que se busca generar. 
 
 \subsubsection{Respuestas al impulso generadas por aumentación}
-Este conjunto se genera partiendo de un subconjunto de respuestas al impulso reales. El proposito de este proceso es partir de un conjunto de impulsos escasos con determinadas características, y generar un conjunto mucho mas grande de respuestas al impulso controlando de manera paramétrica ciertos descriptores acústicos como el tiempo de reverberación $T60$ y la relación directo-reverberado $DRR$, de manera tal que se pueda asegurar un cierto balance en el conjunto conformado \cite{rir_aug}. El proceso de aumentación entonces se divide en dos procesos principales: una alteración de envolvente de caida para controlar el tiempo de reverberación y una alteración de amplitud en la parte temprana de la respuesta al impulso para controlar la relación directo-reverberado. 
+Este conjunto se genera partiendo de un subconjunto de respuestas al impulso reales. El proposito de este proceso es partir de un conjunto de impulsos escasos con determinadas características, y generar un conjunto mucho mas grande de respuestas al impulso controlando de manera paramétrica ciertos descriptores acústicos como el tiempo de reverberación $T60$ y la relación directo-reverberado $DRR$, de manera tal que se pueda asegurar un cierto balance en el conjunto conformado \cite{rir_aug}. El proceso de aumentación entonces se divide en dos procesos principales: una alteración de amplitud en la parte temprana de la respuesta al impulso para controlar la relación directo-reverberado, y una alteración de envolvente de caida para controlar el tiempo de reverberación.
 
+Para el primer proceso, a la parte temprana de la respueta al impulso $h_{e}(t)$ se le aplica una ganancia definida por un factor $\alpha$ el cual se calcula para obtener el valor de $DRR$ deseado generando una nueva señal $\tilde{h}_{e}(t)$. Para evitar generar discontinuidades durante el proceso, se aplican ventanas complementarias a la parte temprana obteniendo una parte temprana ventaneada y un residuo ventaneado. A partir de esto, la parte temprana se puede definir segun la ecuación
+\ref{eqn:ventaneada}.  
 
+\begin{equation}
+\label{eqn:ventaneada}
+	h_{e}(t) = \alpha w_{d}(t)h_{e}(t) + [1-w_{d}(t)]h_{e}(t)
+\end{equation} 
+
+En donde $w_{d}(t)$ corresponde a una ventana Hann de $5 ms$ de longitud. De esta manera, partiendo de esta ultima definición junto con la expresión del parámetro $DRR$ expresado en la ecuación \ref{eqn:DRR} se plantea un sistema de ecuaciones a partir del cual se puede definir un valor pretendido de $DRR$ y despejar el correspondiente valor de $\alpha$. En la figura \ref{fig:drr_aug} se puede observar una representacion de una parte temprana $h_{e}(t)$, las ventanas aplicadas, el efecto del factor de ganancia $\alpha$ y la nueva señal $\tilde{h}_{e}(t)$ generada. Finalmente, esta parte temprana modificada se concatena con el resto de la respuesta al impulso completando asi el proceso de aumentación referido a la relación directo-reverberado.
+
+\begin{figure}[H]
+	\centering{}
+	\includegraphics[scale=0.6]{drr_aug.png}
+	\caption{Señales involucradas en el proceso de aumentación de DRR}
+	\label{fig:drr_aug}
+\end{figure}
+
+Luego, para la modificación del tiempo de reverberación $T60$
 
 \subsection{Bases de datos de señales del habla}
 
