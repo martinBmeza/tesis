@@ -55,26 +55,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.3}Respuestas al impulso generadas por aumentación}{25}{subsubsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Bases de datos de señales del habla}{27}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Bases de datos de señales del habla}{28}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.3.1}Pre-procesamiento de datos}{27}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1}Pre-procesamiento de datos}{29}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4}Modelo propuesto}{29}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.4}Modelo propuesto}{30}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Especificaciones de la arquitectura implementada}{32}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Especificaciones de la arquitectura implementada}{34}{subsection.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.6}Manejo de datos a evaluar}{33}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.6}Manejo de datos a evaluar}{35}{subsection.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Resultados}{35}{section.5}%
+\contentsline {section}{\numberline {5}Resultados}{37}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Influencia del armado de datos}{35}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Influencia del armado de datos}{37}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1}Variables del sistema}{35}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Variables del sistema}{37}{subsubsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Discusión de los resultados}{35}{section.6}%
+\contentsline {section}{\numberline {6}Discusión de los resultados}{37}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Conclusiones}{35}{section.7}%
+\contentsline {section}{\numberline {7}Conclusiones}{37}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Lineas futuras de investigación}{35}{section.8}%
+\contentsline {section}{\numberline {8}Lineas futuras de investigación}{37}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Bibliografía}{36}{section.8}%
+\contentsline {section}{Bibliografía}{38}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Anexos}{43}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Proceso de aumentación de $T_{60}$}{43}{appendix.Alph1}%

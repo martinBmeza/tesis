@@ -863,7 +863,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {Springer}%
+      {ACUSTICA Vol. 81}%
     }
     \strng{namehash}{NPAGND1}
     \strng{fullhash}{NPAGND1}
@@ -1271,6 +1271,39 @@
   for blind room acoustic parameter estimation}
     \field{journaltitle}{Adobe Research}
     \field{year}{2019}
+  \endentry
+
+  \entry{Lundeby}{book}{}
+    \name{author}{3}{}{%
+      {{hash=LA}{%
+         family={Lundeby},
+         familyi={L\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BTEVH}{%
+         family={Bietz},
+         familyi={B\bibinitperiod},
+         given={T.\bibnamedelima E. Vigran\bibnamedelima H.},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  V\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Vorlander},
+         familyi={V\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LABTEVHVM1}
+    \strng{fullhash}{LABTEVHVM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Uncertainties of Measurements in Room Acoustics}
+    \field{year}{1995}
   \endentry
 
   \entry{librispeech}{article}{}
