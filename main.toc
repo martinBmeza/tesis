@@ -81,4 +81,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Anexos}{43}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A}Proceso de aumentación de $T_{60}$}{43}{appendix.Alph1}%
+\contentsline {section}{\numberline {A}Proceso de aumentación de tiempo de reverberación}{43}{appendix.Alph1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.1}Acondicionamiento}{44}{subsection.Alph1.1}%

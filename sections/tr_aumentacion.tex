@@ -1,1 +1,23 @@
 \section{Proceso de aumentación de tiempo de reverberación}
+El proceso de aumentación de respuestas al impulso puede realizarse tomando como parámetros del proceso cierto descriptores temporales como el tiempo de reverberación $TR_{60}$. Esto es, partiendo de una respuesta al impulso con un $TR_{60}$ determinado, se busca generar nuevas respuestas al impulso cuyo $TR_{60}$ pueda ser controlado paramétricamente para ocupar de manera homogenea y balanceada un rango de valores de interés. 
+El $TR_{60}$ se relaciona directamente con la forma de la envolvente de caida de nivel exponencial presente en la parte tardia de las respuestas al impulso. El proceso de aumentación equivale a modificar esta pendiente de caida, multiplicando la señal original por una nueva envolvente que produzca el efecto deseado en la envolvente resultante. Los pasos a seguir para realizar este proceso son: 
+
+\begin{itemize}
+  \item Acondicionamiento de la respuesta al impulso de entrada.
+  \item Filtrado por bandas de octava o bandas de tercio de octava.
+  \item Estimación de piso de ruido.
+  \item Estimación de envolvente de caida.
+  \item Sintetizar una señal aplicando la envolvente estimada con piso de ruido cero a una señal de ruido Gaussiano. 
+  \item Realizar el cross-fade entre la señal sintetizada y la señal original en el punto inicial del piso de ruido.
+  \item Aumentación de la envolvente de caida multiplicando la señal por la correspondiente envolvente exponencial creciente/decreciente.
+  \item Suma de las sub-bandas para obtener la señal resultante en su espectro completo.
+  \item Integración de la parte tardia aumentada con la parte temprana de la respuesta al impulso inicial.
+\end{itemize} 	
+
+A continuación se explica cada paso del algoritmo con mayor profundidad.
+%Acondicionamiento
+En primer lugar, se define una determinada frecuencia de muestro y profundidad de bits para trabajar con la señal de entrada, en este caso una respuesta al impulso real. Una vez asegurada la homogeneidad de estas caracteristicas, la señal se normaliza para trabajar en un rango de amplitud acotado en el intervalo $[-1,1]$ y luego se separa la parte temprana de la parte tardia de la respuesta al impulso. Esto ultimo se realiza aplicando ventanas temporales de acuerdo a lo que indican las ecuaciones \ref{eqn:early} y \ref{eqn:late}, utilizando una ventana de tolerancia de $t_{0} = 2.5 ms$. Para los pasos siguientes se trabaja únicamente modificando la parte tardia, y la parte temprana se almacena para ser utilizada en el paso final a la hora de reconstruir la respuesta completa. 
+%Agregar grafico de la respuesta al impulso de entrada pelada, y despues la respuesta separada en early, late y normalizada.
+
+Luego, el siguiente paso consiste en descomponer la señal en bandas de octava. Es necesario trabajar en sub-bandas frecuenciales para contemplar la dependencia del tiempo de reverberación con la frecuencia, y mantener esa característica en las señales a generar en este proceso. Asi entonces, se aplica un banco de filtros Butterworth de orden 
+
