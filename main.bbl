@@ -1273,7 +1273,7 @@
     \field{year}{2019}
   \endentry
 
-  \entry{Lundeby}{book}{}
+  \entry{Lundeby}{article}{}
     \name{author}{3}{}{%
       {{hash=LA}{%
          family={Lundeby},
@@ -1295,15 +1295,52 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
     \strng{namehash}{LABTEVHVM1}
     \strng{fullhash}{LABTEVHVM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Uncertainties of Measurements in Room Acoustics}
+    \field{journaltitle}{Acta Acustica united with Acustica,}
     \field{year}{1995}
+  \endentry
+
+  \entry{aug_JND}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BMG}{%
+         family={Blevins},
+         familyi={B\bibinitperiod},
+         given={Matthew\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BAT}{%
+         family={Buck},
+         familyi={B\bibinitperiod},
+         given={Adam\bibnamedelima T.},
+         giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=PZ}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Zhao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WLM}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Lily\bibnamedelima M.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMG+1}
+    \strng{fullhash}{BMGBATPZWLM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{Toronto, Canada}
+    \field{title}{Quantifying the just noticeable difference of reverberation
+  time with band-limited noise centered around 1000 Hz using a transformed
+  up-down adaptive method}
+    \field{journaltitle}{International Symposium on Room Acoustics}
+    \field{year}{2013}
   \endentry
 
   \entry{librispeech}{article}{}
@@ -1395,25 +1432,6 @@
     \field{title}{Adam: A Method for Stochastic Optimization}
     \field{journaltitle}{ICLR}
     \field{year}{2014}
-  \endentry
-
-  \entry{aumentacion}{article}{}
-    \name{author}{1}{}{%
-      {{hash=BNJ}{%
-         family={Bryan},
-         familyi={B\bibinitperiod},
-         given={Nicholas\bibnamedelima J.},
-         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BNJ1}
-    \strng{fullhash}{BNJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Impulse response data augmentation and deep neural networks
-  for blind eoom acoustic parameter estimation}
-    \field{journaltitle}{Adobe Research}
-    \field{year}{2019}
   \endentry
 \enddatalist
 \endinput
