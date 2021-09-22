@@ -204,10 +204,9 @@ Conjuntos de evaluacion   & \begin{tabular}[c]{@{}c@{}}Reales\\ Generadas\\ Aume
 \end{table}
 
 
-%Por otro lado, también es interesante evaluar la influencia del orden con el que las instancias de entrenamiento se le presentan a la red, siguiendo los lineamientos de la técnica denominada curriculum learning. En este caso se considera que una instancia es más compleja cuando posee un mayor tiempo de dereverberación y a su vez una relación directo-reverberado baja debido a que la distorsión que sufre la señal sin reverberación es mayor, y es conocida la correlación que tienen estos parámetros con la disminución de la inteligibilidad. Para evaluar esto se utiliza conjuntos de datos simulados en la etapa de entrenamiento ya que estos permiten tener un mayor control sobre los parámetros acústicos. Entonces, se decide comparar el rendimiento del sistema al recibir instancias con tiempos de reverberación aleatoriamente seleccionados contra el rendimiento obtenido al ordenar las instancias de entrenamiento de menos a más complejas, es decir, tiempos de reverberación de menores a mayores, siempre partiendo del mismo conjunto de datos. 
+Por otro lado, también es interesante evaluar la influencia del orden de complejidad con el que las instancias de entrenamiento se le presentan a la red, siguiendo los lineamientos de la técnica de aprendizaje por curriculum. En este caso se considera que una instancia de audio es más compleja de dereverberar cuando posee un mayor tiempo de reverberación, debido a que esto equivale a una mayor distorsión de la señal original que se quiere recuperar. Entonces, se decide comparar el rendimiento del sistema final al ser entrenado con instancias en las cuales los tiempos de reverberación esten ordenados en forma creciente (curriculum), ordenados en forma decreciente (anti-curriculum) y ordenados aleatoriamente. 
 
-
-
+Para esta evaluación del orden de los datos en el entrenamiento, es necesario generar un conjunto de datos anecóicos-reverberados de manera controlada, asegurando una distribución homogenea de los tiempos de reverberación presentes en el conjunto final. Para conseguir esto se decide conformar el conjunto de datos a partir de respuestas al impulso aumentadas, ya que estas se pueden generar controlando paramétricamente el tiempo de reverberación medio y la relación directo-reverberado. Se busca cubrir el rango de tiempo de reverberación medio desde $0.1 \ s$ hasta $3.5 \ s$ con variaciones de relación directo-reverberado desde $-10 \ dB$ a $10 \ dB$. 
 
 
 

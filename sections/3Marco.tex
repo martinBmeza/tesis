@@ -206,7 +206,8 @@ El conjunto de datos de entrenamiento se segmenta en lotes. En cada iteración d
   \label{fig:costo_curva}
 \end{figure}
 
-El orden en el que los datos son presentados ante el modelo puede también influenciar positiva o negativamente en su rendimiento. Al igual que los humanos y animales algunos algoritmos logran aprender de manera más eficaz cuando los ejemplos no se les presentan de manera aleatoria sino mas bien organizados siguiendo un orden significativo en donde la complejidad de la representación a aprender aumente gradualmente. Esta estrategia de entrenamiento se conoce como 'curriculum learning' \cite{cv} y puede lograr que ciertos modelos logren mejores niveles de generalización o bien logran converger mas rápidamente. Se la puede pensar como una estrategia de optimización global. 
+El orden en el que los datos son presentados ante el modelo puede influenciar positiva o negativamente en el resultado final del entrenamiento. Existen técnicas de optimización que se desarrollaron partiendo de cualidades propias del aprendizaje en seres humanos y anaimales, como el hecho de que el aprendizaje resulta mejor cuando las instancias de aprendizaje estan organizadas en un orden significativo, añadiendo gradualmente mayor cantidad de conceptos y por ende una mayor complejidad. Esta idea se traslada al entrenamiento de algoritmos de aprendizaje profundo con el desarrollo de una estrategia denominada aprendizaje por currículum \cite{cv}. La misma consiste en seleccionar cuales datos y en que orden presentarlos al sistema durante el aprendizaje, de manera de guiar el entrenamiento para que inicialmente se aprendan los conceptos mas sencillos del problema, e ir gradualmente aumentando el grado de complejidad de la tarea. El aprendizaje por curriculum se define como una estrategia de optimización global. Dependiento de la tarea sobre la que se aplica, puede lograr en menor o mayor medida que un sistema logre un mejor nivel de generalización asi como también llegar al punto de convergencia en un menor tiempo de entrenamiento.  
+
 
 \subsubsection{Redes neuronales convolucionales}
 
@@ -255,6 +256,9 @@ El procesamiento que ocurre en una capa convolucional consiste en la aplicación
 \end{figure}
 
 De esta manera, las capas convolucionales permiten construir modelos con menos cantidad de parámetros a entrenar, distribuidos adecuadamente para conseguir la generalización de conceptos visuales complejos. 
+
+\subsection{Curriculum Learning}
+
 
 \subsection{Dereverberación por filtrado temporal-frecuencial}
 
