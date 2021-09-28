@@ -1,53 +1,33 @@
 \section{Resultados}
-
 \subsection{Bases de datos de respuestas al impulso}
-Para tener una medida de la variedad de reverberación presente en los conjuntos de respuestas al impulso reales, generadas y aumentadas, se utilizan los parámetros $TR_mid$ y $DRR$. 
+
+Para tener una medida de la variedad de reverberación presente en los conjuntos de respuestas al impulso reales, generadas y aumentadas, se utilizaron los parámetros $TR_mid$ y $DRR$. En las figuras \ref{fig:cloud_reales}, \ref{fig:cloud_generadas}, y \ref{fig:cloud_aumentadas} se muestran los parámetros acústicos anteriormente mencionados para cada conjunto de respuestas al impulso utilizado.  
 
 \begin{figure}[H]
 	\centering{}
 	\includegraphics[scale=0.5]{reales.png}
 	\caption{Conjunto de respuestas al impulso reales.}
-	\label{fig:reales}
+	\label{fig:cloud_reales}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
 	\includegraphics[scale=0.5]{generadas.png}
 	\caption{Conjunto de respuestas al impulso generadas.}
-	\label{fig:generadas}
+	\label{fig:cloud_generadas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
 	\includegraphics[scale=0.5]{aumentadas.png}
 	\caption{Conjunto de respuestas al impulso aumentadas.}
-	\label{fig:aumentas}
+	\label{fig:cloud_aumentadas}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\subsection{Reconstrucción de audios dereverberados}
-
-
-
-\subsection{Conjuntos de datos reverberados}
-
-Para las evaluaciones se tuvieron en cuenta tres conjuntos de datos de acuerdo al tipo de respuestas al impulso utilizadas para generar la reverberación: reales, generadas y aumentadas. Para medir el desempeño de la tarea de dereverberación, las metricas se evaluan sobre los conjuntos reverberados y luego sobre sus correspondientes resultados dereverberados. Los resultados de estas métricas para los conjuntos reverberados se puede observar en la tabla \ref{table:resultados_reverb}. 
-
-\begin{table}[H]
-\centering
-\caption{Resultados de las metricas sobre los conjuntos reverberados}
-\begin{tabular}{|c|c|c|c|}
-\hline
-Conjunto   & \textbf{SDR} & \textbf{SRMR} & \textbf{ESTOI} \\ \hline
-Reales     & -7.35        & 1.61          & 0.27           \\
-Generadas  & -4.12        & 3.08          & 0.40           \\
-Aumentadas & -2.08        & 4.66          & 0.67           \\ \hline
-\end{tabular}
-\label{table:resultados_reverb}
-\end{table}
 
 \subsection{Funcionamiento del sistema}
-
+En la figura \ref{fig:mean and std of nets} se muestra una instancia de ejemplo del funcionamiento del algoritmo de dereverberación implementado. Durante el entrenamiento, el espectrograma reverberado ingresa a la red neuronal para procesarse y generar una máscara de amplitud. En la salida, esta máscara se aplica sobre el mismo espectrograma reverberado de entrada para generar el espectrograma dereverberado. Esta es la salida de la red, la cual se compara contra el espectrograma anecoico dentro de la función de costo para poder propagar el error a lo largo de los pesos sinápticos de la red neuronal. Luego, a la hora de hacer predicciones, solo se necesita ingresar un espectrograma reverberado para que la red estime una máscara de amplitud con la cual pueda generarse el espectrograma dereverberado. Cabe aclarar que a lo largo de estos procesos se trabaja únicamente sobre la magnitud de la STFT, a lo que se hace referencia como espectrograma.  
 \begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
@@ -85,53 +65,167 @@ Aumentadas & -2.08        & 4.66          & 0.67           \\ \hline
         {\small Ejemplo de procesamiento de audio reverberado} 
         \label{fig:mean and std of nets}
     \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Dereverberación del habla}
 
-Los resultados obtenidos para el primer conjunto de pruebas definidos en la tabla \ref{tab:pruebas} se expresan en las figuras \ref{fig:1_SDR}, \ref{fig:1_SRMR} y \ref{fig:1_ESTOI} para las variaciones de las metricas SDR, SRMR y ESTOI respectivamente. 
+\subsection{Reconstrucción de audios dereverberados}
+El proceso de dereverberación de los audios sucede sobre la magnitud de los espectros STFT de los audios con reverberación. Una vez estimada la magnitud del espectro dereverberado, es necesario combinar esta magnitud con información de fase, para poder conformar un espectrograma complejo apto para antitranformarse y pasar del dominio temporal-frecuencial al dominio temporal (información de audio). Un ejemplo de los espectros de magnitud y fase para un audio con reverberación y sin reverberación se muestra en la figura \ref{fig:fases}.
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.65]{fase_clean.png}
+  \caption{Audio sin reverberación}
+  \label{fig:fase_sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.65]{fase_reverb.png}
+  \caption{Audio con reverberación}
+  \label{fig:fase_sub2}
+\end{subfigure}Sin embargo
+\caption{Espectrogramas de magnitud y fase de los audios para entrenamiento}
+\label{fig:fases}
+\end{figure} 
+
+Para determinar la fase del nuevo espectro de magnitud estimado por la red (dereverberado), se consideraron dos alternativas: utilizar directamente la fase del espectro con reverberación o bien utilizar el método iterativo de Griffin-Lim para estimar la fase a partir de la magnitud pretendida. Este último método iterativo puede inicializarse con una fase determinada (como la fase del audio reverberado) para aprovechar información existente de manera de mejorar la estimación o puede inicializarse de manera aleatoria. 
+Para determinar el numero necesario de iteraciones a utilizar en el algoritmo de Griffin-Lim se evaluó la evolución de las métricas utilizadas en este trabajo (SDR, SRMR y ESTOI) en relación al número de iteraciones en la obtención de la fase. En la figura \ref{fig:iteraciones} se pueden observar estas relaciones para cada métrica, teniendo en cuenta que se utilizó el algoritmo inicializado desde una fase aleatoria. Se puede apreciar que los valores se estabilizan al aproximarse a 100 iteraciones, siendo este el número de iteraciones que se utilizó para las pruebas subsiguiSin embargoentes.     
 
 \begin{figure}[H]
 	\centering{}
-	\includegraphics[scale=0.5]{prueba1_SDR.png}
+	\includegraphics[scale=0.9]{iteraciones.png}
+	\caption{Influencia del numero de iteraciones del algoritmo de Griffin-Lim.}
+	\label{fig:iteraciones}
+\end{figure}
+
+En la tabla \ref{table:fases} se muestra el resultado de la comparación entre las distintas alternativas para la determinación de la fase del espectro dereverberado. Para hacer esta comparación se utilizó audio reverberado como referencia, sobre el cual se calculan las métricas objetivas SDR, SRMR y ESTOI. Luego, se implementó cada alternativa de obtención de fase para el espectro de magnitud dereverberado con el fin de generar información de audio y calcular estas mismas métricas. En la tabla se expresan las variaciones de las métricas para cada alternativa con respecto al audio reverberado. Se puede observar que la principal diferencia ocurre sobre el parámetro SDR. La reconstrucción de fase utilizando el algoritmo de Griffin-Lim inicializado de manera aleatoria empeora el resultado de esta métrica, lo cual es un efecto contrario al deseado. Sin embargo, utilizando este algoritmo inicializándolo con la fase reverberada genera una mejora. Finalmente, la dereverberación utilizando directamente la fase reverberada produce una mejora mucho mayor que los metodos iterativos previamente mencionados. Para las otras dos métricas, SRMR y ESTOI, los métodos iterativos producen mejores resultados que la utilización directa de la fase reverberada, pero las diferencias entre las alternativas son menores.
+
+\begin{table}[H]
+\centering
+\caption{Comparación de métodos de reconstrucción de espéctrograma complejo para generar audio}
+\begin{tabular}{|l|l|l|l|}
+\hline
+                                                                               & \textbf{SDR}                         & \textbf{SRMR}                      & \textbf{ESTOI} \\ \hline
+\textit{Audio reverberado (referencia)}                                        & \multicolumn{1}{c|}{\textit{- 3.11}} & \multicolumn{1}{c|}{\textit{1.73}} & \textit{0.29}  \\ \hline
+\Delta $\ $ Dereverberación con fase reverberada                      & +4.27                                & +4.53                              & +0.31          \\
+\Delta $\ $ Dereverberación Griffin-Lim iniciado con fase reverberada & +1.38                                & +5.13                              & +0.33          \\
+\Delta $\ $ Dereverberación Griffin-Lim iniciado con fase aleatoria   & -2.92                                & +5.24                              & +0.33          \\ \hline
+\end{tabular}
+\label{table:fases}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Dereverberación del habla y manejo de datos}
+
+Para las evaluaciones se tuvieron en cuenta tres conjuntos de datos de acuerdo al tipo de respuestas al impulso utilizadas para generar la reverberación: reales, generadas y aumentadas. Para medir el desempeño de la tarea de dereverberación, las metricas se evaluan sobre los conjuntos reverberados y luego sobre sus correspondientes resultados dereverberados. Los resultados de estas métricas para los conjuntos reverberados se puede observar en la tabla \ref{table:resultados_reverb}. 
+
+\begin{table}[H]
+\centering
+\caption{Resultados de las metricas sobre los conjuntos reverberados}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Conjunto   & \textbf{SDR} & \textbf{SRMR} & \textbf{ESTOI} \\ \hline
+Reales     & -3.94        & 1.22          & 0.28           \\
+Generadas  & 2.89        & 2.53          & 0.46           \\
+Aumentadas & 8.09        & 3.19          & 0.64           \\ \hline
+\end{tabular}
+\label{table:resultados_reverb}
+\end{table}
+
+
+Los resultados obtenidos para el primer conjunto de pruebas definidos en la tabla \ref{tab:pruebas} se expresan en las figuras \ref{fig:1_SDR}, \ref{fig:1_SRMR} y \ref{fig:1_ESTOI} para las variaciones de las métricas SDR, SRMR y ESTOI respectivamente. 
+
+\begin{figure}[H]
+	\centering{}
+	\includegraphics[scale=0.65]{prueba1_SDR.png}
 	\caption{Variaciones de SDR para el primer conjunto de pruebas.}
 	\label{fig:1_SDR}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
-	\includegraphics[scale=0.5]{prueba1_SRMR.png}
+	\includegraphics[scale=0.65]{prueba1_SRMR.png}
 	\caption{Variaciones de SRMR para el primer conjunto de pruebas.}
 	\label{fig:1_SRMR}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
-	\includegraphics[scale=0.5]{prueba1_ESTOI.png}
+	\includegraphics[scale=0.65]{prueba1_ESTOI.png}
 	\caption{Variaciones de ESTOI para el primer conjunto de pruebas.}
 	\label{fig:1_ESTOI}
 \end{figure}
 
-Los resultados correspondientes al segundo conjunto de pruebas definido en la tabla \ref{tab:pruebas_combinadas} se muestran en las figuras \ref{fig:2_SDR}, \ref{fig:2_SRMR} y \ref{fig:2_ESTOI} para las variaciones de las metricas SDR, SRMR y ESTOI respectivamente.
+Los resultados correspondientes al segundo conjunto de pruebas definido en la tabla \ref{tab:pruebas_combinadas} se muestran en las figuras \ref{fig:2_SDR}, \ref{fig:2_SRMR} y \ref{fig:2_ESTOI} para las variaciones de las métricas SDR, SRMR y ESTOI respectivamente.
 
 \begin{figure}[H]
 	\centering{}
-	\includegraphics[scale=0.5]{prueba2_SDR.png}
+	\includegraphics[scale=0.65]{prueba2_SDR.png}
 	\caption{Variaciones de SDR para el segundo conjunto de pruebas.}
 	\label{fig:2_SDR}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
-	\includegraphics[scale=0.5]{prueba2_SRMR.png}
+	\includegraphics[scale=0.65]{prueba2_SRMR.png}
 	\caption{Variaciones de SRMR para el segundo conjunto de pruebas.}
 	\label{fig:2_SRMR}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
-	\includegraphics[scale=0.5]{prueba2_ESTOI.png}
+	\includegraphics[scale=0.65]{prueba2_ESTOI.png}
 	\caption{Variaciones de ESTOI para el segundo conjunto de pruebas.}
 	\label{fig:2_ESTOI}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
 
 \subsection{Aprendizaje por curriculum}
+Para evaluar la influencia del ordenamiento de los datos en el proceso de entrenamiento en primer lugar se generó una base de datos de respuestas al impulso asegurando una adecuada dispersión de los parámetros acústicos de relación directo-reverberado y tiempo de reverberación medio. Para poder conseguir esto, se partió de la base de datos de respuestas al impulso reales C4DM y se aplicó el método de aumentación. Esta vez se generaron tiempos de reverberación medio desde $0.1 \ s$ a $3.5 \ s$ y relaciones directo-reverberado de $-10 \ dB$ a $10 \ dB$. En la figura \ref{fig:cl_impulsos} se puede observar la dispersión de los parámetros acústicos mencionados en el conjunto de respuestas al impulso conformado.
+
+\begin{figure}[H]
+	\centering{}
+	\includegraphics[scale=0.60]{cl_impulsos.png}
+	\caption{Respuestas al impulso generadas por aumentación.}
+	\label{fig:cl_impulsos}
+\end{figure}
+
+Partiendo de la información del tiempo de reverberación medio de cada respuesta al impulso, se generaron pares de audios anecoicos-reverberados junto con un registro que indicaba que tiempo de reverberación medio correspondia con cada audio reverberado. Este registro se utilizó para conformar los esquemas de entrenamiento que fueron evaluados. Entonces, se organizaron los datos de entrenamiento de tres maneras: con tiempos de reverberación creciences, decrecientes y aleatorios. Cabe aclarar que la red se entrenó por una sola época sobre estos conjuntos de datos. Una vez realizado el entrenamiento, se utilizo el modelo entrenado para hacer predicciones sobre audios reververados y se calcularon las metricas objetivas sobre los resultados de cada variante. En las figuras \ref{fig:cl_sdr}, \ref{fig:cl_srmr}, y \ref{fig:cl_estoi} se muestran los resultados obtenidos para las metricas SDR, SRMR y ESTOI respectivamente. 
+
+\begin{figure}[H]
+	\centering{}
+	\includegraphics[scale=0.75]{cl_SDR.png}
+	\caption{Comparacion de SDR entre tipos de ordenamiento de datos durante el entrenamiento.}
+	\label{fig:cl_sdr}
+\end{figure}
+
+\begin{figure}[H]
+	\centering{}
+	\includegraphics[scale=0.75]{cl_SRMR.png}
+	\caption{Comparacion de SRMR entre tipos de ordenamiento de datos durante el entrenamiento.}
+	\label{fig:cl_srmr}
+\end{figure}
+
+\begin{figure}[H]
+	\centering{}
+	\includegraphics[scale=0.75]{cl_ESTOI.png}
+	\caption{Comparacion de ESTOI entre tipos de ordenamiento de datos durante el entrenamiento.}
+	\label{fig:cl_estoi}
+\end{figure}
+
+A primera vista se puede percibir que para todas las métricas el resultado obtenido para el entrenamiento con tiempos de reverberación crecientes es el mejor, el resultado obtenido para el entrenamiento con tiempos de reverberacó0n decrecientes es el peor, y el resultado para el entrenamiento con tiempos de reverberación aleatorios esta en un punto medio entre los dos anteriores, en ocasiones mas cerca del mejor y en ocasiones mas cerca del peor. Para ilustrar mejor este comportamiento, en la tabla \ref{table:resultados_reverb} se muestran las medianas de las metricas obtenidas para cada esquema de entrenamiento. 
+
+\begin{table}[H]
+\centering
+\caption{Medianas correspondientes a cada esquema de entrenamiento.}
+\begin{tabular}{|c|c|c|c|}
+\hline
+               & \textbf{$\tilde{X}_{SDR}$} & \textbf{$\tilde{X}_{SRMR}$} & \textbf{$\tilde{X}_{ESTOI}$} \\ \hline
+TR Creciente   & 3.54         & 6.37          & 0.59           \\ \hline
+TR Decreciente & 1.24         & 3.25          & 0.47           \\ \hline
+TR Aleatorio   & 1.61         & 6.24          & 0.53           \\ \hline
+\end{tabular}
+\label{table:resultados_reverb}
+\end{table}

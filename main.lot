@@ -5,4 +5,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {2}{\ignorespaces Configuración del segundo conjunto de pruebas.\relax }}{37}{table.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Resultados de las metricas sobre los conjuntos reverberados\relax }}{40}{table.caption.22}%
+\contentsline {table}{\numberline {3}{\ignorespaces Comparación de métodos de reconstrucción de espéctrograma complejo para generar audio\relax }}{44}{table.caption.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4}{\ignorespaces Resultados de las metricas sobre los conjuntos reverberados\relax }}{44}{table.caption.26}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {5}{\ignorespaces Medianas correspondientes a cada esquema de entrenamiento.\relax }}{50}{table.caption.37}%
