@@ -170,9 +170,10 @@ Finalmente, la función de costo utilizada para evaluar las predicciones realiza
 	L_{MSE} = \sum_{i=1}^{N-1}\overline{(M_{i}(t,f) - \hat{M}_{i}(t,f))^{2}} 
 \end{equation}
 
-\subsection{Manejo de datos a evaluar}
-En este trabajo se ponen a prueba cuestiones relativas al manejo de datos utilizados para entrenar el algoritmo de aprendizaje profundo. Las pruebas se diferencian entre combinaciones entre datos simulados o reales, y en el ordenamiento de la complejidad de los datos durante el entrenamiento. 
+\subsection{Evaluación del modelo}
+En este trabajo se ponen a prueba cuestiones relativas al manejo, generación y aumentación de datos utilizados para el entrenamiento del modelo. Las evaluaciones se diferencian entre combinaciones entre datos simulados o reales, y en el ordenamiento de la complejidad de los datos durante el entrenamiento. 
 
+\subsubsection{Combinaciones de bases de datos}
 En primer lugar, como se cuenta con respuestas al impulso reales, simuladas o generadas, y aumentadas, se prueban combinaciones de estos datos a la hora de formar los diferentes conjuntos de entrenamiento y validacion. Es decir, se entrena el modelo utilizando un determinado conjunto, y luego se evalua su funcionamiento sobre el total de los conjuntos. Esto desemboca en 3 pruebas, en donde los conjuntos de entrenamiento y evaluación quedan determinados segun la tabla \ref{tab:pruebas}. 
 
 
@@ -190,7 +191,6 @@ Conjuntos de evaluacion   & \begin{tabular}[c]{@{}c@{}}Reales\\ Generadas\\ Aume
 
 Luego, se evalua el rendimiento del modelo propuesto al utilizar combinaciones de conjuntos en la etapa de entrenamiento. Como el objetivo principal es lograr extender la variedad presente en las respuestas al impulso reales, las combinaciones propuestas consisten en combinar las respuestas reales con las generadas y aumentadas como se indica en la tabla \ref{tab:pruebas_combinadas}. 
 
-
 \begin{table}[H]
 \caption{Configuración del segundo conjunto de pruebas.}
 \centering
@@ -203,8 +203,9 @@ Conjuntos de evaluacion   & \begin{tabular}[c]{@{}c@{}}Reales\\ Generadas\\ Aume
 \label{tab:pruebas_combinadas}
 \end{table}
 
+\subsubsection{Ordenamiento de los datos durante el entrenamiento}
 
-Por otro lado, también es interesante evaluar la influencia del orden de complejidad con el que las instancias de entrenamiento se le presentan a la red, siguiendo los lineamientos de la técnica de aprendizaje por curriculum. En este caso se considera que una instancia de audio es más compleja de dereverberar cuando posee un mayor tiempo de reverberación, debido a que esto equivale a una mayor distorsión de la señal original que se quiere recuperar. Entonces, se decide comparar el rendimiento del sistema final al ser entrenado con instancias en las cuales los tiempos de reverberación esten ordenados en forma creciente (curriculum), ordenados en forma decreciente (anti-curriculum) y ordenados aleatoriamente. 
+Por otro lado, se evalua la influencia del orden de complejidad con el que las instancias de entrenamiento se le presentan a la red, siguiendo los lineamientos de la técnica de aprendizaje por curriculum. En este caso se considera que una instancia de audio es más compleja de dereverberar cuando posee un mayor tiempo de reverberación, debido a que esto equivale a una mayor distorsión de la señal original que se quiere recuperar. Entonces, se decide comparar el rendimiento del sistema final al ser entrenado con instancias en las cuales los tiempos de reverberación esten ordenados en forma creciente (curriculum), ordenados en forma decreciente (anti-curriculum) y ordenados aleatoriamente. 
 
 Para esta evaluación del orden de los datos en el entrenamiento, es necesario generar un conjunto de datos anecóicos-reverberados de manera controlada, asegurando una distribución homogenea de los tiempos de reverberación presentes en el conjunto final. Para conseguir esto se decide conformar el conjunto de datos a partir de respuestas al impulso aumentadas, ya que estas se pueden generar controlando paramétricamente el tiempo de reverberación medio y la relación directo-reverberado. Se busca cubrir el rango de tiempo de reverberación medio desde $0.1 \ s$ hasta $3.5 \ s$ con variaciones de relación directo-reverberado desde $-10 \ dB$ a $10 \ dB$. 
 
