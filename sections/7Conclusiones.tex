@@ -1,2 +1,11 @@
-\section{Conclusiones}
-A lo largo de este trabajo se implementó un algoritmo de aprendizaje profundo para la tarea de dereverberación de señales de habla. Se utilizó una estructura de tipo autoencoder, la cual se entrenó para estimar máscaras de amplitud que al aplicarse sobre un espectro reverberado generen un espectro dereverberado, que luego de procesarse pueda desembocar en información de audio dereverberado. Particularmente se estudió la influencia del manejo de datos para el entrenamiento de este algoritmo, manipulando y generando respuestas al impulso de diversas maneras. 
+\section[Conclusiones]{CAPÍTULO 6:$\ \ \ \ $CONCLUSIONES} 
+
+A lo largo de este trabajo se implementó un algoritmo de aprendizaje profundo para la tarea de dereverberación de señales de habla. Se utilizó una estructura de tipo autoencoder con conexiones de salto, la cual se entrenó para estimar máscaras de amplitud que al aplicarse sobre un espectro de magnitud reverberado generen un espectro de magnitud dereverberado, que luego de combinarse con el espectro de fase reverberado pueda desembocar en información de audio dereverberado.
+ 
+Particularmente se estudió la influencia del manejo de datos para el entrenamiento de este algoritmo, manipulando y generando respuestas al impulso de diversas maneras. 
+
+Se generaron datos de entrenamiento y evaluación a partir de respuestas al impulso reales, generadas y aumentadas. Se pudo comprobar que una mayor diversidad de respuestas al impulso para la generación de los datos de entrenamiento genera mejores resultados, y que tanto las respuestas al impulso generadas como las aumentadas son útiles como método de aumentación de datos de entrenamiento.
+
+Por otro lado, del análisis del ordenamiento de datos de entrenamiento se comprobó que el tiempo de reverberación medio se relaciona directamente con el nivel de dificultad del proceso de dereverberación, y que el ordenamiento de datos de entrenamiento en orden de dificultad creciente genera mejores resultados finales, acorde a la técnica de aprendizaje por curriculum.
+ 
+Estas conclusiones generan un aporte importante para el estudio de las tareas de dereverberación de audio, para las cuales las bases de datos de respuestas al impulso existentes son escasas, poco abarcativas y en ocasiones dificiles de conseguir o muy costosas.

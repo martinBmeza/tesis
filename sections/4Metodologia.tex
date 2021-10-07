@@ -1,5 +1,6 @@
-\section{Metodología}
-\subsection{Análisis de datos}
+\section[Metodología]{CAPÍTULO 4:$\ \ \ \ $METODOLOGÍA} 
+
+\subsection[Análisis de datos]{GENERACIÓN DE DATOS}
 Para poder entrenar un algoritmo de aprendizaje profundo se requiere un conjunto de datos extensos. Este conjunto debe poder representar de la mejor manera posible el fenómeno que se quiere procesar. Además, se debe poder asegurar que todas las instancias que componen la base de datos tengan características homogéneas que se adecuen a los procesos subsiguientes. 
 
 Para este trabajo, es necesario partir de un conjunto de datos conformados por dos tipos de elementos principales: Respuestas al impulso, y grabaciones de voz. Con estos elementos, es posible generar instancias que comprendan información de audio con reverberación y su correspondiente versión anecoica, siendo esta última la que un sistema de dereverberación tiene como objetivo.
@@ -7,7 +8,7 @@ Para este trabajo, es necesario partir de un conjunto de datos conformados por d
 Además, se debe tener en cuenta que se busca formar tres grandes conjuntos de datos: conjunto de entrenamiento, conjunto de validación y conjunto de prueba. Las características de estos conjuntos deberán variar de acuerdo al propósito de cada uno para lograr optimizar cada etapa, o bien, para evaluar ciertos aspectos de estos procesos.    
 
 
-\subsection{Base de datos de respuestas al impulso}
+\subsection[Base de datos de respuestas al impulso]{BASES DE DATOS DE RESPUESTAS AL IMPULSO}
 
 Para este trabajo se utilizan respuestas al impulso reales y simuladas. A su vez, tambien se trabaja con un tercer conjunto formado a partir de la aumentación de respuestas al impulso reales. Esto es, partiendo de un subconjunto de respuestas al impulso reales, se alteran estas señales de manera controlada para producir nuevas respuestas al impulso con diferentes caracteristicas acústicas.
 
@@ -94,7 +95,7 @@ En donde ${h_{m}}'(t)$ representa a la nueva parte tardia de la respuesta al imp
 
 Para realizar este proceso se determinan limites de relación directo-reverberado y tiempo de reverberación medio. La realción directo-reverberado va desde $-3 \ dB$ a $10 \ dB$ con saltos de $1 \ dB$, lo que se considera una diferencia de nivel promedio acorde a la minima perceptible por el oido humano. Con respecto al tiempo de reverberación, se generan desde $0.1 \ s$ a $1.2 \ s$ para estar dentro del rango de las respuestas al impulso generadas, con un paso de $0.05 s$ basado en estudios previos realizados sobre la minima diferencia perceptible entre tiempos de reverberación \cite{aug_JND}. Una vez obtenido el conjunto de respuestas al impulso aumentadas, se seleccionan aleatoriamente 135 respuestas para equiparar al numero de respuestas al impulso generadas. 
 
-\subsection{Bases de datos de señales del habla}
+\subsection[Bases de datos de señales de habla]{BASES DE DATOS DE SEÑALES DE HABLA}
 
 Las señales del habla necesarias para formar los pares anecoico-reverberados se obtienen de la librería LibriSpeech \cite{librispeech} la cual consiste en un conjunto de datos que reúne 100 horas de audio correspondientes a lecturas en idioma inglés. Los datos corresponden a programas tipo audiolibros. Las señales poseen bajo nivel de reverberación, y provienen de una aplicación en la cual la inteligibilidad es primordial, lo cual hace que esta base de datos sea adecuada para utilizarse en este trabajo.
 
@@ -107,7 +108,7 @@ Luego, los audios de voz se convolucionan con las respuestas al impulso para for
 Cabe destacar que debido a este preprocesamiento aplicado, a la hora de evaluar el modelo se deberán aplicar una serie de procesos previos sobre el audio a procesar. Mas precisamente, se deberá segmentar el audio y obtener espectros de magnitud de la STFT respetando los mismos parámetros que en el preprocesamiento. Luego, como la salida de la red es una máscara de amplitud comprimida, se debe descomprimir esta máscara, aplicarla sobre el espectro reverberado y luego combinar el espectro de amplitud modificado resultante con la fase original de la señal para poder finalmente obtener la información de audio de salida a través de la aplicación del algoritmo de Griffin-Lim.  
 
 
-\subsection{Modelo propuesto}
+\subsection[Modelo propuesto]{MODELO PROPUESTO}
 
 El modelo propuesto se basa en una arquitectura de red neuronal completamente convolucional tipo 'autoencoder' inspirada en el trabajo de Ernst et. al.\cite{FCN}. Más precisamente, un autoencoder es una estructura que tiene como objetivo aprender niveles de representación de la información de entrada, para luego poder reconstruir una instancia similar descartando la información no deseada o considerada "ruido". En este caso, la señal no deseada corresponde a la reverberación. El esquema básico del algoritmo se puede observar en la figura \ref{fig:autoencoder}, donde la variable $x$ representa a las variables de entrada, e $y$ representa la variable de salida. 
 
@@ -141,8 +142,6 @@ A medida que se avanza en el modelo, el tamaño del espectro de entrada va dismi
 Para poder pasar información de manera más directa desde el decodificador hacia el codificador, se implementan conexiones de salto. La conexión de salto consiste en concatenar la salida de una capa del codificador con una capa del decodificador. Para poder hacerlo, la dimensión de concatenación (en este caso, las dimensiones del espectrograma) deben ser las mismas. De esta manera se logran decodificaciones más precisas. 
 
 
-
-
 Una representación gráfica del modelo final implementado se puede apreciar en la figura \ref{fig:modelo}. En cada capa se indican tres valores, donde el primero representa la dimension temporal, el segundo la dimension frecuencial y el tercero el numero de canales. En las primeras capas, las dimensiones se reducen a la mitad en cada instancia debido al uso de un desplazamiento de paso 2 en los filtros convolucionales, lo que realiza la compresión de la información. En las capas subsiguientes, las dimensiones sufren el efecto contrario hasta volver a obtener las dimensiones originales. Este tipo de estructura tiende a perder información importante de bajo nivel durante el proceso de compresión. Como por lo general las variables de entrada y de salida comparten información estructural, se puede mejorar el funcionamiento de estas estructuras implementando conexiones entre las capas del codificador y el decodificador. Esto quiere decir que los mapas de características de las capas que conforman el codificador se van a concatenar directamente con los mapas de características en el decodificador, es decir, la salida de la capa $i$ se concatena con la salida de la capa $N-i$ donde $N$ es el número de capas. Estos saltos evitan que las activaciones pasen por el cuello de botella permitiendo la propagación de esta información estructural que estas estructuras tienden a perder. 
 
 \begin{figure}[H]
@@ -155,7 +154,7 @@ Una representación gráfica del modelo final implementado se puede apreciar en 
 De esta forma, el modelo realiza una compresión de los datos de entrada, buscando minimizar el error en la reconstrucción al comparar con las instancias que se le presentan como objetivo. 
 Para este caso particular, las entradas del modelo son espectrogramas, es decir, valores en el dominio tiempo-frecuencia. Las dimensiones del espectrograma de entrada son comprimidas hasta llegar a dimensiones de $1x1$ y luego son expandidas nuevamente, lo que produce un aumento de los campos perceptivos que permite propagar información global tanto en tiempo como en frecuencia. Esto significa que el cómputo de cada pixel de salida se verá influenciado por la totalidad del espectrograma de entrada. Estudios previos demostraron que la estimación directa de espectros, o lo que es equivalente, el mapeo frecuencial-temporal genera resultados menos precisos comparado con aquellos modelos que en lugar de estimar espectros estiman máscaras espectrales\cite{mask_vs_map}. Por esto, las entradas del modelo son espectrogramas correspondientes a señales con reverberación, y las salidas u objetivos son máscaras de amplitud previamente calculadas en una etapa de preprocesamiento. 
 
-\subsection{Especificaciones de la arquitectura implementada}
+\subsection[Especificaciones de la arquitectura implementada]{ESPECIFICACIONES DE LA ARQUITECTURA IMPLEMENTADA}
 
 Como se indicó anteriormente, esta arquitectura se basa en el entrenamiento de un modelo completamente convolucional. Sin embargo, la etapa de codificación y decodificación requieren evaluar ciertos detalles a la hora de su implementación. 
 
@@ -170,7 +169,7 @@ Finalmente, la función de costo utilizada para evaluar las predicciones realiza
 	L_{MSE} = \sum_{i=1}^{N-1}\overline{(M_{i}(t,f) - \hat{M}_{i}(t,f))^{2}} 
 \end{equation}
 
-\subsection{Evaluación del modelo}
+\subsection[Evaluación del modelo]{EVALUACIÓN DEL MODELO}
 En este trabajo se ponen a prueba cuestiones relativas al manejo, generación y aumentación de datos utilizados para el entrenamiento del modelo. Las evaluaciones se diferencian entre combinaciones entre datos simulados o reales, y en el ordenamiento de la complejidad de los datos durante el entrenamiento. 
 
 \subsubsection{Combinaciones de bases de datos}
@@ -208,13 +207,3 @@ Conjuntos de evaluacion   & \begin{tabular}[c]{@{}c@{}}Reales\\ Generadas\\ Aume
 Por otro lado, se evalua la influencia del orden de complejidad con el que las instancias de entrenamiento se le presentan a la red, siguiendo los lineamientos de la técnica de aprendizaje por curriculum. En este caso se considera que una instancia de audio es más compleja de dereverberar cuando posee un mayor tiempo de reverberación, debido a que esto equivale a una mayor distorsión de la señal original que se quiere recuperar. Entonces, se decide comparar el rendimiento del sistema final al ser entrenado con instancias en las cuales los tiempos de reverberación esten ordenados en forma creciente (curriculum), ordenados en forma decreciente (anti-curriculum) y ordenados aleatoriamente. 
 
 Para esta evaluación del orden de los datos en el entrenamiento, es necesario generar un conjunto de datos anecóicos-reverberados de manera controlada, asegurando una distribución homogenea de los tiempos de reverberación presentes en el conjunto final. Para conseguir esto se decide conformar el conjunto de datos a partir de respuestas al impulso aumentadas, ya que estas se pueden generar controlando paramétricamente el tiempo de reverberación medio y la relación directo-reverberado. Se busca cubrir el rango de tiempo de reverberación medio desde $0.1 \ s$ hasta $3.5 \ s$ con variaciones de relación directo-reverberado desde $-10 \ dB$ a $10 \ dB$. 
-
-
-
-
-
-
-
-
-
-

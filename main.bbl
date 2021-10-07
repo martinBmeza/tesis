@@ -1433,5 +1433,87 @@
     \field{journaltitle}{ICLR}
     \field{year}{2014}
   \endentry
+
+  \entry{repo}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://github.com/martinBmeza/deep-dereverb}}
+    \field{note}{Extraido el 6 de Octubre de 2021}
+    \field{title}{{Martin Bernardo Meza,} Repositorio del trabajo
+  "Dereverberación del habla a partir de algoritmos de aprendizaje profundo"}
+  \endentry
+
+  \entry{sdr_fail}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RJL}{%
+         family={Roux},
+         familyi={R\bibinitperiod},
+         given={Jonathan\bibnamedelima Le},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wisdom},
+         familyi={W\bibinitperiod},
+         given={Scott},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=EH}{%
+         family={Erdogan},
+         familyi={E\bibinitperiod},
+         given={Hakan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HJR}{%
+         family={Hershey},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima R.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RJL+1}
+    \strng{fullhash}{RJLWSEHHJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{SDR - half-baked or well done?}
+    \field{journaltitle}{IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}
+    \field{year}{2018}
+  \endentry
+
+  \entry{CDPAM}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MP}{%
+         family={Manocha},
+         familyi={M\bibinitperiod},
+         given={Pranay},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JZ}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={Zeyu},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Finkelstein},
+         familyi={F\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MP+1}
+    \strng{fullhash}{MPJZZRFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{CDPAM: Constrastive learning for perceptual audio similarity}
+    \field{journaltitle}{IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}
+    \field{year}{2021}
+  \endentry
 \enddatalist
 \endinput

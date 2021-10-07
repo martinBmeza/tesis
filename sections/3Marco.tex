@@ -1,7 +1,6 @@
-\section{Marco Teórico}
+\section[Marco Teórico]{CAPÍTULO 3:$\ \ \ \ $MARCO TEÓRICO} 
 
-
-\subsection{Representación temporal y frecuencial de señales}
+\subsection[Representación temporal y frecuencial de señales]{REPRESENTACIÓN TEMPORAL Y FRECUENCIAL DE SEÑALES}
 Fundamentalmente, el audio esta compuesto por formas de ondas. Cuando un objeto vibra genera ondas de presión que cuando alcanzan nuestros oídos son percibidas como sonido \cite{ritmo}. Si bien entonces podemos definir a una señal de audio como una variación continua, para su análisis digital nos interesa estudiar este tipo de señales en un dominio discreto. Para lograrlo, se toman muestras equiespaciadas de la señal continua, en un proceso que se denomina muestreo. La distancia temporal entre dos muestras contiguas es determinado según la frecuencia máxima que se desea representar, acorde al teorema de Nyquist \cite{openheim}. Entonces, una señal continua $x_{a}(t)$ que es muestreada a una frecuencia de $f_{s} = 1 / T_{s}$ muestras por segundo, produce la señal discreta $x(n)$ que se puede definir a partir dela señal continua a partir de la ecuación \ref{eqn:discreta}, que equivale a la representación vectorial vista en la ecuación   \ref{eqn:vector}, siendo $N$ el número de muestras tomadas. 
 
 \begin{equation}
@@ -39,7 +38,7 @@ Cuando se trabaja con señales no estacionarias es de interés evaluar la variac
 \end{figure}
 
 
-\subsection{Respuesta al impulso y reverberación}
+\subsection[Respuesta al impulso y reverberación]{RESPUESTA AL IMPULSO Y REVERBERACIÓN}
 
 Si en un recinto se tiene una fuente y un micrófono captando a una cierta distancia de la fuente, las ondas sonoras que emite la fuente se reflejarán en las paredes del recinto y alcanzarán el micrófono inmediatamente después que la onda sonora directa. Las reflexiones continúan ocurriendo, y cada instancia de reflexión supone una disminución de la energía sonora de la onda, principalmente causada por el efecto de absorción acústica de las superficies que producen las reflexiones. En un determinado tiempo, la energía sonora decaerá en todo el recinto hasta ubicarse por debajo del ruido de fondo. A este proceso se lo denomina reverberación. Al camino mas corto entre la fuente y el punto de captura se denomina camino directo, y a la relación de nivel entre la presión sonora que genera la onda propia del camino directo y la presión que genera el efecto de reverberación se lo conoce como relación directo-reverberado. 
 
@@ -111,7 +110,7 @@ Como esta definición inicialmente se piensa en un dominio continuo, la primera 
 
 
 
-\subsection{Inteligibilidad y parámetros de calidad de percepción}
+\subsection[Inteligibilidad y parámetros de calidad de percepción]{INTELIGIBILIDAD Y PARÁMETROS DE CALIDAD DE PERCEPCIÓN}
 
 Para caracterizar la señal del habla propagándose en condiciones reverberantes se utilizan métricas objetivas derivadas de la respuesta al impulso del recinto en cuestión, como por ejemplo el tiempo de reverberación o la relación energética entre la señal directa y el campo reverberado. En cambio, al considerar el proceso de dereverberación de estas señales las respuestas al impulso requieren ser estimadas, lo que usualmente conduce a una caracterización de baja calidad. Además, los algoritmos de dereverberación pueden introducir artefactos audibles a la señal voz, los cuales no son contemplados por las respuestas al impulso estimadas. Es por esto que es preciso utilizar métodos de medida de calidad basados en la señal dereverberada. Las pruebas subjetivas son el método más confiable para evaluar la calidad percibida de una señal de habla dereverberada. Sin embargo, este método es costoso y requiere mucho tiempo, por lo cual se vuelve inviable su aplicación para procesamientos en tiempo real. Para aplicaciones prácticas se definieron entonces métodos objetivos de medición de calidad basados en la señal dereverberada como reemplazo de las pruebas subjetivas. Estos métodos consisten en algoritmos que de manera objetiva y repetible buscan estimar la calidad percibida de la señal, por lo cual, un método resulta efectivo cuando logra obtener una alta correlación con las respuestas subjetivas. Estos métodos se clasifican en intrusivos o no intrusivos, dependiendo de si requieren o no una señal de referencia para realizar la estimación. Poder contar con una señal de referencia para realizar estas estimaciones es usualmente una dificultad, por lo cual se presta mayor interés en aquellos métodos no intrusivos. 
 
@@ -126,7 +125,7 @@ Este parámetro está basado en características extraídas a partir de la corre
 
 Este descriptor fue ampliamente utilizado en tareas de separación de fuentes y refuerzo de señales de habla. Esta basado en el cómputo de la relación señal a interferencia (SIR), y en la relación señal a artefacto (SAR) \cite{SAR}. En las tareas de dereverberación, estas medidas pueden ser interpretadas como proporcionales a la supresión de componentes reverberantes tardías e inversamente proporcionales a la distorsión en la señal del habla, respectivamente. Contemplando estos valores, el parámetro final contempla la calidad general de la señal dereverberada.  
 
-\subsection{Redes neuronales y algoritmos de aprendizaje}
+\subsection[Redes neuronales y algoritmos de aprendizaje profundo]{REDES NEURONALES Y ALGORITMOS DE APRENDIZAJE PROFUNDO}
 
 La base de los algoritmos de aprendizaje profundo se encuentra en la neurona artificial. Esta consiste en un modelo que parte de los principios de funcionamiento de las neuronas biológicas \cite{neurona}. El perceptrón \cite{perceptron} fue de las primeras arquitecturas formalmente implementadas y que se considera la unidad básica de  estos algoritmos. Un esquema de una neurona artificial básica se puede ver en la Figura \ref{fig:neurona}. Las componentes básicas de una neurona artificial son: 
 
@@ -257,14 +256,14 @@ El procesamiento que ocurre en una capa convolucional consiste en la aplicación
 
 De esta manera, las capas convolucionales permiten construir modelos con menos cantidad de parámetros a entrenar, distribuidos adecuadamente para conseguir la generalización de conceptos visuales complejos. 
 
-\subsection{Curriculum Learning}
+%\subsection[Curriculum Learning]{CURRICULUM LEARNING}
 
 
-\subsection{Dereverberación por filtrado temporal-frecuencial}
+\subsection[Dereverberación por filtrado temporal-frecuencial]{DEREVERBERACIÓN POR FILTRADO TEMPORAL-FRECUENCIAL}
 
 \subsubsection{Máscaras de amplitud}
 
-Entre los numerosos métodos estudiados para abordar la tarea de la dereverberación, en la actualidad el análisis del espectro temporal-frecuencial ha tomado una importancia central debido a la posibilidad de explotar este enfoque utilizando herramientas como redes neuronales convolucionales y otros algoritmos de aprendizaje profundo. Partiendo de una señal con reverberación, se extrae una representación en tiempo-frecuencia a partir de transformaciones como la transformada de corto término de Fourier (STFT). Una vez obtenido este espectrograma, lo que se busca es descifrar el proceso necesario para obtener un nuevo espectro que se corresponda con la señal anecoica (descartando el efecto de la reverberación). Entonces, el proceso de dereverberación se puede resumir a la estimación de un filtro variable con el tiempo que se aplica sobre el espectrograma con reverberación. Estudios previos demostraron que la fase no aporta información significativa para estas tareas \cite{fase1}\cite{fase2}, por lo cual se pueden realizar estos procesos únicamente sobre la magnitud de los espectrogramas, descartando la información de fase. Considerando esto, el proceso de dereverberación se reduce a la expresión de la ecuación \ref{eqn:dereverb}, en donde $STFT_{Y}$ es el espectrograma de amplitud la señal anecoica, $STFT_{X}$ es el espectrograma de amplitud de la señal con reverberación y $M$ es la máscara ideal que representa el filtrado en el dominio tiempo-frecuencia. En otras palabras, el espectro de amplitud de la señal dereverberada se obtiene aplicando la máscara ideal sobre el espectro de amplitud con reverberación. 
+Entre los numerosos métodos estudiados para abordar la tarea de la dereverberación, en la actualidad el análisis del espectro temporal-frecuencial ha tomado una importancia central debido a la posibilidad de explotar este enfoque utilizando herramientas como son las redes neuronales convolucionales y otros algoritmos de aprendizaje profundo. Partiendo de una señal con reverberación, se extrae una representación en tiempo-frecuencia a partir de transformaciones como la transformada de corto término de Fourier (STFT). Una vez obtenido este espectrograma, lo que se busca es descifrar el proceso necesario para obtener un nuevo espectro que se corresponda con la señal anecoica (descartando el efecto de la reverberación). Entonces, el proceso de dereverberación se puede resumir a la estimación de un filtro variable con el tiempo que se aplica sobre el espectrograma con reverberación. Estudios previos demostraron que la fase no aporta información significativa para estas tareas \cite{fase1}\cite{fase2}, por lo cual se pueden realizar estos procesos únicamente sobre la magnitud de los espectrogramas, descartando la información de fase. Considerando esto, el proceso de dereverberación se reduce a la expresión de la ecuación \ref{eqn:dereverb}, en donde $STFT_{Y}$ es el espectrograma de amplitud la señal anecoica, $STFT_{X}$ es el espectrograma de amplitud de la señal con reverberación y $M$ es la máscara ideal que representa el filtrado en el dominio tiempo-frecuencia. En otras palabras, el espectro de amplitud de la señal dereverberada se obtiene aplicando la máscara ideal sobre el espectro de amplitud con reverberación. 
  
 \begin{equation}
 \label{eqn:dereverb}

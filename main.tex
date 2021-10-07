@@ -3,6 +3,12 @@
 \usepackage[spanish,es-tabla]{babel}
 \usepackage{amsmath,multicol}
 
+  
+%\makeatletter
+%\renewcommand\thesection{}
+%\renewcommand\thesubsection{\@arabic\c@section.\@arabic\c@subsection}
+%\makeatother
+
 
 \usepackage[backend=bibtex,sorting=none]{biblatex}
 %usepackage[resetlabels,labeled]{multibib}
@@ -85,10 +91,13 @@
 \makeatother
 
 \usepackage{titlesec}
-\titleformat{\section}
-  {\normalfont\fontsize{12}{14}\bfseries}{\thesection .}{1em}{}
+\titleformat{\section}{\normalfont\fontsize{16}{18}\bfseries}{}{0pt}{}
+
 \titleformat{\subsection}
-  {\normalfont\fontsize{12}{14}\bfseries}{\thesubsection .}{1em}{}
+  {\normalfont\fontsize{14}{16}\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\fontsize{12}{14}}{\thesubsubsection}{1em}{}
 
 \usepackage[hidelinks]{hyperref} % Para usar hipervinculos
 \usepackage[]{verbatim} % Para poder comentar por bloques
@@ -106,8 +115,11 @@
 \input{sections/0Portada}
 \spacing{1.5}
 \newpage
+%\thispagestyle{empty}
 
-\thispagestyle{empty}
+\pagenumbering{Roman}
+\setcounter{page}{1}
+
 \tableofcontents
 \newpage
 \listoffigures
@@ -115,20 +127,26 @@
 \listoftables
 \newpage
 
+\input{sections/abstracts.tex}
+\newpage
+\pagenumbering{arabic}
 \setcounter{page}{1}
 \setcounter{section}{0}
 \setmainfont{Carlito}
 \spacing{1.5}
 
-\input{sections/1Introduccion}
+\input{sections/1Introduccion.tex}
+\newpage
 \input{sections/2Estado.tex}
+\newpage
 \input{sections/3Marco.tex}
+\newpage
 \input{sections/4Metodologia.tex}
+\newpage
 \input{sections/5Resultados.tex}
-%\input{sections/Disegno.tex}
-%\input{sections/Validacion.tex}
-\input{sections/6Discusion.tex}
+\newpage
 \input{sections/7Conclusiones.tex}
+\newpage
 \input{sections/8Lineas_futuras.tex}
 \newpage
 
@@ -138,13 +156,8 @@
 \appendix
 \clearpage
 \addappheadtotoc
-\appendixpage
+%\appendixpage
 
 \input{sections/tr_aumentacion}
-
-
-
-
-
 
 \end{document}
