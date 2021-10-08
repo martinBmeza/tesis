@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.8.2)  7 OCT 2021 02:30
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.8.2)  8 OCT 2021 03:53
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1579,24 +1579,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1]) [2] [3] (./sections/2Estado.tex [4]) [5] [6] (./sections/3Marco.tex
 [7]
-<imagenes/STFT.png, id=483, 578.16pt x 361.35pt>
+<imagenes/STFT.png, id=486, 578.16pt x 361.35pt>
 File: imagenes/STFT.png Graphic file (type png)
 <use imagenes/STFT.png>
 Package luatex.def Info: imagenes/STFT.png  used on input line 35.
 (luatex.def)             Requested size: 289.07928pt x 180.67456pt.
  [8<./imagenes/STFT.png>] [9]
-<imagenes/rir.png, id=503, 646.415pt x 398.48875pt>
+<imagenes/rir.png, id=506, 646.415pt x 398.48875pt>
 File: imagenes/rir.png Graphic file (type png)
 <use imagenes/rir.png>
 Package luatex.def Info: imagenes/rir.png  used on input line 70.
 (luatex.def)             Requested size: 323.20671pt x 199.24388pt.
  [10<./imagenes/rir.png>] [11] [12] [13]
-<imagenes/neurona.png, id=548, 1118.1775pt x 787.94376pt>
+<imagenes/neurona.png, id=551, 1118.1775pt x 787.94376pt>
 File: imagenes/neurona.png Graphic file (type png)
 <use imagenes/neurona.png>
 Package luatex.def Info: imagenes/neurona.png  used on input line 144.
 (luatex.def)             Requested size: 223.63153pt x 157.58595pt.
-<imagenes/activacion.png, id=549, 1416.29124pt x 514.92375pt>
+<imagenes/activacion.png, id=552, 1416.29124pt x 514.92375pt>
 File: imagenes/activacion.png Graphic file (type png)
 <use imagenes/activacion.png>
 Package luatex.def Info: imagenes/activacion.png  used on input line 151.
@@ -1607,55 +1607,63 @@ Overfull \hbox (37.90451pt too wide) in paragraph at lines 151--152
  []
 
 [14<./imagenes/neurona.png><./imagenes/activacion.png>]
-<imagenes/red.png, id=556, 859.21pt x 617.30624pt>
+<imagenes/red.png, id=559, 859.21pt x 617.30624pt>
 File: imagenes/red.png Graphic file (type png)
 <use imagenes/red.png>
 Package luatex.def Info: imagenes/red.png  used on input line 162.
 (luatex.def)             Requested size: 300.72801pt x 216.06041pt.
  [15<./imagenes/red.png>]
-<imagenes/esquema_red.png, id=565, 925.4575pt x 751.80875pt>
+<imagenes/esquema_red.png, id=568, 925.4575pt x 751.80875pt>
 File: imagenes/esquema_red.png Graphic file (type png)
 <use imagenes/esquema_red.png>
 Package luatex.def Info: imagenes/esquema_red.png  used on input line 182.
 (luatex.def)             Requested size: 323.91498pt x 263.137pt.
  [16] [17<./imagenes/esquema_red.png>]
-<imagenes/costo_curva.png, id=577, 596.2275pt x 386.44376pt>
+<imagenes/costo_curva.png, id=580, 596.2275pt x 386.44376pt>
 File: imagenes/costo_curva.png Graphic file (type png)
 <use imagenes/costo_curva.png>
 Package luatex.def Info: imagenes/costo_curva.png  used on input line 203.
 (luatex.def)             Requested size: 208.68274pt x 135.25734pt.
  [18<./imagenes/costo_curva.png>]
-<imagenes/convnet.png, id=586, 829.0975pt x 371.3875pt>
+<imagenes/convnet.png, id=589, 829.0975pt x 371.3875pt>
 File: imagenes/convnet.png Graphic file (type png)
 <use imagenes/convnet.png>
 Package luatex.def Info: imagenes/convnet.png  used on input line 217.
 (luatex.def)             Requested size: 290.18848pt x 129.98756pt.
 
 [19<./imagenes/convnet.png>]
-<imagenes/filtro.png, id=594, 661.47125pt x 327.2225pt>
+<imagenes/filtro.png, id=597, 661.47125pt x 327.2225pt>
 File: imagenes/filtro.png Graphic file (type png)
 <use imagenes/filtro.png>
 Package luatex.def Info: imagenes/filtro.png  used on input line 232.
 (luatex.def)             Requested size: 231.5184pt x 114.52959pt.
  [20<./imagenes/filtro.png>]
-<imagenes/filtrosconv.png, id=604, 748.7975pt x 831.105pt>
+<imagenes/filtrosconv.png, id=607, 748.7975pt x 831.105pt>
 File: imagenes/filtrosconv.png Graphic file (type png)
 <use imagenes/filtrosconv.png>
 Package luatex.def Info: imagenes/filtrosconv.png  used on input line 252.
 (luatex.def)             Requested size: 262.08305pt x 290.8911pt.
  [21<./imagenes/filtrosconv.png>] [22]
-Overfull \hbox (9.40218pt too wide) in paragraph at lines 294--295
+<imagenes/estimacion_mascara.png, id=628, 663.47874pt x 228.855pt>
+File: imagenes/estimacion_mascara.png Graphic file (type png)
+<use imagenes/estimacion_mascara.png>
+Package luatex.def Info: imagenes/estimacion_mascara.png  used on input line 278
+.
+(luatex.def)             Requested size: 398.0903pt x 137.31404pt.
+
+Overfull \hbox (9.40218pt too wide) in paragraph at lines 287--288
 []\TU/Carlito(0)/m/n/12 Pa-ra rea-li-zar pro-ce-sa-mien-to de au-dio a par-tir 
 de mo-di-fi-car es-pec-tros temporales-frecuenciales
  []
 
-<imagenes/griffin.png, id=630, 673.51625pt x 720.6925pt>
+<imagenes/griffin.png, id=631, 673.51625pt x 720.6925pt>
 File: imagenes/griffin.png Graphic file (type png)
 <use imagenes/griffin.png>
-Package luatex.def Info: imagenes/griffin.png  used on input line 298.
-(luatex.def)             Requested size: 269.40172pt x 288.2719pt.
-[23]) [24<./imagenes/griffin.png>] (./sections/4Metodologia.tex [25]
-<imagenes/room1.png, id=654, 722.7pt x 722.7pt>
+Package luatex.def Info: imagenes/griffin.png  used on input line 291.
+(luatex.def)             Requested size: 303.07951pt x 324.30862pt.
+[23<./imagenes/estimacion_mascara.png>]) [24<./imagenes/griffin.png>]
+(./sections/4Metodologia.tex [25]
+<imagenes/room1.png, id=655, 722.7pt x 722.7pt>
 File: imagenes/room1.png Graphic file (type png)
 <use imagenes/room1.png>
 Package luatex.def Info: imagenes/room1.png  used on input line 36.
@@ -1665,7 +1673,7 @@ Overfull \hbox (24.04636pt too wide) in paragraph at lines 36--37
  [][] 
  []
 
-<imagenes/room2.png, id=655, 722.7pt x 722.7pt>
+<imagenes/room2.png, id=656, 722.7pt x 722.7pt>
 File: imagenes/room2.png Graphic file (type png)
 <use imagenes/room2.png>
 Package luatex.def Info: imagenes/room2.png  used on input line 42.
@@ -1676,25 +1684,30 @@ Overfull \hbox (24.04636pt too wide) in paragraph at lines 42--43
  []
 
 [26] [27<./imagenes/room1.png><./imagenes/room2.png>] [28]
-<imagenes/drr_aug.png, id=681, 722.7pt x 361.35pt>
+<imagenes/drr_aug.png, id=682, 722.7pt x 361.35pt>
 File: imagenes/drr_aug.png Graphic file (type png)
 <use imagenes/drr_aug.png>
 Package luatex.def Info: imagenes/drr_aug.png  used on input line 70.
 (luatex.def)             Requested size: 397.48622pt x 198.74312pt.
  [29<./imagenes/drr_aug.png>] [30] [31] [32]
-<imagenes/autoencoder.png, id=716, 581.17125pt x 470.75874pt>
+<imagenes/autoencoder.png, id=717, 581.17125pt x 470.75874pt>
 File: imagenes/autoencoder.png Graphic file (type png)
 <use imagenes/autoencoder.png>
-Package luatex.def Info: imagenes/autoencoder.png  used on input line 117.
+Package luatex.def Info: imagenes/autoencoder.png  used on input line 119.
 (luatex.def)             Requested size: 174.35272pt x 141.22871pt.
  [33<./imagenes/autoencoder.png>]
-<imagenes/unet.png, id=725, 763.85374pt x 539.01375pt>
+<imagenes/unet.png, id=727, 683.55376pt x 417.56pt>
 File: imagenes/unet.png Graphic file (type png)
 <use imagenes/unet.png>
-Package luatex.def Info: imagenes/unet.png  used on input line 135.
-(luatex.def)             Requested size: 229.15788pt x 161.70537pt.
- [34<./imagenes/unet.png>]
-<imagenes/modelo_red.png, id=734, 1336.995pt x 365.365pt>
+Package luatex.def Info: imagenes/unet.png  used on input line 138.
+(luatex.def)             Requested size: 478.48438pt x 292.29pt.
+
+Overfull \hbox (20.67952pt too wide) in paragraph at lines 138--139
+ [][] 
+ []
+
+[34<./imagenes/unet.png>] [35]
+<imagenes/modelo_red.png, id=743, 1336.995pt x 365.365pt>
 File: imagenes/modelo_red.png Graphic file (type png)
 <use imagenes/modelo_red.png>
 Package luatex.def Info: imagenes/modelo_red.png  used on input line 149.
@@ -1704,53 +1717,62 @@ Overfull \hbox (10.1504pt too wide) in paragraph at lines 149--150
  [][] 
  []
 
-[35] [36<./imagenes/modelo_red.png>] [37] [38]) [39]
-(./sections/5Resultados.tex
-<imagenes/reales.png, id=772, 722.7pt x 578.16pt>
+[36<./imagenes/modelo_red.png>]
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 172
+.
+
+No file TUpcr.fd.
+
+LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 172.
+
+[37] [38]) [39] (./sections/5Resultados.tex
+<imagenes/reales.png, id=780, 722.7pt x 578.16pt>
 File: imagenes/reales.png Graphic file (type png)
 <use imagenes/reales.png>
 Package luatex.def Info: imagenes/reales.png  used on input line 10.
 (luatex.def)             Requested size: 361.3491pt x 289.07928pt.
-<imagenes/generadas.png, id=773, 722.7pt x 578.16pt>
+<imagenes/generadas.png, id=781, 722.7pt x 578.16pt>
 File: imagenes/generadas.png Graphic file (type png)
 <use imagenes/generadas.png>
 Package luatex.def Info: imagenes/generadas.png  used on input line 17.
 (luatex.def)             Requested size: 361.3491pt x 289.07928pt.
  [40<./imagenes/reales.png>]
-<imagenes/aumentadas.png, id=781, 722.7pt x 578.16pt>
+<imagenes/aumentadas.png, id=789, 722.7pt x 578.16pt>
 File: imagenes/aumentadas.png Graphic file (type png)
 <use imagenes/aumentadas.png>
 Package luatex.def Info: imagenes/aumentadas.png  used on input line 24.
 (luatex.def)             Requested size: 361.3491pt x 289.07928pt.
- [41<./imagenes/generadas.png><./imagenes/aumentadas.png>]
-<imagenes/espectro_in.png, id=792, 415.5525pt x 272.01625pt>
+
+[41<./imagenes/generadas.png><./imagenes/aumentadas.png>]
+<imagenes/espectro_in.png, id=800, 415.5525pt x 272.01625pt>
 File: imagenes/espectro_in.png Graphic file (type png)
 <use imagenes/espectro_in.png>
 Package luatex.def Info: imagenes/espectro_in.png  used on input line 41.
 (luatex.def)             Requested size: 217.4601pt x 142.3458pt.
-<imagenes/espectro_target.png, id=793, 415.5525pt x 272.01625pt>
+<imagenes/espectro_target.png, id=801, 415.5525pt x 272.01625pt>
 File: imagenes/espectro_target.png Graphic file (type png)
 <use imagenes/espectro_target.png>
 Package luatex.def Info: imagenes/espectro_target.png  used on input line 49.
 (luatex.def)             Requested size: 217.4601pt x 142.3458pt.
-<imagenes/mascara.png, id=794, 433.62pt x 289.08pt>
+<imagenes/mascara.png, id=802, 433.62pt x 289.08pt>
 File: imagenes/mascara.png Graphic file (type png)
 <use imagenes/mascara.png>
 Package luatex.def Info: imagenes/mascara.png  used on input line 57.
 (luatex.def)             Requested size: 217.4601pt x 144.97632pt.
-<imagenes/espectro_out.png, id=795, 415.5525pt x 272.01625pt>
+<imagenes/espectro_out.png, id=803, 415.5525pt x 272.01625pt>
 File: imagenes/espectro_out.png Graphic file (type png)
 <use imagenes/espectro_out.png>
 Package luatex.def Info: imagenes/espectro_out.png  used on input line 65.
 (luatex.def)             Requested size: 217.4601pt x 142.3458pt.
  [42] [43<./imagenes/espectro_in.png><./imagenes/espectro_target.png><./imagenes
 /mascara.png><./imagenes/espectro_out.png>]
-<imagenes/fase_clean.png, id=811, 348.30125pt x 334.24875pt>
+<imagenes/fase_clean.png, id=819, 348.30125pt x 334.24875pt>
 File: imagenes/fase_clean.png Graphic file (type png)
 <use imagenes/fase_clean.png>
 Package luatex.def Info: imagenes/fase_clean.png  used on input line 88.
 (luatex.def)             Requested size: 226.39313pt x 217.25911pt.
-<imagenes/fase_reverb.png, id=812, 348.30125pt x 334.24875pt>
+<imagenes/fase_reverb.png, id=820, 348.30125pt x 334.24875pt>
 File: imagenes/fase_reverb.png Graphic file (type png)
 <use imagenes/fase_reverb.png>
 Package luatex.def Info: imagenes/fase_reverb.png  used on input line 94.
@@ -1761,63 +1783,63 @@ Overfull \hbox (14.57225pt too wide) in paragraph at lines 86--98
  []
 
 [44<./imagenes/fase_clean.png><./imagenes/fase_reverb.png>]
-<imagenes/iteraciones.png, id=821, 433.62pt x 289.08pt>
+<imagenes/iteraciones.png, id=829, 433.62pt x 289.08pt>
 File: imagenes/iteraciones.png Graphic file (type png)
 <use imagenes/iteraciones.png>
 Package luatex.def Info: imagenes/iteraciones.png  used on input line 109.
 (luatex.def)             Requested size: 390.2544pt x 260.16959pt.
  [45<./imagenes/iteraciones.png>] [46]
-<imagenes/prueba1_SDR.png, id=840, 451.6875pt x 295.1025pt>
+<imagenes/prueba1_SDR.png, id=848, 451.6875pt x 295.1025pt>
 File: imagenes/prueba1_SDR.png Graphic file (type png)
 <use imagenes/prueba1_SDR.png>
 Package luatex.def Info: imagenes/prueba1_SDR.png  used on input line 155.
 (luatex.def)             Requested size: 293.59338pt x 191.81433pt.
-<imagenes/prueba1_SRMR.png, id=841, 462.72874pt x 295.1025pt>
+<imagenes/prueba1_SRMR.png, id=849, 462.72874pt x 295.1025pt>
 File: imagenes/prueba1_SRMR.png Graphic file (type png)
 <use imagenes/prueba1_SRMR.png>
 Package luatex.def Info: imagenes/prueba1_SRMR.png  used on input line 162.
 (luatex.def)             Requested size: 300.77011pt x 191.81433pt.
  [47<./imagenes/prueba1_SDR.png>]
-<imagenes/prueba1_ESTOI.png, id=849, 462.72874pt x 295.1025pt>
+<imagenes/prueba1_ESTOI.png, id=858, 462.72874pt x 295.1025pt>
 File: imagenes/prueba1_ESTOI.png Graphic file (type png)
 <use imagenes/prueba1_ESTOI.png>
 Package luatex.def Info: imagenes/prueba1_ESTOI.png  used on input line 169.
 (luatex.def)             Requested size: 300.77011pt x 191.81433pt.
  [48<./imagenes/prueba1_SRMR.png><./imagenes/prueba1_ESTOI.png>]
-<imagenes/prueba2_SDR.png, id=861, 455.7025pt x 295.1025pt>
+<imagenes/prueba2_SDR.png, id=869, 455.7025pt x 295.1025pt>
 File: imagenes/prueba2_SDR.png Graphic file (type png)
 <use imagenes/prueba2_SDR.png>
 Package luatex.def Info: imagenes/prueba2_SDR.png  used on input line 180.
 (luatex.def)             Requested size: 296.2031pt x 191.81433pt.
-<imagenes/prueba2_SRMR.png, id=862, 456.70625pt x 295.1025pt>
+<imagenes/prueba2_SRMR.png, id=870, 456.70625pt x 295.1025pt>
 File: imagenes/prueba2_SRMR.png Graphic file (type png)
 <use imagenes/prueba2_SRMR.png>
 Package luatex.def Info: imagenes/prueba2_SRMR.png  used on input line 187.
 (luatex.def)             Requested size: 296.85553pt x 191.81433pt.
-<imagenes/prueba2_ESTOI.png, id=863, 466.74374pt x 295.1025pt>
+<imagenes/prueba2_ESTOI.png, id=871, 466.74374pt x 295.1025pt>
 File: imagenes/prueba2_ESTOI.png Graphic file (type png)
 <use imagenes/prueba2_ESTOI.png>
 Package luatex.def Info: imagenes/prueba2_ESTOI.png  used on input line 194.
 (luatex.def)             Requested size: 303.37984pt x 191.81433pt.
  [49<./imagenes/prueba2_SDR.png><./imagenes/prueba2_SRMR.png>] [50<./imagenes/pr
 ueba2_ESTOI.png>]
-<imagenes/cl_impulsos.png, id=877, 722.7pt x 578.16pt>
+<imagenes/cl_impulsos.png, id=885, 722.7pt x 578.16pt>
 File: imagenes/cl_impulsos.png Graphic file (type png)
 <use imagenes/cl_impulsos.png>
 Package luatex.def Info: imagenes/cl_impulsos.png  used on input line 208.
 (luatex.def)             Requested size: 433.62334pt x 346.89867pt.
  [51<./imagenes/cl_impulsos.png>]
-<imagenes/cl_SDR.png, id=887, 387.4475pt x 247.92625pt>
+<imagenes/cl_SDR.png, id=895, 387.4475pt x 247.92625pt>
 File: imagenes/cl_SDR.png Graphic file (type png)
 <use imagenes/cl_SDR.png>
 Package luatex.def Info: imagenes/cl_SDR.png  used on input line 217.
 (luatex.def)             Requested size: 290.5849pt x 185.94423pt.
-<imagenes/cl_SRMR.png, id=888, 380.42125pt x 247.92625pt>
+<imagenes/cl_SRMR.png, id=896, 380.42125pt x 247.92625pt>
 File: imagenes/cl_SRMR.png Graphic file (type png)
 <use imagenes/cl_SRMR.png>
 Package luatex.def Info: imagenes/cl_SRMR.png  used on input line 224.
 (luatex.def)             Requested size: 285.31522pt x 185.94423pt.
-<imagenes/cl_ESTOI.png, id=889, 382.42876pt x 247.92625pt>
+<imagenes/cl_ESTOI.png, id=897, 382.42876pt x 247.92625pt>
 File: imagenes/cl_ESTOI.png Graphic file (type png)
 <use imagenes/cl_ESTOI.png>
 Package luatex.def Info: imagenes/cl_ESTOI.png  used on input line 231.
@@ -1842,19 +1864,10 @@ Overfull \hbox (1.32436pt too wide) in paragraph at lines 153--153
 vot-te. ``Per-for-man-ce Mea-su-re-ment in Blind
  []
 
-[60] [61]
-LaTeX Font Info:    Trying to load font information for TU+pcr on input line 153
-.
-
-No file TUpcr.fd.
-
-LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 153.
-
-[62] (./sections/tr_aumentacion.tex [63
+[60] [61] [62] (./sections/tr_aumentacion.tex [63
 
 ]
-<imagenes/impulso_entrada.png, id=956, 1084.05pt x 361.35pt>
+<imagenes/impulso_entrada.png, id=964, 1084.05pt x 361.35pt>
 File: imagenes/impulso_entrada.png Graphic file (type png)
 <use imagenes/impulso_entrada.png>
 Package luatex.def Info: imagenes/impulso_entrada.png  used on input line 24.
@@ -1865,7 +1878,7 @@ Overfull \hbox (30.01314pt too wide) in paragraph at lines 24--25
  []
 
 [64<./imagenes/impulso_entrada.png>]
-<imagenes/banco_filtros.png, id=964, 1084.05pt x 361.35pt>
+<imagenes/banco_filtros.png, id=972, 1084.05pt x 361.35pt>
 File: imagenes/banco_filtros.png Graphic file (type png)
 <use imagenes/banco_filtros.png>
 Package luatex.def Info: imagenes/banco_filtros.png  used on input line 33.
@@ -1875,7 +1888,7 @@ Overfull \hbox (30.01314pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
-<imagenes/sub_bandas.png, id=966, 1084.05pt x 1084.05pt>
+<imagenes/sub_bandas.png, id=974, 1084.05pt x 1084.05pt>
 File: imagenes/sub_bandas.png Graphic file (type png)
 <use imagenes/sub_bandas.png>
 Package luatex.def Info: imagenes/sub_bandas.png  used on input line 42.
@@ -1886,25 +1899,25 @@ Overfull \hbox (30.01314pt too wide) in paragraph at lines 42--43
  []
 
 [65<./imagenes/banco_filtros.png>] [66<./imagenes/sub_bandas.png>] [67]
-<imagenes/estimacion.png, id=996, 722.7pt x 361.35pt>
+<imagenes/estimacion.png, id=1004, 722.7pt x 361.35pt>
 File: imagenes/estimacion.png Graphic file (type png)
 <use imagenes/estimacion.png>
 Package luatex.def Info: imagenes/estimacion.png  used on input line 66.
 (luatex.def)             Requested size: 325.21199pt x 162.60599pt.
-<imagenes/recorte_ruido.png, id=998, 722.7pt x 361.35pt>
+<imagenes/recorte_ruido.png, id=1006, 722.7pt x 361.35pt>
 File: imagenes/recorte_ruido.png Graphic file (type png)
 <use imagenes/recorte_ruido.png>
 Package luatex.def Info: imagenes/recorte_ruido.png  used on input line 75.
 (luatex.def)             Requested size: 325.21199pt x 162.60599pt.
 
 [68<./imagenes/estimacion.png>]
-<imagenes/banda_aumentada.png, id=1007, 722.7pt x 361.35pt>
+<imagenes/banda_aumentada.png, id=1015, 722.7pt x 361.35pt>
 File: imagenes/banda_aumentada.png Graphic file (type png)
 <use imagenes/banda_aumentada.png>
 Package luatex.def Info: imagenes/banda_aumentada.png  used on input line 84.
 (luatex.def)             Requested size: 325.21199pt x 162.60599pt.
  [69<./imagenes/recorte_ruido.png><./imagenes/banda_aumentada.png>]
-<imagenes/tr_aug.png, id=1016, 1084.05pt x 361.35pt>
+<imagenes/tr_aug.png, id=1024, 1084.05pt x 361.35pt>
 File: imagenes/tr_aug.png Graphic file (type png)
 <use imagenes/tr_aug.png>
 Package luatex.def Info: imagenes/tr_aug.png  used on input line 93.
@@ -1924,7 +1937,7 @@ LaTeX Info: Redefining \% on input line 31.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6F80D3E780522E0E86073A66E070DD33;9878.
+(rerunfilecheck)             Checksum: FA11DC2024A6D0C20FDA03219FC1800A;9881.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1943,31 +1956,32 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 ### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 36268 strings out of 481365
+ 36286 strings out of 481365
  125171,1648299 words of node,token memory allocated
- 1091 words of node memory still in use:
-   9 hlist, 2 vlist, 4 rule, 5 glue, 4 kern, 1 glyph, 110 attribute, 88 glue_spe
-c, 57 attribute_list, 2 write, 8 pdf_action nodes
-   avail lists: 1:3,2:1087,3:147,4:62,5:757,6:52,7:6640,8:55,9:301,10:34,11:846
- 51223 multiletter control sequences out of 65536+600000
- 214 fonts using 26755659 bytes
- 60i,16n,79p,2562b,2273s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 1093 words of node memory still in use:
+   9 hlist, 2 vlist, 4 rule, 7 glue, 4 kern, 1 glyph, 104 attribute, 88 glue_spe
+c, 54 attribute_list, 2 write, 9 pdf_action nodes
+   avail lists: 1:3,2:1087,3:143,4:60,5:757,6:49,7:6638,8:55,9:301,10:35,11:846
+ 51230 multiletter control sequences out of 65536+600000
+ 215 fonts using 26888075 bytes
+ 60i,16n,79p,2570b,2274s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/tex
 live/texmf-dist/fonts/truetype/typoland/carlito/Carlito-Italic.ttf></usr/share/t
-exlive/texmf-dist/fonts/truetype/typoland/carlito/Carlito-BoldItalic.ttf>{/usr/s
-hare/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-di
-st/fonts/truetype/typoland/carlito/Carlito-Regular.ttf></usr/share/texlive/texmf
--dist/fonts/truetype/typoland/carlito/Carlito-Bold.ttf></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/
-usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (78 pages, 3788585 bytes).
+exmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-di
+st/fonts/truetype/typoland/carlito/Carlito-BoldItalic.ttf>{/usr/share/texlive/te
+xmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/truety
+pe/typoland/carlito/Carlito-Regular.ttf></usr/share/texlive/texmf-dist/fonts/tru
+etype/typoland/carlito/Carlito-Bold.ttf></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (78 pages, 3646439 bytes).
 
-PDF statistics: 1091 PDF objects out of 1200 (max. 8388607)
- 900 compressed objects within 9 object streams
+PDF statistics: 1106 PDF objects out of 1200 (max. 8388607)
+ 909 compressed objects within 10 object streams
  251 named destinations out of 1000 (max. 131072)
  376 words of extra memory for PDF output out of 10000 (max. 100000000)
 

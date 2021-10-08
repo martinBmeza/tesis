@@ -1,7 +1,7 @@
 \section[Introducción]{CAPÍTULO 1:$\ \ \ \ $INTRODUCCIÓN} 
 
 \subsection[Fundamentación]{FUNDAMENTACIÓN}
-Las tecnologías que explotan el procesamiento digital de señales de voz mostraron grandes avances en las ultimas décadas, llegando a ocupar roles de primera importancia en nuestro día a día. Las investigaciones realizadas en este campo fueron impulsando diversas aplicaciones basadas en el análisis de la voz humana \cite{fun1}\cite{fun2}. 
+Las tecnologías que explotan el procesamiento digital de señales de voz mostraron grandes avances en las últimas décadas, llegando a ocupar roles de primera importancia en nuestro día a día. Las investigaciones realizadas en este campo fueron impulsando diversas aplicaciones basadas en el análisis de la voz humana \cite{fun1}\cite{fun2}. 
 Estas tareas, en mayor o menor medida, deben lidiar con una característica intrínseca a cualquier emisión sonora dentro de un recinto: la reverberación. Las señales de voz que reciben las aplicaciones anteriormente nombradas por lo general se obtienen a partir de un transductor que no siempre se encuentra cercano a la fuente que desea registrar, provocando que la señal resultante capte la reverberación propia del entorno de origen de la señal. Esta reverberación interfiere en detrimento la señal de voz, produciendo una reducción en el rendimiento de aquellas aplicaciones que dependen de la integridad de dicha señal, como ser: 
 
 \begin{itemize}
@@ -15,7 +15,7 @@ Estas tareas, en mayor o menor medida, deben lidiar con una característica intr
 
 Si bien esta problemática fue abordada desde el enfoque de diversas técnicas de procesamiento de señales, en los últimos años este campo de estudio tuvo grandes avances producto de la implementación de una tecnología emergente de amplio crecimiento en el ambiente científico: los algoritmos de aprendizaje profundo. La capacidad y robustez que esta técnica demostró a la hora de resolver problemas pertinentes al procesamiento de imágenes y detección de patrones frente a los enfoques clásicos la pusieron al frente de las herramientas utilizadas para resolver problemas de este ámbito. Sin embargo, las tareas relacionadas al procesamiento de audio aun son un campo de estudio reciente para estas tecnologías, en donde todavía se presentan obstáculos para lograr una implementación plena de estas técnicas como por ejemplo: la falta de bases de datos masivas de señales acústicas, la selección de una manera de representación óptima de las señales que permita explotar sus características intrínsecas, las maneras de medir el rendimiento de los procesos, entre otros.
 
-Por este motivo, esta investigación pretende realizar un análisis de esta problemática desde el punto de vista de la ingeniería de sonido, para comprender las limitaciones de los modelos actualmente utilizados en este campo de estudio, y poder aportar al progreso y mejora del rendimiento de dichos modelos. 
+Por este motivo, esta investigación pretende realizar un análisis de esta problemática desde el punto de vista de la ingeniería de sonido, para comprender las limitaciones de los modelos actualmente utilizados en este campo de estudio, analizar alternativas posibles a la escasez de datos y poder aportar al progreso y mejora del rendimiento de dichos modelos. 
 
 \subsection[Objetivos]{OBJETIVOS}
 \subsubsection{Objetivo general}
@@ -27,14 +27,14 @@ El objetivo general de esta investigación es implementar un algoritmo de dereve
 \begin{itemize}
     \item Realizar una revisión de las técnicas utilizadas para resolver el problema de dereverberación.
     \item Diseñar e implementar una estructura de red neuronal para dereverberación de señales de voz en lenguaje Python.
-    \item Analizar las técnicas de pre y post procesamiento de datos, estudiando el impacto que tienen en el rendimiento del algoritmo.
-    \item Optimizar el sistema propuesto, y comparar los resultados obtenidos con los modelos actuales de manera objetiva.
-    \item Diseñar e implementar una interfaz gráfica en donde se permita visualizar los efectos del proceso de dereverberación aplicados a una señal particular. 
+    \item Analizar técnicas de pre y post procesamiento de datos, estudiando el impacto que tienen en el rendimiento del algoritmo.
+    \item Optimizar el sistema propuesto, y evaluar los resultados obtenidos de manera objetiva.
+    \item Estudiar y analizar técnicas de generación y aumentación de datos, evaluando el impacto generado en el rendimiento del sistema implementado. 
 \end{itemize}
 
 \subsection[Estructura de la Investigación]{ESTRUCTURA DE LA INVESTIGACIÓN}
 En el capítulo 2 se presenta el estado del arte referido a las técnicas de dereverberación de señales del habla. 
-En el capítulo 3 se detalla el marco teórico necesario para el seguiiento y comprensión de este trabajo. En este se abordan tres temáticas principales: La representación de señales de audio en el dominio espectral mediante la transformada de tiempo corto de Fourier, el concepto de reverberación y su relación con la respuesta al impulso, y por último la aplicación de redes neuronales convolucionales y algoritmos de aprendizaje junto con las principales técnicas de procesamiento.  
-En el capítulo 4 se especifica de manera detallada la metodología seguida a lo largo de este trabajo, brindandose toda la información necesaria para replicar los experimentos realizados. 
-En el capítulo 5 se presentan los resultados de los experimentos y se hace un análisis critico de los mismos. 
-En el capítulo 6 se exponen las conclusiones generales del trabajo, y por último en el capítulo 7 se proponen lineas futuras de investigación relacionadas con el presente trabajo. 
+En el capítulo 3 se detalla el marco teórico necesario para el seguimiento y comprensión de este trabajo. En este se abordan tres temáticas principales: La representación de señales de audio en el dominio espectral mediante la transformada de tiempo corto de Fourier, el concepto de reverberación y su relación con la respuesta al impulso, y por último la aplicación de redes neuronales convolucionales y algoritmos de aprendizaje junto con las principales técnicas de procesamiento.  
+En el capítulo 4 se especifica de manera detallada la metodología seguida a lo largo de este trabajo, y se brinda toda la información necesaria para replicar los experimentos realizados. 
+En el capítulo 5 se presentan los resultados de los experimentos y se hace un análisis crítico de los mismos. 
+En el capítulo 6 se exponen las conclusiones generales del trabajo, y por último en el capítulo 7 se proponen líneas futuras de investigación relacionadas con el presente trabajo. 

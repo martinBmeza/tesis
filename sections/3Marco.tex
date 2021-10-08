@@ -263,42 +263,35 @@ De esta manera, las capas convolucionales permiten construir modelos con menos c
 
 \subsubsection{Máscaras de amplitud}
 
-Entre los numerosos métodos estudiados para abordar la tarea de la dereverberación, en la actualidad el análisis del espectro temporal-frecuencial ha tomado una importancia central debido a la posibilidad de explotar este enfoque utilizando herramientas como son las redes neuronales convolucionales y otros algoritmos de aprendizaje profundo. Partiendo de una señal con reverberación, se extrae una representación en tiempo-frecuencia a partir de transformaciones como la transformada de corto término de Fourier (STFT). Una vez obtenido este espectrograma, lo que se busca es descifrar el proceso necesario para obtener un nuevo espectro que se corresponda con la señal anecoica (descartando el efecto de la reverberación). Entonces, el proceso de dereverberación se puede resumir a la estimación de un filtro variable con el tiempo que se aplica sobre el espectrograma con reverberación. Estudios previos demostraron que la fase no aporta información significativa para estas tareas \cite{fase1}\cite{fase2}, por lo cual se pueden realizar estos procesos únicamente sobre la magnitud de los espectrogramas, descartando la información de fase. Considerando esto, el proceso de dereverberación se reduce a la expresión de la ecuación \ref{eqn:dereverb}, en donde $STFT_{Y}$ es el espectrograma de amplitud la señal anecoica, $STFT_{X}$ es el espectrograma de amplitud de la señal con reverberación y $M$ es la máscara ideal que representa el filtrado en el dominio tiempo-frecuencia. En otras palabras, el espectro de amplitud de la señal dereverberada se obtiene aplicando la máscara ideal sobre el espectro de amplitud con reverberación. 
+Entre los numerosos métodos estudiados para abordar la tarea de la dereverberación, en la actualidad el análisis del espectro temporal-frecuencial ha tomado una importancia central debido a la posibilidad de explotar este enfoque utilizando herramientas como son las redes neuronales convolucionales y otros algoritmos de aprendizaje profundo. Partiendo de una señal con reverberación, se extrae una representación en tiempo-frecuencia a partir de transformaciones como la transformada de corto término de Fourier (STFT). Una vez obtenido este espectrograma, lo que se busca es descifrar el proceso necesario para obtener un nuevo espectro que se corresponda con la señal anecoica (descartando el efecto de la reverberación). Entonces, el proceso de dereverberación se puede resumir a la estimación de un filtro variable con el tiempo que se aplica sobre el espectrograma con reverberación. Estudios previos afirman que la fase no aporta información significativa para estas tareas de mejora del habla \cite{fase1}\cite{fase2}, por lo cual se suelen realizar estos procesos únicamente sobre la magnitud de los espectrogramas, utilizando la información de fase del audio original. Considerando esto, el proceso de dereverberación se reduce a la expresión de la ecuación \ref{eqn:dereverb}, en donde $STFT_{Y}$ es el espectrograma de amplitud la señal anecoica, $STFT_{X}$ es el espectrograma de amplitud de la señal con reverberación y $M$ es la máscara ideal que representa el filtrado en el dominio tiempo-frecuencia. En otras palabras, el espectro de amplitud de la señal dereverberada se obtiene aplicando la máscara ideal sobre el espectro de amplitud con reverberación. 
  
 \begin{equation}
 \label{eqn:dereverb}
 	STFT_{Y}(t,f)= M(t,f) STFT_{X}(t,f) 
 \end{equation}
 
-\begin{equation}
-\label{eqn:dereverb2}
-	M(t,f) =  \frac{STFT_{Y}(t,f)}{STFT_{X}(t,f)} 
-\end{equation}
+Considerando que el espectro reverberado tendrá siempre mayor amplitud que el espectro anecóico, se trasladan los rangos de ambos espectros al intervalo $(0, 1]$. De esta manera, las máscaras resultantes estarán dentro del mismo intervalo. Este proceso de escalado se realiza debido a que es un aspecto necesario para la utilización de redes neuronales artificiales, ya que estos sistemas producen mejores resultados trabajando en estos intervalos \cite{lagartija}. 
+Teniendo esto, las máscaras se pueden estimar a través de la red neuronal. En la figura \ref{fig:red_estim} se muestra un diagrama de como se manejan las entradas para lograr estimar la máscara de manera indirecta. El espectro con reverberación ingresa a la red neuronal artificial, la cual procesa esta entrada y produce una salida intermedia de las mismas dimensiones que la entrada. Luego, esta salida intermedia se multiplica con el espectro de entrada y el resultado es la salida final del sistema que ingresa a la función de costo. Por otro lado, el espectro sin reverberación también ingresa a la función de costo, siendo este el objetivo del aprendizaje del sistema. De esta manera, los pesos de la red neuronal se van a modificar en pos de que la salida del sistema sea lo más semejante posible al espectro sin reverberación. Cuando la diferencia entre los dos espectros que ingresan a la función de costo tienda a cero, la salida intermedia de la red neuronal va a tender a ser igual a la máscara de amplitud buscada. 
 
-Por otro lado, de la ecuación \ref{eqn:dereverb2} se puede inferir que la mascara ideal puede tomar valores en el dominio $[-\infty , +\infty]$. Esto puede ser un contraproducente para la utilización de algoritmos de aprendizaje supervisado, donde lo conveniente es trabajar con instancias acotadas en un rango de valores del dominio $[-1 , +1]$. Para conseguir cambiar el dominio de las máscaras se realiza una compresión de los valores a través de una función tangencial hiperbólica. La misma se expresa en la ecuación \ref{eqn:compresion}, en donde $M^{'}(t,f)$ corresponde a la máscara comprimida. Luego de aplicar esta transformación, el dominio resultante pasa a ser $[-Q , +Q]$. El parámetro $C$ controla la pendiente de la tangente hiperbólica. 
+\begin{figure}[H]
+  \centering{}
+  \includegraphics[scale=0.60]{estimacion_mascara.png}
+  \caption{Disposición de las entradas y salidas del modelo para la estimación de máscaras de amplitud}
+  \label{fig:red_estim}
+\end{figure}
+  
 
-\begin{equation}
-\label{eqn:compresion}
-	M^{'}(t,f) = Q\frac{1-e^{CM(t,f)}}{1+e^{CM(t,f)}}  
-\end{equation}
 
-De igual manera, partiendo de una máscara comprimida se puede recuperar la máscara original a través de la ecuación \ref{eqn:descompresion}. 
-
-\begin{equation}
-\label{eqn:descompresion}
-	M(t,f) = \frac{-1}{C}log(\frac{Q-M^{'}(t,f)}{Q+M^{'}(t,f)})
-\end{equation}
-
-\subsubsection{Sintesis de audio a partir de espectrogramas}
+\subsubsection{Síntesis de audio a partir de espectrogramas}
 
 Para realizar procesamiento de audio a partir de modificar espectros temporales-frecuenciales es necesario poder pasar de información de audio temporal a un dominio temporal-frecuencial (utilizando una transformación como la transformada de corto término de Fourier) y también poder recuperar información de audio partiendo de un espectrograma que ha sido modifcado. Esto último puede ser un problema, porque ciertos procesos pueden generar espectrogramas que no sean consistentes, es decir, que no haya ninguna señal en el dominio temporal que se condiga con el espectrograma generado. Para solucionar esta cuestión se desarrollaron algoritmos que buscan estimar una señal temporal cuyo espectrograma sea el mas cercano posible al espectrograma que se quiere antitransformar. Este es el caso del algoritmo propuesto por Griffin et. al. \cite{griffinlim}. El algoritmo consiste en un bucle iterativo que busca minimizar el error cuadrático medio entre la señal estimada y el espectrograma modificado. En la figura \ref{fig:griffin} se muestra un diagrama de bloques que explica el funcionamiento básico del algoritmo. 
 
 \begin{figure}[H]
   \centering{}
-  \includegraphics[scale=0.40]{griffin.png}
+  \includegraphics[scale=0.45]{griffin.png}
   \caption{Diagrama en bloques del algoritmo de Griffin-Lim.}
   \label{fig:griffin}
 \end{figure}
 
-El espectrograma de entrada $\left | S(w) \right |$ inicialmente se combina con una fase aleatoria para formar un espectrograma complejo. Este se antitransforma obteniendo una señal de audio, la cual vuelve a ser transformada obteniendose un nuevo espectrograma complejo $\left | \hat{S}(w) \right |e^{j\angle \hat{S}(w)}$. Este espectrograma es consistente, pues deriva de la transformación de una señal de audio real. Se puede probar que combinar esta fase resultante $\angle \hat{S}(w)$ con el espectrograma modificado de entrada $\left | S(w) \right |$ disminuye el error cuadrático entre los espectrogramas evaluados (es decir, entre el espectrograma consistente y el inconsistente). De esta manera, este proceso se repite hasta lograr que el error cuadratico medio descienda hasta un cierto valor deseado. Cuando esta condición se cumple, el espectrograma complejo que causa esta condición se antitransforma generando la señal de audio resultante final. 
+El espectrograma de entrada $\left | S(w) \right |$ inicialmente se combina con una fase aleatoria para formar un espectrograma complejo. Si se cuenta con una estimación previa de la fase, puede utilizarse en lugar de la fase aleatoria al iniciar el proceso. Luego, el espectrograma complejo conformado se antitransforma obteniendo una señal de audio, la cual vuelve a ser transformada obteniéndose un nuevo espectrograma complejo $\left | \hat{S}(w) \right |e^{j\angle \hat{S}(w)}$. Este espectrograma es consistente, pues deriva de la transformación de una señal de audio real. Se puede probar que combinar esta fase resultante $\angle \hat{S}(w)$ con el espectrograma modificado de entrada $\left | S(w) \right |$ disminuye el error cuadrático entre los espectrogramas evaluados (es decir, entre el espectrograma consistente y el inconsistente). De esta manera, este proceso se repite hasta lograr que el error cuadrático medio descienda hasta un cierto valor deseado. Cuando esta condición se cumple, el espectrograma complejo que causa esta condición se antitransforma generando la señal de audio resultante final. 
 

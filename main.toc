@@ -41,7 +41,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.5.1}Máscaras de amplitud}{21}{subsubsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.2}Sintesis de audio a partir de espectrogramas}{23}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2}Síntesis de audio a partir de espectrogramas}{23}{subsubsection.3.5.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Metodología}{25}{section.4}%
 \defcounter {refsection}{0}\relax 
@@ -87,6 +87,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Bibliografía}{58}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Anexos}{63}{section*.38}%
+\contentsline {section}{Anexos}{63}{section*.39}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Aumentación de tiempo de reverberación}{63}{appendix.Alph1}%
