@@ -1,19 +1,19 @@
 \section[Introducción]{CAPÍTULO 1:$\ \ \ \ $INTRODUCCIÓN} 
 
 \subsection[Fundamentación]{FUNDAMENTACIÓN}
-Las tecnologías que explotan el procesamiento digital de señales de voz mostraron grandes avances en las últimas décadas, llegando a ocupar roles de primera importancia en nuestro día a día. Las investigaciones realizadas en este campo fueron impulsando diversas aplicaciones basadas en el análisis de la voz humana \cite{fun1}\cite{fun2}. 
-Estas tareas, en mayor o menor medida, deben lidiar con una característica intrínseca a cualquier emisión sonora dentro de un recinto: la reverberación. Las señales de voz que reciben las aplicaciones anteriormente nombradas por lo general se obtienen a partir de un transductor que no siempre se encuentra cercano a la fuente que desea registrar, provocando que la señal resultante capte la reverberación propia del entorno de origen de la señal. Esta reverberación interfiere en detrimento la señal de voz, produciendo una reducción en el rendimiento de aquellas aplicaciones que dependen de la integridad de dicha señal, como ser: 
+Las tecnologías de procesamiento digital de señales de voz mostraron grandes avances en las últimas décadas, llegando a ocupar un rol importante en nuestro día a día. Las investigaciones realizadas en este campo impulsaron diversas aplicaciones basadas en el análisis de la voz humana \cite{fun1}\cite{fun2}. 
+Estas aplicaciones, en mayor o menor medida, deben lidiar con una característica intrínseca a cualquier emisión sonora dentro de un recinto: la reverberación. Esto se debe principalmente a que las señales de voz se obtienen a partir de un transductor que no siempre se encuentra cercano a la fuente que se desea registrar, provocando que la señal registrada contenga la reverberación propia del entorno. Esta reverberación interfiere en con la señal de voz, produciendo una reducción en el rendimiento de aquellas aplicaciones que dependen de la integridad de dicha señal, como por ejemplo: 
 
 \begin{itemize}
     \item Reconocimiento del habla \cite{reconocimiento}
-    \item Verificación del hablante\footnote{Debe distinguirse entre reconocimiento del habla y verificación del hablante. Lo primero refiere a poder distinguir que palabras fueron dichas, y lo segundo refiere a identificar quien es el que esta pronunciando las palabras.} \cite{verificacion}
-    
+    \item Verificación del hablante\footnote{Debe distinguirse entre reconocimiento del habla y verificación del hablante. Lo primero refiere a poder distinguir qué palabras fueron dichas, y lo segundo refiere a identificar quién es el que está pronunciando las palabras.} \cite{verificacion}
+   
     \item Localización del hablante \cite{localizacion}
-    \item Inteligibilidad de la palabra
+    \item Mejora del habla \cite{speech_enhancement}
 \end{itemize}
 
 
-Si bien esta problemática fue abordada desde el enfoque de diversas técnicas de procesamiento de señales, en los últimos años este campo de estudio tuvo grandes avances producto de la implementación de una tecnología emergente de amplio crecimiento en el ambiente científico: los algoritmos de aprendizaje profundo. La capacidad y robustez que esta técnica demostró a la hora de resolver problemas pertinentes al procesamiento de imágenes y detección de patrones frente a los enfoques clásicos la pusieron al frente de las herramientas utilizadas para resolver problemas de este ámbito. Sin embargo, las tareas relacionadas al procesamiento de audio aun son un campo de estudio reciente para estas tecnologías, en donde todavía se presentan obstáculos para lograr una implementación plena de estas técnicas como por ejemplo: la falta de bases de datos masivas de señales acústicas, la selección de una manera de representación óptima de las señales que permita explotar sus características intrínsecas, las maneras de medir el rendimiento de los procesos, entre otros.
+Si bien esta problemática fue abordada desde el enfoque de diversas técnicas de procesamiento de señales, en los últimos años ocurrieron grandes avances producto de la implementación de una tecnología emergente de amplio crecimiento en el ambiente científico: los algoritmos de aprendizaje profundo. La capacidad y robustez de estos métodos a la hora de resolver problemas pertinentes al procesamiento de imágenes y detección de patrones se vio también reflejada en el campo de la dereverberación de habla. Actualmente, los sistemas basados en modelos de aprendizaje profundo representan el estado del arte, tanto en dereverberación del habla como otras tareas de audio, desplazando a enfoques mas clásicos del procesamiento de señales. Sin embargo, aún quedan desafíos por resolver como por ejemplo: la falta de bases de datos masivas de señales acústicas específicas como respuestas al impulso reales, la selección de una representación óptima de las señales que permita explotar sus características intrínsecas, las formas de evaluar y cuantificar el desempeño de los sistemas, entre otros.
 
 Por este motivo, esta investigación pretende realizar un análisis de esta problemática desde el punto de vista de la ingeniería de sonido, para comprender las limitaciones de los modelos actualmente utilizados en este campo de estudio, analizar alternativas posibles a la escasez de datos y poder aportar al progreso y mejora del rendimiento de dichos modelos. 
 
@@ -26,15 +26,15 @@ El objetivo general de esta investigación es implementar un algoritmo de dereve
 
 \begin{itemize}
     \item Realizar una revisión de las técnicas utilizadas para resolver el problema de dereverberación.
-    \item Diseñar e implementar una estructura de red neuronal para dereverberación de señales de voz en lenguaje Python.
+    \item Diseñar e implementar una arquitectura de red neuronal para dereverberación de señales de voz en lenguaje Python.
     \item Analizar técnicas de pre y post procesamiento de datos, estudiando el impacto que tienen en el rendimiento del algoritmo.
     \item Optimizar el sistema propuesto, y evaluar los resultados obtenidos de manera objetiva.
-    \item Estudiar y analizar técnicas de generación y aumentación de datos, evaluando el impacto generado en el rendimiento del sistema implementado. 
+    \item Estudiar y analizar técnicas de generación y aumentación de datos, evaluando su impacto en el desempeño del sistema implementado. 
 \end{itemize}
 
 \subsection[Estructura de la Investigación]{ESTRUCTURA DE LA INVESTIGACIÓN}
 En el capítulo 2 se presenta el estado del arte referido a las técnicas de dereverberación de señales del habla. 
-En el capítulo 3 se detalla el marco teórico necesario para el seguimiento y comprensión de este trabajo. En este se abordan tres temáticas principales: La representación de señales de audio en el dominio espectral mediante la transformada de tiempo corto de Fourier, el concepto de reverberación y su relación con la respuesta al impulso, y por último la aplicación de redes neuronales convolucionales y algoritmos de aprendizaje junto con las principales técnicas de procesamiento.  
+En el capítulo 3 se detalla el marco teórico necesario para el seguimiento y comprensión de este trabajo. En este se abordan tres temáticas principales: la representación de señales de audio en el dominio espectral mediante la transformada de tiempo corto de Fourier, el concepto de reverberación y su relación con la respuesta al impulso, y por último la aplicación de redes neuronales convolucionales y algoritmos de aprendizaje junto con las principales técnicas de procesamiento.  
 En el capítulo 4 se especifica de manera detallada la metodología seguida a lo largo de este trabajo, y se brinda toda la información necesaria para replicar los experimentos realizados. 
 En el capítulo 5 se presentan los resultados de los experimentos y se hace un análisis crítico de los mismos. 
 En el capítulo 6 se exponen las conclusiones generales del trabajo, y por último en el capítulo 7 se proponen líneas futuras de investigación relacionadas con el presente trabajo. 

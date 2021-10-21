@@ -6,7 +6,7 @@
 
 \begin{abstract}
 
-En este trabajo se estudia la dereverberación de señales de habla a partir de algoritmos de aprendizaje profundo. Se implementa un sistema de red neuronal convolucional tipo autoencoder con conexiones de salto, combinando técnicas del estado del arte actual. El sistema implementado se utiliza para estimar máscaras de amplitud que realicen la dereverberación del habla en el dominio de la transformada de tiempo corto de Fourier. Con esto, se estudian técnicas de generación y aumentación de datos para brindar una solución al problema de la escasez de bases de datos para esta tarea. Además, se evalúa el impacto del ordenamiento de los datos de entrenamiento. Estas configuraciones se evalúan utilizando métricas objetivas. Los resultados indican que las técnicas de generación y aumentación de datos son eficaces para mejorar el rendimiento final del sistema. Lo mismo ocurrió para el ordenamiento de los datos, donde se logró demostrar su influencia en el entrenamiento del sistema. Por último se proponen mejoras al enfoque utilizado, y otras líneas futuras de investigación de interés.
+En este trabajo se estudia la dereverberación de señales de habla a partir de algoritmos de aprendizaje profundo. Se implementa una de red neuronal convolucional tipo autoencoder con conexiones de salto, basada en el estado del arte actual, para estimar máscaras de amplitud que realicen la dereverberación del habla en el dominio de la transformada de tiempo corto de Fourier. Uno de los problemas de esta tarea es la escasa cantidad de datos disponibles, por lo que se analizan técnicas de generación y aumentación de datos, evaluando su impacto en el desempeño del sistema. Además, se evalúa el efecto que tiene el ordenamiento de los datos de entrenamiento y el tratamiento de la información de fase. Los resultados indican que las técnicas de generación y aumentación de datos permiten mejorar el rendimiento final del sistema. A su vez, ordenar los datos de entrenamiento con un tiempo de reverberación creciente tuvo un impacto positivo en las métricas de evaluación. Por último, se proponen mejoras al enfoque utilizado, y líneas futuras de investigación.
 
 \vspace{14pt}
 
@@ -18,7 +18,7 @@ En este trabajo se estudia la dereverberación de señales de habla a partir de 
 \renewcommand{\abstractname}{\normalfont\fontsize{16}{18}\bfseries SUMMARY\vspace{14pt}}
 \begin{abstract}
 
-In this work deep learning based speech dereverberation  is studied. A type of convolutional neural network called autoencoder with jump connections is implemented, combining techniques of the current state of the art. The implemented system is used to estimate amplitude masks that perform speech dereverberation in the domain of the short Fourier time transform. Then, data generation and augmentation techniques are studied to solve the databases lack problem for this task. In addition, the impact of the ordering of the training data is evaluated. These configurations are evaluated using objective metrics. The results indicate that data generation and augmentation techniques are effective in improving the final performance of the system. The same happened for the ordering of the data, where the results were able to demonstrate its influence on the training of the system. Finally, improvements to the used approach are proposed, as well as other future lines of research of interest.  
+...  
 
 \vspace{14pt}
 
