@@ -772,6 +772,38 @@
     \field{year}{2017}
   \endentry
 
+  \entry{rir_filtinverso}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CH}{%
+         family={Chung},
+         familyi={C\bibinitperiod},
+         given={Hanwook},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TVS}{%
+         family={Tomar},
+         familyi={T\bibinitperiod},
+         given={Vikrant\bibnamedelima Singh},
+         giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Champagne},
+         familyi={C\bibinitperiod},
+         given={Benoit},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CHTVSCB1}
+    \strng{fullhash}{CHTVSCB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Deep convolutional neural network-based inverse filtering
+  approach for speech de-reverberation}
+    \field{journaltitle}{IEE International Workshop on Machine Learning for
+  Signal Processing}
+    \field{year}{2020}
+  \endentry
+
   \entry{RNN}{article}{}
     \name{author}{4}{}{%
       {{hash=WF}{%
@@ -890,6 +922,55 @@
     \field{journaltitle}{22nd International Conference on Digital Signal
   Processing}
     \field{year}{2017}
+  \endentry
+
+  \entry{skip}{article}{}
+    \name{author}{6}{}{%
+      {{hash=KV}{%
+         family={Kothapally},
+         familyi={K\bibinitperiod},
+         given={Vinay},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=XW}{%
+         family={Xia},
+         familyi={X\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghorbani},
+         familyi={G\bibinitperiod},
+         given={Shahram},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HJH}{%
+         family={Hansen},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima H.L.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=XW}{%
+         family={Xue},
+         familyi={X\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KV+1}
+    \strng{fullhash}{KVXWGSHJHXWHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{SkipConvNet: Skip Convolutional Neural Network for Speech
+  Dereverberation using Optimally Smoothed Spectral Mapping}
+    \field{journaltitle}{Proc. Interspeech}
+    \field{year}{2020}
   \endentry
 
   \entry{hifiGAN}{article}{}
@@ -1186,31 +1267,6 @@
     \field{year}{2006}
   \endentry
 
-  \entry{ANN_intro}{article}{}
-    \name{author}{2}{}{%
-      {{hash=BI}{%
-         family={Basheer},
-         familyi={B\bibinitperiod},
-         given={I.A.},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=HM}{%
-         family={Hajmeer},
-         familyi={H\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BIHM1}
-    \strng{fullhash}{BIHM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Artificial neural networks: fundamentals, computing, design,
-  and application}
-    \field{journaltitle}{Journal of Microbiological Methods}
-    \field{year}{2000}
-  \endentry
-
   \entry{neurona}{article}{}
     \name{author}{3}{}{%
       {{hash=LC}{%
@@ -1239,6 +1295,31 @@
     \field{title}{A Logical Calculus of Ideas Immanent in Nervous Activity}
     \field{journaltitle}{Bulletin of Mathematical Biophysics}
     \field{year}{1943}
+  \endentry
+
+  \entry{ANN_intro}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BI}{%
+         family={Basheer},
+         familyi={B\bibinitperiod},
+         given={I.A.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hajmeer},
+         familyi={H\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BIHM1}
+    \strng{fullhash}{BIHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Artificial neural networks: fundamentals, computing, design,
+  and application}
+    \field{journaltitle}{Journal of Microbiological Methods}
+    \field{year}{2000}
   \endentry
 
   \entry{dragon}{book}{}
@@ -1322,6 +1403,125 @@
     \field{journaltitle}{Proceedings of the 26thInternational Confer-ence on
   Machine Learning}
     \field{year}{2009}
+  \endentry
+
+  \entry{drop}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SN}{%
+         family={Srivastava},
+         familyi={S\bibinitperiod},
+         given={Nitish},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SNHG1}
+    \strng{fullhash}{SNHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Dropout: A Simple Way to Prevent Neural Networks from
+  Over-fitting}
+    \field{journaltitle}{Journal of Machine Learning Research}
+    \field{year}{2014}
+  \endentry
+
+  \entry{bengio}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The MIT Press}%
+    }
+    \strng{namehash}{GIBYCA1}
+    \strng{fullhash}{GIBYCA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{DEEP LEARNING}
+    \field{year}{2016}
+  \endentry
+
+  \entry{batchnorm}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IS}{%
+         family={Ioffe},
+         familyi={I\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ISSC1}
+    \strng{fullhash}{ISSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Batch Normalization: Accelerating Deep Network Training by
+  Reducing Internal Covariate Shift}
+    \field{journaltitle}{International Conference on Machine Learning}
+    \field{year}{2015}
+  \endentry
+
+  \entry{animales}{article}{}
+    \name{author}{4}{}{%
+      {{hash=EM}{%
+         family={Eickenberg},
+         familyi={E\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gramfort},
+         familyi={G\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Varoquaux},
+         familyi={V\bibinitperiod},
+         given={Gaël},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Thirion},
+         familyi={T\bibinitperiod},
+         given={Bertrand},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EM+1}
+    \strng{fullhash}{EMGAVGTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Seeing it all: Convolutional network layers map the function
+  of the human visual system}
+    \field{journaltitle}{NeuroImage}
+    \field{year}{2017}
   \endentry
 
   \entry{fase1}{article}{}
@@ -1580,6 +1780,44 @@
     \field{year}{2015}
   \endentry
 
+  \entry{DAE}{article}{}
+    \name{author}{4}{}{%
+      {{hash=VP}{%
+         family={Vincent},
+         familyi={V\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Larochelle},
+         familyi={L\bibinitperiod},
+         given={Hugo},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MPA}{%
+         family={Manzagol},
+         familyi={M\bibinitperiod},
+         given={Pierre-Antoine},
+         giveni={P\bibinithyphendelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VP+2}
+    \strng{fullhash}{VPLHBYMPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Extracting and Composing Robust Features with Denoising
+  Autoencoders}
+    \field{journaltitle}{Proceedings of the 25th international conference on
+  Machine learning}
+    \field{year}{2008}
+  \endentry
+
   \entry{mask_vs_map}{article}{}
     \name{author}{3}{}{%
       {{hash=WY}{%
@@ -1610,6 +1848,146 @@
     \field{year}{2014}
   \endentry
 
+  \entry{checkerboard}{article}{}
+    \name{author}{6}{}{%
+      {{hash=AA}{%
+         family={Aitken},
+         familyi={A\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Ledig},
+         familyi={L\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TL}{%
+         family={Theis},
+         familyi={T\bibinitperiod},
+         given={Lucas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Caballero},
+         familyi={C\bibinitperiod},
+         given={Jose},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Zehan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Wenzhe},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AA+1}
+    \strng{fullhash}{AALCTLCJWZSW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Checkerboard artifact free sub-pixel convolution}
+    \field{journaltitle}{ArXiv - Computer Science}
+    \field{year}{2017}
+  \endentry
+
+  \entry{check1}{article}{}
+    \name{author}{8}{}{%
+      {{hash=WS}{%
+         family={W.},
+         familyi={W\bibinitperiod},
+         given={Shi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JC}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Caballero},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={F.},
+         familyi={F\bibinitperiod},
+         given={Huszar},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=JT}{%
+         family={J.},
+         familyi={J\bibinitperiod},
+         given={Totz},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={A.P.},
+         familyi={A\bibinitperiod},
+         given={Aitken},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RB}{%
+         family={R.},
+         familyi={R\bibinitperiod},
+         given={Bishop},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DR}{%
+         family={D.},
+         familyi={D\bibinitperiod},
+         given={Rueckert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Z.},
+         familyi={Z\bibinitperiod},
+         given={Wang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WS+1}
+    \strng{fullhash}{WSJCFHJTAARBDRZW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Real-time single image and video super-resolution using an
+  efficient sub-pixel convolutional neural network}
+    \field{journaltitle}{Proceedings of the IEEE Conference on Computer Vision
+  and Pattern Recognition}
+    \field{year}{2016}
+  \endentry
+
+  \entry{check2}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CD}{%
+         family={C.},
+         familyi={C\bibinitperiod},
+         given={Dong},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={C.C.},
+         familyi={C\bibinitperiod},
+         given={Loy},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={K.},
+         familyi={K\bibinitperiod},
+         given={He},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CDCLKH1}
+    \strng{fullhash}{CDCLKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Image super-resolution using deep convolutional networks}
+    \field{journaltitle}{International Conference on Intelligent Computing}
+    \field{year}{2014}
+  \endentry
+
   \entry{adam}{article}{}
     \name{author}{2}{}{%
       {{hash=PKD}{%
@@ -1634,12 +2012,166 @@
     \field{year}{2014}
   \endentry
 
+  \entry{cl1}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GKJ}{%
+         family={Geras},
+         familyi={G\bibinitperiod},
+         given={Krzysztof\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Sutton},
+         familyi={S\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GKJSC1}
+    \strng{fullhash}{GKJSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Scheduled denoising autoencoders}
+    \field{journaltitle}{International Conference on Learning Representations}
+    \field{year}{2015}
+  \endentry
+
+  \entry{cl2}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZS}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Siqi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Gang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Suo},
+         familyi={S\bibinitperiod},
+         given={Hongbin},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lei},
+         familyi={L\bibinitperiod},
+         given={Yun},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZS+1}
+    \strng{fullhash}{ZSLGSHLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Autoencoder-based Semi-Supervised Curriculum Learning For
+  Out-of-domain Speaker Verification}
+    \field{journaltitle}{Proc. Interspeech}
+    \field{year}{2019}
+  \endentry
+
   \entry{repo}{misc}{}
     \field{labeltitlesource}{title}
     \field{howpublished}{\url{https://github.com/martinBmeza/deep-dereverb}}
     \field{note}{Extraido el 6 de Octubre de 2021}
     \field{title}{{Martin Bernardo Meza,} Repositorio del trabajo
-  "Dereverberación del habla a partir de algoritmos de aprendizaje profundo"}
+  ``Dereverberación del habla a partir de algoritmos de aprendizaje profundo"}
+  \endentry
+
+  \entry{phase_book}{book}{}
+    \name{author}{1}{}{%
+      {{hash=OD}{%
+         family={O’Shaughnessy},
+         familyi={O\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Press}%
+    }
+    \strng{namehash}{OD1}
+    \strng{fullhash}{OD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Speech Communications: Human and Machine}
+    \field{year}{1987}
+  \endentry
+
+  \entry{unphase}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WD}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Deliang},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LJS}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={Jae\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WDLJS1}
+    \strng{fullhash}{WDLJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The unimportance of phase in speech enhancement}
+    \field{journaltitle}{IEEE Transactions on Acoustics, Speech, and Signal
+  Processing}
+    \field{year}{1982}
+  \endentry
+
+  \entry{phaseaware}{article}{}
+    \name{author}{6}{}{%
+      {{hash=CHS}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Hyeong-Seok},
+         giveni={H\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=KJH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jang-Hyun},
+         giveni={J\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huh},
+         familyi={H\bibinitperiod},
+         given={Jaesung},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HJW}{%
+         family={Ha},
+         familyi={H\bibinitperiod},
+         given={Jung-Woo},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kyogu},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CHS+1}
+    \strng{fullhash}{CHSKJHHJKAHJWLK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Phase-aware speech enhancement with deep complex U-net}
+    \field{journaltitle}{International Conference on Learning Representations}
+    \field{year}{2019}
   \endentry
 
   \entry{sdr_fail}{article}{}

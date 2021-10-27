@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.8.6)  29 SEP 2021 20:45
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.8.6)  25 OCT 2021 03:51
  restricted system commands enabled.
 **5Resultados.tex
 (./5Resultados.tex
@@ -64,7 +64,7 @@ Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 . L3 programming layer <2020-02-14>
 ! Undefined control sequence.
 l.1 \section
-          {Resultados y Discusiones}
+          [Resultados y Discusiones]{CAPÍTULO 5:$\ \ \ \ $RESULTADOS Y DISC...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -78,14 +78,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \section{R
-            esultados y Discusiones}
+l.1 \section[
+           Resultados y Discusiones]{CAPÍTULO 5:$\ \ \ \ $RESULTADOS Y DISC...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+\citation{repo}
+luaotfload | db : Font names database loaded from /home/martin/.texlive2019/texm
+f-var/luatex-cache/generic-dev/names/luaotfload-names.luc
 ! Undefined control sequence.
-l.2 \subsection
-             {Bases de datos de respuestas al impulso}
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.2 ...su correspondiente documentación \cite{repo}
+                                                  .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -93,8 +102,42 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
+LaTeX Warning: Citation `repo' on page  undefined on input line 2.
+
+
 Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
-[]Resultados
+[][Resultados
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 1--3
+[[]]. 
+ []
+
+! Undefined control sequence.
+l.4 \subsection
+             [Bases de datos de respuestas al impulso]{BASES DE DATOS DE RES...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \subsection[
+              Bases de datos de respuestas al impulso]{BASES DE DATOS DE RES...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+[][Bases
  []
 
 
@@ -104,21 +147,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 P
+l.6 P
    ara tener una medida de la variedad de reverberación presente en los con...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
-luaotfload | db : Font names database loaded from /home/martin/.texlive2019/texm
-f-var/luatex-cache/generic-dev/names/luaotfload-names.luc
 ! Undefined control sequence.
 <write> ... Reference `fig:cloud_reales' on page \thepage 
                                                   \space undefined\on@line .
-l.4 ... $DRR$. En las figuras \ref{fig:cloud_reales}
+l.6 ... $DRR$. En las figuras \ref{fig:cloud_reales}
                                                   , \ref{fig:cloud_generadas...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -127,12 +164,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:cloud_reales' on page  undefined on input line 4.
+LaTeX Warning: Reference `fig:cloud_reales' on page  undefined on input line 6.
 
 ! Undefined control sequence.
 <write> ...ference `fig:cloud_generadas' on page \thepage 
                                                   \space undefined\on@line .
-l.4 ...{fig:cloud_reales}, \ref{fig:cloud_generadas}
+l.6 ...{fig:cloud_reales}, \ref{fig:cloud_generadas}
                                                   , y \ref{fig:cloud_aumenta...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -142,12 +179,12 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:cloud_generadas' on page  undefined on input line 
-4.
+6.
 
 ! Undefined control sequence.
 <write> ...erence `fig:cloud_aumentadas' on page \thepage 
                                                   \space undefined\on@line .
-l.4 ...loud_generadas}, y \ref{fig:cloud_aumentadas}
+l.6 ...loud_generadas}, y \ref{fig:cloud_aumentadas}
                                                    se muestran los parámetr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -157,35 +194,35 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:cloud_aumentadas' on page  undefined on input line
- 4.
+ 6.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
 []Para
  []
 
 
-Overfull \hbox (31.07166pt too wide) in paragraph at lines 4--5
-\OML/cmm/m/it/10 TR[]id$
+Overfull \hbox (29.41382pt too wide) in paragraph at lines 6--7
+\OML/cmm/m/it/10 TR[]$
  []
 
 
-Overfull \hbox (23.89725pt too wide) in paragraph at lines 4--5
+Overfull \hbox (23.89725pt too wide) in paragraph at lines 6--7
 \OML/cmm/m/it/10 DRR$\nullfont .
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 4--5
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 6--7
 [],
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 4--5
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 6--7
 [],
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 4--5
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 6--7
 []
  []
 
@@ -196,7 +233,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \begin{figure}
+l.8 \begin{figure}
                 [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -209,14 +246,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.6 \begin{figure}[
+l.8 \begin{figure}[
                  H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.8 	\includegraphics
-                   [scale=0.5]{reales.png}
+l.10 	\includegraphics
+                    [scale=0.5]{reales.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -230,8 +267,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 	\caption
-           {Conjunto de respuestas al impulso reales.}
+l.11 	\caption
+            {Conjunto de respuestas al impulso reales.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -242,14 +279,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 \end{figure}
+l.13 \end{figure}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 6--12
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--14
 [][H]
  []
 
@@ -260,7 +297,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 \begin{figure}
+l.15 \begin{figure}
                  [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -273,13 +310,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 \begin{figure}[
+l.15 \begin{figure}[
                   H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.15 	\includegraphics
+l.17 	\includegraphics
                     [scale=0.5]{generadas.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -294,7 +331,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.16 	\caption
+l.18 	\caption
             {Conjunto de respuestas al impulso generadas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -306,14 +343,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 \end{figure}
+l.20 \end{figure}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 13--19
+Overfull \hbox (20.0pt too wide) in paragraph at lines 15--21
 [][H]
  []
 
@@ -324,7 +361,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 \begin{figure}
+l.22 \begin{figure}
                  [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -337,13 +374,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 \begin{figure}[
+l.22 \begin{figure}[
                   H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.22 	\includegraphics
+l.24 	\includegraphics
                     [scale=0.5]{aumentadas.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -358,7 +395,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 	\caption
+l.25 	\caption
             {Conjunto de respuestas al impulso aumentadas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -370,14 +407,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \end{figure}
+l.27 \end{figure}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 20--26
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--28
 [][H]
  []
 
@@ -388,7 +425,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 D
+l.29 D
     el análisis de estos conjuntos utilizando como medida la relación dire...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -396,7 +433,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <write> ... Reference `fig:cloud_reales' on page \thepage 
                                                   \space undefined\on@line .
-l.27 ... reales, en la figura \ref{fig:cloud_reales}
+l.29 ... reales, en la figura \ref{fig:cloud_reales}
                                                    se pueden distinguir tres...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -405,13 +442,35 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:cloud_reales' on page  undefined on input line 27.
+LaTeX Warning: Reference `fig:cloud_reales' on page  undefined on input line 29.
 
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 29--30
+[]Del
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 29--30
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 L
+    as variaciones de ambos parámetros acústicos ocurren debido a las dife...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 <write> ...ference `fig:cloud_generadas' on page \thepage 
                                                   \space undefined\on@line .
-l.27 ...stran en la figura \ref{fig:cloud_generadas}
+l.33 ...stran en la figura \ref{fig:cloud_generadas}
                                                   . Si bien en este caso se ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -421,12 +480,12 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:cloud_generadas' on page  undefined on input line 
-27.
+33.
 
 ! Undefined control sequence.
 <write> ...erence `fig:cloud_aumentadas' on page \thepage 
                                                   \space undefined\on@line .
-l.27 ...erva en la figura \ref{fig:cloud_aumentadas}
+l.33 ...erva en la figura \ref{fig:cloud_aumentadas}
                                                   . A primera vista se obser...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -436,64 +495,101 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:cloud_aumentadas' on page  undefined on input line
- 27.
+ 33.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 27--28
-[]Del
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--34
+[]Las
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 27--28
-[]
+Overfull \hbox (25.55563pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 97 \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (23.2917pt too wide) in paragraph at lines 27--28
-\OT1/cmr/m/n/10 10\OML/cmm/m/it/10 dB$
+Overfull \hbox (22.46533pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 03\OML/cmm/m/it/10 s$\nullfo
+nt ,
  []
 
 
-Overfull \hbox (9.68752pt too wide) in paragraph at lines 27--28
-\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 s$
+Overfull \hbox (25.55563pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 46 \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (17.46532pt too wide) in paragraph at lines 27--28
-\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 8\OML/cmm/m/it/10 s$\nullfon
-t .
+Overfull \hbox (22.46533pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 06\OML/cmm/m/it/10 s$
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 27--28
+Overfull \hbox (25.55563pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 14 \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (22.46533pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 04\OML/cmm/m/it/10 s$\nullfo
+nt .
+ []
+
+
+Overfull \hbox (23.2917pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 15\OML/cmm/m/it/10 dB$\nullfont ,
+ []
+
+
+Overfull \hbox (23.2917pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 11\OML/cmm/m/it/10 dB$
+ []
+
+
+Overfull \hbox (23.2917pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 16\OML/cmm/m/it/10 dB$
+ []
+
+
+Overfull \hbox (22.46533pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 97\OML/cmm/m/it/10 s$
+ []
+
+
+Overfull \hbox (22.46533pt too wide) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 14\OML/cmm/m/it/10 s$\nullfo
+nt .
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 33--34
 [].
  []
 
 
-Overfull \hbox (17.46532pt too wide) in paragraph at lines 27--28
+Overfull \hbox (17.46532pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 s$\nullfon
 t ,
  []
 
 
-Overfull \hbox (22.46533pt too wide) in paragraph at lines 27--28
+Overfull \hbox (22.46533pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 75\OML/cmm/m/it/10 s$
  []
 
 
-Overfull \hbox (17.46532pt too wide) in paragraph at lines 27--28
+Overfull \hbox (17.46532pt too wide) in paragraph at lines 33--34
 \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 s$\nullfon
 t )
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 27--28
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 33--34
 [].
  []
 
 ! Undefined control sequence.
-l.33 \subsection
-              {Funcionamiento del sistema}
+l.39 \subsection
+              [Análisis cualitativo del sistema]{ANÁLISIS CUALITATIVO DEL ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -507,15 +603,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.33 \subsection{F
-                uncionamiento del sistema}
+l.39 \subsection[
+               Análisis cualitativo del sistema]{ANÁLISIS CUALITATIVO DEL ...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 <write> ...ce `fig:mean and std of nets' on page \thepage 
                                                   \space undefined\on@line .
-l.34 En la figura \ref{fig:mean and std of nets}
+l.40 En la figura \ref{fig:mean and std of nets}
                                                se muestra una instancia de e...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -525,7 +621,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:mean and std of nets' on page  undefined on input 
-line 34.
+line 40.
 
 
 ! LaTeX Error: Environment figure undefined.
@@ -534,7 +630,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 \begin{figure}
+l.41 \begin{figure}
                  [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -547,7 +643,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37         \begin{subfigure}
+l.43         \begin{subfigure}
                             [b]{0.475\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -556,7 +652,7 @@ or  <return>  to continue without it.
 ! Missing number, treated as zero.
 <to be read again> 
 }
-l.37         \begin{subfigure}[b]{0.475\textwidth}
+l.43         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -565,7 +661,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.37         \begin{subfigure}[b]{0.475\textwidth}
+l.43         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -575,7 +671,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.39             \includegraphics
+l.45             \includegraphics
                                [width=\textwidth]{espectro_in.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -586,7 +682,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.39             \includegraphics[width=\textwidth]
+l.45             \includegraphics[width=\textwidth]
                                                  {espectro_in.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -595,7 +691,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.39             \includegraphics[width=\textwidth]
+l.45             \includegraphics[width=\textwidth]
                                                  {espectro_in.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -607,13 +703,13 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
 $
-l.39 ...\includegraphics[width=\textwidth]{espectro_
+l.45 ...\includegraphics[width=\textwidth]{espectro_
                                                   in.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.39 ...egraphics[width=\textwidth]{espectro_in.png}
+l.45 ...egraphics[width=\textwidth]{espectro_in.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -628,13 +724,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40             \caption
+l.46             \caption
                        [Network2]%
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.41             {{\small
+l.47             {{\small
                         Espectrograma reverberado}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -649,7 +745,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.43         \end{subfigure}
+l.49         \end{subfigure}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -658,7 +754,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.43         \end{subfigure}
+l.49         \end{subfigure}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -669,7 +765,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.43         \end{subfigure}
+l.49         \end{subfigure}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -684,7 +780,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45         \begin{subfigure}
+l.51         \begin{subfigure}
                             [b]{0.475\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -693,7 +789,7 @@ or  <return>  to continue without it.
 ! Missing number, treated as zero.
 <to be read again> 
 }
-l.45         \begin{subfigure}[b]{0.475\textwidth}
+l.51         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -702,7 +798,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.45         \begin{subfigure}[b]{0.475\textwidth}
+l.51         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -712,7 +808,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.47             \includegraphics
+l.53             \includegraphics
                                [width=\textwidth]{espectro_target.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -723,7 +819,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.47             \includegraphics[width=\textwidth]
+l.53             \includegraphics[width=\textwidth]
                                                  {espectro_target.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -732,7 +828,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.47             \includegraphics[width=\textwidth]
+l.53             \includegraphics[width=\textwidth]
                                                  {espectro_target.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -744,13 +840,13 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
 $
-l.47 ...\includegraphics[width=\textwidth]{espectro_
+l.53 ...\includegraphics[width=\textwidth]{espectro_
                                                   target.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.47 ...phics[width=\textwidth]{espectro_target.png}
+l.53 ...phics[width=\textwidth]{espectro_target.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -765,13 +861,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48             \caption
+l.54             \caption
                        []%
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.49             {{\small
+l.55             {{\small
                         Espectrograma anecoico}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -786,7 +882,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.51         \end{subfigure}
+l.57         \end{subfigure}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -795,7 +891,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.51         \end{subfigure}
+l.57         \end{subfigure}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -806,7 +902,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.51         \end{subfigure}
+l.57         \end{subfigure}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -815,23 +911,23 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 33--52
- []Funcionamiento 
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--58
+ [][Análisis 
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 33--52
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 39--58
  [] 
  []
 
 
-Overfull \hbox (201.156pt too wide) in paragraph at lines 33--52
+Overfull \hbox (201.156pt too wide) in paragraph at lines 39--58
  [width=]espectro$[][]\OML/cmm/m/it/10 n:png\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 N
 etwork\OT1/cmr/m/n/10 2][][]$ 
  []
 
 
-Overfull \hbox (158.40492pt too wide) in paragraph at lines 33--52
+Overfull \hbox (158.40492pt too wide) in paragraph at lines 39--58
  [width=]espectro$[][]\OML/cmm/m/it/10 arget:png\OT1/cmr/m/n/10 [][][]$ 
  []
 
@@ -842,7 +938,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53         \begin{subfigure}
+l.59         \begin{subfigure}
                             [b]{0.475\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -855,7 +951,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53         \begin{subfigure}[
+l.59         \begin{subfigure}[
                              b]{0.475\textwidth}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -863,7 +959,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing number, treated as zero.
 <to be read again> 
 }
-l.53         \begin{subfigure}[b]{0.475\textwidth}
+l.59         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -872,7 +968,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.53         \begin{subfigure}[b]{0.475\textwidth}
+l.59         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -882,7 +978,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.55             \includegraphics
+l.61             \includegraphics
                                [width=\textwidth]{mascara.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -893,7 +989,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.55             \includegraphics[width=\textwidth]
+l.61             \includegraphics[width=\textwidth]
                                                  {mascara.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -902,7 +998,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.55             \includegraphics[width=\textwidth]
+l.61             \includegraphics[width=\textwidth]
                                                  {mascara.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -918,13 +1014,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56             \caption
+l.62             \caption
                        []%
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.57             {{\small
+l.63             {{\small
                         Mascara estimada por la red}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -939,7 +1035,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         \end{subfigure}
+l.65         \end{subfigure}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -952,7 +1048,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.61         \begin{subfigure}
+l.67         \begin{subfigure}
                             [b]{0.475\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -961,7 +1057,7 @@ or  <return>  to continue without it.
 ! Missing number, treated as zero.
 <to be read again> 
 }
-l.61         \begin{subfigure}[b]{0.475\textwidth}
+l.67         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -970,7 +1066,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.61         \begin{subfigure}[b]{0.475\textwidth}
+l.67         \begin{subfigure}[b]{0.475\textwidth}
                                                 
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -980,7 +1076,7 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.63             \includegraphics
+l.69             \includegraphics
                                [width=\textwidth]{espectro_out.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -991,7 +1087,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.63             \includegraphics[width=\textwidth]
+l.69             \includegraphics[width=\textwidth]
                                                  {espectro_out.png}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1000,7 +1096,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.63             \includegraphics[width=\textwidth]
+l.69             \includegraphics[width=\textwidth]
                                                  {espectro_out.png}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1012,13 +1108,13 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
 $
-l.63 ...\includegraphics[width=\textwidth]{espectro_
+l.69 ...\includegraphics[width=\textwidth]{espectro_
                                                   out.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.63 ...graphics[width=\textwidth]{espectro_out.png}
+l.69 ...graphics[width=\textwidth]{espectro_out.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1033,13 +1129,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64             \caption
+l.70             \caption
                        []%
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.65             {{\small
+l.71             {{\small
                         Espectrograma dereverberado}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1054,7 +1150,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67         \end{subfigure}
+l.73         \end{subfigure}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1063,7 +1159,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.67         \end{subfigure}
+l.73         \end{subfigure}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1074,7 +1170,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.67         \end{subfigure}
+l.73         \end{subfigure}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1089,13 +1185,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68         \caption
+l.74         \caption
                    [ The average and standard deviation of critical paramete...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.69         {\small
+l.75         {\small
                    Ejemplo de procesamiento de audio reverberado}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1110,14 +1206,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71     \end{figure}
+l.77     \end{figure}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (170.49036pt too wide) in paragraph at lines 53--72
+Overfull \hbox (170.49036pt too wide) in paragraph at lines 59--78
 [width=]espectro$[][]\OML/cmm/m/it/10 ut:png\OT1/cmr/m/n/10 [][][]$
  []
 
@@ -1128,59 +1224,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 S
-    e puede observar que el aprendizaje de la red neuronal desemboca en la g...
+l.79 S
+    e puede observar en el ejemplo de la figura \ref{fig:mean and std of net...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+! Undefined control sequence.
+<write> ...ce `fig:mean and std of nets' on page \thepage 
+                                                  \space undefined\on@line .
+l.79 ... de la figura \ref{fig:mean and std of nets}
+                                                  , que efectivamente, el mo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 73--74
+
+LaTeX Warning: Reference `fig:mean and std of nets' on page  undefined on input 
+line 79.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--82
 []Se
  []
 
-! Undefined control sequence.
-l.79 \subsection
-              {Reconstrucción de audios dereverberados}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 \subsection{R
-                econstrucción de audios dereverberados}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<write> ...arning: Reference `fig:fases' on page \thepage 
-                                                  \space undefined\on@line .
-l.80 ...ión se muestra en la figura \ref{fig:fases}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:fases' on page  undefined on input line 80.
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 79--81
-[]Reconstrucción
- []
-
-
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 79--81
-[]. 
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 79--82
+[],
  []
 
 
@@ -1190,7 +1261,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \begin{figure}
+l.83 \begin{figure}
                  [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1203,7 +1274,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \begin{figure}[
+l.83 \begin{figure}[
                   H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1215,8 +1286,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 \begin{subfigure}
-                    {.5\textwidth}
+l.84         \begin{subfigure}
+                            [b]{0.33\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1224,8 +1295,8 @@ or  <return>  to continue without it.
 ! Missing number, treated as zero.
 <to be read again> 
 }
-l.84 \begin{subfigure}{.5\textwidth}
-                                  
+l.84         \begin{subfigure}[b]{0.33\textwidth}
+                                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1233,8 +1304,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.84 \begin{subfigure}{.5\textwidth}
-                                  
+l.84         \begin{subfigure}[b]{0.33\textwidth}
+                                               
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1243,25 +1314,46 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.86   \includegraphics
-                     [scale=0.65]{fase_clean.png}
+l.85                 \includegraphics
+                                   [width=\linewidth]{target_zoom.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.85 ...          \includegraphics[width=\linewidth]
+                                                  {target_zoom.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.85 ...          \includegraphics[width=\linewidth]
+                                                  {target_zoom.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 ! Missing $ inserted.
 <inserted text> 
 $
-l.86   \includegraphics[scale=0.65]{fase_
-                                       clean.png}
+l.85 ...  \includegraphics[width=\linewidth]{target_
+                                                  zoom.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.86   \includegraphics[scale=0.65]{fase_clean.png}
-                                                 
+l.85 ...egraphics[width=\linewidth]{target_zoom.png}
+                                                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -1275,8 +1367,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.87   \caption
-             {Audio sin reverberación}
+l.86                 \caption
+                           {Espectrograma anecoico}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1287,8 +1379,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \end{subfigure}
-                  %
+l.88         \end{subfigure}
+                          %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1296,21 +1388,19 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.89 \end{subfigure}
-                  %
+l.88         \end{subfigure}
+                          %
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-Missing character: There is no ó (U+00F3) in font cmmi10!
-Missing character: There is no ó (U+00F3) in font cmmi10!
 ! Missing } inserted.
 <inserted text> 
 }
-l.89 \end{subfigure}
-                  %
+l.88         \end{subfigure}
+                          %
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1324,8 +1414,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \begin{subfigure}
-                    {.5\textwidth}
+l.89         \begin{subfigure}
+                            [b]{0.33\textwidth}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1333,8 +1423,8 @@ or  <return>  to continue without it.
 ! Missing number, treated as zero.
 <to be read again> 
 }
-l.90 \begin{subfigure}{.5\textwidth}
-                                  
+l.89         \begin{subfigure}[b]{0.33\textwidth}
+                                               
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -1342,8 +1432,8 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 }
-l.90 \begin{subfigure}{.5\textwidth}
-                                  
+l.89         \begin{subfigure}[b]{0.33\textwidth}
+                                               
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -1352,24 +1442,45 @@ delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
 ! Undefined control sequence.
-l.92   \includegraphics
-                     [scale=0.65]{fase_reverb.png}
+l.90                 \includegraphics
+                                   [width=\linewidth]{predict_zoom.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.90 ...          \includegraphics[width=\linewidth]
+                                                  {predict_zoom.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.90 ...          \includegraphics[width=\linewidth]
+                                                  {predict_zoom.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 ! Missing $ inserted.
 <inserted text> 
 $
-l.92   \includegraphics[scale=0.65]{fase_
-                                       reverb.png}
+l.90 ... \includegraphics[width=\linewidth]{predict_
+                                                  zoom.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.92   \includegraphics[scale=0.65]{fase_reverb.png}
+l.90 ...graphics[width=\linewidth]{predict_zoom.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1384,8 +1495,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93   \caption
-             {Audio con reverberación}
+l.91                 \caption
+                           {Espectrograma dereverberado}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1396,8 +1507,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \end{subfigure}
-                  Sin embargo
+l.93         \end{subfigure}
+                          %
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1405,21 +1516,149 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.95 \end{subfigure}
-                  Sin embargo
+l.93         \end{subfigure}
+                          %
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-Missing character: There is no ó (U+00F3) in font cmmi10!
-Missing character: There is no ó (U+00F3) in font cmmi10!
 ! Missing } inserted.
 <inserted text> 
 }
-l.95 \end{subfigure}
-                  Sin embargo
+l.93         \end{subfigure}
+                          %
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94         \begin{subfigure}
+                            [b]{0.33\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+}
+l.94         \begin{subfigure}[b]{0.33\textwidth}
+                                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+}
+l.94         \begin{subfigure}[b]{0.33\textwidth}
+                                               
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.95                 \includegraphics
+                                   [width=\linewidth]{error_zoom.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.95 ...          \includegraphics[width=\linewidth]
+                                                  {error_zoom.png}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.95 ...          \includegraphics[width=\linewidth]
+                                                  {error_zoom.png}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.95 ...   \includegraphics[width=\linewidth]{error_
+                                                  zoom.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.95 ...degraphics[width=\linewidth]{error_zoom.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96                 \caption
+                           {Error cuadrático entre espectrogramas}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98         \end{subfigure}
+                          %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.98         \end{subfigure}
+                          %
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no á (U+00E1) in font cmmi10!
+Missing character: There is no á (U+00E1) in font cmmi10!
+! Missing } inserted.
+<inserted text> 
+}
+l.98         \end{subfigure}
+                          %
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1433,9 +1672,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \caption
-           {Espectrogramas de magnitud y fase de los audios para entrenamiento}
-
+l.99         \caption
+                   {Diferencias entre espectrograma anecoico y dereverberado...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1446,62 +1684,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 \end{figure}
-               
+l.100 \end{figure}
+                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 82--99
+Overfull \hbox (20.0pt too wide) in paragraph at lines 83--101
 [][H]
  []
 
 
-Overfull \hbox (139.89096pt too wide) in paragraph at lines 82--99
-[scale=0.65]fase$[][]\OML/cmm/m/it/10 lean:png[][]$\nullfont .5
+Overfull \hbox (148.93968pt too wide) in paragraph at lines 83--101
+[width=]target$[][]\OML/cmm/m/it/10 oom:png[][]$\nullfont [b]0.33
  []
 
 
-Overfull \hbox (145.76212pt too wide) in paragraph at lines 82--99
-[scale=0.65]fase$[][]\OML/cmm/m/it/10 everb:png[][]$\nullfont Sin
+Overfull \hbox (174.23415pt too wide) in paragraph at lines 83--101
+[width=]predict$[][]\OML/cmm/m/it/10 oom:png[][]$\nullfont [b]0.33
  []
 
 
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 P
-     ara determinar la fase del nuevo espectro de magnitud estimado por la r...
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-<write> ...: Reference `fig:iteraciones' on page \thepage 
-                                                  \space undefined\on@line .
-l.101 ...la fase. En la figura \ref{fig:iteraciones}
-                                                   se pueden observar estas ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `fig:iteraciones' on page  undefined on input line 101.
-
-
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 100--102
-[]Para
- []
-
-
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 100--102
-[]
+Overfull \hbox (205.03822pt too wide) in paragraph at lines 83--101
+[width=]error$[][]\OML/cmm/m/it/10 oom:png[][]$\nullfont Diferencias
  []
 
 
@@ -1511,8 +1717,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \begin{figure}
-                  [H]
+l.102 \begin{figure}
+                  [H]\centering
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1524,19 +1730,205 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \begin{figure}[
-                   H]
+l.102 \begin{figure}[
+                   H]\centering
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.105 	\includegraphics
-                     [scale=0.9]{iteraciones.png}
+l.103 \subfloat
+             [legend]{\label{a}\includegraphics[width=.45\linewidth]{error_z...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.103 \subfloat[legend]{\label{a}\includegraphics
+                                               [width=.45\linewidth]{error_z...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.103 ...bel{a}\includegraphics[width=.45\linewidth]
+                                                  {error_zoom.png}}\hfill
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.103 ...bel{a}\includegraphics[width=.45\linewidth]
+                                                  {error_zoom.png}}\hfill
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.103 ...includegraphics[width=.45\linewidth]{error_
+                                                  zoom.png}}\hfill
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.103 ...aphics[width=.45\linewidth]{error_zoom.png}
+                                                  }\hfill
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.103 ...phics[width=.45\linewidth]{error_zoom.png}}
+                                                  \hfill
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.104 \subfloat
+             [legend]{\label{b}\includegraphics[width=.45\linewidth]{error_z...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.104 \subfloat[legend]{\label{b}\includegraphics
+                                               [width=.45\linewidth]{error_z...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.104 ...bel{b}\includegraphics[width=.45\linewidth]
+                                                  {error_zoom.png}}\par
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.104 ...bel{b}\includegraphics[width=.45\linewidth]
+                                                  {error_zoom.png}}\par
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.104 ...s[width=.45\linewidth]{error_zoom.png}}\par
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (219.13997pt too wide) in paragraph at lines 102--104
+ [][H][legend][][width=.45]error$[][]\OML/cmm/m/it/10 oom:png \OT1/cmr/m/n/10 [
+\OML/cmm/m/it/10 legend\OT1/cmr/m/n/10 ][]$ 
+ []
+
+! Undefined control sequence.
+l.105 \subfloat
+             [legend]{\label{c}\includegraphics[width=.45\linewidth]{error_z...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 \subfloat[
+              legend]{\label{c}\includegraphics[width=.45\linewidth]{error_z...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.105 \subfloat[legend]{\label{c}\includegraphics
+                                               [width=.45\linewidth]{error_z...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.105 ...bel{c}\includegraphics[width=.45\linewidth]
+                                                  {error_zoom.png}}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.105 ...bel{c}\includegraphics[width=.45\linewidth]
+                                                  {error_zoom.png}}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.105 ...includegraphics[width=.45\linewidth]{error_
+                                                  zoom.png}}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.105 ...aphics[width=.45\linewidth]{error_zoom.png}
+                                                  }
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.105 ...phics[width=.45\linewidth]{error_zoom.png}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 
 ! LaTeX Error: \caption outside float.
@@ -1545,8 +1937,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 	\caption
-             {Influencia del numero de iteraciones del algoritmo de Griffin-...
+l.106 \caption
+            {my fig}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1563,8 +1955,509 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+! Missing $ inserted.
+<inserted text> 
+$
+l.108 \end{figure}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 103--109
+! Missing } inserted.
+<inserted text> 
+}
+l.108 \end{figure}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.108 \end{figure}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.108 \end{figure}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+}
+l.108 \end{figure}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (70.60971pt too wide) in paragraph at lines 105--110
+[][legend][][width=.45]error$[][]\OML/cmm/m/it/10 oom:png[][]$ 
+ []
+
+! Undefined control sequence.
+l.112 \subsection
+               [Tratamiento de la Fase]{TRATAMIENTO DE LA FASE}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \subsection[
+                Tratamiento de la Fase]{TRATAMIENTO DE LA FASE}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<write> ...arning: Reference `fig:fases' on page \thepage 
+                                                  \space undefined\on@line .
+l.113 ...ón se muestra en la figura \ref{fig:fases}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:fases' on page  undefined on input line 113.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 112--114
+[][Tratamiento
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 112--114
+[]. 
+ []
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \begin{figure}
+                  [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \begin{figure}[
+                   H]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \begin{subfigure}
+                     {.5\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+}
+l.117 \begin{subfigure}{.5\textwidth}
+                                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+}
+l.117 \begin{subfigure}{.5\textwidth}
+                                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.119   \includegraphics
+                      [scale=0.65]{fase_clean.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.119   \includegraphics[scale=0.65]{fase_
+                                        clean.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.119   \includegraphics[scale=0.65]{fase_clean.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120   \caption
+              {Audio sin reverberación}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.122 \end{subfigure}
+                   %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.122 \end{subfigure}
+                   %
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ó (U+00F3) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
+! Missing } inserted.
+<inserted text> 
+}
+l.122 \end{subfigure}
+                   %
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Environment subfigure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 \begin{subfigure}
+                     {.5\textwidth}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+}
+l.123 \begin{subfigure}{.5\textwidth}
+                                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+}
+l.123 \begin{subfigure}{.5\textwidth}
+                                   
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.125   \includegraphics
+                      [scale=0.65]{fase_reverb.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.125   \includegraphics[scale=0.65]{fase_
+                                        reverb.png}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.125 ...ncludegraphics[scale=0.65]{fase_reverb.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126   \caption
+              {Audio con reverberación}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{subfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \end{subfigure}
+                   Sin embargo
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.128 \end{subfigure}
+                   Sin embargo
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ó (U+00F3) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
+! Missing } inserted.
+<inserted text> 
+}
+l.128 \end{subfigure}
+                   Sin embargo
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \caption
+            {Espectrogramas de magnitud y fase de los audios para entrenamie...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 \end{figure}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 115--132
+[][H]
+ []
+
+
+Overfull \hbox (139.89096pt too wide) in paragraph at lines 115--132
+[scale=0.65]fase$[][]\OML/cmm/m/it/10 lean:png[][]$\nullfont .5
+ []
+
+
+Overfull \hbox (145.76212pt too wide) in paragraph at lines 115--132
+[scale=0.65]fase$[][]\OML/cmm/m/it/10 everb:png[][]$\nullfont Sin
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.133 S
+     e puede apreciar que los espectros de fase parecen contener poca inform...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 133--134
+[]Se
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 P
+     ara determinar la fase del nuevo espectro de magnitud estimado por la r...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<write> ...: Reference `fig:iteraciones' on page \thepage 
+                                                  \space undefined\on@line .
+l.136 ...aciones. En la figura \ref{fig:iteraciones}
+                                                   se pueden observar estas ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:iteraciones' on page  undefined on input line 136.
+
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 135--137
+[]Para
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 135--137
+[]
+ []
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \begin{figure}
+                  [H]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \begin{figure}[
+                   H]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.140 	\includegraphics
+                     [scale=0.9]{iteraciones.png}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 	\caption
+             {Influencia del número de iteraciones del algoritmo de Griffin...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143 \end{figure}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 138--144
 [][H]
  []
 
@@ -1575,16 +2468,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 E
-     n la tabla \ref{table:fases} se muestra el resultado de la comparación...
+l.145 E
+     n la tabla \ref{table:fases} se comparan las métricas obtenidas al uti...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 <write> ...ning: Reference `table:fases' on page \thepage 
                                                   \space undefined\on@line .
-l.110 En la tabla \ref{table:fases}
-                                  se muestra el resultado de la comparación...
+l.145 En la tabla \ref{table:fases}
+                                  se comparan las métricas obtenidas al uti...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1592,15 +2485,15 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `table:fases' on page  undefined on input line 110.
+LaTeX Warning: Reference `table:fases' on page  undefined on input line 145.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 110--111
+Overfull \hbox (20.0pt too wide) in paragraph at lines 145--146
 []En
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 110--111
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 145--146
 []
  []
 
@@ -1611,7 +2504,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 \begin{table}
+l.147 \begin{table}
                  [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1624,7 +2517,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 \begin{table}[
+l.147 \begin{table}[
                   H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1636,7 +2529,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 \caption
+l.149 \caption
             {Comparación de métodos de reconstrucción de espéctrograma c...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1648,19 +2541,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.124 \end{table}
+l.159 \end{table}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 112--125
+Overfull \hbox (20.0pt too wide) in paragraph at lines 147--160
 [][H]
  []
 
 
-Overfull \hbox (228.15018pt too wide) in paragraph at lines 112--125
+Overfull \hbox (228.15018pt too wide) in paragraph at lines 147--160
 []
  []
 
@@ -1671,19 +2564,39 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 E
-     ntonces, de los resultados obtenidos sobre las distintas alternativas e...
+l.161 E
+     stos resultados revelan una cierta inconsistencia entre las métricas u...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+\citation{sdr_fail}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.161 ...de reconstrucción de audio \cite{sdr_fail}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 126--128
-[]Entonces,
+
+LaTeX Warning: Citation `sdr_fail' on page  undefined on input line 161.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 161--163
+[]Estos
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 161--163
+[[]]. 
  []
 
 ! Undefined control sequence.
-l.129 \subsection
-               {Dereverberación del habla y manejo de datos}
+l.164 \subsection
+               [Dereverberación del habla y manejo de datos]{DEREVERBERACIÓ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1697,14 +2610,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 \subsection{D
-                 ereverberación del habla y manejo de datos}
+l.164 \subsection[
+                Dereverberación del habla y manejo de datos]{DEREVERBERACIÓ...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 129--130
-[]Dereverberación
+Overfull \hbox (20.0pt too wide) in paragraph at lines 164--165
+[][Dereverberación
  []
 
 
@@ -1714,7 +2628,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 P
+l.166 P
      ara las evaluaciones se tuvieron en cuenta tres conjuntos de datos de a...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1722,7 +2636,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <write> ...nce `table:resultados_reverb' on page \thepage 
                                                   \space undefined\on@line .
-l.131 ...r en la tabla \ref{table:resultados_reverb}
+l.166 ...r en la tabla \ref{table:resultados_reverb}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1732,15 +2646,15 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `table:resultados_reverb' on page  undefined on input l
-ine 131.
+ine 166.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 131--132
+Overfull \hbox (20.0pt too wide) in paragraph at lines 166--167
 []Para
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 131--132
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 166--167
 []. 
  []
 
@@ -1751,7 +2665,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \begin{table}
+l.168 \begin{table}
                  [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1764,7 +2678,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \begin{table}[
+l.168 \begin{table}[
                   H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1776,8 +2690,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 \caption
-            {Resultados de las metricas sobre los conjuntos reverberados}
+l.170 \caption
+            {Resultados de las métricas sobre los conjuntos reverberados}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1788,19 +2702,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144 \end{table}
+l.179 \end{table}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 133--145
+Overfull \hbox (20.0pt too wide) in paragraph at lines 168--180
 [][H]
  []
 
 
-Overfull \hbox (93.36008pt too wide) in paragraph at lines 133--145
+Overfull \hbox (93.36008pt too wide) in paragraph at lines 168--180
 []
  []
 
@@ -1811,7 +2725,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147 L
+l.182 L
      os resultados obtenidos para el primer conjunto de pruebas definidos en...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1819,7 +2733,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <write> ...ning: Reference `tab:pruebas' on page \thepage 
                                                   \space undefined\on@line .
-l.147 ...bas definidos en la tabla \ref{tab:pruebas}
+l.182 ...bas definidos en la tabla \ref{tab:pruebas}
                                                    se expresan en las figura...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1828,12 +2742,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `tab:pruebas' on page  undefined on input line 147.
+LaTeX Warning: Reference `tab:pruebas' on page  undefined on input line 182.
 
 ! Undefined control sequence.
 <write> ...arning: Reference `fig:1_SDR' on page \thepage 
                                                   \space undefined\on@line .
-l.147 ... se expresan en las figuras \ref{fig:1_SDR}
+l.182 ... se expresan en las figuras \ref{fig:1_SDR}
                                                   , \ref{fig:1_SRMR} y \ref{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1842,12 +2756,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:1_SDR' on page  undefined on input line 147.
+LaTeX Warning: Reference `fig:1_SDR' on page  undefined on input line 182.
 
 ! Undefined control sequence.
 <write> ...rning: Reference `fig:1_SRMR' on page \thepage 
                                                   \space undefined\on@line .
-l.147 ...s figuras \ref{fig:1_SDR}, \ref{fig:1_SRMR}
+l.182 ...s figuras \ref{fig:1_SDR}, \ref{fig:1_SRMR}
                                                    y \ref{fig:1_ESTOI} para ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1856,12 +2770,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:1_SRMR' on page  undefined on input line 147.
+LaTeX Warning: Reference `fig:1_SRMR' on page  undefined on input line 182.
 
 ! Undefined control sequence.
 <write> ...ning: Reference `fig:1_ESTOI' on page \thepage 
                                                   \space undefined\on@line .
-l.147 ..._SDR}, \ref{fig:1_SRMR} y \ref{fig:1_ESTOI}
+l.182 ..._SDR}, \ref{fig:1_SRMR} y \ref{fig:1_ESTOI}
                                                    para las variaciones de l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1870,30 +2784,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:1_ESTOI' on page  undefined on input line 147.
+LaTeX Warning: Reference `fig:1_ESTOI' on page  undefined on input line 182.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 147--148
+Overfull \hbox (20.0pt too wide) in paragraph at lines 182--183
 []Los
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 147--148
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 182--183
 []
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 147--148
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 182--183
 [],
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 147--148
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 182--183
 []
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 147--148
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 182--183
 []
  []
 
@@ -1904,7 +2818,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \begin{figure}
+l.184 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1917,13 +2831,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \begin{figure}[
+l.184 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.151 	\includegraphics
+l.186 	\includegraphics
                      [scale=0.65]{prueba1_SDR.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1934,13 +2848,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.151 	\includegraphics[scale=0.65]{prueba1_
+l.186 	\includegraphics[scale=0.65]{prueba1_
                                           SDR.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.151 	\includegraphics[scale=0.65]{prueba1_SDR.png}
+l.186 	\includegraphics[scale=0.65]{prueba1_SDR.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1955,7 +2869,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.152 	\caption
+l.187 	\caption
              {Variaciones de SDR para el primer conjunto de pruebas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1967,7 +2881,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 \end{figure}
+l.189 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1976,7 +2890,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.154 \end{figure}
+l.189 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1987,7 +2901,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.154 \end{figure}
+l.189 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1996,12 +2910,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 149--155
+Overfull \hbox (20.0pt too wide) in paragraph at lines 184--190
 [][H]
  []
 
 
-Overfull \hbox (275.4635pt too wide) in paragraph at lines 149--155
+Overfull \hbox (275.4635pt too wide) in paragraph at lines 184--190
 [scale=0.65]prueba1$[][]\OML/cmm/m/it/10 DR:png[][]$ 
  []
 
@@ -2012,7 +2926,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \begin{figure}
+l.191 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2025,13 +2939,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \begin{figure}[
+l.191 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.158 	\includegraphics
+l.193 	\includegraphics
                      [scale=0.65]{prueba1_SRMR.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2042,13 +2956,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.158 	\includegraphics[scale=0.65]{prueba1_
+l.193 	\includegraphics[scale=0.65]{prueba1_
                                           SRMR.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.158 ...cludegraphics[scale=0.65]{prueba1_SRMR.png}
+l.193 ...cludegraphics[scale=0.65]{prueba1_SRMR.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2063,7 +2977,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 	\caption
+l.194 	\caption
              {Variaciones de SRMR para el primer conjunto de pruebas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2075,7 +2989,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161 \end{figure}
+l.196 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2084,7 +2998,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.161 \end{figure}
+l.196 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2095,7 +3009,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.161 \end{figure}
+l.196 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2104,12 +3018,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 156--162
+Overfull \hbox (20.0pt too wide) in paragraph at lines 191--197
 [][H]
  []
 
 
-Overfull \hbox (295.27322pt too wide) in paragraph at lines 156--162
+Overfull \hbox (295.27322pt too wide) in paragraph at lines 191--197
 [scale=0.65]prueba1$[][]\OML/cmm/m/it/10 RMR:png[][]$ 
  []
 
@@ -2120,7 +3034,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 \begin{figure}
+l.198 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2133,13 +3047,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 \begin{figure}[
+l.198 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.165 	\includegraphics
+l.200 	\includegraphics
                      [scale=0.65]{prueba1_ESTOI.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2150,13 +3064,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.165 	\includegraphics[scale=0.65]{prueba1_
+l.200 	\includegraphics[scale=0.65]{prueba1_
                                           ESTOI.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.165 ...ludegraphics[scale=0.65]{prueba1_ESTOI.png}
+l.200 ...ludegraphics[scale=0.65]{prueba1_ESTOI.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2171,7 +3085,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166 	\caption
+l.201 	\caption
              {Variaciones de ESTOI para el primer conjunto de pruebas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2183,7 +3097,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.168 \end{figure}
+l.203 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2192,7 +3106,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.168 \end{figure}
+l.203 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2203,7 +3117,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.168 \end{figure}
+l.203 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2212,12 +3126,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 163--169
+Overfull \hbox (20.0pt too wide) in paragraph at lines 198--204
 [][H]
  []
 
 
-Overfull \hbox (299.27591pt too wide) in paragraph at lines 163--169
+Overfull \hbox (299.27591pt too wide) in paragraph at lines 198--204
 [scale=0.65]prueba1$[][]\OML/cmm/m/it/10 STOI:png[][]$ 
  []
 
@@ -2228,13 +3142,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.170 D
-     el primer conjunto de pruebas, se esperaba obtener los mejores resultad...
+l.205 D
+     el primer conjunto de pruebas se esperaba obtener los mejores resultado...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 170--171
+Overfull \hbox (20.0pt too wide) in paragraph at lines 205--206
 []Del
  []
 
@@ -2245,7 +3159,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 L
+l.207 L
      os resultados correspondientes al segundo conjunto de pruebas definido ...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2253,7 +3167,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <write> ...ence `tab:pruebas_combinadas' on page \thepage 
                                                   \space undefined\on@line .
-l.172 ...do en la tabla \ref{tab:pruebas_combinadas}
+l.207 ...do en la tabla \ref{tab:pruebas_combinadas}
                                                    se muestran en las figura...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2263,12 +3177,12 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `tab:pruebas_combinadas' on page  undefined on input li
-ne 172.
+ne 207.
 
 ! Undefined control sequence.
 <write> ...arning: Reference `fig:2_SDR' on page \thepage 
                                                   \space undefined\on@line .
-l.172 ... se muestran en las figuras \ref{fig:2_SDR}
+l.207 ... se muestran en las figuras \ref{fig:2_SDR}
                                                   , \ref{fig:2_SRMR} y \ref{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2277,12 +3191,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:2_SDR' on page  undefined on input line 172.
+LaTeX Warning: Reference `fig:2_SDR' on page  undefined on input line 207.
 
 ! Undefined control sequence.
 <write> ...rning: Reference `fig:2_SRMR' on page \thepage 
                                                   \space undefined\on@line .
-l.172 ...s figuras \ref{fig:2_SDR}, \ref{fig:2_SRMR}
+l.207 ...s figuras \ref{fig:2_SDR}, \ref{fig:2_SRMR}
                                                    y \ref{fig:2_ESTOI} para ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2291,12 +3205,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:2_SRMR' on page  undefined on input line 172.
+LaTeX Warning: Reference `fig:2_SRMR' on page  undefined on input line 207.
 
 ! Undefined control sequence.
 <write> ...ning: Reference `fig:2_ESTOI' on page \thepage 
                                                   \space undefined\on@line .
-l.172 ..._SDR}, \ref{fig:2_SRMR} y \ref{fig:2_ESTOI}
+l.207 ..._SDR}, \ref{fig:2_SRMR} y \ref{fig:2_ESTOI}
                                                    para las variaciones de l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2305,30 +3219,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:2_ESTOI' on page  undefined on input line 172.
+LaTeX Warning: Reference `fig:2_ESTOI' on page  undefined on input line 207.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 172--173
+Overfull \hbox (20.0pt too wide) in paragraph at lines 207--208
 []Los
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 172--173
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 207--208
 []
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 172--173
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 207--208
 [],
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 172--173
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 207--208
 []
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 172--173
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 207--208
 []
  []
 
@@ -2339,7 +3253,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.174 \begin{figure}
+l.209 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2352,13 +3266,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.174 \begin{figure}[
+l.209 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.176 	\includegraphics
+l.211 	\includegraphics
                      [scale=0.65]{prueba2_SDR.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2369,13 +3283,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.176 	\includegraphics[scale=0.65]{prueba2_
+l.211 	\includegraphics[scale=0.65]{prueba2_
                                           SDR.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.176 	\includegraphics[scale=0.65]{prueba2_SDR.png}
+l.211 	\includegraphics[scale=0.65]{prueba2_SDR.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2390,7 +3304,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.177 	\caption
+l.212 	\caption
              {Variaciones de SDR para el segundo conjunto de pruebas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2402,7 +3316,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 \end{figure}
+l.214 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2411,7 +3325,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.179 \end{figure}
+l.214 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2422,7 +3336,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.179 \end{figure}
+l.214 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2431,12 +3345,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 174--180
+Overfull \hbox (20.0pt too wide) in paragraph at lines 209--215
 [][H]
  []
 
 
-Overfull \hbox (280.22324pt too wide) in paragraph at lines 174--180
+Overfull \hbox (280.22324pt too wide) in paragraph at lines 209--215
 [scale=0.65]prueba2$[][]\OML/cmm/m/it/10 DR:png[][]$ 
  []
 
@@ -2447,7 +3361,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 \begin{figure}
+l.216 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2460,13 +3374,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 \begin{figure}[
+l.216 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.183 	\includegraphics
+l.218 	\includegraphics
                      [scale=0.65]{prueba2_SRMR.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2477,13 +3391,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.183 	\includegraphics[scale=0.65]{prueba2_
+l.218 	\includegraphics[scale=0.65]{prueba2_
                                           SRMR.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.183 ...cludegraphics[scale=0.65]{prueba2_SRMR.png}
+l.218 ...cludegraphics[scale=0.65]{prueba2_SRMR.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2498,7 +3412,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 	\caption
+l.219 	\caption
              {Variaciones de SRMR para el segundo conjunto de pruebas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2510,7 +3424,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186 \end{figure}
+l.221 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2519,7 +3433,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.186 \end{figure}
+l.221 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2530,7 +3444,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.186 \end{figure}
+l.221 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2539,12 +3453,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 181--187
+Overfull \hbox (20.0pt too wide) in paragraph at lines 216--222
 [][H]
  []
 
 
-Overfull \hbox (300.03296pt too wide) in paragraph at lines 181--187
+Overfull \hbox (300.03296pt too wide) in paragraph at lines 216--222
 [scale=0.65]prueba2$[][]\OML/cmm/m/it/10 RMR:png[][]$ 
  []
 
@@ -2555,7 +3469,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.188 \begin{figure}
+l.223 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2568,13 +3482,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.188 \begin{figure}[
+l.223 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.190 	\includegraphics
+l.225 	\includegraphics
                      [scale=0.65]{prueba2_ESTOI.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2585,13 +3499,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.190 	\includegraphics[scale=0.65]{prueba2_
+l.225 	\includegraphics[scale=0.65]{prueba2_
                                           ESTOI.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.190 ...ludegraphics[scale=0.65]{prueba2_ESTOI.png}
+l.225 ...ludegraphics[scale=0.65]{prueba2_ESTOI.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2606,7 +3520,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 	\caption
+l.226 	\caption
              {Variaciones de ESTOI para el segundo conjunto de pruebas.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2618,7 +3532,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 \end{figure}
+l.228 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2627,7 +3541,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.193 \end{figure}
+l.228 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2638,7 +3552,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.193 \end{figure}
+l.228 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2647,12 +3561,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 188--194
+Overfull \hbox (20.0pt too wide) in paragraph at lines 223--229
 [][H]
  []
 
 
-Overfull \hbox (304.03564pt too wide) in paragraph at lines 188--194
+Overfull \hbox (304.03564pt too wide) in paragraph at lines 223--229
 [scale=0.65]prueba2$[][]\OML/cmm/m/it/10 STOI:png[][]$ 
  []
 
@@ -2663,19 +3577,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 P
+l.230 P
      ara el segundo conjunto de pruebas se combinaron tipos de respuestas al...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 195--197
+Overfull \hbox (20.0pt too wide) in paragraph at lines 230--232
 []Para
  []
 
 ! Undefined control sequence.
-l.199 \subsection
-               {Aprendizaje por curriculum}
+l.234 \subsection
+               [Aprendizaje por curriculum]{APRENDIZAJE POR CURRICULUM}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2689,15 +3603,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.199 \subsection{A
-                 prendizaje por curriculum}
+l.234 \subsection[
+                Aprendizaje por curriculum]{APRENDIZAJE POR CURRICULUM}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 <write> ...: Reference `fig:cl_impulsos' on page \thepage 
                                                   \space undefined\on@line .
-l.200 ...0 \ dB$. En la figura \ref{fig:cl_impulsos}
+l.235 ...0 \ dB$. En la figura \ref{fig:cl_impulsos}
                                                    se puede observar la disp...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2706,36 +3620,36 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:cl_impulsos' on page  undefined on input line 200.
+LaTeX Warning: Reference `fig:cl_impulsos' on page  undefined on input line 235.
 
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 199--201
-[]Aprendizaje
+Overfull \hbox (20.0pt too wide) in paragraph at lines 234--236
+[][Aprendizaje
  []
 
 
-Overfull \hbox (17.46532pt too wide) in paragraph at lines 199--201
+Overfull \hbox (17.46532pt too wide) in paragraph at lines 234--236
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 s$
  []
 
 
-Overfull \hbox (17.46532pt too wide) in paragraph at lines 199--201
+Overfull \hbox (17.46532pt too wide) in paragraph at lines 234--236
 \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 s$
  []
 
 
-Overfull \hbox (31.0695pt too wide) in paragraph at lines 199--201
+Overfull \hbox (31.0695pt too wide) in paragraph at lines 234--236
 \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 10\OML/cmm/m/it/10 dB$
  []
 
 
-Overfull \hbox (23.2917pt too wide) in paragraph at lines 199--201
+Overfull \hbox (23.2917pt too wide) in paragraph at lines 234--236
 \OT1/cmr/m/n/10 10\OML/cmm/m/it/10 dB$\nullfont .
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 199--201
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 234--236
 []
  []
 
@@ -2746,7 +3660,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 \begin{figure}
+l.237 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2759,13 +3673,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 \begin{figure}[
+l.237 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.204 	\includegraphics
+l.239 	\includegraphics
                      [scale=0.60]{cl_impulsos.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2776,13 +3690,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.204 	\includegraphics[scale=0.60]{cl_
+l.239 	\includegraphics[scale=0.60]{cl_
                                      impulsos.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.204 	\includegraphics[scale=0.60]{cl_impulsos.png}
+l.239 	\includegraphics[scale=0.60]{cl_impulsos.png}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2797,7 +3711,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.205 	\caption
+l.240 	\caption
              {Respuestas al impulso generadas por aumentación.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2809,7 +3723,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.207 \end{figure}
+l.242 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2818,7 +3732,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.207 \end{figure}
+l.242 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2831,7 +3745,7 @@ Missing character: There is no ó (U+00F3) in font cmmi10!
 ! Missing } inserted.
 <inserted text> 
 }
-l.207 \end{figure}
+l.242 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2840,12 +3754,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 202--208
+Overfull \hbox (20.0pt too wide) in paragraph at lines 237--243
 [][H]
  []
 
 
-Overfull \hbox (270.33252pt too wide) in paragraph at lines 202--208
+Overfull \hbox (270.33252pt too wide) in paragraph at lines 237--243
 [scale=0.60]cl$[][]\OML/cmm/m/it/10 mpulsos:png[][]$ 
  []
 
@@ -2856,7 +3770,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.209 P
+l.244 P
      artiendo de la información del tiempo de reverberación medio de cada ...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2864,7 +3778,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <write> ...rning: Reference `fig:cl_sdr' on page \thepage 
                                                   \space undefined\on@line .
-l.209 ...a variante. En las figuras \ref{fig:cl_sdr}
+l.244 ...a variante. En las figuras \ref{fig:cl_sdr}
                                                   , \ref{fig:cl_srmr}, y \re...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2873,12 +3787,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:cl_sdr' on page  undefined on input line 209.
+LaTeX Warning: Reference `fig:cl_sdr' on page  undefined on input line 244.
 
 ! Undefined control sequence.
 <write> ...ning: Reference `fig:cl_srmr' on page \thepage 
                                                   \space undefined\on@line .
-l.209 ...figuras \ref{fig:cl_sdr}, \ref{fig:cl_srmr}
+l.244 ...figuras \ref{fig:cl_sdr}, \ref{fig:cl_srmr}
                                                   , y \ref{fig:cl_estoi} se ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2887,12 +3801,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:cl_srmr' on page  undefined on input line 209.
+LaTeX Warning: Reference `fig:cl_srmr' on page  undefined on input line 244.
 
 ! Undefined control sequence.
 <write> ...ing: Reference `fig:cl_estoi' on page \thepage 
                                                   \space undefined\on@line .
-l.209 ...r}, \ref{fig:cl_srmr}, y \ref{fig:cl_estoi}
+l.244 ...r}, \ref{fig:cl_srmr}, y \ref{fig:cl_estoi}
                                                    se muestran los resultado...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2901,25 +3815,25 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:cl_estoi' on page  undefined on input line 209.
+LaTeX Warning: Reference `fig:cl_estoi' on page  undefined on input line 244.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 209--210
+Overfull \hbox (20.0pt too wide) in paragraph at lines 244--245
 []Partiendo
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 209--210
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 244--245
 [],
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 209--210
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 244--245
 [],
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 209--210
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 244--245
 []
  []
 
@@ -2930,7 +3844,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 \begin{figure}
+l.246 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2943,13 +3857,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.211 \begin{figure}[
+l.246 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.213 	\includegraphics
+l.248 	\includegraphics
                      [scale=0.75]{cl_SDR.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2960,13 +3874,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.213 	\includegraphics[scale=0.75]{cl_
+l.248 	\includegraphics[scale=0.75]{cl_
                                      SDR.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.213 	\includegraphics[scale=0.75]{cl_SDR.png}
+l.248 	\includegraphics[scale=0.75]{cl_SDR.png}
                                              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2981,8 +3895,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 	\caption
-             {Comparacion de SDR entre tipos de ordenamiento de datos durant...
+l.249 	\caption
+             {Comparación de SDR entre tipos de ordenamiento de datos duran...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2993,7 +3907,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 \end{figure}
+l.251 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3002,7 +3916,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.216 \end{figure}
+l.251 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3010,10 +3924,12 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+Missing character: There is no ó (U+00F3) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
 ! Missing } inserted.
 <inserted text> 
 }
-l.216 \end{figure}
+l.251 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3022,12 +3938,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 211--217
+Overfull \hbox (20.0pt too wide) in paragraph at lines 246--252
 [][H]
  []
 
 
-Overfull \hbox (397.32059pt too wide) in paragraph at lines 211--217
+Overfull \hbox (392.47336pt too wide) in paragraph at lines 246--252
 [scale=0.75]cl$[][]\OML/cmm/m/it/10 DR:png[][]$ 
  []
 
@@ -3038,7 +3954,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.218 \begin{figure}
+l.253 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3051,13 +3967,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.218 \begin{figure}[
+l.253 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.220 	\includegraphics
+l.255 	\includegraphics
                      [scale=0.75]{cl_SRMR.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3068,13 +3984,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.220 	\includegraphics[scale=0.75]{cl_
+l.255 	\includegraphics[scale=0.75]{cl_
                                      SRMR.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.220 	\includegraphics[scale=0.75]{cl_SRMR.png}
+l.255 	\includegraphics[scale=0.75]{cl_SRMR.png}
                                               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3089,8 +4005,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 	\caption
-             {Comparacion de SRMR entre tipos de ordenamiento de datos duran...
+l.256 	\caption
+             {Comparación de SRMR entre tipos de ordenamiento de datos dura...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3101,7 +4017,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 \end{figure}
+l.258 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3110,7 +4026,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.223 \end{figure}
+l.258 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3118,10 +4034,12 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+Missing character: There is no ó (U+00F3) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
 ! Missing } inserted.
 <inserted text> 
 }
-l.223 \end{figure}
+l.258 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3130,12 +4048,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 218--224
+Overfull \hbox (20.0pt too wide) in paragraph at lines 253--259
 [][H]
  []
 
 
-Overfull \hbox (417.13031pt too wide) in paragraph at lines 218--224
+Overfull \hbox (412.28308pt too wide) in paragraph at lines 253--259
 [scale=0.75]cl$[][]\OML/cmm/m/it/10 RMR:png[][]$ 
  []
 
@@ -3146,7 +4064,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.225 \begin{figure}
+l.260 \begin{figure}
                   [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3159,13 +4077,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.225 \begin{figure}[
+l.260 \begin{figure}[
                    H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.227 	\includegraphics
+l.262 	\includegraphics
                      [scale=0.75]{cl_ESTOI.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3176,13 +4094,13 @@ and I'll forget about whatever was undefined.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.227 	\includegraphics[scale=0.75]{cl_
+l.262 	\includegraphics[scale=0.75]{cl_
                                      ESTOI.png}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.227 	\includegraphics[scale=0.75]{cl_ESTOI.png}
+l.262 	\includegraphics[scale=0.75]{cl_ESTOI.png}
                                                
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -3197,8 +4115,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 	\caption
-             {Comparacion de ESTOI entre tipos de ordenamiento de datos dura...
+l.263 	\caption
+             {Comparación de ESTOI entre tipos de ordenamiento de datos dur...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3209,7 +4127,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 \end{figure}
+l.265 \end{figure}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3218,7 +4136,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.230 \end{figure}
+l.265 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3226,10 +4144,12 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+Missing character: There is no ó (U+00F3) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
 ! Missing } inserted.
 <inserted text> 
 }
-l.230 \end{figure}
+l.265 \end{figure}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -3238,12 +4158,12 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 225--231
+Overfull \hbox (20.0pt too wide) in paragraph at lines 260--266
 [][H]
  []
 
 
-Overfull \hbox (421.133pt too wide) in paragraph at lines 225--231
+Overfull \hbox (416.28577pt too wide) in paragraph at lines 260--266
 [scale=0.75]cl$[][]\OML/cmm/m/it/10 STOI:png[][]$ 
  []
 
@@ -3254,7 +4174,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.232 A
+l.267 A
       primera vista se puede percibir que para todas las métricas el result...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3262,7 +4182,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <write> ...nce `table:resultados_reverb' on page \thepage 
                                                   \space undefined\on@line .
-l.232 ..., en la tabla \ref{table:resultados_reverb}
+l.267 ..., en la tabla \ref{table:resultados_reverb}
                                                    se muestran las medianas ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3272,15 +4192,15 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `table:resultados_reverb' on page  undefined on input l
-ine 232.
+ine 267.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 232--233
+Overfull \hbox (20.0pt too wide) in paragraph at lines 267--268
 []A
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 232--233
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 267--268
 []
  []
 
@@ -3291,7 +4211,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.234 \begin{table}
+l.269 \begin{table}
                  [H]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3304,7 +4224,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.234 \begin{table}[
+l.269 \begin{table}[
                   H]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3316,7 +4236,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.236 \caption
+l.271 \caption
             {Medianas correspondientes a cada esquema de entrenamiento.}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3328,19 +4248,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.245 \end{table}
+l.280 \end{table}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 234--246
+Overfull \hbox (20.0pt too wide) in paragraph at lines 269--281
 [][H]
  []
 
 
-Overfull \hbox (97.9851pt too wide) in paragraph at lines 234--246
+Overfull \hbox (97.9851pt too wide) in paragraph at lines 269--281
 []
  []
 
@@ -3351,7 +4271,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.247 F
+l.282 F
      inalmente, con estos resultados se pudo corroborar el impacto del orden...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3366,12 +4286,12 @@ If that doesn't work, type  X <return>  to quit.
 
 Here is how much of LuaTeX's memory you used:
  63 strings out of 481365
- 156265,319454 words of node,token memory allocated 133537 words of node memory still in use:
-   340 hlist, 6 vlist, 92 rule, 24 disc, 38 local_par, 1 dir, 60 math, 3159 glue
-, 229 kern, 91 penalty, 14731 glyph, 423 attribute, 39 glue_spec, 423 attribute_
-list, 1 temp, 25 write nodes
-   avail lists: 3:75,4:224,5:14,8:83,10:222
+ 156265,319454 words of node,token memory allocated 142367 words of node memory still in use:
+   395 hlist, 6 vlist, 92 rule, 24 disc, 44 local_par, 1 dir, 77 math, 3347 glue
+, 266 kern, 109 penalty, 15646 glyph, 472 attribute, 39 glue_spec, 472 attribute
+_list, 1 temp, 33 write nodes
+   avail lists: 3:75,4:225,5:14,8:83,10:224
  17274 multiletter control sequences out of 65536+600000
  37 fonts using 4144099 bytes
- 18i,8n,15p,2523b,174s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 18i,8n,19p,2192b,172s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -1,12 +1,16 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Configuración del primer conjunto de pruebas.\relax }}{44}{table.caption.23}%
+\contentsline {table}{\numberline {1}{\ignorespaces Tiempo de reverberación por bandas para cada recinto.\relax }}{35}{table.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Configuración del segundo conjunto de pruebas.\relax }}{45}{table.caption.24}%
+\contentsline {table}{\numberline {2}{\ignorespaces Especificaciones de la arquitectura implementada.\relax }}{45}{table.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Comparación de métodos de reconstrucción de espéctrograma complejo para generar audio\relax }}{52}{table.caption.31}%
+\contentsline {table}{\numberline {3}{\ignorespaces Configuración del primer conjunto de pruebas.\relax }}{47}{table.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Resultados de las métricas sobre los conjuntos reverberados\relax }}{53}{table.caption.32}%
+\contentsline {table}{\numberline {4}{\ignorespaces Configuración del segundo conjunto de pruebas.\relax }}{48}{table.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Medianas correspondientes a cada esquema de entrenamiento.\relax }}{59}{table.caption.43}%
+\contentsline {table}{\numberline {5}{\ignorespaces Comparación de métodos de reconstrucción de espectrograma complejo para generar audio\relax }}{57}{table.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6}{\ignorespaces Resultados de las métricas sobre los conjuntos reverberados\relax }}{58}{table.caption.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7}{\ignorespaces Medianas correspondientes a cada esquema de entrenamiento.\relax }}{65}{table.caption.49}%
