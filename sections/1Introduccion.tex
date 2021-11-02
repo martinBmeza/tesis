@@ -2,16 +2,9 @@
 
 \subsection[Fundamentación]{FUNDAMENTACIÓN}
 Las tecnologías de procesamiento digital de señales de voz mostraron grandes avances en las últimas décadas, llegando a ocupar un rol importante en nuestro día a día. Las investigaciones realizadas en este campo impulsaron diversas aplicaciones basadas en el análisis de la voz humana \cite{fun1}\cite{fun2}. 
-Estas aplicaciones, en mayor o menor medida, deben lidiar con una característica intrínseca a cualquier emisión sonora dentro de un recinto: la reverberación. Esto se debe principalmente a que las señales de voz se obtienen a partir de un transductor que no siempre se encuentra cercano a la fuente que se desea registrar, provocando que la señal registrada contenga la reverberación propia del entorno. Esta reverberación interfiere en con la señal de voz, produciendo una reducción en el rendimiento de aquellas aplicaciones que dependen de la integridad de dicha señal, como por ejemplo: 
+Estas aplicaciones, en mayor o menor medida, deben lidiar con una característica intrínseca a cualquier emisión sonora dentro de un recinto: la reverberación. Esto se debe principalmente a que las señales de voz se obtienen a partir de un transductor que no siempre se encuentra cercano a la fuente que se desea registrar, provocando que la señal registrada contenga la reverberación propia del entorno. Esta reverberación interfiere con la señal de voz, produciendo una reducción en el rendimiento de aquellas aplicaciones que dependen de la integridad de dicha señal, como por ejemplo: 
 
-\begin{itemize}
-    \item Reconocimiento del habla \cite{reconocimiento}
-    \item Verificación del hablante\footnote{Debe distinguirse entre reconocimiento del habla y verificación del hablante. Lo primero refiere a poder distinguir qué palabras fueron dichas, y lo segundo refiere a identificar quién es el que está pronunciando las palabras.} \cite{verificacion}
-   
-    \item Localización del hablante \cite{localizacion}
-    \item Mejora del habla \cite{speech_enhancement}
-\end{itemize}
-
+Reconocimiento del habla \cite{reconocimiento}, verificación del hablante\footnote{Debe distinguirse entre reconocimiento del habla y verificación del hablante. Lo primero refiere a poder distinguir qué palabras fueron dichas, y lo segundo refiere a identificar quién es el que está pronunciando las palabras.} \cite{verificacion} y localización del hablante \cite{localizacion}.
 
 Si bien esta problemática fue abordada desde el enfoque de diversas técnicas de procesamiento de señales, en los últimos años ocurrieron grandes avances producto de la implementación de una tecnología emergente de amplio crecimiento en el ambiente científico: los algoritmos de aprendizaje profundo. La capacidad y robustez de estos métodos a la hora de resolver problemas pertinentes al procesamiento de imágenes y detección de patrones se vio también reflejada en el campo de la dereverberación de habla. Actualmente, los sistemas basados en modelos de aprendizaje profundo representan el estado del arte, tanto en dereverberación del habla como otras tareas de audio, desplazando a enfoques mas clásicos del procesamiento de señales. Sin embargo, aún quedan desafíos por resolver como por ejemplo: la falta de bases de datos masivas de señales acústicas específicas como respuestas al impulso reales, la selección de una representación óptima de las señales que permita explotar sus características intrínsecas, las formas de evaluar y cuantificar el desempeño de los sistemas, entre otros.
 

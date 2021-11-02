@@ -28,11 +28,11 @@ En donde $X$ es la transformada de Fourier discreta de $x$, y cada muestra de $X
 	x[n] = {1}/{N}\sum_{k=0}^{N-1} X[k]e^{jnk2\pi/N} \qquad  0\leq n \leq N-1
 \end{equation} 
 
-Existen algoritmos eficientes para el cálculo de la DFT denominados algoritmos de transformada rápida de Fourier (FFT) \cite{fft}. Estos consiguen realizar el cálculo de la DFT reduciendo considerablemente la complejidad computacional (de $\textup{O}(N^{2})$ a $\textup{O}(Nlog(N))$).
+Existen algoritmos eficientes para el cálculo de la DFT denominados algoritmos de transformada rápida de Fourier (FFT) \cite{fft}. Estos consiguen realizar el cálculo de la DFT reduciendo considerablemente la complejidad computacional, de $O(N^{2})$ a $O(Nlog(N))$.
 
 \subsubsection{Transformada de corto término de Fourier (STFT)}
 
-Las señales sonoras a analizar pueden ser no estacionarias. En este caso, la forma de onda de la señal nos brinda información del orden de aparición de los eventos sonoros, pero no sobre sus características frecuenciales. Por otro lado, la DFT nos permite tener información sobre la estructura frecuencial de la señal, pero resignando información sobre la evolución temporal. Entonces, para representar adecuadamente este tipo de señales tanto en tiempo como en frecuencia se utiliza la transformada de corto término de Fourier (STFT). La misma consiste en calcular la DFT sobre una ventana temporal que limita la cantidad de muestras a utilizar. Esta ventana se desplaza a lo largo de la señal, de manera tal que el resultado final pueda representar las características frecuenciales y sus variaciones en el tiempo. Matemáticamente, la STFT se define como: 
+Las señales sonoras a analizar pueden ser no estacionarias. En este caso, la forma de onda de la señal nos brinda información del orden de aparición de los eventos sonoros, pero no sobre sus características frecuenciales. Por otro lado, la DFT nos permite tener información sobre el espectro de la señal, pero resignando información sobre la evolución temporal. Entonces, para representar adecuadamente este tipo de señales tanto en tiempo como en frecuencia se utiliza la transformada de corto término de Fourier (STFT). La misma consiste en calcular la DFT sobre una ventana temporal que limita la cantidad de muestras a utilizar. Esta ventana se desplaza a lo largo de la señal, de manera tal que el resultado final pueda representar las variaciones del espectro en el tiempo. Matemáticamente, la STFT se define como: 
 
 \begin{equation}
 \label{eqn:STFT}
@@ -58,7 +58,7 @@ En la Figura \ref{fig:stft_analisis} se ilustra el proceso descrito para la obte
   \label{fig:stft_analisis}
 \end{figure}
 
-El resultado de la STFT depende tanto de la señal bajo análisis como del tipo de ventana utilizada. Esto se debe a que la señal y la ventana se multiplican en el dominio del tiempo, lo que equivale a una convolución en frecuencia. Es decir que el espectro frecuencial de la señal se verá distorsionado por el espectro frecuencial de la ventana utilizada. Sabiendo esto, las ventanas se diseñan para controlar la distorsión espectral que producen sobre la señal bajo análisis. Existen dos tipos principales de distorsión espectral: el manchado espectral y la fuga espectral. El manchado espectral refiere a una pérdida de resolución en frecuencia y esta relacionado al ancho del lóbulo principal del espectro de la ventana utilizada. Por otro lado, la fuga espectral consiste en la aparición de componentes frecuenciales que no corresponden a la señal bajo análisis y esta relacionada a la amplitud relativa del lóbulo principal con respecto a los lóbulos secundarios. En la Figura \ref{fig:ventanas} se muestran algunas ventanas con sus respectivas respuestas en frecuencia.
+El resultado de la STFT depende tanto de la señal bajo análisis como del tipo de ventana utilizada. Esto se debe a que la señal y la ventana se multiplican en el dominio del tiempo, lo que equivale a una convolución en frecuencia. Es decir que el espectro frecuencial de la señal se verá distorsionado por el espectro frecuencial de la ventana utilizada. Sabiendo esto, las ventanas se diseñan para controlar la distorsión espectral que producen sobre la señal bajo análisis. Existen dos tipos principales de distorsión espectral: el manchado espectral y la fuga espectral. El manchado espectral refiere a una pérdida de resolución en frecuencia y está relacionado al ancho del lóbulo principal del espectro de la ventana utilizada. Por otro lado, la fuga espectral consiste en la aparición de componentes frecuenciales que no corresponden a la señal bajo análisis y esta relacionada a la amplitud relativa del lóbulo principal con respecto a los lóbulos secundarios. En la Figura \ref{fig:ventanas} se muestran algunas ventanas con sus respectivas respuestas en frecuencia.
 
 \begin{figure}[H]
   \centering{}
@@ -103,7 +103,7 @@ donde $\alpha$ es una constante. Cuando $\alpha = 1$ la reconstrucción es perfe
 
 \subsection[Respuesta al impulso y reverberación]{RESPUESTA AL IMPULSO Y REVERBERACIÓN}
 
-Si en un recinto se tiene una fuente sonora y un micrófono captando a una cierta distancia, las ondas sonoras emitidas se reflejan en las paredes del recinto y alcanzan el micrófono inmediatamente después que la onda sonora directa. Cada instancia de reflexión supone una disminución de la energía de la onda, principalmente causada por el efecto de absorción acústica de las superficies que producen las reflexiones. En un determinado tiempo, la energía sonora decaerá en todo el recinto hasta ubicarse por debajo del ruido de fondo. A este proceso se lo denomina reverberación. Al camino mas corto entre la fuente y el punto de captura se denomina camino directo, y a la relación de nivel entre la presión sonora que genera la onda propia del camino directo y la presión que genera el efecto de reverberación se lo conoce como relación directo-reverberado. 
+Si en un recinto se tiene una fuente sonora y un micrófono captando a una cierta distancia, las ondas sonoras emitidas se reflejan en las paredes del recinto y alcanzan el micrófono inmediatamente después que la onda sonora directa. Cada instancia de reflexión supone una disminución de la energía de la onda, principalmente causada por el efecto de absorción acústica de las superficies que producen las reflexiones. En un determinado tiempo, la energía sonora decaerá en todo el recinto hasta ubicarse por debajo del ruido de fondo. A este proceso se lo denomina reverberación. Al camino mas corto entre la fuente y el punto de captura se lo denomina camino directo, y a la relación de nivel entre la presión sonora que genera la onda propia del camino directo y la presión que genera el efecto de reverberación se lo conoce como relación directo-reverberado. 
 
 Si el micrófono se ubica cerca de la fuente va a captar en mayor medida la señal correspondiente al camino directo, y una pequeña porción del sonido reverberado. Es decir, una relación directo-reverberado alta. A medida que el punto de captura se aleja de la fuente va a captar una menor cantidad del sonido correspondientemente al camino directo, mientras que el campo reverberado se mantendrá aproximadamente invariante. Esto se traduce en una disminución de la relación directo-reverberado. 
 De esta manera, habrá una distancia específica para la cual el nivel de presión sonora generado por la fuente sera igual al nivel de presión sonora generado por el efecto de la reverberación. Esta distancia se conoce como distancia crítica. Esta depende tanto de las condiciones del recinto como de las características del micrófono. 
@@ -111,7 +111,7 @@ De esta manera, habrá una distancia específica para la cual el nivel de presi�
 Si pensamos a la fuente y el micrófono dentro del recinto como un sistema, es de interés estudiar su respuesta al impulso $h(n)$ para poder calcular una serie de parámetros que describan las características acústicas del recinto. Como su nombre lo indica, la respuesta al impulso equivale a la respuesta del sistema cuando se lo excita con un impulso infinitamente angosto (delta de Dirac). La respuesta al impulso será diferente para cada par de puntos fuente-receptor dentro del recinto.   
 
 
-La Figura \ref{fig:rir} muestra una respuesta al impulso junto con un esquema temporal de la misma. En dicho esquema podemos identificar 3 partes: primero, el nivel de sonido directo (producido por la onda que viaja a través del camino directo), las reflexiones tempranas (cuyo limite temporal vendrá definido por las características propias de cada recinto) y por último la cola reverberante. Se puede distinguir la parte de reflexiones tempranas y la cola reverberante partiendo de la suposición de que las reflexiones tempranas ocurren en un proceso determinístico, siendo altamente sensibles a pequeños cambios en la geometría del recinto, mientras que la cola reverberante es mas bien un proceso estocástico, y al depender de un mayor número de reflexiones no varía drásticamente frente a pequeños cambios de geometría. 
+La Figura \ref{fig:rir} muestra una respuesta al impulso junto con un esquema temporal de la misma. En dicho esquema podemos identificar 3 partes: primero, el nivel de sonido directo (producido por la onda que viaja a través del camino directo), las reflexiones tempranas (cuyo limite temporal vendrá definido por las características propias de cada recinto) y por último la cola reverberante. Se puede distinguir la parte de reflexiones tempranas y la cola reverberante partiendo de la suposición de que las reflexiones tempranas ocurren en un proceso determinístico, siendo altamente sensibles a pequeños cambios en la geometría del recinto, mientras que la cola reverberante es mas bien un proceso estocástico, y al depender de un mayor número de reflexiones es poco sensible a cambios de geometría. 
 
 \begin{figure}[H]
   \centering{}
@@ -120,7 +120,7 @@ La Figura \ref{fig:rir} muestra una respuesta al impulso junto con un esquema te
   \label{fig:rir}
 \end{figure}
 
-Idealmente, el micrófono captura una señal que corresponde a la convolución entre la respuesta al impulso del recinto y la señal fuente, como se ve en la ecuación \ref{eqn:impulso}. Esto equivale a una multiplicación en el dominio de la frecuencia de acuerdo con la transformada de Fourier, como se ve en la ecuación \ref{eqn:frecuencia}.  
+Idealmente, el micrófono captura una señal que corresponde a la convolución entre la respuesta al impulso del recinto y la señal correspondiente a la fuente, como se ve en la ecuación \ref{eqn:impulso}. Esto equivale a una multiplicación en el dominio de la frecuencia de acuerdo con la transformada de Fourier, como se ve en la ecuación \ref{eqn:frecuencia}.  
 
 
 \begin{equation}
@@ -135,7 +135,7 @@ Idealmente, el micrófono captura una señal que corresponde a la convolución e
 
 De esta manera se puede ver que la respuesta al impulso conserva toda la información sobre la influencia de la reverberación del recinto sobre la señal captada por el micrófono. 
 
-La respuesta al impulso de un recinto real se mide actualmente utilizando una técnica de barrido frecuencial \cite{sinesweep}. Además, existen modelos geométricos que se utilizan para determinar la respuesta al impulso de manera analítica. Los principales son el modelo de trazado de rayos \cite{raytracing} y el modelo fuente imagen \cite{sourceimage}. Estos modelos asumen la propagación del sonido como rayos en lugar de ondas. En la Figura \ref{fig:analitic_rir} se ilustran ambos modelos. 
+La respuesta al impulso de un recinto se mide actualmente utilizando una técnica de barrido frecuencial \cite{sinesweep}. Además, existen modelos geométricos que se utilizan para determinar la respuesta al impulso de manera analítica. Los principales son el modelo de trazado de rayos \cite{raytracing} y el modelo fuente imagen \cite{sourceimage}. Estos modelos asumen la propagación del sonido como rayos en lugar de ondas. En la Figura \ref{fig:analitic_rir} se ilustran ambos modelos. 
 
 \begin{figure}[H]
   \centering{}
@@ -168,7 +168,7 @@ Para caracterizar la señal del habla propagándose en condiciones reverberantes
 
 \subsubsection{Relación energía de modulación de voz a reverberación}
 
-Este parámetro de medida de calidad para señales dereverberadas se basa en obtener características de la reverberación partiendo del espectro de modulación de la señal \cite{SRMR}. La formulación de este parámetro se basa en el hecho de que la cola reverberante de una respuesta al impulso puede ser modelada como ruido blanco Gaussinano exponencialmente amortiguado. Esta característica puede ser explotada en el análisis del espectro de modulación de la señal bajo análisis para obtener descriptores del efecto de la reverberación.
+Este parámetro de medida de calidad para señales dereverberadas se basa en obtener características de la reverberación partiendo del espectro de modulación de la señal \cite{SRMR}. La formulación de este parámetro se basa en el hecho de que la cola reverberante de una respuesta al impulso puede ser modelada como ruido blanco gaussiano exponencialmente amortiguado. Esta característica puede ser explotada en el análisis del espectro de modulación de la señal bajo análisis para obtener descriptores del efecto de la reverberación.
 
 \subsubsection{Inteligibilidad objetiva de corto termino extendida}
 Este parámetro está basado en características extraídas a partir de la correlación de corto término entre la señal limpia y la señal procesada. Es aplicable para evaluar aquellos procesos que realizan transformaciones no lineales \cite{ESTOI}. Su funcionamiento se basa en aplicar una ventana de análisis de $384$ $ms$ en las envolventes de amplitud de las subbandas de la señal analizada. Estas ventanas temporales se aplican en pos de contemplar frecuencias de modulación que son relevantes para la inteligibilidad. En estos lapsos temporales se calculan coeficientes de correlación espectrales que son luego promediados. De esta manera, este parámetro puede ser interpretado en términos de una descomposición ortogonal de espectrogramas energéticamente normalizados que son luego ordenados de acuerdo a su contribución a la inteligibilidad estimada. 
@@ -178,23 +178,24 @@ Este parámetro está basado en características extraídas a partir de la corre
 Este descriptor fue ampliamente utilizado en tareas de separación de fuentes y refuerzo de señales de habla. Esta basado en el cómputo de la relación señal a interferencia (SIR), y en la relación señal a artefacto (SAR) \cite{SAR}. En las tareas de dereverberación, estas medidas pueden ser interpretadas como proporcionales a la supresión de componentes reverberantes tardías e inversamente proporcionales a la distorsión en la señal del habla, respectivamente. Contemplando estos valores, el parámetro final mide la calidad general de la señal dereverberada.  
 
 \subsection[Redes neuronales y algoritmos de aprendizaje profundo]{REDES NEURONALES Y ALGORITMOS DE APRENDIZAJE PROFUNDO}
-Las redes neuronales artificiales son herramientas de modelado computacional que comparten algunas propiedades con el funcionamiento de las neuronas biológicas  \cite{neurona}. Estas conforman el estado del arte actual para la resolución y modelado de problemas de alta complejidad en diversas disciplinas \cite{ANN_intro}. 
+Las redes neuronales artificiales son modelos computacionales que comparten algunas propiedades con el funcionamiento de las neuronas biológicas  \cite{neurona}. Estas conforman el estado del arte actual para la resolución y modelado de problemas de alta complejidad en diversas disciplinas \cite{ANN_intro}. 
 
 \subsubsection{La neurona artificial}
 El bloque básico de los modelos de aprendizaje profundo es la neurona artificial. El esquema de una neurona artificial se puede ver en la Figura \ref{fig:neurona}. Sus componentes principales son: 
 
 \begin{figure}[H]
   \centering{}
-  \includegraphics[scale=0.30]{neurona.png}
-  \caption{Esquema de neurona artificial. Extraído de \cite{dragon}.}
+  \includegraphics[scale=0.25]{neurona3.png}
+  \caption{Esquema de neurona artificial.}
   \label{fig:neurona}
 \end{figure}
 
 \begin{itemize}
     \item \textbf{Entradas}: son los datos que van a ser procesados en esta unidad.
-    \item \textbf{Pesos sinápticos}:son parámetros asociados a cada entrada que se van ajustando durante la etapa de entrenamiento. 
     
-    \item \textbf{Suma ponderada}: Sintetiza la entrada a la función de activación. Consiste en el producto interno entre el vector de entradas y el vector de pesos sinápticos. Matemáticamente, se expresa como:
+    \item \textbf{Pesos sinápticos}: son parámetros asociados a cada entrada que se van ajustando durante la etapa de entrenamiento. 
+    
+    \item \textbf{Suma ponderada}: consiste en el producto interno entre el vector de entradas y el vector de pesos sinápticos. Matemáticamente, se expresa como:
     
     \begin{equation}
 \label{eqn:suma_ponderada}
@@ -202,9 +203,16 @@ El bloque básico de los modelos de aprendizaje profundo es la neurona artificia
 \end{equation}
     
     donde $x$ son las entradas, $w$ los pesos sinápticos y $n$ el número de entradas.
-    \item \textbf{Función de activación}: Función que se aplica a la salida de la suma ponderada, y genera la salida de la neurona. La misma introduce alinealidades en la neurona, haciendo que el modelo resultante sea no lineal. Algunos ejemplos de funciones de activación se pueden ver en la Figura \ref{fig:activación}. 
+	
+	\item \textbf{Umbral o Bias}: entrada externa a la red neuronal. Su valor se modifica durante el entrenamiento al igual que los pesos sinápticos.     
     
-    \item \textbf{Salida}: Es el resultado de aplicar el proceso completo al conjunto de entradas. En una red neuronal, esta salida puede ser la entrada de una o varias unidades subsiguientes. 
+    \item \textbf{Función de activación}: Función que se aplica a la salida de la suma ponderada mas el umbral o bias, y genera la salida de la neurona como se muestra en la ecuación \ref{eqn:activacion}. La misma introduce alinealidades en la neurona, haciendo que el modelo resultante sea no lineal. Algunos ejemplos de funciones de activación se pueden ver en la Figura \ref{fig:activación}. 
+    
+\begin{equation}
+\label{eqn:activacion}
+	o_{j} = \varphi (\sum_{i=1}^{n}x_{i}w_{ji}+\theta_{j})
+\end{equation}
+     
 \end{itemize}
 
 
@@ -217,16 +225,9 @@ El bloque básico de los modelos de aprendizaje profundo es la neurona artificia
 
 \subsubsection{Modelos basados en redes neuronales}
 
-Una red neuronal suele organizarse en capas, las cuales poseen una cierta cantidad de neuronas. El comportamiento de la red neuronal se define en base a su arquitectura. La arquitectura depende principalmente de:
-\begin{itemize}
-\item Número de capas.
-\item Número de neuronas por capas.
-\item Tipos de conexiones entre las capas.
-\end{itemize}
+Una red neuronal se organiza en capas, que poseen una cierta cantidad de neuronas. Las salidas de las neuronas de una capa suelen constituir las entradas de las neuronas de la capa siguiente. A la hora de diseñar una arquitectura de red neuronal, es necesario definir hiperparámetros, como cuántas capas se utilizarán, cuántas neuronas tendrá cada capa y qué tipo de capas serán, entre muchos otros.
 
-La red neuronal con alimentación hacia adelante fue el primer tipo de red neuronal implementado. En esta red neuronal, la información fluye en un solo sentido, desde la entrada hacia la salida. 
-
-Una de las redes neuronales mas estudiadas es la red neuronal multicapas con alimentación hacia adelante (feed-forward multilayer neural network). Esta consta de una capa de entrada, una o varias capas ocultas, y una capa de salida. Cada capa puede contener un número distinto de neuronas, y cada capa se encuentra completamente conectada a la capa adyacente. Esta red neuronal es capaz de representar cualquier función dado un número suficiente de neuronas. Un ejemplo de esta red se ilustra en la Figura \ref{fig:red}.
+Una de las redes neuronales mas estudiadas es el perceptrón multicapa (multilayer perceptron, o MLP) \cite{MLP}. Esta consta de una capa de entrada, una o varias capas ocultas, y una capa de salida. Cada capa puede contener un número distinto de neuronas, y cada capa se encuentra completamente conectada a la capa adyacente. Esta red neuronal es capaz de representar cualquier función dado un número suficiente de neuronas. Un ejemplo de esta red se ilustra en la Figura \ref{fig:red}.
 
 \begin{figure}[H]
   \centering{}
@@ -235,7 +236,7 @@ Una de las redes neuronales mas estudiadas es la red neuronal multicapas con ali
   \label{fig:red}
 \end{figure}
 
-Frecuentemente se cataloga a las redes neuronales multicapas como algoritmos de aprendizaje profundo. Esto se debe a que contienen múltiples capas de procesamiento no lineal que aprenden diferentes niveles de representación formando una jerarquía de características, desde un nivel de abstracción mas bajo a uno mas alto \cite{franchute}.  
+Frecuentemente se cataloga a las redes neuronales con más de una capa oculta como algoritmos de aprendizaje profundo. Esto se debe a que contienen múltiples capas de procesamiento no lineal que aprenden diferentes niveles de representación formando una jerarquía de características, desde un nivel de abstracción más bajo a uno más alto \cite{franchute}.  
 
 \subsubsection{Entrenamiento y aprendizaje}
 
@@ -243,24 +244,17 @@ Los algoritmos de aprendizaje por máquina se entrenan a partir del procesamient
 
 La función de costo recibe las salidas de la red y las salidas esperadas, y luego calcula una medida de error a partir de una función matemática. Esta función se escoge de acuerdo a la tarea que se busca realizar. Entonces, para cada estimación de la red, la función de costo otorga un puntaje que explica cuan lejos está el valor estimado del valor objetivo.  
 
-El paso siguiente en el proceso de entrenamiento es utilizar la salida de la función de costo como una señal de realimentación para poder ajustar los parámetros entrenables de la red neuronal (pesos sinápticos, umbrales, etc) de manera tal de minimizar la función de costo. Esta tarea es realizada por la función de optimización. La misma aplica el algoritmo de propagación del error hacia atrás para computar el gradiente de la función de costo respecto a los parámetros entrenables de la red neuronal. En base a este gradiente y al valor de tasa de aprendizaje definido en la función de optimización, se puede determinar como modificar los parámetros entrenables para lograr disminuir el error de salida. Este bucle de entrenamiento se ilustra en el esquema de la Figura \ref{fig:esquema}. Repetir este ciclo un número suficiente de veces conduce a la convergencia del valor de error. 
+El paso siguiente en el proceso de entrenamiento es utilizar la salida de la función de costo como una señal de realimentación para poder ajustar los parámetros entrenables de la red neuronal (pesos sinápticos, umbrales, etc) de manera tal de minimizar la función de costo. Esta tarea es realizada por la función de optimización. La misma aplica el algoritmo de propagación del error hacia atrás para computar el gradiente de la función de costo respecto a los parámetros entrenables de la red neuronal. En base a este gradiente y al valor de tasa de aprendizaje definido en la función de optimización, se puede determinar cómo modificar los parámetros entrenables para lograr disminuir el error de salida. Este bucle de entrenamiento se ilustra en el esquema de la Figura \ref{fig:esquema}. Repetir este ciclo un número suficiente de veces conduce a la convergencia del valor de error. 
 
 \begin{figure}[H]
   \centering{}
   \includegraphics[scale=0.65]{esquema_red.jpg}
-  \caption{Diagrama de flujo del bucle de entrenamiento de una sistema de red neuronal.}
+  \caption{Diagrama de flujo del bucle de entrenamiento de una red neuronal.}
   \label{fig:esquema}
 \end{figure}
 
 
-En este trabajo el conjunto de datos de entrenamiento se segmenta en lotes. En cada iteración de entrenamiento la red neuronal recibe un lote, lo procesa, aplica la función de costo y ajusta los parámetros de cada capa. Cuando la red procesó todos los lotes que componen el conjunto de datos de entrenamiento se dice que transcurrió una época. El proceso de entrenamiento depende en cierta medida del tamaño de los lotes \cite{franchute}. Si consideramos la curva de la función de costo de un parámetro como la de la Figura \ref{fig:costo_curva}, vemos que existen mínimos locales y mínimos globales a lo largo de la misma. En el proceso de entrenamiento se busca minimizar este valor de costo. Si se toman lotes muy pequeños, lo que se traduce en desplazamientos pequeños a lo largo de esta curva, se corre el riesgo de quedar confinado en un mínimo local. De igual manera, un conjunto demasiado grande produciría saltos demasiado grandes en comparación a las fluctuaciones de esta curva, haciendo que se obtengan valores de costo aleatorios. 
-
-\begin{figure}[H]
-  \centering{}
-  \includegraphics[scale=0.35]{costo_curva.png}
-  \caption{Curva de costo para un parámetro}
-  \label{fig:costo_curva}
-\end{figure}
+En este trabajo, el conjunto de datos de entrenamiento se segmenta en lotes. En cada iteración de entrenamiento la red neuronal recibe un lote, lo procesa, aplica la función de costo y ajusta los parámetros de cada capa. Cuando la red procesó todos los lotes que componen el conjunto de datos de entrenamiento se dice que transcurrió una época. Por ende, tanto el tamaño de los lotes como la cantidad de epocas de entrenamiento son hiperparámetros a definir.
 
 El orden en el que los datos son presentados ante el modelo puede influenciar positiva o negativamente en el resultado final del entrenamiento. Existen técnicas de optimización que se desarrollaron partiendo de cualidades propias del aprendizaje en seres humanos y animales, como el hecho de que el aprendizaje resulta mejor cuando las instancias de aprendizaje están organizadas en un orden significativo, añadiendo gradualmente mayor cantidad de conceptos y por ende una mayor complejidad. Esta idea se traslada al entrenamiento de algoritmos de aprendizaje profundo con el desarrollo de una estrategia denominada aprendizaje por currículum \cite{cv}. La misma consiste en seleccionar cuales datos y en que orden presentarlos al sistema durante el aprendizaje, de manera de guiar el entrenamiento para que inicialmente se aprendan los conceptos mas sencillos del problema, e ir gradualmente aumentando el grado de complejidad de la tarea. El aprendizaje por currículum se define como una estrategia de optimización global. Dependiendo de la tarea sobre la que se aplica, puede lograr en menor o mayor medida que un sistema logre un mejor nivel de generalización así como también llegar al punto de convergencia en un menor tiempo de entrenamiento.
 
@@ -270,27 +264,26 @@ Por último, la segmentación de los datos que la red neuronal recibe y procesa 
 \begin{itemize}
 \item\textbf{Conjunto de entrenamiento}: Este conjunto de datos es el que se utiliza en la etapa de entrenamiento para optimizar los parámetros de la red. Aquí se concentra el mayor volumen de datos.
 
-\item\textbf{Conjunto de validación}: Sobre este conjunto se mide el desempeño del sistema a lo largo de su entrenamiento. Los resultados obtenidos del procesamiento de este conjunto sirven para ajustar variables que requieren ser especificadas de manera previa al entrenamiento. Estas variables se denominan hiper parámetros.
+\item\textbf{Conjunto de validación}: Sobre este conjunto se mide el desempeño del sistema a lo largo de su entrenamiento. Los resultados obtenidos al evaluar en este conjunto sirven para ajustar los hiperparámetros que requieren ser especificadas de manera previa al entrenamiento. Estas variables se denominan hiper parámetros.
  
-\item\textbf{Conjunto de prueba}: Este conjunto es el que se utiliza para medir el rendimiento final del sistema. Como contiene instancias que no fueron utilizadas en las etapas de entrenamiento y ajuste de parámetros, el análisis del procesamiento de este conjunto sirve para medir el nivel de generalización que el sistema logró alcanzar. 
+\item\textbf{Conjunto de prueba}: Este conjunto es el que se utiliza para medir el desempeño final del sistema. Como contiene instancias que no fueron utilizadas en las etapas de entrenamiento y ajuste de parámetros, la evaluación sobre este conjunto sirve para medir el nivel de generalización que el sistema logró alcanzar. 
 
 \end{itemize}
 
 Durante el entrenamiento pueden ocurrir dos fenómenos indeseados: el sobreajuste y el subajuste. 
-El sobreajuste refiere al caso en que el modelo obtenga muy buenos resultados sobre los datos de entrenamiento, pero malos resultados sobre los datos de valdiación y evaluación. Es decir, el modelo no alcanzó el grado de generalización pretendido, y memorizó las instancias de entrenamiento. Esto ocurre cuando la complejidad del modelo es muy alta en comparación a la complejidad de la tarea que busca resolver.
-El subajuste, en cambio, hace referencia a un error elevado en la etapa de entrenamiento. Esto ocurre cuando el modelo es muy simple, o carece de la complejidad necesaria para realizar la tarea. 
+El sobreajuste refiere al caso en que el modelo obtenga muy buenos resultados sobre los datos de entrenamiento, pero malos resultados sobre los datos de validación y evaluación. Es decir, el modelo no alcanzó el grado de generalización pretendido, y memorizó las instancias de entrenamiento. Esto ocurre cuando la complejidad del modelo es muy alta en comparación a la complejidad de la tarea que busca resolver, o no se utilizaron suficientes datos de entrenamiento. El subajuste, en cambio, hace referencia a un error elevado en la etapa de entrenamiento. Esto ocurre cuando el modelo es muy simple, o carece de la complejidad necesaria para realizar la tarea. 
 
 Existen varias estratégias para lidiar con los problemas de sobreajuste, como por ejemplo:
 
 \begin{itemize}
-\item\textbf{Aumento de datos de entrenamiento}: Proporcionar más datos a la etapa de entrenamiento produce una mejora en la capacidad de generalización del modelo. De todos modos, obtener mas datos no siempre es posible, y por eso existen técnicas de aumentación, que consisten en manipular datos ya existentes para generar datos nuevos.  
+\item\textbf{Aumento de datos de entrenamiento}: Proporcionar más datos a la etapa de entrenamiento produce una mejora en la capacidad de generalización del modelo. De todos modos, recolectar más datos no siempre es posible, y por eso existen técnicas de aumentación, que consisten en manipular datos ya existentes para generar datos nuevos.  
 
-\item\textbf{Dropout}: Es una técnica de regularización que consiste en anular aleatoriamente un determinado número de activaciones de una capa durante el entrenamiento \cite{drop}. Es equivalente a entrenar un numero menor de neuronas, lo que se traduce en una reducción de la complejidad del modelo.  
+\item\textbf{Dropout}: Es una técnica de regularización que consiste en anular aleatoriamente un determinado número de activaciones de una capa durante el entrenamiento \cite{drop}. Es equivalente a entrenar un número menor de neuronas, lo que se traduce en una reducción de la complejidad del modelo.  
 
 \item\textbf{Interrupción temprana del entrenamiento}: Esta estrategia consiste en detener el entrenamiento antes de que el modelo comience a sobreajustar los datos \cite{bengio}.  Para determinar el punto en el que el modelo empieza a sobreajustar, comúnmente se monitorea el error que produce el modelo sobre el conjunto de validación a medida que transcurre el entrenamiento.
 \end{itemize}
 
-Otra técnica importante que se utiliza en este trabajo es la normalización por lotes \cite{batchnorm}. Esta consiste en normalizar las entradas de una capa, restando la media y dividiendo por el desvío estándar del lote de datos actual. Esto produce que el entrenamiento sea mas veloz (se logra la convergencia del error mas rápidamente) y estable. 
+Otra técnica importante que se utiliza en este trabajo es la normalización por lotes \cite{batchnorm}. Esta consiste en normalizar las entradas de una capa, restando la media y dividiendo por el desvío estándar del lote de datos actual. Esto suele resultar en un entrenamiento más estable, y una convergencia más rápida de las curvas de error del modelo.
 
 \subsubsection{Redes neuronales convolucionales}
 
@@ -308,7 +301,7 @@ El bloque básico de las redes neuronales convolucionales es la capa convolucion
 \end{itemize}
 
 
-El funcionamiento a partir de campos receptivos y el hecho de que los parámetros se comparten entre neuronas producen que las capas convolucionales sean mas eficientes en términos de cantidad parámetros a entrenar. 
+El funcionamiento a partir de campos receptivos y el hecho de que los parámetros se comparten entre neuronas producen que las capas convolucionales sean más eficientes en términos de cantidad de parámetros a entrenar. 
 
 
 \begin{figure}[H]
@@ -318,7 +311,7 @@ El funcionamiento a partir de campos receptivos y el hecho de que los parámetro
   \label{fig:convolucion}
 \end{figure}
 
-De esta manera, una capa convolucional aplica uno o varios filtros bidimensionales sobre la imagen de entrada, generando mapas de características que representan la presencia del patrón del filtro a lo largo de la imagen, como se puede apreciar en la Figura \ref{fig:numerito}. En este tipo de capas, el aprendizaje se traduce en determinar la forma de los filtros que se deben aplicar para conseguir los resultados esperados. 
+De esta manera, una capa convolucional aplica uno o varios filtros bidimensionales sobre la imagen de entrada, generando mapas de características que representan la presencia del patrón del filtro a lo largo de la imagen, como se puede apreciar en la Figura \ref{fig:numerito}. En este tipo de capas, el aprendizaje se traduce en determinar los valores de los filtros que se deben aplicar para conseguir los resultados esperados. 
 
 \begin{figure}[H]
   \centering{}
@@ -343,12 +336,12 @@ Los hiperparámetros que se deben definir en cada capa convolucional son:
 \begin{figure}[H]
   \centering{}
   \includegraphics[scale=0.35]{filtrosconv.png}
-  \caption{Parámetros de procesamiento en capas convolucionales. Extraído de \cite{lagartija}.}
+  \caption{Principales hiperparámetros de una capa convolucional. Extraído de \cite{lagartija}.}
   \label{fig:variables_conv}
 \end{figure}
 
 
-Para el análisis de imágenes, estas capas se concatenan de manera que la primera capa no contempla cada píxel de la imagen, sino que solo se enfoca un número acotado de píxeles que caen dentro de su campo receptivo. De igual manera, las capas subsiguientes se enfocan en las salidas de un conjunto acotado de neuronas de la capa precedente. Este funcionamiento se ilustra en la Figura \ref{fig:convnet}. 
+Para el análisis de imágenes, estas capas se organizan de manera que la primera capa no contempla todos los pixeles de la imagen, sino que solo se enfoca un número acotado de píxeles que caen dentro de su campo receptivo. De igual manera, las capas subsiguientes se enfocan en las salidas de un conjunto acotado de neuronas de la capa precedente. Este funcionamiento se ilustra en la Figura \ref{fig:convnet}. 
 
 \begin{figure}[H]
   \centering{}
@@ -379,7 +372,7 @@ El esquema  se compone de tres partes fundamentales:
 \item Una función de decodificación en donde se aplica el proceso inverso que en la codificación, expandiendo las dimensiones tomadas del espacio latente para reconstruir la señal de entrada. 
 \end{itemize}
 
-Comúnmente, este tipo de arquitecturas se entrenan restringiendo o condicionando los datos de entrada, para que la red se vea obligada a priorizar que aspectos de la entrada deben copiarse, lo que a menudo implica aprender propiedades útiles de los datos.
+Comúnmente, este tipo de arquitecturas se entrenan restringiendo o condicionando los datos de entrada, para que la red se vea obligada a priorizar qué aspectos de la entrada deben copiarse, lo que a menudo implica aprender propiedades útiles de los datos.
 
 
 
@@ -387,7 +380,7 @@ Comúnmente, este tipo de arquitecturas se entrenan restringiendo o condicionand
 
 \subsubsection{Máscaras de amplitud}
 
-Existen numerosas maneras de representar las señales de audio para dereverberarlas. En la actualidad, los espectrogramas son la más utilizada ya que su cálculo es rápido y sencillo, son interpretables, es posible invertirlos y pueden ser fácilmente aprovechados por modelos de aprendizaje profundo como las redes neuronales convolucionales. Partiendo de una señal con reverberación, se extrae una representación en tiempo-frecuencia a partir de transformaciones como la transformada de corto término de Fourier (STFT). Una vez obtenido este espectrograma, lo que se busca es descifrar el proceso necesario para obtener un nuevo espectrograma que se corresponda con la señal anecoica (descartando el efecto de la reverberación). Entonces, el proceso de dereverberación se puede resumir a la estimación de un filtro variable con el tiempo que se aplica sobre el espectrograma con reverberación. Estudios previos afirman que la fase no aporta información significativa para estas tareas de mejora del habla \cite{fase1}\cite{fase2}, por lo cual se suelen realizar estos procesos únicamente sobre la magnitud de los espectrogramas, utilizando la información de fase del audio original. Considerando esto, el proceso de dereverberación se reduce a la expresión de la ecuación \ref{eqn:dereverb}, en donde $STFT_{Y}$ es la magnitud del espectrograma de la señal anecoica, $STFT_{X}$ es la magnitud del espectrograma de la señal con reverberación y $M$ es la máscara ideal que representa el filtrado en el dominio tiempo-frecuencia. En otras palabras, la magnitud del espectro de la señal dereverberada se obtiene aplicando la máscara ideal sobre la magnitud del espectrograma de la señal con reverberación. 
+Existen numerosas maneras de representar las señales de audio para dereverberarlas. En la actualidad, los espectrogramas son la más utilizada ya que su cálculo es rápido y sencillo, son interpretables, es posible invertirlos y pueden ser fácilmente aprovechados por modelos de aprendizaje profundo como las redes neuronales convolucionales. Partiendo de una señal con reverberación, se extrae una representación en tiempo-frecuencia a partir de transformaciones como la transformada de corto término de Fourier (STFT). Una vez obtenido este espectrograma, lo que se busca es aprender el proceso necesario para obtener un nuevo espectrograma que se corresponda con la señal anecoica (descartando el efecto de la reverberación). Entonces, el proceso de dereverberación se puede resumir a la estimación de un filtro variable en el tiempo que se aplica sobre el espectrograma con reverberación. Estudios previos afirman que la fase no aporta información significativa para estas tareas de mejora del habla \cite{fase1}\cite{fase2}, por lo cual se suelen realizar estos procesos únicamente sobre la magnitud de los espectrogramas, utilizando la información de fase del audio original. Considerando esto, el proceso de dereverberación se reduce a la expresión de la ecuación \ref{eqn:dereverb}, en donde $STFT_{Y}$ es la magnitud del espectrograma de la señal anecoica, $STFT_{X}$ es la magnitud del espectrograma de la señal con reverberación y $M$ es la máscara ideal que representa el filtrado en el dominio tiempo-frecuencia. En otras palabras, la magnitud del espectro de la señal dereverberada se obtiene aplicando la máscara ideal sobre la magnitud del espectrograma de la señal con reverberación. 
  
 \begin{equation}
 \label{eqn:dereverb}
@@ -415,7 +408,7 @@ En este trabajo, como en muchas otras tareas de procesamiento de audio (y proces
 \item Convertir el espectrograma modificado $\hat{X}[t,f]$ nuevamente a una señal en el dominio del tiempo $\hat{x}[n]$ a través de la ISTFT.
 \end{enumerate}
 
-El último paso de la lista conlleva un problema, ya que ciertos procesos pueden generar espectrogramas que no sean consistentes, es decir, que no haya ninguna señal en el dominio del tiempo cuyo espectrograma sea el generado. Para solucionar esta cuestión se desarrollaron algoritmos que buscan estimar una señal temporal cuyo espectrograma sea el más cercano posible al espectrograma que se quiere invertir. Este es el caso del algoritmo propuesto por Griffin y Lim \cite{griffinlim}. El algoritmo consiste en un bucle iterativo que busca minimizar el error cuadrático medio entre el espectrograma de la señal estimada y el espectrograma modificado. En la Figura \ref{fig:griffin} se muestra un diagrama de bloques que explica el funcionamiento básico del algoritmo. 
+El último paso de la lista conlleva un problema, ya que ciertos procesos pueden generar espectrogramas que no sean consistentes, es decir, que no haya ninguna señal en el dominio del tiempo cuyo espectrograma sea el generado. Para solucionar este problema se desarrollaron algoritmos que buscan estimar una señal temporal cuyo espectrograma sea el más cercano posible al espectrograma que se quiere invertir. Este es el caso del algoritmo propuesto por Griffin y Lim \cite{griffinlim}. El algoritmo consiste en un bucle iterativo que busca minimizar el error cuadrático medio entre el espectrograma de la señal estimada y el espectrograma modificado. En la Figura \ref{fig:griffin} se muestra un diagrama de bloques que explica el funcionamiento básico del algoritmo. 
 
 \begin{figure}[H]
   \centering{}
@@ -424,5 +417,5 @@ El último paso de la lista conlleva un problema, ya que ciertos procesos pueden
   \label{fig:griffin}
 \end{figure}
 
-La magnitud del espectrograma de entrada $\left | \hat{S}[t,f] \right |$ inicialmente se combina con una fase aleatoria para formar un espectrograma complejo. Si se cuenta con una estimación previa de la fase, esta puede utilizarse en lugar de la fase aleatoria al iniciar el proceso. Luego, el espectrograma complejo conformado se antitransforma obteniendo una señal de audio, la cual vuelve a ser transformada obteniéndose un nuevo espectrograma complejo $\left | S[t,f] \right |e^{j\angle S[t,f]}$. Este espectrograma es consistente, pues deriva de la transformación de una señal de audio real. Se puede probar que combinar esta fase resultante $\angle S[t,f]$ con el espectrograma modificado de entrada $\left | \hat{S}[t,f] \right |$ disminuye el error cuadrático entre los espectrogramas evaluados (es decir, entre el espectrograma consistente y el inconsistente). Entonces, se combina la fase consistente con la magnitud del espectrograma de entreda y se vuelve a repetir todo el proceso.   Se debe definir un criterio para determinar cuando dejar de iterar, y tomar al espectrograma consistente como el resultado final del proceso para antitransformarlo y obtener  $\hat{x}[n]$. Un criterio podría ser calcular la convergencia espectral al final de cada iteración, y definir un valor de tolerancia. De esta manera, el bucle se repite hasta que la diferencia entre los espectrogramas evaluados sea menor que un valor definido como tolerancia. Otro criterio, por ejemplo, podría ser directamente fijar un número de iteraciones a realizar a partir de el cual se asume la convergencia del espectro resultante. De igual manera se podrían definir otros criterios. 
+La magnitud del espectrograma de entrada $\left | \hat{S}[t,f] \right |$ inicialmente se combina con una fase aleatoria para formar un espectrograma complejo. Si se cuenta con una estimación previa de la fase, esta puede utilizarse en lugar de la fase aleatoria al iniciar el proceso. Luego, el espectrograma complejo conformado se antitransforma obteniendo una señal de audio, la cual vuelve a ser transformada obteniéndose un nuevo espectrograma complejo $\left | S[t,f] \right |e^{j\angle S[t,f]}$. Este espectrograma es consistente, pues deriva de la transformación de una señal de audio real. Se puede probar que combinar esta fase resultante $\angle S[t,f]$ con el espectrograma modificado de entrada $\left | \hat{S}[t,f] \right |$ disminuye el error cuadrático entre los espectrogramas evaluados (es decir, entre el espectrograma consistente y el inconsistente). Entonces, se combina la fase consistente con la magnitud del espectrograma de entrada y se vuelve a repetir todo el proceso.   Se debe definir un criterio para determinar cuando dejar de iterar, y tomar al espectrograma consistente como el resultado final del proceso para antitransformarlo y obtener  $\hat{x}[n]$. Un criterio podría ser calcular la convergencia espectral al final de cada iteración, y definir un valor de tolerancia. De esta manera, el bucle se repite hasta que la diferencia entre los espectrogramas evaluados sea menor que un valor definido como tolerancia. Otro criterio, por ejemplo, podría ser directamente fijar un número de iteraciones a realizar a partir del cual se asume la convergencia del espectro resultante. De igual manera se podrían definir otros criterios. 
 

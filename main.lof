@@ -13,88 +13,86 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {6}{\ignorespaces Modelos analíticos de cálculo de la respuesta al impulso de un recinto. Extraído de \cite {rir}.\relax }}{14}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de neurona artificial. Extraído de \cite {dragon}.\relax }}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Esquema de neurona artificial.\relax }}{17}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {8}{\ignorespaces Funciones de activación y sus derivadas. Extraído de \cite {lagartija}.\relax }}{18}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {9}{\ignorespaces Ejemplo de red neuronal multicapa con alimentación hacia adelante.\relax }}{19}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de flujo del bucle de entrenamiento de una sistema de red neuronal.\relax }}{21}{figure.caption.10}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de flujo del bucle de entrenamiento de una red neuronal.\relax }}{21}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Curva de costo para un parámetro\relax }}{22}{figure.caption.11}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Funcionamiento de un filtro de convolución. Extraído de \cite {dragon}.\relax }}{24}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Funcionamiento de un filtro de convolución. Extraído de \cite {dragon}.\relax }}{25}{figure.caption.12}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Representación de la aplicación de un filtro bidimensional sobre una imagen.\relax }}{25}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Representación de la aplicación de un filtro bidimensional sobre una imagen.\relax }}{25}{figure.caption.13}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Principales hiperparámetros de una capa convolucional. Extraído de \cite {lagartija}.\relax }}{26}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Parámetros de procesamiento en capas convolucionales. Extraído de \cite {lagartija}.\relax }}{27}{figure.caption.14}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Capas convolucionales con campos receptivos locales rectangulares\relax }}{26}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Capas convolucionales con campos receptivos locales rectangulares\relax }}{27}{figure.caption.15}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Estructura general de un autoencoder.\relax }}{27}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Estructura general de un autoencoder.\relax }}{28}{figure.caption.16}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Disposición de las entradas y salidas del modelo para la estimación de las máscaras de amplitud\relax }}{29}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Disposición de las entradas y salidas del modelo para la estimación de las máscaras de amplitud\relax }}{30}{figure.caption.17}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagrama en bloques del algoritmo de Griffin-Lim.\relax }}{30}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama en bloques del algoritmo de Griffin-Lim.\relax }}{31}{figure.caption.18}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Recinto greathall y esquema de medición de respuestas al impulso.\relax }}{33}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces Recinto greathall y esquema de medición de respuestas al impulso.\relax }}{34}{figure.caption.19}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Recinto octagon y esquema de medición de respuestas al impulso.\relax }}{33}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces Recinto octagon y esquema de medición de respuestas al impulso.\relax }}{34}{figure.caption.20}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Recinto classroom y esquema de medición de respuestas al impulso.\relax }}{34}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {21}{\ignorespaces Recinto classroom y esquema de medición de respuestas al impulso.\relax }}{35}{figure.caption.21}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Recintos y puntos receptor-fuente generados para la simulación de respuestas al impulso\relax }}{35}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces Recintos y puntos receptor-fuente generados para la simulación de respuestas al impulso\relax }}{36}{figure.caption.23}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Señales involucradas en el proceso de aumentación de DRR\relax }}{38}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces Señales involucradas en el proceso de aumentación de DRR\relax }}{39}{figure.caption.24}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Esquema básico de una red tipo 'U-NET' con conexiones de salto.\relax }}{42}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {24}{\ignorespaces Esquema básico de una red tipo 'U-NET' con conexiones de salto.\relax }}{43}{figure.caption.25}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Modelo de red neuronal convolucional implementado\relax }}{44}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces Modelo de red neuronal convolucional implementado\relax }}{45}{figure.caption.26}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Conjunto de respuestas al impulso reales.\relax }}{48}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces Conjunto de respuestas al impulso reales.\relax }}{49}{figure.caption.30}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Conjunto de respuestas al impulso generadas.\relax }}{49}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {27}{\ignorespaces Conjunto de respuestas al impulso generadas.\relax }}{50}{figure.caption.31}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Conjunto de respuestas al impulso aumentadas.\relax }}{49}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces Conjunto de respuestas al impulso aumentadas.\relax }}{50}{figure.caption.32}%
+\contentsline {figure}{\numberline {28}{\ignorespaces The average and standard deviation of critical parameters }}{51}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces The average and standard deviation of critical parameters }}{52}{figure.caption.33}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Diferencias entre espectrograma anecoico y dereverberado.\relax }}{52}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces Diferencias entre espectrograma anecoico y dereverberado.\relax }}{53}{figure.caption.34}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Espectrogramas de magnitud y fase de los audios para entrenamiento\relax }}{53}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces Espectrogramas de magnitud y fase de los audios para entrenamiento\relax }}{54}{figure.caption.35}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Influencia del número de iteraciones del algoritmo de Griffin-Lim.\relax }}{55}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces Influencia del número de iteraciones del algoritmo de Griffin-Lim.\relax }}{56}{figure.caption.36}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Variaciones de SDR para el primer conjunto de pruebas.\relax }}{57}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces Variaciones de SDR para el primer conjunto de pruebas.\relax }}{58}{figure.caption.39}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Variaciones de SRMR para el primer conjunto de pruebas.\relax }}{57}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces Variaciones de SRMR para el primer conjunto de pruebas.\relax }}{58}{figure.caption.40}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Variaciones de ESTOI para el primer conjunto de pruebas.\relax }}{58}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces Variaciones de ESTOI para el primer conjunto de pruebas.\relax }}{59}{figure.caption.41}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Variaciones de SDR para el segundo conjunto de pruebas.\relax }}{59}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces Variaciones de SDR para el segundo conjunto de pruebas.\relax }}{60}{figure.caption.42}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Variaciones de SRMR para el segundo conjunto de pruebas.\relax }}{59}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces Variaciones de SRMR para el segundo conjunto de pruebas.\relax }}{60}{figure.caption.43}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Variaciones de ESTOI para el segundo conjunto de pruebas.\relax }}{60}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces Variaciones de ESTOI para el segundo conjunto de pruebas.\relax }}{61}{figure.caption.44}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Respuestas al impulso generadas por aumentación.\relax }}{61}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces Respuestas al impulso generadas por aumentación.\relax }}{62}{figure.caption.45}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Comparación de SDR entre tipos de ordenamiento de datos durante el entrenamiento.\relax }}{62}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces Comparación de SDR entre tipos de ordenamiento de datos durante el entrenamiento.\relax }}{63}{figure.caption.46}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Comparación de SRMR entre tipos de ordenamiento de datos durante el entrenamiento.\relax }}{63}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces Comparación de SRMR entre tipos de ordenamiento de datos durante el entrenamiento.\relax }}{64}{figure.caption.47}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Comparación de ESTOI entre tipos de ordenamiento de datos durante el entrenamiento.\relax }}{63}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {42}{\ignorespaces Comparación de ESTOI entre tipos de ordenamiento de datos durante el entrenamiento.\relax }}{64}{figure.caption.48}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Descomposición temporal de la respuesta al impulso a procesar durante la aumentación temporal\relax }}{76}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {43}{\ignorespaces Descomposición temporal de la respuesta al impulso a procesar durante la aumentación temporal\relax }}{77}{figure.caption.51}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Banco de filtros Butterworth\relax }}{77}{figure.caption.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {44}{\ignorespaces Banco de filtros Butterworth\relax }}{78}{figure.caption.52}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Sub-bandas obtenidas luego de aplicar el banco de filtros\relax }}{78}{figure.caption.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {45}{\ignorespaces Sub-bandas obtenidas luego de aplicar el banco de filtros\relax }}{79}{figure.caption.53}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Estimación paramétrica de la pendiente de caída.\relax }}{80}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {46}{\ignorespaces Estimación paramétrica de la pendiente de caída.\relax }}{81}{figure.caption.54}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Respuesta original y extendida sin piso de ruido.\relax }}{81}{figure.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {47}{\ignorespaces Respuesta original y extendida sin piso de ruido.\relax }}{82}{figure.caption.55}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Aumentación del tiempo de reverberación alterando la envolvente de caída original.\relax }}{81}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {48}{\ignorespaces Aumentación del tiempo de reverberación alterando la envolvente de caída original.\relax }}{82}{figure.caption.56}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {49}{\ignorespaces Resultado del proceso de aumentación del tiempo de reverberación de una respuesta al impulso\relax }}{83}{figure.caption.57}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Resultado del proceso de aumentación del tiempo de reverberación de una respuesta al impulso\relax }}{82}{figure.caption.56}%
