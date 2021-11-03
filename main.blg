@@ -1,66 +1,30 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-The style file: biblatex.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 16120 items from 5000.
-Database file #1: main-blx.bib
-Database file #2: referencias.bib
-Biblatex version: 3.13
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 80 entries,
-            6365 wiz_defined-function locations,
-            1547 strings with 20132 characters,
-and the built_in function-call counts, 453214 in all, are:
-= -- 32175
-> -- 8009
-< -- 1664
-+ -- 11303
-- -- 3049
-* -- 31562
-:= -- 49837
-add.period$ -- 0
-call.type$ -- 80
-change.case$ -- 706
-chr.to.int$ -- 42
-cite$ -- 158
-duplicate$ -- 48603
-empty$ -- 41592
-format.name$ -- 5283
-if$ -- 93076
-int.to.chr$ -- 0
-int.to.str$ -- 176
-missing$ -- 0
-newline$ -- 2191
-num.names$ -- 3136
-pop$ -- 28257
-preamble$ -- 1
-purify$ -- 1245
-quote$ -- 0
-skip$ -- 13053
-stack$ -- 0
-substring$ -- 55088
-swap$ -- 9623
-text.length$ -- 1732
-text.prefix$ -- 0
-top$ -- 1
-type$ -- 2708
-warning$ -- 0
-while$ -- 6752
-width$ -- 0
-write$ -- 2112
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[66] biber:322> INFO - === mar nov  2, 2021, 20:23:14
+[77] Biber.pm:415> INFO - Reading 'main.bcf'
+[136] Biber.pm:943> INFO - Found 79 citekeys in bib section 0
+[147] Biber.pm:4256> INFO - Processing section 0
+[147] Utils.pm:75> INFO - Globbing data source 'referencias.bib'
+[147] Utils.pm:91> INFO - Globbed data source 'referencias.bib' to referencias.bib
+[156] Biber.pm:4455> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[158] bibtex.pm:1653> INFO - LaTeX decoding ...
+[227] bibtex.pm:1471> INFO - Found BibTeX data source 'referencias.bib'
+[275] Utils.pm:293> WARN - year field 'Berlin, 2001' in entry 'localizacion' is not an integer - this will probably not sort properly.
+[285] Utils.pm:293> WARN - year field 'California, 2010' in entry 'rabiner' is not an integer - this will probably not sort properly.
+[316] Utils.pm:293> WARN - year field 'Norwell, 2005' in entry 'binarymask' is not an integer - this will probably not sort properly.
+[319] Utils.pm:293> WARN - year field 'Massachussets, 1994' in entry 'ASA' is not an integer - this will probably not sort properly.
+[355] Utils.pm:293> WARN - year field 'California, 2019' in entry 'lagartija' is not an integer - this will probably not sort properly.
+[398] Utils.pm:293> WARN - year field 'Massachusetts, 1969' in entry 'Beranek' is not an integer - this will probably not sort properly.
+[402] Utils.pm:293> WARN - year field 'New Jersey, 1989' in entry 'openheim' is not an integer - this will probably not sort properly.
+[405] Utils.pm:293> WARN - year field 'New Jersey, 1988' in entry 'fft' is not an integer - this will probably not sort properly.
+[407] Utils.pm:293> WARN - year field 'Germany, 2021' in entry 'valerio' is not an integer - this will probably not sort properly.
+[410] Utils.pm:293> WARN - year field 'Hamburg, 2017' in entry 'rir' is not an integer - this will probably not sort properly.
+[448] Utils.pm:293> WARN - year field 'New York, 2021' in entry 'franchute' is not an integer - this will probably not sort properly.
+[462] Utils.pm:293> WARN - year field 'Massachusetts, 2016' in entry 'bengio' is not an integer - this will probably not sort properly.
+[482] Utils.pm:293> WARN - year field 'Beijing, 2008' in entry 'dragon' is not an integer - this will probably not sort properly.
+[683] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[683] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[683] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[729] bbl.pm:652> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[770] bbl.pm:755> INFO - Output to main.bbl
+[770] Biber.pm:128> INFO - WARNINGS: 13

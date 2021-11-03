@@ -91,7 +91,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>999</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
@@ -99,7 +99,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>999</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
@@ -111,15 +111,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minbibnames</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>mincitenames</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minsortnames</bcf:key>
-      <bcf:value>1</bcf:value>
+      <bcf:value>3</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minitems</bcf:key>
@@ -413,6 +413,7 @@
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
     <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">dashed</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>
@@ -2182,27 +2183,122 @@
     <bcf:datasource type="file" datatype="bibtex">referencias.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">reconocimiento</bcf:citekey>
-    <bcf:citekey order="2">verificacion</bcf:citekey>
-    <bcf:citekey order="3">localizacion</bcf:citekey>
-    <bcf:citekey order="4">filtros_inv</bcf:citekey>
-    <bcf:citekey order="5">LTI</bcf:citekey>
-    <bcf:citekey order="6">rabiner</bcf:citekey>
-    <bcf:citekey order="7">LPresiduo</bcf:citekey>
-    <bcf:citekey order="8">multichannel</bcf:citekey>
-    <bcf:citekey order="9">armonica</bcf:citekey>
-    <bcf:citekey order="10">mod</bcf:citekey>
-    <bcf:citekey order="11">spect_subtrac</bcf:citekey>
-    <bcf:citekey order="12">spect_subtrac2</bcf:citekey>
-    <bcf:citekey order="13">two_stage</bcf:citekey>
-    <bcf:citekey order="14">CASA</bcf:citekey>
-    <bcf:citekey order="15">ASA</bcf:citekey>
-    <bcf:citekey order="16">binarymask</bcf:citekey>
-    <bcf:citekey order="17">rev_mask</bcf:citekey>
-    <bcf:citekey order="18">parametros</bcf:citekey>
-    <bcf:citekey order="19">hazrati</bcf:citekey>
-    <bcf:citekey order="20">MLP</bcf:citekey>
-    <bcf:citekey order="21">ezeKun</bcf:citekey>
+    <bcf:citekey order="8">fun1</bcf:citekey>
+    <bcf:citekey order="9">fun2</bcf:citekey>
+    <bcf:citekey order="10">reconocimiento</bcf:citekey>
+    <bcf:citekey order="11">verificacion</bcf:citekey>
+    <bcf:citekey order="12">localizacion</bcf:citekey>
+    <bcf:citekey order="13">filtros_inv</bcf:citekey>
+    <bcf:citekey order="14">LTI</bcf:citekey>
+    <bcf:citekey order="15">rabiner</bcf:citekey>
+    <bcf:citekey order="16">LPresiduo</bcf:citekey>
+    <bcf:citekey order="17">multichannel</bcf:citekey>
+    <bcf:citekey order="18">armonica</bcf:citekey>
+    <bcf:citekey order="19">mod</bcf:citekey>
+    <bcf:citekey order="20">spect_subtrac</bcf:citekey>
+    <bcf:citekey order="21">spect_subtrac2</bcf:citekey>
+    <bcf:citekey order="22">two_stage</bcf:citekey>
+    <bcf:citekey order="23">binarymask</bcf:citekey>
+    <bcf:citekey order="24">ASA</bcf:citekey>
+    <bcf:citekey order="25">rev_mask</bcf:citekey>
+    <bcf:citekey order="26">parametros</bcf:citekey>
+    <bcf:citekey order="27">hazrati</bcf:citekey>
+    <bcf:citekey order="28">MLP</bcf:citekey>
+    <bcf:citekey order="29">cIRM</bcf:citekey>
+    <bcf:citekey order="30">IRM</bcf:citekey>
+    <bcf:citekey order="31">GAN</bcf:citekey>
+    <bcf:citekey order="32">ezeKun</bcf:citekey>
+    <bcf:citekey order="33">lagartija</bcf:citekey>
+    <bcf:citekey order="34">FCN</bcf:citekey>
+    <bcf:citekey order="34">rir_filtinverso</bcf:citekey>
+    <bcf:citekey order="35">RNN</bcf:citekey>
+    <bcf:citekey order="36">RNN+CNN</bcf:citekey>
+    <bcf:citekey order="37">GAN</bcf:citekey>
+    <bcf:citekey order="38">ezeKun</bcf:citekey>
+    <bcf:citekey order="39">griffinlim</bcf:citekey>
+    <bcf:citekey order="40">CNN</bcf:citekey>
+    <bcf:citekey order="40">FCN</bcf:citekey>
+    <bcf:citekey order="40">skip</bcf:citekey>
+    <bcf:citekey order="40">rir_filtinverso</bcf:citekey>
+    <bcf:citekey order="41">cIRM</bcf:citekey>
+    <bcf:citekey order="42">hifiGAN</bcf:citekey>
+    <bcf:citekey order="43">Beranek</bcf:citekey>
+    <bcf:citekey order="44">openheim</bcf:citekey>
+    <bcf:citekey order="45">openheim</bcf:citekey>
+    <bcf:citekey order="46">fft</bcf:citekey>
+    <bcf:citekey order="47">matlab</bcf:citekey>
+    <bcf:citekey order="48">matlab</bcf:citekey>
+    <bcf:citekey order="49">valerio</bcf:citekey>
+    <bcf:citekey order="50">valerio</bcf:citekey>
+    <bcf:citekey order="51">rir</bcf:citekey>
+    <bcf:citekey order="52">rir</bcf:citekey>
+    <bcf:citekey order="53">sinesweep</bcf:citekey>
+    <bcf:citekey order="54">raytracing</bcf:citekey>
+    <bcf:citekey order="55">sourceimage</bcf:citekey>
+    <bcf:citekey order="56">rir</bcf:citekey>
+    <bcf:citekey order="57">rir</bcf:citekey>
+    <bcf:citekey order="58">SRMR</bcf:citekey>
+    <bcf:citekey order="59">ESTOI</bcf:citekey>
+    <bcf:citekey order="60">SAR</bcf:citekey>
+    <bcf:citekey order="61">neurona</bcf:citekey>
+    <bcf:citekey order="62">ANN_intro</bcf:citekey>
+    <bcf:citekey order="63">lagartija</bcf:citekey>
+    <bcf:citekey order="64">lagartija</bcf:citekey>
+    <bcf:citekey order="65">MLP2</bcf:citekey>
+    <bcf:citekey order="66">franchute</bcf:citekey>
+    <bcf:citekey order="67">cv</bcf:citekey>
+    <bcf:citekey order="68">drop</bcf:citekey>
+    <bcf:citekey order="69">bengio</bcf:citekey>
+    <bcf:citekey order="70">batchnorm</bcf:citekey>
+    <bcf:citekey order="71">animales</bcf:citekey>
+    <bcf:citekey order="72">dragon</bcf:citekey>
+    <bcf:citekey order="73">dragon</bcf:citekey>
+    <bcf:citekey order="74">lagartija</bcf:citekey>
+    <bcf:citekey order="75">lagartija</bcf:citekey>
+    <bcf:citekey order="76">lagartija</bcf:citekey>
+    <bcf:citekey order="77">lagartija</bcf:citekey>
+    <bcf:citekey order="78">fase1</bcf:citekey>
+    <bcf:citekey order="79">fase2</bcf:citekey>
+    <bcf:citekey order="80">lagartija</bcf:citekey>
+    <bcf:citekey order="81">griffinlim</bcf:citekey>
+    <bcf:citekey order="82">rir_reales</bcf:citekey>
+    <bcf:citekey order="83">sinesweep</bcf:citekey>
+    <bcf:citekey order="84">pyroom</bcf:citekey>
+    <bcf:citekey order="85">ISM</bcf:citekey>
+    <bcf:citekey order="86">rir_filtinverso</bcf:citekey>
+    <bcf:citekey order="86">FCN</bcf:citekey>
+    <bcf:citekey order="87">rir_aug</bcf:citekey>
+    <bcf:citekey order="88">Lundeby</bcf:citekey>
+    <bcf:citekey order="89">aug_JND</bcf:citekey>
+    <bcf:citekey order="90">librispeech</bcf:citekey>
+    <bcf:citekey order="91">rir_filtinverso</bcf:citekey>
+    <bcf:citekey order="91">FCN</bcf:citekey>
+    <bcf:citekey order="92">FCN</bcf:citekey>
+    <bcf:citekey order="93">DAE</bcf:citekey>
+    <bcf:citekey order="94">mask_vs_map</bcf:citekey>
+    <bcf:citekey order="95">FCN</bcf:citekey>
+    <bcf:citekey order="96">lagartija</bcf:citekey>
+    <bcf:citekey order="97">FCN</bcf:citekey>
+    <bcf:citekey order="98">checkerboard</bcf:citekey>
+    <bcf:citekey order="99">check1</bcf:citekey>
+    <bcf:citekey order="100">check2</bcf:citekey>
+    <bcf:citekey order="101">adam</bcf:citekey>
+    <bcf:citekey order="102">cv</bcf:citekey>
+    <bcf:citekey order="102">cl1</bcf:citekey>
+    <bcf:citekey order="102">cl2</bcf:citekey>
+    <bcf:citekey order="103">repo</bcf:citekey>
+    <bcf:citekey order="104">phase_book</bcf:citekey>
+    <bcf:citekey order="104">unphase</bcf:citekey>
+    <bcf:citekey order="105">CNN</bcf:citekey>
+    <bcf:citekey order="105">FCN</bcf:citekey>
+    <bcf:citekey order="105">skip</bcf:citekey>
+    <bcf:citekey order="105">rir_filtinverso</bcf:citekey>
+    <bcf:citekey order="106">phaseaware</bcf:citekey>
+    <bcf:citekey order="107">sdr_fail</bcf:citekey>
+    <bcf:citekey order="108">cl1</bcf:citekey>
+    <bcf:citekey order="108">cl2</bcf:citekey>
+    <bcf:citekey order="109">CDPAM</bcf:citekey>
+    <bcf:citekey order="110">Lundeby</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

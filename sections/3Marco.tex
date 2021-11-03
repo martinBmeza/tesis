@@ -194,19 +194,19 @@ El bloque básico de los modelos de aprendizaje profundo es la neurona artificia
     \item \textbf{Entradas}: son los datos que van a ser procesados en esta unidad.
     
     \item \textbf{Pesos sinápticos}: son parámetros asociados a cada entrada que se van ajustando durante la etapa de entrenamiento. 
-    
-    \item \textbf{Suma ponderada}: consiste en el producto interno entre el vector de entradas y el vector de pesos sinápticos. Matemáticamente, se expresa como:
+
+	\item \textbf{Umbral o Bias}: entrada externa a la red neuronal. Su valor se modifica durante el entrenamiento al igual que los pesos sinápticos.
+
+    \item \textbf{Suma ponderada}: consiste en el producto interno entre el vector de entradas y el vector de pesos sinápticos, al cual se suma el valor del umbral o bias. Matemáticamente, se expresa como:
     
     \begin{equation}
 \label{eqn:suma_ponderada}
-	\sum_{i=1}^{n}x_{i}w_{i}
+	\sum_{i=1}^{n}x_{i}w_{ji} +\theta_{j}
 \end{equation}
     
     donde $x$ son las entradas, $w$ los pesos sinápticos y $n$ el número de entradas.
 	
-	\item \textbf{Umbral o Bias}: entrada externa a la red neuronal. Su valor se modifica durante el entrenamiento al igual que los pesos sinápticos.     
-    
-    \item \textbf{Función de activación}: Función que se aplica a la salida de la suma ponderada mas el umbral o bias, y genera la salida de la neurona como se muestra en la ecuación \ref{eqn:activacion}. La misma introduce alinealidades en la neurona, haciendo que el modelo resultante sea no lineal. Algunos ejemplos de funciones de activación se pueden ver en la Figura \ref{fig:activación}. 
+    \item \textbf{Función de activación}: Función que se aplica a la salida de la suma ponderada, y genera la salida de la neurona como se muestra en la ecuación \ref{eqn:activacion}. La misma introduce alinealidades en la neurona, haciendo que el modelo resultante sea no lineal. Algunos ejemplos de funciones de activación se pueden ver en la Figura \ref{fig:activación}. 
     
 \begin{equation}
 \label{eqn:activacion}
@@ -227,7 +227,7 @@ El bloque básico de los modelos de aprendizaje profundo es la neurona artificia
 
 Una red neuronal se organiza en capas, que poseen una cierta cantidad de neuronas. Las salidas de las neuronas de una capa suelen constituir las entradas de las neuronas de la capa siguiente. A la hora de diseñar una arquitectura de red neuronal, es necesario definir hiperparámetros, como cuántas capas se utilizarán, cuántas neuronas tendrá cada capa y qué tipo de capas serán, entre muchos otros.
 
-Una de las redes neuronales mas estudiadas es el perceptrón multicapa (multilayer perceptron, o MLP) \cite{MLP}. Esta consta de una capa de entrada, una o varias capas ocultas, y una capa de salida. Cada capa puede contener un número distinto de neuronas, y cada capa se encuentra completamente conectada a la capa adyacente. Esta red neuronal es capaz de representar cualquier función dado un número suficiente de neuronas. Un ejemplo de esta red se ilustra en la Figura \ref{fig:red}.
+Una de las redes neuronales mas estudiadas es el perceptrón multicapa (multilayer perceptron, o MLP) \cite{MLP2}. Esta consta de una capa de entrada, una o varias capas ocultas, y una capa de salida. Cada capa puede contener un número distinto de neuronas, y cada capa se encuentra completamente conectada a la capa adyacente. Esta red neuronal es capaz de representar cualquier función dado un número suficiente de neuronas. Un ejemplo de esta red se ilustra en la Figura \ref{fig:red}.
 
 \begin{figure}[H]
   \centering{}
