@@ -47,7 +47,7 @@ A partir de aplicar este banco de filtros, la señal de entrada se descompone en
 El paso siguiente consiste en determinar el piso de ruido de la señal. Detectar el piso de ruido permite asegurar que el método de aumentación no amplifique ruido cuando se busca obtener un tiempo de reverberación mayor al inicial propio de la respuesta al impulso de entrada. Para determinar el punto donde predomina el ruido en la respuesta al impulso se utiliza el método iterativo de Lundeby \cite{Lundeby}. El mismo consta de los siguientes pasos: 
 
 \begin{enumerate}
-\item La respuesta al impulso al cuadrado es promediada en intervalos de tiempo locales de entre $10 \ ms$ y $50 \ ms$ para obtener una curva 'suavizada', es decir, disminuir las variaciones instantáneas sin perder las pendientes cortas.
+\item La respuesta al impulso al cuadrado es promediada en intervalos de tiempo locales de entre $10 \ ms$ y $50 \ ms$ para obtener una curva `suavizada', es decir, disminuir las variaciones instantáneas sin perder las pendientes cortas.
 
 \item Se hace una primera estimación del piso de ruido. Para hacerlo se toma el segmento correspondiente al último $10\%$ de la respuesta al impulso.
 

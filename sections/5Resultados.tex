@@ -8,36 +8,33 @@ Para tener una medida de la variedad de reverberación presente en los conjuntos
 \begin{figure}[H]
 	\centering{}
 	\includegraphics[scale=0.5]{reales.png}
-	\caption{Conjunto de respuestas al impulso reales.}
+	\caption{Parámetros del conjunto de respuestas al impulso reales.}
 	\label{fig:cloud_reales}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
 	\includegraphics[scale=0.5]{generadas.png}
-	\caption{Conjunto de respuestas al impulso generadas.}
+	\caption{Parámetros del conjunto de respuestas al impulso generadas.}
 	\label{fig:cloud_generadas}
 \end{figure}
 
 \begin{figure}[H]
 	\centering{}
 	\includegraphics[scale=0.5]{aumentadas.png}
-	\caption{Conjunto de respuestas al impulso aumentadas.}
+	\caption{Parámetros del conjunto de respuestas al impulso aumentadas.}
 	\label{fig:cloud_aumentadas}
 \end{figure}
 
 Del análisis de estos conjuntos utilizando como medida la relación directo reverberado  y el tiempo de reverberación medio se pueden observar algunas particularidades. Respecto a las respuestas al impulso reales, en la Figura \ref{fig:cloud_reales} se pueden distinguir tres grandes grupos de puntos de acuerdo a los tres recintos de los cuales fueron obtenidas dichas respuestas. 
-
-
-
-Las variaciones de ambos parámetros acústicos ocurren debido a las diferentes posiciones de micrófono que han sido utilizadas. Los recintos poseen tiempos de reverberación medios de $1.97 \pm 0.03 \ s$, $2.46 \pm 0.06 \ s$ y $3.14 \pm 0.04	\ s$. De igual manera, se producen variaciones de DRR en un rango de  $15 \ dB$, $11 \ dB$ y $16 \ dB$ respectivamente. Por ende, las respuestas al impulso reales cubren, de una forma poco homogénea, un rango de TR entre $1.97 \ s$ y $3.14 \ s$. Algo similar ocurre con las respuestas al impulso generadas que se muestran en la Figura \ref{fig:cloud_generadas}. Si bien en este caso se tiene control sobre los puntos centrales de los conjuntos de puntos (se generaron para tiempos de reverberación de $0.5 \ s$, $0.75 \ s$ y $1.0 \ s$) ocurre el mismo fenómeno que con las respuestas al impulso reales, en donde se forman grupos de puntos que no se dispersan uniformemente en el plano. Esto cambia para el tercer conjunto que corresponde a las respuestas al impulso generadas a partir del proceso de aumentación. La dispersión de estas respuestas se observa en la Figura \ref{fig:cloud_aumentadas}. A primera vista se observa una mayor uniformidad de los puntos en el plano, ya que no se aprecian conjuntos separados sino más bien una aleatoriedad uniforme a lo largo del rango generado. La uniformidad de la dispersión la podemos atribuir al control que se tiene sobre estos parámetros a la hora de generar las respuestas aumentadas, y la aleatoriedad entre los puntos se debe al hecho de que siempre se parte de una respuesta al impulso real diferente para realizar la aumentación, lo cual produce que el margen entre los parámetros deseados y los obtenidos sea variable. Por otro lado, parece haber una menor cantidad de puntos en la esquina inferior izquierda del grafico, es decir, tiempos de reverberación bajos con relaciones directo-reverberado bajos. Esta es una limitación tanto propia del algoritmo de aumentación como también de la naturaleza de las respuestas al impulso reales, en donde para tiempos de reverberación bajos la energía de la parte tardía de la respuesta es de por sí baja. 
+Las variaciones de ambos parámetros acústicos ocurren debido a las diferentes posiciones de micrófono que han sido utilizadas. Los recintos poseen tiempos de reverberación medios de $1.97 \pm 0.03 \ s$, $2.46 \pm 0.06 \ s$ y $3.14 \pm 0.04	\ s$. De igual manera, las diferencias entre el valor de DRR máximo y mínimo son de $15 \ dB$, $11 \ dB$ y $16 \ dB$ respectivamente. Por ende, las respuestas al impulso reales cubren, de una forma poco homogénea, un rango de TR entre $1.97 \ s$ y $3.14 \ s$. Algo similar ocurre con las respuestas al impulso generadas que se muestran en la Figura \ref{fig:cloud_generadas}. Si bien en este caso se tiene control sobre los puntos centrales de los conjuntos de puntos (se generaron para tiempos de reverberación de $0.5 \ s$, $0.75 \ s$ y $1.0 \ s$) ocurre el mismo fenómeno que con las respuestas al impulso reales, en donde se forman grupos de puntos que no se dispersan uniformemente en el plano. Esto cambia para el tercer conjunto que corresponde a las respuestas al impulso generadas a partir del proceso de aumentación. La dispersión de estas respuestas se observa en la Figura \ref{fig:cloud_aumentadas}. A primera vista se observa una mayor uniformidad de los puntos en el plano, ya que no se aprecian conjuntos separados sino más bien una aleatoriedad uniforme a lo largo del rango generado. La uniformidad de la dispersión la podemos atribuir al control que se tiene sobre estos parámetros a la hora de generar las respuestas aumentadas, y la aleatoriedad entre los puntos se debe al hecho de que siempre se parte de una respuesta al impulso real diferente para realizar la aumentación, lo cual produce que el margen entre los parámetros deseados y los obtenidos sea variable. Por otro lado, parece haber una menor cantidad de puntos en la esquina inferior izquierda del grafico, es decir, tiempos de reverberación bajos con relaciones directo-reverberado bajos. Esta es una limitación propia tanto del algoritmo de aumentación como de la naturaleza de las respuestas al impulso reales, en donde para tiempos de reverberación bajos la energía de la parte tardía de la respuesta es de por sí baja. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \subsection[Análisis cualitativo del sistema]{ANÁLISIS CUALITATIVO DEL SISTEMA}
-En la Figura \ref{fig:mean and std of nets} se muestra una instancia de ejemplo del funcionamiento del algoritmo de dereverberación implementado. Durante el entrenamiento, el espectrograma reverberado ingresa a la red neuronal para procesarse y generar una máscara de amplitud. Esta máscara se multiplica con el mismo espectrograma reverberado de entrada para generar el espectrograma dereverberado, que es la salida de la red.  Luego, se calcula el error entre la salida de la red y el espectrograma anecoico correspondiente, y se propaga a los parámetros de la red. A la hora de hacer predicciones, solo se necesita ingresar un espectrograma reverberado para que la red estime una máscara de amplitud con la cual pueda generarse el espectrograma dereverberado. Cabe aclarar que a lo largo de estos procesos se trabaja únicamente sobre la magnitud de la STFT, a lo que se hace referencia como espectrograma.  
+En la Figura \ref{fig:mean and std of nets} se muestra una instancia de ejemplo del funcionamiento del algoritmo de dereverberación implementado. Durante el entrenamiento, el espectrograma reverberado ingresa a la red neuronal para procesarse y generar una máscara de amplitud. Esta máscara se multiplica con el mismo espectrograma reverberado de entrada para generar el espectrograma dereverberado, que es la salida de la red.  Luego, se calcula el error entre la salida de la red y el espectrograma anecoico correspondiente, y se propaga a los parámetros de la red. A la hora de hacer predicciones, solo se necesita ingresar un espectrograma reverberado para que la red estime una máscara de amplitud con la cual pueda generarse el espectrograma dereverberado. Cabe aclarar que a lo largo de estos procesos se trabaja únicamente sobre la magnitud de la STFT, referenciado como espectrograma.  
 \begin{figure}[H]
         \centering
         \begin{subfigure}[b]{0.475\textwidth}
@@ -78,7 +75,7 @@ En la Figura \ref{fig:mean and std of nets} se muestra una instancia de ejemplo 
     
 Se puede observar en el ejemplo de la Figura \ref{fig:mean and std of nets}, que efectivamente, el modelo propuesto luego de ser entrenado es capaz de estimar máscaras que reducen la reverberación conservando la señal de habla. 
 La atenuación de las componentes reverberantes ocurre con mayor precisión para frecuencias bajas, en donde hay más energía. Esto puede deberse al uso del error cuadrático medio (MSE) como función de costo, el cual prioriza la energía por lo que sesga al modelo a aprender a dereverberar en bajas frecuencias. Algo para tener en cuenta en un trabajo futuro seria evaluar otro tipo de funciones de costo que compensen este sesgo, como por ejemplo utilizar un error cuadrático medio normalizado por el espectrograma objetivo.
-A pesar de esto, se pueden observar rasgos del espectro reverberado aun presentes en el espectro dereverberado, lo que es de esperarse debido a que el proceso únicamente esta aplicando un filtro de amplitud por sobre la magnitud del espectro reverberado. En la Figura \ref{fig:zoom} se muestra con más detalle un espectrograma dereverberado con su correspondiente espectrograma anecoico y el resultado del error cuadrático entre ambos. Además de lo mencionado anteriormente, el espectrograma dereverberado conserva los armónicos propios de la señal de habla, evitando así su deterioro.
+A pesar de esto, se pueden observar rasgos del espectro reverberado aun presentes en el espectro dereverberado, lo que es de esperarse debido a que el proceso únicamente esta aplicando un filtro de amplitud sobre la magnitud del espectro reverberado. En la Figura \ref{fig:zoom} se muestra con más detalle un espectrograma dereverberado con su correspondiente espectrograma anecoico y el resultado del error cuadrático entre ambos. Además de lo mencionado anteriormente, el espectrograma dereverberado conserva los armónicos propios de la señal de habla, evitando así su deterioro.
 
 \begin{figure}[H]\centering
 \subfloat[Espectrograma anecoico.]{\label{a}\includegraphics[width=.45\linewidth]{target_zoom.png}}\hfill
@@ -106,7 +103,7 @@ El proceso de dereverberación de los audios sucede sobre la magnitud de los esp
   \includegraphics[scale=0.65]{fase_reverb.png}
   \caption{Audio con reverberación}
   \label{fig:fase_sub2}
-\end{subfigure}Sin embargo
+\end{subfigure}
 \caption{Espectrogramas de magnitud y fase de los audios para entrenamiento.}
 \label{fig:fases}
 \end{figure} 
@@ -125,7 +122,7 @@ Para determinar el número necesario de iteraciones a utilizar en el algoritmo d
 	\label{fig:iteraciones}
 \end{figure}
 
-En la Tabla \ref{table:fases} se comparan las métricas obtenidas al utilizar las distintas técnicas para invertir el espectrograma. Allí se expresan las variaciones de las métricas para cada alternativa con respecto al audio reverberado. Se puede observar que la principal diferencia ocurre sobre el parámetro SDR. La reconstrucción de fase utilizando el algoritmo de Griffin-Lim inicializado de manera aleatoria empeora el resultado de esta métrica, lo cual es un efecto contrario al deseado. Sin embargo, utilizando este algoritmo inicializado con la fase reverberada genera una mejora. Finalmente, la dereverberación utilizando directamente la fase reverberada produce una mejora mucho mayor que los métodos iterativos previamente mencionados. Para las otras dos métricas, SRMR y ESTOI, los métodos iterativos producen mejores resultados que la utilización directa de la fase reverberada, pero las diferencias entre las alternativas son menores.
+En la Tabla \ref{table:fases} se comparan las métricas objetivas SDR, SRMR y ESTOI obtenidas al utilizar las distintas técnicas para invertir el espectrograma dereverberado. Allí se expresan las variaciones de las métricas para cada alternativa con respecto al audio reverberado. Es decir que un aumento respecto del valor de referencia se corresponde con una mejoría en el aspecto evaluado por cada métrica. Se puede observar que la principal diferencia ocurre sobre el valor de SDR. La reconstrucción de fase utilizando el algoritmo de Griffin-Lim inicializado de manera aleatoria empeora el resultado de esta métrica, lo cual es un efecto contrario al deseado. Sin embargo, utilizando este algoritmo inicializado con la fase reverberada genera una mejora. Finalmente, la dereverberación utilizando directamente la fase reverberada produce una mejora mucho mayor que los métodos iterativos previamente mencionados. Para las otras dos métricas, SRMR y ESTOI, los métodos iterativos producen mejores resultados que la utilización directa de la fase reverberada, pero las diferencias entre las alternativas son menores.
 
 \begin{table}[H]
 \centering

@@ -760,7 +760,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {O'reilly media}%
+      {O'Reilly}%
     }
     \strng{namehash}{GA1}
     \strng{fullhash}{GA1}
@@ -836,7 +836,7 @@
     \field{labeltitlesource}{title}
     \field{title}{Deep convolutional neural network-based inverse filtering
   approach for speech de-reverberation}
-    \field{journaltitle}{IEE International Workshop on Machine Learning for
+    \field{journaltitle}{IEEE International Workshop on Machine Learning for
   Signal Processing}
     \field{year}{2020}
   \endentry
