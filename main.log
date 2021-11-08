@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.8.2)  2 NOV 2021 22:47
+This is LuaTeX, Version 1.10.0 (TeX Live 2019/Debian)  (format=lualatex 2021.8.2)  8 NOV 2021 06:52
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -358,6 +358,10 @@ Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count198
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box93
+)
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
 
@@ -402,7 +406,7 @@ File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
 )
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box93
+\collectedbox=\box94
 )
 \tc@llx=\dimen158
 \tc@lly=\dimen159
@@ -421,7 +425,7 @@ File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box94
+\pgfutil@abb=\box95
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -511,7 +515,7 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen174
 \pgfmath@count=\count273
-\pgfmath@box=\box95
+\pgfmath@box=\box96
 \pgfmath@toks=\toks29
 \pgfmath@stack@operand=\toks30
 \pgfmath@stack@operation=\toks31
@@ -570,9 +574,9 @@ File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box96
-\pgf@hbox=\box97
-\pgf@layerbox@main=\box98
+\pgfpic=\box97
+\pgf@hbox=\box98
+\pgf@layerbox@main=\box99
 \pgf@picture@serial@count=\count275
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
@@ -615,7 +619,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box99
+\pgfexternal@startupbox=\box100
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -634,7 +638,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box100
+\pgfnodeparttextbox=\box101
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -665,7 +669,7 @@ Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box101
+\@vwid@box=\box102
 \sift@deathcycles=\count279
 \@vwid@loff=\dimen265
 \@vwid@roff=\dimen266
@@ -862,10 +866,20 @@ Package biblatex Info: ... file 'blx-compat.def' found.
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 )
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
 \c@textcitecount=\count393
 \c@textcitetotal=\count394
@@ -996,10 +1010,10 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@lastmovetoy=\dimen275
 \tikzleveldistance=\dimen276
 \tikzsiblingdistance=\dimen277
-\tikz@figbox=\box102
-\tikz@figbox@bg=\box103
-\tikz@tempbox=\box104
-\tikz@tempbox@bg=\box105
+\tikz@figbox=\box103
+\tikz@figbox@bg=\box104
+\tikz@tempbox=\box105
+\tikz@tempbox@bg=\box106
 \tikztreelevel=\count407
 \tikznumberofchildren=\count408
 \tikznumberofcurrentchild=\count409
@@ -1041,9 +1055,9 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count419
 \float@exts=\toks35
-\float@box=\box106
+\float@box=\box107
 \@float@everytoks=\toks36
-\@floatcapt=\box107
+\@floatcapt=\box108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
@@ -1066,6 +1080,7 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count420
 \c@continuedfloat=\count421
 Package caption Info: float package is loaded.
+Package caption Info: threeparttable package is loaded.
 )
 \c@subfigure=\count422
 \c@subtable=\count423
@@ -1074,7 +1089,7 @@ Package caption Info: float package is loaded.
 \wrapoverhang=\dimen298
 \WF@size=\dimen299
 \c@WF@wrappedlines=\count424
-\WF@box=\box108
+\WF@box=\box109
 \WF@everypar=\toks37
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -1096,12 +1111,12 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen303
-\ar@mcellbox=\box109
+\ar@mcellbox=\box110
 \extrarowheight=\dimen304
 \NC@list=\toks38
 \extratabsurround=\skip90
 \backup@length=\skip91
-\ar@cellbox=\box110
+\ar@cellbox=\box111
 )
 \everycr=\toks39
 \minrowclearance=\skip92
@@ -1120,7 +1135,7 @@ Package: appendix 2020/02/08 v1.2c extra appendix facilities
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box111
+\ttl@box=\box112
 \beforetitleunit=\skip93
 \aftertitleunit=\skip94
 \ttl@plus=\dimen306
@@ -1161,7 +1176,7 @@ Package: expl3 2020-02-14 L3 programming layer (loader)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count433
-\l__pdf_internal_box=\box112
+\l__pdf_internal_box=\box113
 ))
 Package: xparse 2020-02-14 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count434
@@ -1399,8 +1414,8 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotelevel=\count484
 \@quotereset=\count485
 (./main.aux
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
 
 
 LaTeX Warning: Label `table:resultados_reverb' multiply defined.
@@ -1408,41 +1423,41 @@ LaTeX Warning: Label `table:resultados_reverb' multiply defined.
 )
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 11
-4.
+6.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 114
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 116
 .
-LaTeX Font Info:    No file TUptm.fd. on input line 114.
+LaTeX Font Info:    No file TUptm.fd. on input line 116.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 114.
+(Font)              using `TU/lmr/m/n' instead on input line 116.
 
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
 
 Package tablefootnote Warning: LuaTeX and hyperref package used:
 (tablefootnote)                Hyperreferences in rotated content
@@ -1454,7 +1469,7 @@ Package tablefootnote Warning: LuaTeX and hyperref package used:
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count486
 \scratchdimen=\dimen326
-\scratchbox=\box113
+\scratchbox=\box114
 \nofMPsegments=\count487
 \nofMParguments=\count488
 \everyMPshowfont=\toks47
@@ -1483,13 +1498,16 @@ Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
 
-\openout4 = main.bcf
+\openout4 = main-blx.bib
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 114.
-Package biblatex Info: Reference segment=0 on input line 114.
+Package biblatex Info: Reference section=0 on input line 116.
+Package biblatex Info: Reference segment=0 on input line 116.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
@@ -1528,8 +1546,8 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box114
-Package hyperref Info: Link coloring OFF on input line 114.
+\AtBeginShipoutBox=\box115
+Package hyperref Info: Link coloring OFF on input line 116.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1541,9 +1559,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count492
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -1658,11 +1676,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11.84009> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.6001> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1]) [2] [3] (./sections/2Estado.tex
@@ -1750,12 +1768,12 @@ File: imagenes/filtro.png Graphic file (type png)
 <use imagenes/filtro.png>
 Package luatex.def Info: imagenes/filtro.png  used on input line 318.
 (luatex.def)             Requested size: 231.5184pt x 114.52959pt.
-<imagenes/filtrosconv.png, id=730, 748.7975pt x 831.105pt>
+ [25<./imagenes/filtro.png>]
+<imagenes/filtrosconv.png, id=735, 748.7975pt x 831.105pt>
 File: imagenes/filtrosconv.png Graphic file (type png)
 <use imagenes/filtrosconv.png>
 Package luatex.def Info: imagenes/filtrosconv.png  used on input line 338.
 (luatex.def)             Requested size: 262.08305pt x 290.8911pt.
- [25<./imagenes/filtro.png>]
 <imagenes/convnet.png, id=739, 829.0975pt x 371.3875pt>
 File: imagenes/convnet.png Graphic file (type png)
 <use imagenes/convnet.png>
@@ -1825,8 +1843,12 @@ File: imagenes/drr_aug.png Graphic file (type png)
 <use imagenes/drr_aug.png>
 Package luatex.def Info: imagenes/drr_aug.png  used on input line 117.
 (luatex.def)             Requested size: 397.48622pt x 198.74312pt.
- [37] [38<./imagenes/drr_aug.png>] [39] [40] [41]
-<imagenes/unet.png, id=896, 683.55376pt x 417.56pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37] [38<./imagenes/drr_aug.png>] [39] [40] [41]
+<imagenes/unet.png, id=897, 683.55376pt x 417.56pt>
 File: imagenes/unet.png Graphic file (type png)
 <use imagenes/unet.png>
 Package luatex.def Info: imagenes/unet.png  used on input line 168.
@@ -1847,79 +1869,79 @@ Overfull \hbox (10.1504pt too wide) in paragraph at lines 179--180
  [][] 
  []
 
-[43] [44<./imagenes/modelo_red.png>]
-LaTeX Font Info:    Trying to load font information for TU+pcr on input line 229
+[43<./imagenes/modelo_red.png>] [44]
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 234
 .
 
 No file TUpcr.fd.
 
 LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 229.
+(Font)              using `TU/lmr/m/n' instead on input line 234.
 
 [45] [46]) [47] (./sections/5Resultados.tex
-<imagenes/reales.png, id=963, 722.7pt x 578.16pt>
+<imagenes/reales.png, id=961, 722.7pt x 578.16pt>
 File: imagenes/reales.png Graphic file (type png)
 <use imagenes/reales.png>
 Package luatex.def Info: imagenes/reales.png  used on input line 10.
 (luatex.def)             Requested size: 361.3491pt x 289.07928pt.
-<imagenes/generadas.png, id=964, 722.7pt x 578.16pt>
+<imagenes/generadas.png, id=962, 722.7pt x 578.16pt>
 File: imagenes/generadas.png Graphic file (type png)
 <use imagenes/generadas.png>
 Package luatex.def Info: imagenes/generadas.png  used on input line 17.
 (luatex.def)             Requested size: 361.3491pt x 289.07928pt.
  [48<./imagenes/reales.png>]
-<imagenes/aumentadas.png, id=972, 722.7pt x 578.16pt>
+<imagenes/aumentadas.png, id=970, 722.7pt x 578.16pt>
 File: imagenes/aumentadas.png Graphic file (type png)
 <use imagenes/aumentadas.png>
 Package luatex.def Info: imagenes/aumentadas.png  used on input line 24.
 (luatex.def)             Requested size: 361.3491pt x 289.07928pt.
 
 [49<./imagenes/generadas.png><./imagenes/aumentadas.png>]
-<imagenes/espectro_in.png, id=983, 415.5525pt x 272.01625pt>
+<imagenes/espectro_in.png, id=981, 415.5525pt x 272.01625pt>
 File: imagenes/espectro_in.png Graphic file (type png)
 <use imagenes/espectro_in.png>
 Package luatex.def Info: imagenes/espectro_in.png  used on input line 45.
 (luatex.def)             Requested size: 217.4601pt x 142.3458pt.
-<imagenes/espectro_target.png, id=984, 415.5525pt x 272.01625pt>
+<imagenes/espectro_target.png, id=982, 415.5525pt x 272.01625pt>
 File: imagenes/espectro_target.png Graphic file (type png)
 <use imagenes/espectro_target.png>
 Package luatex.def Info: imagenes/espectro_target.png  used on input line 53.
 (luatex.def)             Requested size: 217.4601pt x 142.3458pt.
-<imagenes/mascara.png, id=985, 433.62pt x 289.08pt>
+<imagenes/mascara.png, id=983, 433.62pt x 289.08pt>
 File: imagenes/mascara.png Graphic file (type png)
 <use imagenes/mascara.png>
 Package luatex.def Info: imagenes/mascara.png  used on input line 61.
 (luatex.def)             Requested size: 217.4601pt x 144.97632pt.
-<imagenes/espectro_out.png, id=986, 415.5525pt x 272.01625pt>
+<imagenes/espectro_out.png, id=984, 415.5525pt x 272.01625pt>
 File: imagenes/espectro_out.png Graphic file (type png)
 <use imagenes/espectro_out.png>
 Package luatex.def Info: imagenes/espectro_out.png  used on input line 69.
 (luatex.def)             Requested size: 217.4601pt x 142.3458pt.
  [50] [51<./imagenes/espectro_in.png><./imagenes/espectro_target.png><./imagenes
 /mascara.png><./imagenes/espectro_out.png>]
-<imagenes/target_zoom.png, id=1003, 403.5075pt x 272.01625pt>
+<imagenes/target_zoom.png, id=1001, 403.5075pt x 272.01625pt>
 File: imagenes/target_zoom.png Graphic file (type png)
 <use imagenes/target_zoom.png>
 Package luatex.def Info: imagenes/target_zoom.png  used on input line 84.
 (luatex.def)             Requested size: 206.01077pt x 138.88002pt.
-<imagenes/predict_zoom.png, id=1004, 403.5075pt x 272.01625pt>
+<imagenes/predict_zoom.png, id=1002, 403.5075pt x 272.01625pt>
 File: imagenes/predict_zoom.png Graphic file (type png)
 <use imagenes/predict_zoom.png>
 Package luatex.def Info: imagenes/predict_zoom.png  used on input line 85.
 (luatex.def)             Requested size: 206.01077pt x 138.88002pt.
-<imagenes/error_zoom.png, id=1005, 372.39125pt x 252.945pt>
+<imagenes/error_zoom.png, id=1003, 372.39125pt x 252.945pt>
 File: imagenes/error_zoom.png Graphic file (type png)
 <use imagenes/error_zoom.png>
 Package luatex.def Info: imagenes/error_zoom.png  used on input line 86.
 (luatex.def)             Requested size: 206.01077pt x 139.93456pt.
  [52<./imagenes/target_zoom.png><./imagenes/predict_zoom.png><./imagenes/error_z
 oom.png>]
-<imagenes/fase_clean.png, id=1017, 348.30125pt x 334.24875pt>
+<imagenes/fase_clean.png, id=1015, 348.30125pt x 334.24875pt>
 File: imagenes/fase_clean.png Graphic file (type png)
 <use imagenes/fase_clean.png>
 Package luatex.def Info: imagenes/fase_clean.png  used on input line 100.
 (luatex.def)             Requested size: 226.39313pt x 217.25911pt.
-<imagenes/fase_reverb.png, id=1018, 348.30125pt x 334.24875pt>
+<imagenes/fase_reverb.png, id=1016, 348.30125pt x 334.24875pt>
 File: imagenes/fase_reverb.png Graphic file (type png)
 <use imagenes/fase_reverb.png>
 Package luatex.def Info: imagenes/fase_reverb.png  used on input line 106.
@@ -1930,63 +1952,63 @@ Overfull \hbox (14.57225pt too wide) in paragraph at lines 98--110
  []
 
 [53<./imagenes/fase_clean.png><./imagenes/fase_reverb.png>]
-<imagenes/iteraciones.png, id=1036, 433.62pt x 289.08pt>
+<imagenes/iteraciones.png, id=1034, 433.62pt x 289.08pt>
 File: imagenes/iteraciones.png Graphic file (type png)
 <use imagenes/iteraciones.png>
 Package luatex.def Info: imagenes/iteraciones.png  used on input line 123.
 (luatex.def)             Requested size: 390.2544pt x 260.16959pt.
  [54] [55<./imagenes/iteraciones.png>] [56]
-<imagenes/prueba1_SDR.png, id=1061, 451.6875pt x 295.1025pt>
+<imagenes/prueba1_SDR.png, id=1059, 451.6875pt x 295.1025pt>
 File: imagenes/prueba1_SDR.png Graphic file (type png)
 <use imagenes/prueba1_SDR.png>
 Package luatex.def Info: imagenes/prueba1_SDR.png  used on input line 169.
 (luatex.def)             Requested size: 293.59338pt x 191.81433pt.
-<imagenes/prueba1_SRMR.png, id=1062, 462.72874pt x 295.1025pt>
+<imagenes/prueba1_SRMR.png, id=1060, 462.72874pt x 295.1025pt>
 File: imagenes/prueba1_SRMR.png Graphic file (type png)
 <use imagenes/prueba1_SRMR.png>
 Package luatex.def Info: imagenes/prueba1_SRMR.png  used on input line 176.
 (luatex.def)             Requested size: 300.77011pt x 191.81433pt.
-<imagenes/prueba1_ESTOI.png, id=1063, 462.72874pt x 295.1025pt>
+<imagenes/prueba1_ESTOI.png, id=1061, 462.72874pt x 295.1025pt>
 File: imagenes/prueba1_ESTOI.png Graphic file (type png)
 <use imagenes/prueba1_ESTOI.png>
 Package luatex.def Info: imagenes/prueba1_ESTOI.png  used on input line 183.
 (luatex.def)             Requested size: 300.77011pt x 191.81433pt.
  [57<./imagenes/prueba1_SDR.png><./imagenes/prueba1_SRMR.png>]
-<imagenes/prueba2_SDR.png, id=1075, 455.7025pt x 295.1025pt>
+<imagenes/prueba2_SDR.png, id=1073, 455.7025pt x 295.1025pt>
 File: imagenes/prueba2_SDR.png Graphic file (type png)
 <use imagenes/prueba2_SDR.png>
 Package luatex.def Info: imagenes/prueba2_SDR.png  used on input line 194.
 (luatex.def)             Requested size: 296.2031pt x 191.81433pt.
  [58<./imagenes/prueba1_ESTOI.png>]
-<imagenes/prueba2_SRMR.png, id=1082, 456.70625pt x 295.1025pt>
+<imagenes/prueba2_SRMR.png, id=1080, 456.70625pt x 295.1025pt>
 File: imagenes/prueba2_SRMR.png Graphic file (type png)
 <use imagenes/prueba2_SRMR.png>
 Package luatex.def Info: imagenes/prueba2_SRMR.png  used on input line 201.
 (luatex.def)             Requested size: 296.85553pt x 191.81433pt.
-<imagenes/prueba2_ESTOI.png, id=1083, 466.74374pt x 295.1025pt>
+<imagenes/prueba2_ESTOI.png, id=1081, 466.74374pt x 295.1025pt>
 File: imagenes/prueba2_ESTOI.png Graphic file (type png)
 <use imagenes/prueba2_ESTOI.png>
 Package luatex.def Info: imagenes/prueba2_ESTOI.png  used on input line 208.
 (luatex.def)             Requested size: 303.37984pt x 191.81433pt.
  [59<./imagenes/prueba2_SDR.png><./imagenes/prueba2_SRMR.png>] [60<./imagenes/pr
 ueba2_ESTOI.png>]
-<imagenes/cl_impulsos.png, id=1096, 722.7pt x 578.16pt>
+<imagenes/cl_impulsos.png, id=1094, 722.7pt x 578.16pt>
 File: imagenes/cl_impulsos.png Graphic file (type png)
 <use imagenes/cl_impulsos.png>
 Package luatex.def Info: imagenes/cl_impulsos.png  used on input line 222.
 (luatex.def)             Requested size: 433.62334pt x 346.89867pt.
  [61<./imagenes/cl_impulsos.png>]
-<imagenes/cl_SDR.png, id=1106, 387.4475pt x 247.92625pt>
+<imagenes/cl_SDR.png, id=1104, 387.4475pt x 247.92625pt>
 File: imagenes/cl_SDR.png Graphic file (type png)
 <use imagenes/cl_SDR.png>
 Package luatex.def Info: imagenes/cl_SDR.png  used on input line 232.
 (luatex.def)             Requested size: 290.5849pt x 185.94423pt.
-<imagenes/cl_SRMR.png, id=1107, 380.42125pt x 247.92625pt>
+<imagenes/cl_SRMR.png, id=1105, 380.42125pt x 247.92625pt>
 File: imagenes/cl_SRMR.png Graphic file (type png)
 <use imagenes/cl_SRMR.png>
 Package luatex.def Info: imagenes/cl_SRMR.png  used on input line 239.
 (luatex.def)             Requested size: 285.31522pt x 185.94423pt.
-<imagenes/cl_ESTOI.png, id=1108, 382.42876pt x 247.92625pt>
+<imagenes/cl_ESTOI.png, id=1106, 382.42876pt x 247.92625pt>
 File: imagenes/cl_ESTOI.png Graphic file (type png)
 <use imagenes/cl_ESTOI.png>
 Package luatex.def Info: imagenes/cl_ESTOI.png  used on input line 246.
@@ -1994,40 +2016,40 @@ Package luatex.def Info: imagenes/cl_ESTOI.png  used on input line 246.
  [62<./imagenes/cl_sdr.png><./imagenes/cl_SRMR.png>]) [63<./imagenes/cl_ESTOI.pn
 g>] [64] (./sections/7Conclusiones.tex) [65]
 (./sections/8Lineas_futuras.tex) [66] [67]
-Overfull \hbox (7.41812pt too wide) in paragraph at lines 157--157
+Overfull \hbox (7.41812pt too wide) in paragraph at lines 159--159
 \TU/Carlito(0)/m/n/12 re-cog-ni-tion and re-la-ted ap-pli-ca-tions: An over-vie
 w,'' \TU/Carlito(0)/m/it/12 IEEE In-ter-na-tio-nal Con-fe-ren-ce on Acous-
  []
 
 [68] [69]
-Overfull \hbox (2.25429pt too wide) in paragraph at lines 157--157
+Overfull \hbox (2.25429pt too wide) in paragraph at lines 159--159
 \TU/Carlito(0)/m/it/12 IEEE Transac-tions on Acous-tics, Speech, and Sig-nal Pr
 o-ces-sing\TU/Carlito(0)/m/n/12 , vol. 32, n.[] 2, págs. 236[]243,
  []
 
 [70]
-Overfull \hbox (4.44891pt too wide) in paragraph at lines 157--157
+Overfull \hbox (4.44891pt too wide) in paragraph at lines 159--159
 []\TU/Carlito(0)/m/n/12 A. V. Op-pen-heim, R. W. Sha-fer y J. R. Buck, \TU/Carl
 ito(0)/m/it/12 Discrete-Time Sig-nal Pro-ces-sing\TU/Carlito(0)/m/n/12 , 2.[] e
 d. Prentice-
  []
 
 
-Overfull \hbox (5.30315pt too wide) in paragraph at lines 157--157
+Overfull \hbox (5.30315pt too wide) in paragraph at lines 159--159
 []\TU/Carlito(0)/m/it/12 Do-cu-men-ta-ción ofi-cial de Math-works del mó-du-l
 o ”DSP”de Matlab\TU/Carlito(0)/m/n/12 , []$\TU/pcr/m/n/12 https : / / la . 
 mathworks .
  []
 
 [71]
-Overfull \hbox (28.98909pt too wide) in paragraph at lines 157--157
+Overfull \hbox (28.98909pt too wide) in paragraph at lines 159--159
 \TU/Carlito(0)/m/n/12 work la-yers map the fun-ction of the hu-man vi-sual sys-
 tem,'' \TU/Carlito(0)/m/it/12 Neu-ro-Ima-ge\TU/Carlito(0)/m/n/12 , vol. 152, p
 ágs. 184[]194,
  []
 
 [72] [73]
-Overfull \hbox (4.55685pt too wide) in paragraph at lines 157--157
+Overfull \hbox (4.55685pt too wide) in paragraph at lines 159--159
 []\TU/Carlito(0)/m/n/12 D. O’Shaugh-nessy, \TU/Carlito(0)/m/it/12 Speech Com-
 mu-ni-ca-tions: Hu-man and Ma-chi-ne\TU/Carlito(0)/m/n/12 , 2.[] ed. Wiley-IEEE
  Press,
@@ -2036,7 +2058,7 @@ mu-ni-ca-tions: Hu-man and Ma-chi-ne\TU/Carlito(0)/m/n/12 , 2.[] ed. Wiley-IEEE
 [74] (./sections/tr_aumentacion.tex [75
 
 ]
-<imagenes/impulso_entrada.png, id=1188, 1084.05pt x 361.35pt>
+<imagenes/impulso_entrada.png, id=1186, 1084.05pt x 361.35pt>
 File: imagenes/impulso_entrada.png Graphic file (type png)
 <use imagenes/impulso_entrada.png>
 Package luatex.def Info: imagenes/impulso_entrada.png  used on input line 24.
@@ -2047,7 +2069,7 @@ Overfull \hbox (30.01314pt too wide) in paragraph at lines 24--25
  []
 
 [76<./imagenes/impulso_entrada.png>]
-<imagenes/banco_filtros.png, id=1196, 1084.05pt x 361.35pt>
+<imagenes/banco_filtros.png, id=1194, 1084.05pt x 361.35pt>
 File: imagenes/banco_filtros.png Graphic file (type png)
 <use imagenes/banco_filtros.png>
 Package luatex.def Info: imagenes/banco_filtros.png  used on input line 33.
@@ -2057,7 +2079,7 @@ Overfull \hbox (30.01314pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
-<imagenes/sub_bandas.png, id=1198, 1084.05pt x 1084.05pt>
+<imagenes/sub_bandas.png, id=1196, 1084.05pt x 1084.05pt>
 File: imagenes/sub_bandas.png Graphic file (type png)
 <use imagenes/sub_bandas.png>
 Package luatex.def Info: imagenes/sub_bandas.png  used on input line 42.
@@ -2068,45 +2090,45 @@ Overfull \hbox (30.01314pt too wide) in paragraph at lines 42--43
  []
 
 [77<./imagenes/banco_filtros.png>] [78<./imagenes/sub_bandas.png>] [79]
-<imagenes/estimacion.png, id=1228, 722.7pt x 361.35pt>
+<imagenes/estimacion.png, id=1226, 722.7pt x 361.35pt>
 File: imagenes/estimacion.png Graphic file (type png)
 <use imagenes/estimacion.png>
-Package luatex.def Info: imagenes/estimacion.png  used on input line 66.
+Package luatex.def Info: imagenes/estimacion.png  used on input line 76.
 (luatex.def)             Requested size: 325.21199pt x 162.60599pt.
-<imagenes/recorte_ruido.png, id=1230, 722.7pt x 361.35pt>
+<imagenes/recorte_ruido.png, id=1228, 722.7pt x 361.35pt>
 File: imagenes/recorte_ruido.png Graphic file (type png)
 <use imagenes/recorte_ruido.png>
-Package luatex.def Info: imagenes/recorte_ruido.png  used on input line 75.
+Package luatex.def Info: imagenes/recorte_ruido.png  used on input line 85.
 (luatex.def)             Requested size: 325.21199pt x 162.60599pt.
 
 [80<./imagenes/estimacion.png>]
-<imagenes/banda_aumentada.png, id=1239, 722.7pt x 361.35pt>
+<imagenes/banda_aumentada.png, id=1237, 722.7pt x 361.35pt>
 File: imagenes/banda_aumentada.png Graphic file (type png)
 <use imagenes/banda_aumentada.png>
-Package luatex.def Info: imagenes/banda_aumentada.png  used on input line 84.
+Package luatex.def Info: imagenes/banda_aumentada.png  used on input line 94.
 (luatex.def)             Requested size: 325.21199pt x 162.60599pt.
  [81<./imagenes/recorte_ruido.png><./imagenes/banda_aumentada.png>]
-<imagenes/tr_aug.png, id=1248, 1084.05pt x 361.35pt>
+<imagenes/tr_aug.png, id=1246, 1084.05pt x 361.35pt>
 File: imagenes/tr_aug.png Graphic file (type png)
 <use imagenes/tr_aug.png>
-Package luatex.def Info: imagenes/tr_aug.png  used on input line 93.
+Package luatex.def Info: imagenes/tr_aug.png  used on input line 103.
 (luatex.def)             Requested size: 487.818pt x 162.60599pt.
 
-Overfull \hbox (30.01314pt too wide) in paragraph at lines 93--94
+Overfull \hbox (30.01314pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
 ) [82<./imagenes/tr_aug.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./main.aux
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4887278EC2977A3FDFF7702384F834C8;10614.
+(rerunfilecheck)             Checksum: E03E3EB4588470BAAE87E86EB4EEFAF1;10620.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2120,23 +2142,21 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 140 (\begingroup)
-### semi simple group (level 1) entered at line 120 (\begingroup)
+### semi simple group (level 2) entered at line 142 (\begingroup)
+### semi simple group (level 1) entered at line 122 (\begingroup)
 ### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 37599 strings out of 481365
+ 37790 strings out of 481365
  125171,1648299 words of node,token memory allocated
  1174 words of node memory still in use:
    9 hlist, 2 vlist, 4 rule, 8 glue, 4 kern, 1 glyph, 116 attribute, 92 glue_spe
 c, 60 attribute_list, 2 write, 12 pdf_action nodes
-   avail lists: 1:3,2:1444,3:181,4:172,5:618,6:100,7:5116,8:58,9:467,10:32,11:67
-7
- 52281 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:1338,3:149,4:166,5:611,6:100,7:5051,8:58,9:467,10:32,11:67
+3
+ 52458 multiletter control sequences out of 65536+600000
  233 fonts using 28000707 bytes
- 72i,16n,103p,2223b,2673s stack positions out of 5000i,500n,10000p,200000b,100000s
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
+ 72i,18n,103p,2223b,2677s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/tex
 mf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dist
 /fonts/truetype/typoland/carlito/Carlito-BoldItalic.ttf>{/usr/share/texlive/texm
@@ -2152,10 +2172,10 @@ am10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (91 pages, 6044396 bytes).
+Output written on main.pdf (91 pages, 6044190 bytes).
 
-PDF statistics: 1339 PDF objects out of 1440 (max. 8388607)
- 1103 compressed objects within 12 object streams
+PDF statistics: 1337 PDF objects out of 1440 (max. 8388607)
+ 1101 compressed objects within 12 object streams
  307 named destinations out of 1000 (max. 131072)
  408 words of extra memory for PDF output out of 10000 (max. 100000000)
 

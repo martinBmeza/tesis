@@ -29,7 +29,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.1}Relación energía de modulación de voz a reverberación}{16}{subsubsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.2}Inteligibilidad objetiva de corto termino extendida}{16}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2}Inteligibilidad objetiva de corto término extendida}{16}{subsubsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.3}Relación señal a distorsión}{16}{subsubsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
@@ -63,19 +63,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.2.3}Respuestas al impulso generadas por aumentación}{36}{subsubsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3}Bases de datos de señales de habla}{40}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Bases de datos de señales de habla}{39}{subsection.4.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {4.3.1}Pre-procesamiento de datos}{40}{subsubsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Modelo propuesto}{41}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5}Detalles de implementación}{44}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Detalles de implementación}{43}{subsection.4.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.6}Evaluación del modelo}{45}{subsection.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.1}Combinaciones de bases de datos}{46}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.1}Combinaciones de bases de datos}{45}{subsubsection.4.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.6.2}Ordenamiento de los datos durante el entrenamiento}{47}{subsubsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2}Ordenamiento de los datos durante el entrenamiento}{46}{subsubsection.4.6.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Resultados y Discusiones}{48}{section.5}%
 \defcounter {refsection}{0}\relax 
@@ -91,10 +91,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Conclusiones}{65}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Lineas futuras de investigación}{66}{section.7}%
+\contentsline {section}{\numberline {7}Líneas futuras de investigación}{66}{section.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Bibliografía}{68}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Anexos}{75}{section*.49}%
+\contentsline {section}{Anexos}{75}{section*.50}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Aumentación de tiempo de reverberación}{75}{appendix.Alph1}%

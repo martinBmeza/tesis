@@ -71,8 +71,8 @@ En la Figura \ref{fig:mean and std of nets} se muestra una instancia de ejemplo 
             {{\small Espectrograma dereverberado}}    
             \label{fig:mean and std of net44}
         \end{subfigure}
-        \caption[ The average and standard deviation of critical parameters ]
-        {\small Ejemplo de procesamiento de audio reverberado} 
+        \caption[Ejemplo de procesamiento de audio reverberado.]
+        {\small Ejemplo de procesamiento de audio reverberado.} 
         \label{fig:mean and std of nets}
     \end{figure}
     
@@ -107,7 +107,7 @@ El proceso de dereverberación de los audios sucede sobre la magnitud de los esp
   \caption{Audio con reverberación}
   \label{fig:fase_sub2}
 \end{subfigure}Sin embargo
-\caption{Espectrogramas de magnitud y fase de los audios para entrenamiento}
+\caption{Espectrogramas de magnitud y fase de los audios para entrenamiento.}
 \label{fig:fases}
 \end{figure} 
 
@@ -129,7 +129,7 @@ En la Tabla \ref{table:fases} se comparan las métricas obtenidas al utilizar la
 
 \begin{table}[H]
 \centering
-\caption{Comparación de métodos de reconstrucción de espectrograma complejo para generar audio}
+\caption{Comparación de métodos de reconstrucción de espectrograma complejo para generar audio.}
 \begin{tabular}{|l|l|l|l|}
 \hline
                                                                                & \textbf{SDR}                         & \textbf{SRMR}                      & \textbf{ESTOI} \\ \hline
@@ -150,7 +150,7 @@ Para las evaluaciones se tuvieron en cuenta tres conjuntos de datos de acuerdo a
 
 \begin{table}[H]
 \centering
-\caption{Resultados de las métricas sobre los conjuntos reverberados}
+\caption{Resultados de las métricas sobre los conjuntos reverberados.}
 \begin{tabular}{|c|c|c|c|}
 \hline
 Conjunto   & \textbf{SDR} & \textbf{SRMR} & \textbf{ESTOI} \\ \hline
@@ -210,7 +210,7 @@ Los resultados correspondientes al segundo conjunto de pruebas definido en la Ta
 	\label{fig:2_ESTOI}
 \end{figure}
 
-Para el segundo conjunto de pruebas se combinaron tipos de respuestas al impulso en la conformación de los datos de entrenamiento y se volvió a evaluar en los mismos conjuntos de la primera prueba, asegurándose que el número de instancias de entrenamiento se mantenga fijo en todas las pruebas. Se debe tener en consideración que es de mayor importancia para éste trabajo evaluar el rendimiento al evaluar sobre respuestas al impulso reales, ya que es el objetivo principal del sistema implementado. En esta prueba, para todas las métricas los mejores resultados se obtuvieron al combinar los tres tipos de datos en la conformación del conjunto de entrenamiento. Es decir, una mayor diversidad de impulsos presentes a la hora de generar los datos de entrenamiento resulta en una mejora en el rendimiento del sistema. Además, la combinación de respuestas al impulso reales-generadas arrojó mejores resultados que la combinación reales-aumentadas para todas las métricas. Esto puede deberse al hecho de que las respuestas al impulso aumentadas si bien varían la pendiente de caída de la cola reverberante, mantienen el mismo perfil espectral que las respuestas al impulso reales de las que provienen. En trabajos posteriores sería de interés realizar una aumentación que no mantenga el perfil original del tiempo de reverberación, siendo el perfil resultante otra variable a controlar. 
+Para el segundo conjunto de pruebas se combinaron tipos de respuestas al impulso en la conformación de los datos de entrenamiento y se volvió a evaluar en los mismos conjuntos de la primera prueba, asegurándose que el número de instancias de entrenamiento se mantenga fijo en todas las pruebas. Se debe tener en consideración que es de mayor importancia para éste trabajo valorar el rendimiento al evaluar sobre respuestas al impulso reales, ya que es el objetivo principal del sistema implementado. En esta prueba, para todas las métricas, los mejores resultados se obtuvieron al combinar los tres tipos de datos en la conformación del conjunto de entrenamiento. Es decir, una mayor diversidad de impulsos presentes a la hora de generar los datos de entrenamiento resulta en una mejora en el rendimiento del sistema. Además, la combinación de respuestas al impulso reales-generadas arrojó mejores resultados que la combinación reales-aumentadas para todas las métricas. Esto puede deberse al hecho de que las respuestas al impulso aumentadas si bien varían la pendiente de caída de la cola reverberante, mantienen el mismo perfil espectral que las respuestas al impulso reales de las que provienen. En trabajos posteriores sería de interés realizar una aumentación que no mantenga el perfil original del tiempo de reverberación, siendo el perfil resultante otra variable a controlar. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
 
@@ -224,7 +224,7 @@ Para evaluar la influencia del ordenamiento de los datos en el proceso de entren
 	\label{fig:cl_impulsos}
 \end{figure}
 
-Partiendo de la información del tiempo de reverberación medio de cada respuesta al impulso, se generaron pares de audios anecoicos-reverberados junto con un registro que indicaba que tiempo de reverberación medio correspondía con cada audio reverberado. Este registro se utilizó para conformar los esquemas de entrenamiento que fueron evaluados. Entonces, se organizaron los datos de entrenamiento de tres maneras: con tiempos de reverberación crecientes, decrecientes y aleatorios. 
+Partiendo de la información del tiempo de reverberación medio de cada respuesta al impulso, se generaron pares de audios anecoicos-reverberados junto con un registro que indicaba cual tiempo de reverberación medio correspondía con cada audio reverberado. Este registro se utilizó para conformar los esquemas de entrenamiento que fueron evaluados. Entonces, se organizaron los datos de entrenamiento de tres maneras: con tiempos de reverberación crecientes, decrecientes y aleatorios. 
 Se aumentaron los datos de entrenamiento de manera tal de que, para cada método, la convergencia del error ocurra entrenando durante una sola época. Esto se consiguió generando 460 respuestas al  impulso aumentadas y utilizando 360 horas de grabaciones de voz anecoicas. Una vez realizado el entrenamiento, se utilizó el modelo entrenado para hacer predicciones y se calcularon las métricas objetivas sobre los resultados de cada variante. En las Figuras \ref{fig:cl_sdr}, \ref{fig:cl_srmr}, y \ref{fig:cl_estoi} se muestran los resultados obtenidos para las métricas SDR, SRMR y ESTOI respectivamente. 
 
 \begin{figure}[H]

@@ -28,7 +28,7 @@ En donde $X$ es la transformada de Fourier discreta de $x$, y cada muestra de $X
 	x[n] = {1}/{N}\sum_{k=0}^{N-1} X[k]e^{jnk2\pi/N} \qquad  0\leq n \leq N-1
 \end{equation} 
 
-Existen algoritmos eficientes para el cálculo de la DFT denominados algoritmos de transformada rápida de Fourier (FFT) \cite{fft}. Estos consiguen realizar el cálculo de la DFT reduciendo considerablemente la complejidad computacional, de $O(N^{2})$ a $O(Nlog(N))$.
+Existen algoritmos eficientes para el cálculo de la DFT, que se denominan algoritmos de transformada rápida de Fourier (FFT) \cite{fft}. Estos consiguen realizar el cálculo de la DFT reduciendo considerablemente la complejidad computacional, de $O(N^{2})$ a $O(Nlog(N))$.
 
 \subsubsection{Transformada de corto término de Fourier (STFT)}
 
@@ -58,7 +58,7 @@ En la Figura \ref{fig:stft_analisis} se ilustra el proceso descrito para la obte
   \label{fig:stft_analisis}
 \end{figure}
 
-El resultado de la STFT depende tanto de la señal bajo análisis como del tipo de ventana utilizada. Esto se debe a que la señal y la ventana se multiplican en el dominio del tiempo, lo que equivale a una convolución en frecuencia. Es decir que el espectro frecuencial de la señal se verá distorsionado por el espectro frecuencial de la ventana utilizada. Sabiendo esto, las ventanas se diseñan para controlar la distorsión espectral que producen sobre la señal bajo análisis. Existen dos tipos principales de distorsión espectral: el manchado espectral y la fuga espectral. El manchado espectral refiere a una pérdida de resolución en frecuencia y está relacionado al ancho del lóbulo principal del espectro de la ventana utilizada. Por otro lado, la fuga espectral consiste en la aparición de componentes frecuenciales que no corresponden a la señal bajo análisis y esta relacionada a la amplitud relativa del lóbulo principal con respecto a los lóbulos secundarios. En la Figura \ref{fig:ventanas} se muestran algunas ventanas con sus respectivas respuestas en frecuencia.
+El resultado de la STFT depende tanto de la señal bajo análisis como del tipo de ventana utilizada. Esto se debe a que la señal y la ventana se multiplican en el dominio del tiempo, lo que equivale a una convolución en frecuencia. Es decir que el espectro frecuencial de la señal se verá distorsionado por el espectro frecuencial de la ventana utilizada. Sabiendo esto, las ventanas se diseñan para controlar la distorsión espectral que producen sobre la señal bajo análisis. Existen dos tipos principales de distorsión espectral: el manchado espectral y la fuga espectral. El manchado espectral refiere a una pérdida de resolución en frecuencia y está relacionado al ancho del lóbulo principal del espectro de la ventana utilizada. Por otro lado, la fuga espectral consiste en la aparición de componentes frecuenciales que no corresponden a la señal bajo análisis y está relacionada a la amplitud relativa del lóbulo principal con respecto a los lóbulos secundarios. En la Figura \ref{fig:ventanas} se muestran algunas ventanas con sus respectivas respuestas en frecuencia.
 
 \begin{figure}[H]
   \centering{}
@@ -92,7 +92,7 @@ En donde $L$ es la cantidad de cuadros temporales presentes en la STFT. Para que
 		\sum_{t=0}^{L-1}w[n-tH] = \alpha \ \ \forall n \in  \mathbb{Z}
 \end{equation}
 
-donde $\alpha$ es una constante. Cuando $\alpha = 1$ la reconstrucción es perfecta. Para otros valores de $\alpha$ se deben aplicar compensaciones de amplitud sobre la señal reconstruida. La ventana de Hann cumple el criterio COLA siempre que la relación $\frac{N}{H}$ sea un número entero mayor a 1. En la Figura \ref{fig:solapa} se muestran ejemplos de diferentes grados de solapamientos. Se puede ver que cuando no se cumple la relación anteriormente mencionada entre el largo de la ventana y el tamaño de salto, se produce una modulación en la amplitud de la señal recuperada. 
+En donde $\alpha$ es una constante. Cuando $\alpha = 1$ la reconstrucción es perfecta. Para otros valores de $\alpha$ se deben aplicar compensaciones de amplitud sobre la señal reconstruida. La ventana de Hann cumple el criterio COLA siempre que la relación $\frac{N}{H}$ sea un número entero mayor a 1. En la Figura \ref{fig:solapa} se muestran ejemplos de diferentes grados de solapamientos. Se puede ver que cuando no se cumple la relación anteriormente mencionada entre el largo de la ventana y el tamaño de salto, se produce una modulación en la amplitud de la señal recuperada. 
 
  \begin{figure}[H]
   \centering{}
@@ -103,15 +103,15 @@ donde $\alpha$ es una constante. Cuando $\alpha = 1$ la reconstrucción es perfe
 
 \subsection[Respuesta al impulso y reverberación]{RESPUESTA AL IMPULSO Y REVERBERACIÓN}
 
-Si en un recinto se tiene una fuente sonora y un micrófono captando a una cierta distancia, las ondas sonoras emitidas se reflejan en las paredes del recinto y alcanzan el micrófono inmediatamente después que la onda sonora directa. Cada instancia de reflexión supone una disminución de la energía de la onda, principalmente causada por el efecto de absorción acústica de las superficies que producen las reflexiones. En un determinado tiempo, la energía sonora decaerá en todo el recinto hasta ubicarse por debajo del ruido de fondo. A este proceso se lo denomina reverberación. Al camino mas corto entre la fuente y el punto de captura se lo denomina camino directo, y a la relación de nivel entre la presión sonora que genera la onda propia del camino directo y la presión que genera el efecto de reverberación se lo conoce como relación directo-reverberado. 
+Si en un recinto se tiene una fuente sonora y un micrófono captando a una cierta distancia, las ondas sonoras emitidas se reflejan en las paredes del recinto y alcanzan el micrófono inmediatamente después que la onda sonora directa. Cada instancia de reflexión supone una disminución de la energía de la onda, principalmente causada por el efecto de absorción acústica de las superficies que producen las reflexiones. En un determinado tiempo, la energía sonora decaerá en todo el recinto hasta ubicarse por debajo del ruido de fondo. A este proceso se lo denomina reverberación. Al camino más corto entre la fuente y el punto de captura se lo denomina camino directo, y a la relación de nivel entre la presión sonora que genera la onda propia del camino directo y la presión que genera el efecto de reverberación se lo conoce como relación directo-reverberado. 
 
 Si el micrófono se ubica cerca de la fuente va a captar en mayor medida la señal correspondiente al camino directo, y una pequeña porción del sonido reverberado. Es decir, una relación directo-reverberado alta. A medida que el punto de captura se aleja de la fuente va a captar una menor cantidad del sonido correspondientemente al camino directo, mientras que el campo reverberado se mantendrá aproximadamente invariante. Esto se traduce en una disminución de la relación directo-reverberado. 
-De esta manera, habrá una distancia específica para la cual el nivel de presión sonora generado por la fuente sera igual al nivel de presión sonora generado por el efecto de la reverberación. Esta distancia se conoce como distancia crítica. Esta depende tanto de las condiciones del recinto como de las características del micrófono. 
+De esta manera, habrá una distancia específica para la cual el nivel de presión sonora generado por la fuente sera igual al nivel de presión sonora generado por el efecto de la reverberación. Esta distancia se conoce como distancia crítica, y depende tanto de las condiciones del recinto como de las características del micrófono utilizado. 
 
-Si pensamos a la fuente y el micrófono dentro del recinto como un sistema, es de interés estudiar su respuesta al impulso $h(n)$ para poder calcular una serie de parámetros que describan las características acústicas del recinto. Como su nombre lo indica, la respuesta al impulso equivale a la respuesta del sistema cuando se lo excita con un impulso infinitamente angosto (delta de Dirac). La respuesta al impulso será diferente para cada par de puntos fuente-receptor dentro del recinto.   
+Si pensamos a la fuente y el micrófono dentro del recinto como un sistema, es de interés estudiar su respuesta al impulso $h(n)$ para poder calcular una serie de parámetros que describan las características acústicas del recinto. Como su nombre lo indica, la respuesta al impulso equivale a la respuesta del sistema cuando se lo excita con un impulso infinitamente angosto (delta de Dirac). Dicha respuesta al impulso será diferente para cada par de puntos fuente-receptor dentro del recinto.   
 
 
-La Figura \ref{fig:rir} muestra una respuesta al impulso junto con un esquema temporal de la misma. En dicho esquema podemos identificar 3 partes: primero, el nivel de sonido directo (producido por la onda que viaja a través del camino directo), las reflexiones tempranas (cuyo limite temporal vendrá definido por las características propias de cada recinto) y por último la cola reverberante. Se puede distinguir la parte de reflexiones tempranas y la cola reverberante partiendo de la suposición de que las reflexiones tempranas ocurren en un proceso determinístico, siendo altamente sensibles a pequeños cambios en la geometría del recinto, mientras que la cola reverberante es mas bien un proceso estocástico, y al depender de un mayor número de reflexiones es poco sensible a cambios de geometría. 
+La Figura \ref{fig:rir} muestra una respuesta al impulso junto con un esquema temporal de la misma. En dicho esquema podemos identificar 3 partes: primero, el nivel de sonido directo (producido por la onda que viaja a través del camino directo), las reflexiones tempranas (cuyo límite temporal vendrá definido por las características propias de cada recinto) y por último la cola reverberante. Se puede distinguir la parte de reflexiones tempranas y la cola reverberante partiendo de la suposición de que las reflexiones tempranas ocurren en un proceso determinístico, siendo altamente sensibles a pequeños cambios en la geometría del recinto, mientras que la cola reverberante es más bien un proceso estocástico, y al depender de un mayor número de reflexiones es poco sensible a cambios de geometría. 
 
 \begin{figure}[H]
   \centering{}
@@ -170,7 +170,7 @@ Para caracterizar la señal del habla propagándose en condiciones reverberantes
 
 Este parámetro de medida de calidad para señales dereverberadas se basa en obtener características de la reverberación partiendo del espectro de modulación de la señal \cite{SRMR}. La formulación de este parámetro se basa en el hecho de que la cola reverberante de una respuesta al impulso puede ser modelada como ruido blanco gaussiano exponencialmente amortiguado. Esta característica puede ser explotada en el análisis del espectro de modulación de la señal bajo análisis para obtener descriptores del efecto de la reverberación.
 
-\subsubsection{Inteligibilidad objetiva de corto termino extendida}
+\subsubsection{Inteligibilidad objetiva de corto término extendida}
 Este parámetro está basado en características extraídas a partir de la correlación de corto término entre la señal limpia y la señal procesada. Es aplicable para evaluar aquellos procesos que realizan transformaciones no lineales \cite{ESTOI}. Su funcionamiento se basa en aplicar una ventana de análisis de $384$ $ms$ en las envolventes de amplitud de las subbandas de la señal analizada. Estas ventanas temporales se aplican en pos de contemplar frecuencias de modulación que son relevantes para la inteligibilidad. En estos lapsos temporales se calculan coeficientes de correlación espectrales que son luego promediados. De esta manera, este parámetro puede ser interpretado en términos de una descomposición ortogonal de espectrogramas energéticamente normalizados que son luego ordenados de acuerdo a su contribución a la inteligibilidad estimada. 
 
 \subsubsection{Relación señal a distorsión}
@@ -204,7 +204,7 @@ El bloque básico de los modelos de aprendizaje profundo es la neurona artificia
 	\sum_{i=1}^{n}x_{i}w_{ji} +\theta_{j}
 \end{equation}
     
-    donde $x$ son las entradas, $w$ los pesos sinápticos y $n$ el número de entradas.
+    donde $x$ son las entradas, $w$ los pesos sinápticos, $\theta$ el umbral o bias y $n$ el número de entradas.
 	
     \item \textbf{Función de activación}: Función que se aplica a la salida de la suma ponderada, y genera la salida de la neurona como se muestra en la ecuación \ref{eqn:activacion}. La misma introduce alinealidades en la neurona, haciendo que el modelo resultante sea no lineal. Algunos ejemplos de funciones de activación se pueden ver en la Figura \ref{fig:activación}. 
     
@@ -225,9 +225,9 @@ El bloque básico de los modelos de aprendizaje profundo es la neurona artificia
 
 \subsubsection{Modelos basados en redes neuronales}
 
-Una red neuronal se organiza en capas, que poseen una cierta cantidad de neuronas. Las salidas de las neuronas de una capa suelen constituir las entradas de las neuronas de la capa siguiente. A la hora de diseñar una arquitectura de red neuronal, es necesario definir hiperparámetros, como cuántas capas se utilizarán, cuántas neuronas tendrá cada capa y qué tipo de capas serán, entre muchos otros.
+Una red neuronal se organiza en capas, las cuales poseen una cierta cantidad de neuronas. Las salidas de las neuronas de una capa suelen constituir las entradas de las neuronas de la capa siguiente. A la hora de diseñar una arquitectura de red neuronal, es necesario definir hiperparámetros, como cuántas capas se utilizarán, cuántas neuronas tendrá cada capa y qué tipo de capas serán, entre muchos otros.
 
-Una de las redes neuronales mas estudiadas es el perceptrón multicapa (multilayer perceptron, o MLP) \cite{MLP2}. Esta consta de una capa de entrada, una o varias capas ocultas, y una capa de salida. Cada capa puede contener un número distinto de neuronas, y cada capa se encuentra completamente conectada a la capa adyacente. Esta red neuronal es capaz de representar cualquier función dado un número suficiente de neuronas. Un ejemplo de esta red se ilustra en la Figura \ref{fig:red}.
+Una de las redes neuronales más estudiadas es el perceptrón multicapa (\textit{multilayer perceptron}, o MLP) \cite{MLP2}. Esta consta de una capa de entrada, una o varias capas ocultas, y una capa de salida. Cada capa puede contener un número distinto de neuronas, y cada capa se encuentra completamente conectada a la capa adyacente. Esta red neuronal es capaz de representar cualquier función dado un número suficiente de neuronas. Un ejemplo de esta red se ilustra en la Figura \ref{fig:red}.
 
 \begin{figure}[H]
   \centering{}
@@ -256,7 +256,7 @@ El paso siguiente en el proceso de entrenamiento es utilizar la salida de la fun
 
 En este trabajo, el conjunto de datos de entrenamiento se segmenta en lotes. En cada iteración de entrenamiento la red neuronal recibe un lote, lo procesa, aplica la función de costo y ajusta los parámetros de cada capa. Cuando la red procesó todos los lotes que componen el conjunto de datos de entrenamiento se dice que transcurrió una época. Por ende, tanto el tamaño de los lotes como la cantidad de epocas de entrenamiento son hiperparámetros a definir.
 
-El orden en el que los datos son presentados ante el modelo puede influenciar positiva o negativamente en el resultado final del entrenamiento. Existen técnicas de optimización que se desarrollaron partiendo de cualidades propias del aprendizaje en seres humanos y animales, como el hecho de que el aprendizaje resulta mejor cuando las instancias de aprendizaje están organizadas en un orden significativo, añadiendo gradualmente mayor cantidad de conceptos y por ende una mayor complejidad. Esta idea se traslada al entrenamiento de algoritmos de aprendizaje profundo con el desarrollo de una estrategia denominada aprendizaje por currículum \cite{cv}. La misma consiste en seleccionar cuales datos y en que orden presentarlos al sistema durante el aprendizaje, de manera de guiar el entrenamiento para que inicialmente se aprendan los conceptos mas sencillos del problema, e ir gradualmente aumentando el grado de complejidad de la tarea. El aprendizaje por currículum se define como una estrategia de optimización global. Dependiendo de la tarea sobre la que se aplica, puede lograr en menor o mayor medida que un sistema logre un mejor nivel de generalización así como también llegar al punto de convergencia en un menor tiempo de entrenamiento.
+El orden en el que los datos son presentados ante el modelo puede influenciar positiva o negativamente en el resultado final del entrenamiento. Existen técnicas de optimización que se desarrollaron partiendo de cualidades propias del aprendizaje en seres humanos y animales, como el hecho de que el aprendizaje resulta mejor cuando las instancias de aprendizaje están organizadas en un orden significativo, añadiendo gradualmente mayor cantidad de conceptos y por ende una mayor complejidad. Esta idea se traslada al entrenamiento de algoritmos de aprendizaje profundo con el desarrollo de una estrategia denominada aprendizaje por currículum \cite{cv}. La misma consiste en seleccionar cuales datos y en que orden presentarlos al sistema durante el aprendizaje, de manera de guiar el entrenamiento para que inicialmente se aprendan los conceptos más sencillos del problema, e ir gradualmente aumentando el grado de complejidad de la tarea. El aprendizaje por currículum se define como una estrategia de optimización global. Dependiendo de la tarea sobre la que se aplica, puede lograr en menor o mayor medida que un sistema logre un mejor nivel de generalización así como también llegar al punto de convergencia en un menor tiempo de entrenamiento.
 
 
 Por último, la segmentación de los datos que la red neuronal recibe y procesa en cada etapa del desarrollo también influye en el desempeño de la misma. El objetivo final del sistema es alcanzar un grado de generalización que le permita procesar adecuadamente instancias de datos que no hayan sido reveladas ante la red en la etapa de entrenamiento. Por esto, el conjunto total de los datos se divide en tres subgrupos: 
@@ -264,7 +264,7 @@ Por último, la segmentación de los datos que la red neuronal recibe y procesa 
 \begin{itemize}
 \item\textbf{Conjunto de entrenamiento}: Este conjunto de datos es el que se utiliza en la etapa de entrenamiento para optimizar los parámetros de la red. Aquí se concentra el mayor volumen de datos.
 
-\item\textbf{Conjunto de validación}: Sobre este conjunto se mide el desempeño del sistema a lo largo de su entrenamiento. Los resultados obtenidos al evaluar en este conjunto sirven para ajustar los hiperparámetros que requieren ser especificadas de manera previa al entrenamiento. Estas variables se denominan hiper parámetros.
+\item\textbf{Conjunto de validación}: Sobre este conjunto se mide el desempeño del sistema a lo largo de su entrenamiento. Los resultados obtenidos al evaluar en este conjunto sirven para ajustar las variables que requieren ser especificadas de manera previa al entrenamiento. Estas variables se denominan hiperparámetros.
  
 \item\textbf{Conjunto de prueba}: Este conjunto es el que se utiliza para medir el desempeño final del sistema. Como contiene instancias que no fueron utilizadas en las etapas de entrenamiento y ajuste de parámetros, la evaluación sobre este conjunto sirve para medir el nivel de generalización que el sistema logró alcanzar. 
 
@@ -323,13 +323,13 @@ De esta manera, una capa convolucional aplica uno o varios filtros bidimensional
 Los hiperparámetros que se deben definir en cada capa convolucional son: 
 
 \begin{itemize}
-\item\textbf{Tamaño del filtro}: Define el tamaño del campo receptivo de cada unidad de procesamiento de la capa. Valores comunes son $3x3$ o $5x5$. En la Figura \ref{fig:variables_conv} se ve un ejemplo de un filtro de tamaño $3x3$.
+\item\textbf{Tamaño del filtro}: define el tamaño del campo receptivo de cada unidad de procesamiento de la capa. Valores comunes son $3x3$ o $5x5$. En la Figura \ref{fig:variables_conv} se ve un ejemplo de un filtro de tamaño $3x3$.
 
-\item\textbf{Tamaño del salto}: Determina la distancia horizontal y vertical entre campos receptivos de dos unidades contiguas. Hacer que este valor sea mayor a uno permite reducir las dimensiones de la imagen de entrada al atravesar la capa convolucional. Esto se puede apreciar en la Figura \ref{fig:variables_conv} en donde se aplica un tamaño de salto igual a dos (tanto en sentido vertical como horizontal). 
+\item\textbf{Tamaño del salto}: determina la distancia horizontal y vertical entre campos receptivos de dos unidades contiguas. Hacer que este valor sea mayor a uno permite reducir las dimensiones de la imagen de entrada al atravesar la capa convolucional. Esto se puede apreciar en la Figura \ref{fig:variables_conv} en donde se aplica un tamaño de salto igual a dos (tanto en sentido vertical como horizontal). 
 
-\item\textbf{Relleno de ceros}: Cuando se pretende mantener invariables las dimensiones de entrada y salida de una capa convolucional, se suele aplicar un relleno con ceros en los contornos de la imagen. La cantidad de ceros agregados dependerá de las características del filtro a aplicar. Aplicar un relleno de ceros produce un fenómeno denominado efecto de borde \cite{lagartija}. 
+\item\textbf{Relleno de ceros}: cuando se pretende mantener invariables las dimensiones de entrada y salida de una capa convolucional, se suele aplicar un relleno con ceros en los contornos de la imagen. La cantidad de ceros agregados dependerá de las características del filtro a aplicar. Aplicar un relleno de ceros produce un fenómeno denominado efecto de borde \cite{lagartija}. 
 
-\item\textbf{Cantidad de filtros aplicados}: El número de filtros convolucionales que se aplican sobre la entrada. Es equivalente al número de mapas de características que se generan. 
+\item\textbf{Cantidad de filtros aplicados}: el número de filtros convolucionales que se aplican sobre la entrada. Es equivalente al número de mapas de características que se generan en cada capa. 
 
 \end{itemize}
 
@@ -341,12 +341,12 @@ Los hiperparámetros que se deben definir en cada capa convolucional son:
 \end{figure}
 
 
-Para el análisis de imágenes, estas capas se organizan de manera que la primera capa no contempla todos los pixeles de la imagen, sino que solo se enfoca un número acotado de píxeles que caen dentro de su campo receptivo. De igual manera, las capas subsiguientes se enfocan en las salidas de un conjunto acotado de neuronas de la capa precedente. Este funcionamiento se ilustra en la Figura \ref{fig:convnet}. 
+Para el análisis de imágenes, estas capas se organizan de manera que la primera capa no contempla todos los píxeles de la imagen, sino que solo se enfoca un número acotado de píxeles que caen dentro de su campo receptivo. De igual manera, las capas subsiguientes se enfocan en las salidas de un conjunto acotado de neuronas de la capa precedente. Este funcionamiento se ilustra en la Figura \ref{fig:convnet}. 
 
 \begin{figure}[H]
   \centering{}
   \includegraphics[scale=0.35]{convnet.png}
-  \caption{Capas convolucionales con campos receptivos locales rectangulares}
+  \caption{Capas convolucionales con campos receptivos locales rectangulares.}
   \label{fig:convnet}
 \end{figure}
 
@@ -392,7 +392,7 @@ Considerando que el espectro reverberado tendrá siempre mayor amplitud que el e
 \begin{figure}[H]
   \centering{}
   \includegraphics[scale=0.60]{estimacion_mascara.png}
-  \caption{Disposición de las entradas y salidas del modelo para la estimación de las máscaras de amplitud}
+  \caption{Disposición de las entradas y salidas del modelo para la estimación de las máscaras de amplitud.}
   \label{fig:red_estim}
 \end{figure}
   

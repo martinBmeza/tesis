@@ -5,7 +5,7 @@ Para poder entrenar un algoritmo de aprendizaje profundo es recomendable contar 
 
 Para este trabajo se requieren grabaciones de voz anecoicas, y las mismas señales reverberadas. La forma más sencilla de obtener las señales reverberadas es utilizando respuestas al impulso. Mediante el proceso de convolución, es posible obtener las señales reverberadas a partir de las anecoicas y las respuestas al impulso. En este trabajo, se asumirá que los recintos son sistemas LTI y por lo tanto pueden ser modelados mediante un proceso de convolución con una respuesta al impulso.
 
-Además, se debe tener en cuenta que se busca formar tres grandes conjuntos de datos: conjunto de entrenamiento, conjunto de validación y conjunto de prueba. Los conjuntos de validación y prueba deben servir para verificar que el sistema es capaz de generalizar a condiciones no vistas durante el entrenamiento, pero que si serán encontradas al utilizar el sistema de dereverberación. Por ejemplo, debe ser capaz de generalizar a recintos y voces que no vio durante el entrenamiento. Por esto, se utilizaron respuestas al impulso, y señales de voz distintas en cada conjunto generado.   
+Además, se debe tener en cuenta que se busca formar tres grandes conjuntos de datos: conjunto de entrenamiento, conjunto de validación y conjunto de prueba. Los conjuntos de validación y prueba deben servir para verificar que el sistema es capaz de generalizar a condiciones no vistas durante el entrenamiento, pero que si serán encontradas al utilizar el sistema de dereverberación. Por ejemplo, debe ser capaz de generalizar a recintos y voces que no vio durante el entrenamiento. Por esto, se utilizaron respuestas al impulso y señales de voz distintas en cada conjunto generado.   
 
 
 \subsection[Base de datos de respuestas al impulso]{BASES DE DATOS DE RESPUESTAS AL IMPULSO}
@@ -87,7 +87,7 @@ Para generar los datos se proponen dos recintos, el primero de dimensiones $8m\:
   \caption{Recinto 2}
   \label{fig:sub2}
 \end{subfigure}
-\caption{Recintos y puntos receptor-fuente generados para la simulación de respuestas al impulso}
+\caption{Recintos y puntos receptor-fuente generados para la simulación de respuestas al impulso.}
 \label{fig:recintos}
 \end{figure}
 
@@ -112,10 +112,10 @@ Para el primer proceso, a la parte correspondiente al sonido directo $h_{e}(t)$ 
 
 En donde $w_{d}(t)$ corresponde a una ventana Hann de $5 ms$ de longitud. De esta manera, partiendo de esta última definición junto con la expresión del parámetro $DRR$ expresado en la ecuación \ref{eqn:DRR} se plantea un sistema de ecuaciones a partir del cual se puede definir un valor pretendido de $DRR$ y despejar el correspondiente valor de $\alpha$. En la Figura \ref{fig:drr_aug} se puede observar una representación de una parte directa $h_{e}(t)$, las ventanas aplicadas, el efecto del factor de ganancia $\alpha$ y la nueva señal $\tilde{h}_{e}(t)$ generada. Finalmente, esta parte directa modificada se concatena con el resto de la respuesta al impulso completando así el proceso de aumentación referido a la relación directo-reverberado. Se debe tener en cuenta que para tiempos de reverberación cortos, puede ser un problema generar relaciones directo-reverberado demasiado bajas, ya que la energía de la parte tardía ya es de por si muy baja. Para esos casos, se definen valores límites para la ganancia aplicada a la parte temprana.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering{}
 	\includegraphics[scale=0.55]{drr_aug.png}
-	\caption{Señales involucradas en el proceso de aumentación de DRR}
+	\caption{Señales involucradas en el proceso de aumentación de DRR.}
 	\label{fig:drr_aug}
 \end{figure}
 
@@ -161,7 +161,7 @@ Cabe destacar que debido a este preprocesamiento aplicado, a la hora de evaluar 
 
 El modelo propuesto se basa en una arquitectura de red neuronal completamente convolucional tipo 'autoencoder' inspirada en el trabajo de Ernst et. al. \cite{FCN}. En este autoencoder, la señal de salida es la señal de entrada sin reverberación. Este tipo de variantes de autoencoder se denominan denoising autoencoders \cite{DAE}, y son un patrón de diseño muy común en problemas de mejora del habla. En este trabajo, en vez de estimar directamente el espectrograma anecoico, la red estima máscaras que al ser multiplicadas con la señal reverberada de entrada, dan como resultado el espectrograma anecoico. En estudios previos, se demostró que este método da mejores resultados que estimar directamente el espectrograma anecoico \cite{mask_vs_map}. Para trabajar con espectros, las señales de entrada se transforman al dominio temporal-frecuencial a partir de la transformada de Fourier de corto término.
  
-La estructura de red neuronal utilizada consiste en una U-NET con conexiones de saltos, inspirada inicialmente en \cite{FCN}. Este tipo de estructuras consiste en tomar mapas bidimensionales de entrada y a partir de la aplicación sucesiva de capas convolucionales con valores de salto mayor a 1, reducir la dimensionalidad del mismo e ir aumentando el número de filtros utilizados por la capa convolucional. Un esquema básico de está estructura se puede ver en la Figura \ref{fig:unet}, en donde se puede observar que las dimensiones de las capas siguen una forma de 'U', lo cual le da el nombre a estas estructuras.
+La estructura de red neuronal utilizada consiste en una U-NET con conexiones de salto, inspirada inicialmente en \cite{FCN}. Este tipo de estructura consiste en tomar mapas bidimensionales de entrada y a partir de la aplicación sucesiva de capas convolucionales con valores de salto mayor a 1, reducir la dimensionalidad del mismo e ir aumentando el número de filtros utilizados por las capas convolucionales. Un esquema básico de está estructura se puede ver en la Figura \ref{fig:unet}, en donde se puede observar que las dimensiones de las capas siguen una forma de 'U', lo cual le da el nombre a estas estructuras.
 
 \begin{figure}[H]
 	\centering{}
@@ -177,7 +177,7 @@ Una representación gráfica del modelo final implementado se puede apreciar en 
 \begin{figure}[H]
 	\centering{}
 	\includegraphics[scale=0.35]{modelo_red.png}
-	\caption{Modelo de red neuronal convolucional implementado}
+	\caption{Modelo de red neuronal convolucional implementado.}
 	\label{fig:modelo}
 \end{figure}
 
@@ -191,6 +191,8 @@ En la arquitectura implementada, se imitaron decisiones tomadas en el trabajo de
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 \begin{table}[H]
 \caption{Especificaciones de la arquitectura implementada.}
+\centering
+\begin{threeparttable}
 \begin{tabular}{c|
 >{\columncolor[HTML]{FFFC9E}}c 
 >{\columncolor[HTML]{FFFC9E}}c 
@@ -208,11 +210,14 @@ En la arquitectura implementada, se imitaron decisiones tomadas en el trabajo de
 \multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}5}             & 512              & LeakyReLu           & BatchNorm                                                                        & 256              & ReLu                & BatchNorm                                                                        \\
 \multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}6}             & 512              & LeakyReLu           & BatchNorm                                                                        & 128              & ReLu                & BatchNorm                                                                        \\
 \multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}7}             & 512              & LeakyReLu           & BatchNorm                                                                        & 64               & ReLu                & BatchNorm                                                                        \\
-\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}8}             & 512              & ReLu                & BatchNorm                                                                        & 1                & ReLu \footnotemark                & BatchNorm                                                                        \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}8}             & 512              & ReLu                & BatchNorm                                                                        & 1                & ReLu \tnote{1}                & BatchNorm                                                                        \\ \hline
 \end{tabular}
+	\begin{tablenotes}
+    	\item[1] Se cambia a ReLu limitada en 1 a la hora de hacer predicciones.
+	\end{tablenotes}
+\end{threeparttable}
 \label{table:arquitectura}
 \end{table}
-\footnotetext[3]{Se cambia a ReLu limitada en 1 a la hora de hacer predicciones.}
 
 
 Las capas que componen el codificador son convolucionales, y las que componen el decodificador son capas deconvolutivas o de convolución transpuesta. Las capas de convolución transpuesta pueden generar artefactos indeseados en los mapas de características \cite{checkerboard}.  Una manera de solucionar este efecto es asegurándose de que los campos receptivos sean múltiplos enteros del tamaño de salto utilizado \cite{check1}. Sin embargo, aun teniendo esto en consideración, las capas de convolución transpuesta pueden seguir generando artefactos. Entonces, en lugar de utilizar capas de convolución transpuesta se opta por implementar una combinación de dos capas consecutivas: en primer lugar una capa que aumente las dimensiones del espectrograma generando nuevos puntos a partir de una interpolación entre los valores más cercanos, y luego una capa convolucional. De esta manera se logra aumentar la dimensionalidad de la entrada y utilizar una operación de convolución sin generar la aparición de artefactos indeseados \cite{check2}. 
@@ -267,4 +272,4 @@ Conjuntos de evaluación   & \begin{tabular}[c]{@{}c@{}}Reales\\ Generadas\\ Aum
 
 Por otro lado, se evalúa la influencia del orden con el que las instancias de entrenamiento se le presentan a la red. Normalmente, durante el entrenamiento de una red neuronal, los datos se ordenan de forma aleatoria. Sin embargo, diversos trabajos \cite{cv, cl1, cl2}, demuestran que ordenar los datos de forma creciente en dificultad es beneficioso y lleva a un mejor desempeño de los modelos. Esta técnica se denomina aprendizaje por currículum, y para este trabajo, el criterio que se utilizó para medir la dificultad es que a mayor tiempo de reverberación (TR), más difícil es dereverberar una señal. En consecuencia, se evaluó el modelo entrenado con los datos en un orden creciente de TR (currículum), y para evaluar la efectividad del método, se comparó su desempeño con entrenar el modelo con un orden decreciente de TR (anti-currículum), y con un orden aleatorio.
 
-Para esta evaluación del orden de los datos en el entrenamiento, es necesario generar un conjunto de datos anecóicos-reverberados de manera controlada, asegurando una distribución homogénea de los tiempos de reverberación presentes en el conjunto final. Para conseguir esto se decide conformar el conjunto de datos a partir de respuestas al impulso aumentadas, ya que estas se pueden generar controlando paramétricamente el TR medio y la relación directo-reverberado. Se busca cubrir el rango de tiempo de reverberación medio desde $0.1 \ s$ hasta $3.5 \ s$ con variaciones de entre $-10 \ dB$ a $10 \ dB$ de relación directo-reverberado. 
+Para esta evaluación del orden de los datos en el entrenamiento, es necesario generar un conjunto de datos anecoicos-reverberados de manera controlada, asegurando una distribución homogénea de los tiempos de reverberación presentes en el conjunto final. Para conseguir esto se decide conformar el conjunto de datos a partir de respuestas al impulso aumentadas, ya que estas se pueden generar controlando paramétricamente el TR medio y la DRR. Se busca cubrir el rango de tiempo de reverberación medio desde $0.1 \ s$ hasta $3.5 \ s$ con variaciones de entre $-10 \ dB$ a $10 \ dB$ de relación directo-reverberado. 
